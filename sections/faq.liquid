@@ -1,7 +1,7 @@
 <div class="content-section gutter--on">
 
   {%- unless section.settings.title == blank -%}
-    <h2 class="h1">{{ section.settings.title | escape }}</h2>
+    <{{ section.settings.seo_h_tag }} class="h1">{{ section.settings.title | escape }}</{{ section.settings.seo_h_tag }}>
   {%- endunless -%}
 
   <div class="toggles">
@@ -9,8 +9,8 @@
   	{%- for block in section.blocks -%}
 
       <toggle-tab class="toggle" {{ block.shopify_attributes }}>
-        <span class="toggle__title body-text-lg {% if forloop.first and section.settings.open_first %} opened {% endif %}">{{ block.settings.title | escape }}</span>
-        <div class="toggle__content" {% if forloop.first and section.settings.open_first %} style="display: block;" {% endif %}>
+        <span class="toggle__title body-text-lg {% if forloop.first and section.settings.open_first %} opened {% endif %}" data-js-title>{{ block.settings.title | escape }}</span>
+        <div class="toggle__content" {% if forloop.first and section.settings.open_first %} style="display: block;" {% endif %} data-js-content>
           {%- liquid
             echo block.settings.body
             unless block.settings.image == blank
@@ -23,6 +23,8 @@
 
   	{%- endfor -%}
 
+    <script src="{{ 'component-toggle.js' | asset_url }}" defer></script>
+
   </div>
 
 </div>
@@ -30,7 +32,7 @@
 {% schema %}
 	{
     "name": "t:sections.faq.name",
-    "class": "faq centered-section-content",
+    "class": "faq centered-section-content with-gutter",
     "tag": "section",
 		"settings": [
       {
@@ -43,7 +45,36 @@
 				"type": "checkbox",
 				"id": "open_first",
 				"label": "t:sections.faq.settings.open_first.label"
-			}
+			},
+      {
+        "type": "select",
+        "id": "seo_h_tag",
+        "label": "t:sections.refactor_words.seo.label",
+        "info": "t:sections.refactor_words.seo.info",
+        "options": [
+          {
+            "value": "h1",
+            "label": "H1"
+          },
+          {
+            "value": "h2",
+            "label": "H2"
+          },
+          {
+            "value": "h3",
+            "label": "H3"
+          },
+          {
+            "value": "h4",
+            "label": "H4"
+          },
+          {
+            "value": "span",
+            "label": "span"
+          }
+        ],
+        "default": "h2"
+      }
 		],
 		"blocks": [
       {

@@ -1,4 +1,12 @@
+{{ 'section-testimonials.css' | asset_url | stylesheet_tag }}
+
 <div id="testimonials-{{ section.id }}"class="content-section gutter--on testimonials {% if section.settings.color_bg != 'rgba(0,0,0,0)' %} parent-has-inner-padding {% endif %}">
+
+  <script class="gutter-script">
+    {%- if section.settings.color_bg != 'rgba(0,0,0,0)' -%}
+      document.getElementById('testimonials-{{ section.id }}').parentElement.classList.add('has-inner-padding');
+    {%- endif -%}
+  </script>
 
   <css-slider class="testimonials__container"
     data-options='{
@@ -24,10 +32,11 @@
                   <img 
                     src="{{ block.settings.author_avatar | image_url: width: 66, height: 66, crop: 'center' }}"
                     alt="{{ block.settings.author_avatar.alt | escape }}"
-                    srcset="{{ block.settings.author_avatar | image_url: width: 66, height: 66, crop: 'center' }} 66w, {{ block.settings.author_avatar | image_url: width: 132, height: 132, crop: 'center' }} 132w" 
+                    srcset="{{ block.settings.author_avatar | image_url: width: 66, height: 66, crop: 'center' }} 66w, {{ block.settings.author_avatar | image_url: width: 132, height: 132, crop: 'center' }} 132w, {{ block.settings.author_avatar | image_url: width: 198, height: 198, crop: 'center' }} 198w" 
                     loading="lazy" 
                     sizes="66px"
                     width="66" height="66"
+                    onload="this.classList.add('lazyloaded')"
                   />
                 </figure>
               {%- endif -%}
@@ -87,12 +96,12 @@
 {% schema %}
   {
     "name": "t:sections.testimonials.name",
-    "class": "mount-css-slider",
+    "class": "mount-css-slider with-gutter",
     "max_blocks": 8,
     "settings": [
       {
         "type": "header",
-        "content": "t:sections.custom-colors.heading.label"
+        "content": "t:settings_schema.colors.name"
       },
       {
         "type": "color",

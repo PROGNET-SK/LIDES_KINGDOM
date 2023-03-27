@@ -2,10 +2,10 @@
 
   <div class="featured-collection__header rte">
   
-    <div class="remove-end-margin" style="flex: 1; padding-right: 10%;">
+    <div class="remove-end-margin" style="flex: 1; padding-inline-end: 10%;">
 
       {%- unless section.settings.title == blank -%}
-        <h2 class="featured-collection__title h1">{{ section.settings.title | escape }}</h2>
+        <{{ section.settings.seo_h_tag }} class="featured-collection__title h1">{{ section.settings.title | escape }}</{{ section.settings.seo_h_tag }}>
       {%- endunless -%}
       
     </div>
@@ -35,7 +35,7 @@
       {%- liquid
         if section.settings.collection != blank
           for product in collections[section.settings.collection].products limit: section.settings.products_number
-            render 'product-item', product: product, index: forloop.index
+            render 'product-item', product: product, product_collection: collections[section.settings.collection], index: forloop.index
           endfor
         else 
           for i in (1..section.settings.products_number)
@@ -53,7 +53,7 @@
 {% schema %}
   {
     "name": "t:sections.featured-collection.name",
-    "class": "overflow-hidden mount-css-slider",
+    "class": "overflow-hidden mount-css-slider with-gutter",
     "settings": [
       {
         "type": "text",
@@ -96,10 +96,42 @@
         "type": "collection",
         "id": "collection",
         "label": "t:sections.featured-collection.settings.collection.label"
+      },
+      {
+        "type": "select",
+        "id": "seo_h_tag",
+        "label": "t:sections.refactor_words.seo.label",
+        "info": "t:sections.refactor_words.seo.info",
+        "options": [
+          {
+            "value": "h1",
+            "label": "H1"
+          },
+          {
+            "value": "h2",
+            "label": "H2"
+          },
+          {
+            "value": "h3",
+            "label": "H3"
+          },
+          {
+            "value": "h4",
+            "label": "H4"
+          },
+          {
+            "value": "span",
+            "label": "span"
+          }
+        ],
+        "default": "h2"
       }
     ],
     "presets": [{
       "name": "t:sections.featured-collection.presets.name"
-    }]
+    }],
+    "disabled_on": {
+      "templates": ["password"]
+    }
   }
 {% endschema %}

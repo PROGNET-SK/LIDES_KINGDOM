@@ -20,24 +20,16 @@
 			
 				{% for item in cart.items %}
 
-		      <div id="item-{{ item.id }}" class="cart-item" data-title="{{ item.product.title | escape }} {%- unless item.product.has_only_default_variant -%} ({{ item.variant.title | escape }}) {%- endunless -%}" data-id="{{ item.key }}" data-qty="{{ item.quantity }}">
+		      <div id="item-{{ item.id }}" class="cart-item" data-title="{{ item.product.title | escape }} {%- unless item.product.has_only_default_variant -%} ({{ item.variant.title | escape }}) {%- endunless -%}" data-id="{{ item.key }}" data-qty="{{ item.quantity }}" data-product-id="{{ item.product.id }}" data-js-cart-item>
 
 		        <a href="{{ item.url }}" class="thumbnail">
-		        	<figure class="lazy-image" data-ratio style="padding-top: 120%">
-		        		<img 
-		        			src="{{ item.image | image_url: width: 100, height: 120, crop: 'center' }}" alt="{{ item.title | escape }}"
-									srcset="{{ item.image | image_url: width: 100, height: 120, crop: 'center' }} 100w, {{ item.image | image_url: width: 200, height: 240, crop: 'center' }} 200w"
-									loading="lazy"
-									sizes="100px"
-									width="100" height="120"
-								/>
-							</figure>
+		        	{%- render 'lazy-image-small', image: item.image -%}
 		        </a>
 
 		        <div class="content">
 
 		          <a href="{{ item.url }}" class="title">
-		            {{ item.product.title | escape }}
+		            <span class="underline-animation">{{ item.product.title | escape }}</span>
 	              {% unless item.product.has_only_default_variant %}
 	                <span>({{ item.variant.title | escape }})</span>
 	              {% endunless %}

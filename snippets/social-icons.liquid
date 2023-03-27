@@ -45,7 +45,11 @@
   {%- endif -%}
 
   {%- if settings.social_email != '' -%}
-    <a href="mailto:{{ settings.social_email | escape }}" target="_blank"><span class="visually-hidden">Email</span><span class="icon" aria-hidden="true">{% render 'theme-symbols', icon: 'social_email' %}</span></a>
+    <a href="{{ settings.social_email | escape }}" target="_blank"><span class="visually-hidden">Email</span><span class="icon" aria-hidden="true">{% render 'theme-symbols', icon: 'social_email' %}</span></a>
+  {%- endif -%}
+
+  {%- if settings.social_phone != '' -%}
+    <a href="{{ settings.social_phone | escape }}" target="_blank"><span class="visually-hidden">Phone</span><span class="icon" aria-hidden="true">{% render 'theme-symbols', icon: 'social_phone' %}</span></a>
   {%- endif -%}
 
 </div>

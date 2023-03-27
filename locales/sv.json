@@ -6,6 +6,12 @@
       "search_placeholder": "Sök efter produkter...",
       "continue_browsing": "Fortsätt surfa"
     },
+    "sharing": {
+      "title": "Dela",
+      "facebook": "Facebook",
+      "twitter": "Twitter",
+      "pinterest": "Pinterest"
+    },
     "newsletter": {
       "email_label": "Ange din e-postadress",
       "submit_label": "Skicka in",
@@ -17,6 +23,7 @@
       "email_label": "E-post",
       "phone_label": "Telefonnummer",
       "message_label": "Meddelande",
+      "subject_label": "Ämne",
       "submit_label": "Skicka in",
       "success_message": "Tack för att du kontaktar oss! Vi återkommer till dig så snart som möjligt."
     },
@@ -30,7 +37,7 @@
       "signup_form_email_placeholder": "Din e-post",
       "signup_form_submit": "Skicka in",
       "signup_form_success": "Vi kommer att skicka dig ett e-postmeddelande precis innan vi öppnar!",
-      "admin_link_html": "Är du butiksägaren? <a href=\"\/admin\">Log in here<\/a>",
+      "admin_link_html": "Är du butiksägaren? <a href=\"/admin\">Log in here</a>",
       "password_link": "Gå in med lösenord",
       "powered_by_shopify_html": "Den här butiken kommer att drivas av {{ shopify }}"
     },
@@ -44,10 +51,15 @@
     "breadcrumb": {
       "homepage": "Hem",
       "collections": "Samlingar",
-      "search": "Sökresultat för \"{{ terms }}\"",
+      "search": "Sök",
       "blog": "Blogg",
-      "account": "Konto",
-      "cart": "Varukorg"
+      "account": {
+        "title": "Konto",
+        "addresses": "Adresser",
+        "orders": "Beställningar"
+      },
+      "cart": "Varukorg",
+      "search_results": "Sökresultat för \"{{ terms }}\""
     },
     "date_format": {
       "month_day_year": "%b %d, %Y"
@@ -59,7 +71,15 @@
     },
     "share_on": "Dela på",
     "accessibility_labels": {
-      "home": "Hem",
+      "menu": "Meny",
+      "increase_quantity": "Öka antalet",
+      "decrease_quantity": "Minska antalet",
+      "open_menu": "Öppna meny",
+      "open_filters": "Öppna filter",
+      "open_search": "Öppna sök",
+      "open_cart": "Öppna kundvagn",
+      "close_sidebar": "Stäng sidoruta",
+      "close_popup": "Stäng popup",
       "skip_to_content": "Hoppa till innehållet",
       "next": "Nästa",
       "previous": "Föregående",
@@ -67,7 +87,7 @@
       "back": "Tillbaka",
       "play_video": "Spela video",
       "language_dropdown_label": "Språk",
-      "country_dropdown_label": "Land\/Region",
+      "country_dropdown_label": "Land/Region",
       "quantity": "Antal",
       "price": {
         "regular": "Ordinarie pris",
@@ -81,12 +101,21 @@
         "twitter": "Dela på Twitter",
         "pinterest": "Dela på Pinterest"
       },
-      "rating_info": "Betyg: {{ rating_value }} av {{ rating_max }}"
+      "rating_info": "Betyg: {{ rating_value }} av {{ rating_max }}",
+      "top": "Top",
+      "go_to_top": "Top"
+    },
+    "cookies_popup": {
+      "title": "Cookies",
+      "content": "Den här webbplatsen använder cookies för att säkerställa att du får den bästa upplevelsen på vår enhet.",
+      "button_label": "Acceptera alla cookies"
     },
     "onboarding": {
-      "product_title": "Namnet på din produkt",
-      "collection_title": "Namnet på din kollektion",
-      "article_title": "Titeln på din artikel"
+      "product_title": "Produkttitel",
+      "collection_title": "Samlingens titel",
+      "author_name": "Författarens namn",
+      "article_title": "Artikelns titel",
+      "seven_comments": "7 kommentarer"
     }
   },
   "collections": {
@@ -116,7 +145,7 @@
     "sort_button": "Sortera",
     "sort_by_label": "Sortera efter:",
     "to": "Till",
-    "use_fewer_filters_html": "Använd färre filter eller <a class=\"{{ class }}\" href=\"{{ link }}\">rensa alla<\/a>",
+    "use_fewer_filters_html": "Använd färre filter eller <a class=\"{{ class }}\" href=\"{{ link }}\">rensa alla</a>",
     "view_all_products": "Se alla produkter",
     "no_collections": "Vi beklagar, det finns inga kollektioner i denna butik för närvarande."
   },
@@ -128,7 +157,10 @@
       "on_sale_product": "På rea",
       "new_product": "Ny",
       "preorder_product": "Förbeställ",
-      "no_products_text": "Det finns för närvarande inga produkter i den här kollektionen."
+      "no_products_text": "Det finns för närvarande inga produkter i den här kollektionen.",
+      "save_amount_html": "Spara {{ amount }}",
+      "quick_view": "Välj alternativ",
+      "quick_buy": "Lägg i varukorgen"
     },
     "page": {
       "sku": "SKU: ",
@@ -141,7 +173,7 @@
         "one_product": "Det finns bara en produkt kvar!",
         "few_products": "Det finns {{ count }} produkter kvar.",
         "no_products": "Det finns inga produkter kvar.",
-        "preoder": "Produkten är inte i lager, men du kan ändå beställa den."
+        "preorder": "Produkten är inte i lager, men du kan ändå beställa den."
       },
       "add_to_cart_button": "Lägg i varukorgen",
       "preorder_button": "Förhandsboka",
@@ -152,7 +184,7 @@
       },
       "loading_reviews": "Laddar upp fler recensioner",
       "include_taxes": "Inklusive skatt.",
-      "shipping_policy_html": "<a href=\"{{ link }}\">Fraktkostnaden<\/a> räknas ut i kassan.",
+      "shipping_policy_html": "<a href=\"{{ link }}\">Fraktkostnaden</a> räknas ut i kassan.",
       "view_in_space": "Visa på din plats",
       "view_in_space_label": "Väljer du att visa på din plats laddas varan i förstärkt verklighet."
     },
@@ -164,16 +196,21 @@
   "cart": {
     "title": "Varukorg",
     "total": "Totalt:",
-    "subtotal": "Delsumma:",
+    "subtotal": "Delsumma",
     "discount": "Rabatt:",
     "discounts": "Rabatter:",
     "checkout": "Kassa",
     "update": "Uppdatera varukorgen",
     "note": "Särskilda instruktioner till säljaren",
-    "shipping_at_checkout": "Fraktavgift och skatter beräknas i kassan.",
+    "policies": {
+      "taxes_and_shipping_policy_at_checkout_html": "Moms och <a href=\"{{ link }}\">frakt</a> beräknas i kassan",
+      "taxes_included_but_shipping_at_checkout": "Moms ingår och frakt beräknas i kassan",
+      "taxes_included_and_shipping_policy_html": "Moms ingår. <a href=\"{{ link }}\">Frakt</a> beräknas i kassan.",
+      "taxes_and_shipping_at_checkout": "Moms och frakt beräknas i kassan"
+    },
     "empty": "Din varukorg är tom.",
     "continue_browsing": "Fortsätt surfa",
-    "remove_item": "Ta bort varan från varukorgen",
+    "remove_item": "Ta bort artikeln från varukorgen",
     "add_error": "Alla {{ title }} ligger i din varukorg.",
     "general_error": "Något gick fel. Ladda om sidan och prova igen, tack.",
     "view_cart": "Visa varukorg",
@@ -184,11 +221,28 @@
     "added_items_count": {
       "one": "{{ count }} produkt lades i din varukorg",
       "other": "{{ count }} produkter lades i din varukorg"
+    },
+    "free_shipping_remaining_html": "Du är {{ remaining_amount }} bort från fri frakt.",
+    "free_shipping_eligible": "Du är berättigad till fri frakt!",
+    "shipping_calculator": {
+      "title": "Beräkna frakt",
+      "form_button_label": "Uppskattning",
+      "results_heading_one": "Det finns en fraktkostnad för din adress",
+      "results_heading_multiple": "Fraktpriser för din adress"
+    },
+    "table": {
+      "product": "Produkt",
+      "quantity": "Kvantitet",
+      "total": "Totalt"
     }
   },
   "blog": {
     "grid": {
-      "comments_count": "kommentarer",
+      "comments_count": {
+        "one": "{{ count }} kommentar",
+        "other": "{{ count }} kommentarer"
+      },
+      "tags_label": "Taggar",
       "read_more_label": "Fortsätt läsa",
       "no_articles_text": "Det finns för närvarande inga artiklar i den här bloggen.",
       "tags_dropdown": {
@@ -213,13 +267,14 @@
   },
   "search": {
     "form": {
-      "placeholder": "Sök...",
+      "placeholder": "Sök ...",
       "responsive_placeholder": "Skriv ett nyckelord och tryck enter...",
       "submit": "Skicka in",
       "collection_results_title": "Samlingar",
       "page_results_title": "Sidor",
       "article_results_title": "Bloggposter",
-      "search_for_html": "Sök efter \"{{ terms }}\""
+      "search_for_html": "Sök efter \"{{ terms }}\"",
+      "product_results_title": "Produkter"
     },
     "page": {
       "title": "Sök",
@@ -230,8 +285,8 @@
       "pages_and_articles_found": "Sidor och artiklar för \"{{ terms }}\"",
       "results_count": {
         "zero": "Inga resultat",
-        "one": "Visar {{count}} resultat",
-        "other": "Visar {{offset}}–{{page_size}} av {{count}} resultat"
+        "one": "Visar {{ count }} resultat",
+        "other": "Visar {{ offset }}–{{ page_size }} av {{ count }} resultat"
       },
       "form_placeholder": "Skriv nyckelord här",
       "search_button_label": "Sök",
@@ -291,6 +346,7 @@
     },
     "register_page": {
       "title": "Skapa ett konto",
+      "login_text": "Har du redan ett konto?",
       "form": {
         "first_name_label": "Förnamn",
         "last_name_label": "Efternamn",
@@ -312,8 +368,8 @@
         "first_name_label": "Förnamn",
         "last_name_label": "Efternamn",
         "company_label": "Företag",
-        "address_1_label": "Adress 1",
-        "address_2_label": "Adress 2",
+        "address_1_label": "Adressrad 1",
+        "address_2_label": "Adressrad 2",
         "city_label": "Ort",
         "country_label": "Land",
         "province_label": "Provins",
@@ -323,7 +379,8 @@
         "update_button": "Uppdatera adress",
         "set_as_default_check": "Välj som förinställd adress?",
         "delete_check": "Är du säker på att du vill radera den här adressen?"
-      }
+      },
+      "return": "Återgå till kontosidan"
     },
     "orders_page": {
       "title": "Mitt konto",
@@ -364,8 +421,8 @@
     "check_other_stores": "Se tillgänglighet i andra butiker",
     "pick_up_available": "Upphämtning tillgängligt",
     "pick_up_currently_unavailable": "Upphämtning för närvarande ej tillgängligt",
-    "pick_up_available_at_html": "Upphämtning tillgängligt vid <strong>{{ location_name }}<\/strong>",
-    "pick_up_unavailable_at_html": "Upphämtning för närvarande ej tillgängligt vid <strong>{{ location_name }}<\/strong>",
+    "pick_up_available_at_html": "Upphämtning tillgängligt vid <strong>{{ location_name }}</strong>",
+    "pick_up_unavailable_at_html": "Upphämtning för närvarande ej tillgängligt vid <strong>{{ location_name }}</strong>",
     "invalid_location_address": "Kontakta butiken för att bekräfta adressen",
     "refresh": "Uppdatera"
   }

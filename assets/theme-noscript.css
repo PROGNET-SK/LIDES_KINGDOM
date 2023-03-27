@@ -11,6 +11,10 @@
   transform: none;
   padding-left: 20px;
 }
+html[dir=rtl] .sidebar__submenu .sub-menu {
+  padding-right: 20px;
+  padding-left: 0;
+}
 
 .submenu-arrow {
   display: none;

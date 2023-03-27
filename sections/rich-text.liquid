@@ -1,4 +1,18 @@
+
+{{ 'section-rich-text.css' | asset_url | stylesheet_tag }}
+
 <div id="rich-text-{{ section.id }}" class="content-section {% unless section.settings.image == blank %} gutter--off {% else %} gutter--on centered-section-content {% endunless %} rich-text rich-text--{{ section.settings.image_position }} rich-text--text-{{ section.settings.text_alignment }} rich-text--media-{% unless section.settings.image == blank %}on{% else %}off{% endunless %} {% if section.settings.color_bg != 'rgba(0,0,0,0)' and section.settings.image == blank %} parent-has-inner-padding {% endif %}">
+
+  <script class="gutter-script">
+    {%- unless section.settings.image == blank -%}
+      document.getElementById('rich-text-{{ section.id }}').parentElement.classList.add('without-gutter');
+    {%- else -%}
+      document.getElementById('rich-text-{{ section.id }}').parentElement.classList.add('with-gutter');
+      {%- if section.settings.color_bg != 'rgba(0,0,0,0)' -%}
+        document.getElementById('rich-text-{{ section.id }}').parentElement.classList.add('has-inner-padding');
+      {%- endif -%}
+    {%- endunless -%}
+  </script>
 
   <div class="rich-text__content" style="text-align: {{ section.settings.text_alignment }}">
 
@@ -7,7 +21,7 @@
       {%- case block.type -%}
 
         {%- when 'heading' -%}
-          <h2 class="rich-text__title {% if block.settings.heading_size == 'regular' %} h1 {% elsif block.settings.heading_size == 'large' %} h0 {% else %} hh {% endif %}" {{ block.shopify_attributes }}>{{ block.settings.heading }}</h2>
+          <{{ block.settings.seo_h_tag }} class="rich-text__title {% if block.settings.heading_size == 'regular' %} h1 {% elsif block.settings.heading_size == 'large' %} h0 {% else %} hh {% endif %}" {{ block.shopify_attributes }}>{{ block.settings.heading }}</{{ block.settings.seo_h_tag }}>
 
         {%- when 'text' -%}
           <div class="rich-text__body rte"  {{ block.shopify_attributes }}>{{ block.settings.text }}</div>
@@ -107,6 +121,35 @@
               }
             ],
             "default": "regular"
+          },
+          {
+            "type": "select",
+            "id": "seo_h_tag",
+            "label": "t:sections.refactor_words.seo.label",
+            "info": "t:sections.refactor_words.seo.info",
+            "options": [
+              {
+                "value": "h1",
+                "label": "H1"
+              },
+              {
+                "value": "h2",
+                "label": "H2"
+              },
+              {
+                "value": "h3",
+                "label": "H3"
+              },
+              {
+                "value": "h4",
+                "label": "H4"
+              },
+              {
+                "value": "span",
+                "label": "span"
+              }
+            ],
+            "default": "h3"
           }
         ]
       },
@@ -1112,7 +1155,7 @@
       },
       {
         "type": "header",
-        "content": "t:sections.custom-colors.heading.label"
+        "content": "t:settings_schema.colors.name"
       },
       {
         "type": "color",

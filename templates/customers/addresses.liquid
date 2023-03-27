@@ -37,7 +37,7 @@
 
 							<div id="edit_address_{{ address.id }}" aria-hidden="true" class="hidden">
 
-								<div class="address-popup">
+								<div class="page-popup">
 
 									{% form 'customer_address', address, class: 'simple-form' %}
 
@@ -136,7 +136,7 @@
 
 			<div id="add_address" aria-hidden="true" class="hidden">
 
-				<div class="address-popup">
+				<div class="page-popup">
 
 					{% form 'customer_address', customer.new_address, class: 'simple-form' %}
 
@@ -223,6 +223,7 @@
 
 </div>
 
+<script src="{{ 'component-lightbox.js' | asset_url }}" defer></script>
 <script type="text/javascript">
 
 	window.onload = function(){
@@ -239,7 +240,7 @@
 					hideElement: 'address_province_container_{{ address.id }}'
 				});
 
-				const modal_{{ address.id }} = basicLightbox.create(document.getElementById('edit_address_{{ address.id }}'), {
+				const modal_{{ address.id }} = window.basicLightbox.create(document.getElementById('edit_address_{{ address.id }}'), {
 					trigger: document.getElementById('open_address_{{ address.id }}'),
 					focus: 'input[type="text"]'
 				});
@@ -248,7 +249,7 @@
 
 		{% endpaginate %}
 
-		const modal_new = basicLightbox.create(document.getElementById('add_address'), {
+		const modal_new = window.basicLightbox.create(document.getElementById('add_address'), {
 			trigger: document.getElementById('open_address_new'),
 			focus: 'input[type="text"]'
 		});

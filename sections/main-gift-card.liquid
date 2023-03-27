@@ -1,10 +1,16 @@
-{% unless section.settings.logo_src == blank %}
+{{ 'section-main-gift-card.css' | asset_url | stylesheet_tag }}
+
+{%- unless section.settings.logo_src == blank -%}
 	<div class="gift-card-logo">
 		<a class="logo__image" href="{{ routes.root_url }}" style="display:block;height:{{ section.settings.logo_width | divided_by: section.settings.logo_src.aspect_ratio }}px">
 			<img src="{{ section.settings.logo_src | image_url }}" alt="{{ shop.name | escape }}" style="width: {{ section.settings.logo_width | escape }}px;" width="{{ section.settings.logo_src.width }}" height="{{ section.settings.logo_src.height }}" />
 		</a>
 	</div>
-{% endunless %}
+	{%- else -%}
+		<div class="gift-card-logo">
+			{{ shop.name | escape }}
+		</div>
+	{%- endunless -%}
 
 <div class="gift-card-content {% if gift_card.expired or gift_card.enabled != true %} expired {% endif %}">
 	

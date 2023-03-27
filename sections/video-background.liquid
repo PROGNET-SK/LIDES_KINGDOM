@@ -1,4 +1,14 @@
-<video-background id="video-background-{{ section.id }}" class="full-width-section-content content-section gutter--{% if section.settings.gutter_enabled %}on{% else %}off{% endif %} video-text" style="display:block">
+{{ 'section-video-background.css' | asset_url | stylesheet_tag }}
+
+<div id="video-background-{{ section.id }}" class="full-width-section-content content-section gutter--{% if section.settings.gutter_enabled %}on{% else %}off{% endif %} video-text" style="display:block">
+
+  <script class="gutter-script">
+    {%- if section.settings.gutter_enabled -%}
+      document.getElementById('video-background-{{ section.id }}').parentElement.classList.add('with-gutter');
+    {%- else -%}
+      document.getElementById('video-background-{{ section.id }}').parentElement.classList.add('without-gutter');
+    {%- endif -%}
+  </script>
 
   <div class="video-text__container ">
     <div class="video-text__content aligned-text-content {{ section.settings.text_alignment }}">
@@ -9,7 +19,7 @@
           {%- case block.type -%}
 
             {%- when 'heading' -%}
-              <h2 class="video-text__title {% if block.settings.heading_size == 'regular' %} h1 {% elsif block.settings.heading_size == 'large' %} h0 {% else %} hh {% endif %}">{{ block.settings.heading | escape }}</h2>
+              <{{ block.settings.seo_h_tag }} class="video-text__title {% if block.settings.heading_size == 'regular' %} h1 {% elsif block.settings.heading_size == 'large' %} h0 {% else %} hh {% endif %}">{{ block.settings.heading | escape }}</{{ block.settings.seo_h_tag }}>
 
             {%- when 'text' -%}
               <div class="video-text__body {% if block.settings.text_size == 'large' %} h2 {% elsif block.settings.text_size == 'huge' %} h1 {% endif %} rte">{{ block.settings.text }}</div>
@@ -27,22 +37,38 @@
     </div>
   </div>
 
-   <div class="video-text__background" data-height="{{ section.settings.video_height }}" {% unless section.settings.video == blank %} data-src="{{ section.settings.video }}" {% endunless %}>
-      
-    {%- unless section.settings.image == blank -%}
-      <span class="video-text__image" aria-hidden="true">
-        {%- liquid
-          assign sizes = 'sizes="(max-width: 948px) 100vw, calc(100vw - 200px)"'
-          render 'lazy-image', image: section.settings.image, type: 'background', sizes: sizes, image_alignment: true
-        -%}
-      </span>
-    {%- else -%}
-      <span class="video-text__image onboarding-svg onboarding-background">{{ 'image' | placeholder_svg_tag }}</span>
-    {%- endunless -%}
-    
-  </div>
+  {%- unless section.settings.video_object == blank -%}
 
-</video-background>
+    <video-background-element class="video-text__background" data-id="{{ section.id }}" data-height="{{ section.settings.video_height }}">
+
+      <video autoplay muted loop playsinline>
+        {%- for source in section.settings.video_object.sources -%}
+          <source data-src="{{ source.url }}" type="{{ source.mime_type }}">
+        {%- endfor -%}
+      </video>
+
+      {%- unless section.settings.image == blank -%}
+        <div data-video-background-fallback data-id="{{ section.id }}">
+          <template>
+            {%- liquid
+              assign sizes = 'sizes="(max-width: 948px) 100vw, calc(100vw - 200px)"'
+              render 'lazy-image', image: section.settings.image, type: 'background', sizes: sizes, image_alignment: true
+            -%}
+          </template>
+        </div>
+      {%- endunless -%}
+      
+    </video-background-element>
+
+  {%- else -%}
+    <div class="video-text__background">
+      <span class="onboarding-svg with-background">{{ 'image' | placeholder_svg_tag }}</span>
+    </div>
+  {%- endunless -%}
+
+  <script src="{{ 'component-video-background.js' | asset_url }}" defer></script>
+  
+</div>
 
 {%- assign color_text = section.settings.color_text -%}
 {%- if color_text != 'rgba(0,0,0,0)' -%}
@@ -87,26 +113,17 @@
   #video-background-{{ section.id }} .video-text__container {
     padding-top: {{ section.settings.video_height }};
   }
+  @media all and (max-width: 948px) {
+    #video-background-{{ section.id }} .video-text__container {
+      padding-top: {{ section.settings.video_mobile_height }};
+    }
+  }
   @media all and (min-width: 768px) {
     #video-background-{{ section.id }} .video-text__content > div {
       max-width: {{ section.settings.text_width }};
     }
   }
 {% endstyle %}
-
-{%- if section.settings.video_height == "56.25%" -%}
-  {% style %}
-    #video-background-{{ section.id }} .video-text__background video {
-      width: 100%;
-      height: 100%;
-      top: 0;
-      left: 0;
-      min-width: 0;
-      min-height: 0;
-      transform: none;
-    }
-  {% endstyle %}
-{%- endif -%}
 
 {% schema %}
   {
@@ -141,6 +158,35 @@
               }
             ],
             "default": "regular"
+          },
+          {
+            "type": "select",
+            "id": "seo_h_tag",
+            "label": "t:sections.refactor_words.seo.label",
+            "info": "t:sections.refactor_words.seo.info",
+            "options": [
+              {
+                "value": "h1",
+                "label": "H1"
+              },
+              {
+                "value": "h2",
+                "label": "H2"
+              },
+              {
+                "value": "h3",
+                "label": "H3"
+              },
+              {
+                "value": "h4",
+                "label": "H4"
+              },
+              {
+                "value": "span",
+                "label": "span"
+              }
+            ],
+            "default": "h2"
           }
         ]
       },
@@ -208,18 +254,16 @@
         ]
       }
     ],
-    "settings": [{
-        "id": "video",
-        "type": "text",
-        "label": "t:sections.video-background.settings.video.label",
-        "info": "t:sections.video-background.settings.video.info",
-        "default": "//cdn.shopify.com/s/files/1/0266/9543/4315/files/Share_your_brand_story_by_adding_a_video_to_your_store.mp4?3663"
+    "settings": [
+      {
+        "type": "video",
+        "id": "video_object",
+        "label": "t:sections.local-extra-words.sections.media-with-text-overlay.blocks.video.label"
       },
       {
         "type": "image_picker",
         "id": "image",
-        "label": "t:sections.video-background.settings.image.label",
-        "info": "t:sections.video-background.settings.image.info"
+        "label": "t:sections.video-background.settings.image.label"
       },
       {
         "type": "header",
@@ -229,6 +273,28 @@
         "type": "select",
         "id": "video_height",
         "label": "t:sections.video-background.settings.video_height.label",
+        "options": [{
+            "value": "56.25%",
+            "label": "t:sections.video-background.settings.video_height.options__1.label",
+            "group": "t:sections.video-background.settings.video_height.options__1.group"
+          },
+          {
+            "value": "70vh",
+            "label": "t:sections.video-background.settings.video_height.options__2.label",
+            "group": "t:sections.video-background.settings.video_height.options__2.group"
+          },
+          {
+            "value": "100vh",
+            "label": "t:sections.video-background.settings.video_height.options__3.label",
+            "group": "t:sections.video-background.settings.video_height.options__2.group"
+          }
+        ],
+        "default": "56.25%"
+      },
+      {
+        "type": "select",
+        "id": "video_mobile_height",
+        "label": "t:sections.video-background.settings.video_mobile_height.label",
         "options": [{
             "value": "56.25%",
             "label": "t:sections.video-background.settings.video_height.options__1.label",
@@ -311,7 +377,7 @@
       },
       {
         "type": "header",
-        "content": "t:sections.custom-colors.heading.label"
+        "content": "t:settings_schema.colors.name"
       },
       {
         "type": "color",

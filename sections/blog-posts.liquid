@@ -1,9 +1,11 @@
+{{ 'component-blog-item.css' | asset_url | stylesheet_tag }}
+
 <div class="content-section full-width-section-content gutter--on blog-posts">
 
   <div class="blog-posts__header rte">
     
     {%- unless section.settings.title == blank -%}
-      <h2 class="blog-posts__title h1" style="flex: 1;">{{ section.settings.title | escape }}</h2>
+      <{{ section.settings.seo_h_tag }} class="blog-posts__title h1" style="flex: 1;">{{ section.settings.title | escape }}</{{ section.settings.seo_h_tag }}>
     {%- endunless -%}
 
     {%- if section.settings.show_view_all -%}
@@ -45,7 +47,7 @@
 {% schema %}
   {
     "name": "t:sections.blog-posts.name",
-    "class": "overflow-hidden",
+    "class": "overflow-hidden with-gutter",
     "blocks": [
       {
         "type": "title",
@@ -132,6 +134,39 @@
           }
         ],
         "default": "grid cols-2"
+      },
+      {
+        "type": "header",
+        "content": "t:sections.refactor_words.seo.name"
+      },
+      {
+        "type": "select",
+        "id": "seo_h_tag",
+        "label": "t:sections.refactor_words.seo.label",
+        "info": "t:sections.refactor_words.seo.info",
+        "options": [
+          {
+            "value": "h1",
+            "label": "H1"
+          },
+          {
+            "value": "h2",
+            "label": "H2"
+          },
+          {
+            "value": "h3",
+            "label": "H3"
+          },
+          {
+            "value": "h4",
+            "label": "H4"
+          },
+          {
+            "value": "span",
+            "label": "span"
+          }
+        ],
+        "default": "h2"
       }
     ],    
     "presets": [{

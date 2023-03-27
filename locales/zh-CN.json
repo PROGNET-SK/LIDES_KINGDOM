@@ -6,6 +6,12 @@
       "search_placeholder": "搜索产品……",
       "continue_browsing": "继续浏览"
     },
+    "sharing": {
+      "title": "分享",
+      "facebook": "脸书 (Facebook)",
+      "twitter": "推特 (Twitter)",
+      "pinterest": "拼趣 (Pinterest)"
+    },
     "newsletter": {
       "email_label": "输入您的电子邮箱",
       "submit_label": "提交",
@@ -17,6 +23,7 @@
       "email_label": "电子邮件地址",
       "phone_label": "电话号码",
       "message_label": "留言",
+      "subject_label": "主题",
       "submit_label": "提交",
       "success_message": "感谢您与我们联系！我们会尽快回复您。"
     },
@@ -30,7 +37,7 @@
       "signup_form_email_placeholder": "您的电子邮件地址",
       "signup_form_submit": "提交",
       "signup_form_success": "我们会在开业前给您发一封电子邮件！",
-      "admin_link_html": "您是店主吗？<a href=\"\/admin\">在此登录<\/a>",
+      "admin_link_html": "您是店主吗？<a href=\"/admin\">在此登录</a>",
       "password_link": "使用密码进入",
       "powered_by_shopify_html": "此商店将由 {{ shopify }} 提供支持"
     },
@@ -44,10 +51,15 @@
     "breadcrumb": {
       "homepage": "首页",
       "collections": "产品系列",
-      "search": "与“{{ terms }}”相关的搜索结果",
+      "search": "搜索",
       "blog": "博客",
-      "account": "账户",
-      "cart": "购物车"
+      "account": {
+        "title": "账户",
+        "addresses": "地址",
+        "orders": "订单"
+      },
+      "cart": "购物车",
+      "search_results": "与“{{ terms }}”相关的搜索结果"
     },
     "date_format": {
       "month_day_year": "%Y 年 %b %d 日"
@@ -59,7 +71,15 @@
     },
     "share_on": "分享到",
     "accessibility_labels": {
-      "home": "首页",
+      "menu": "菜单",
+      "increase_quantity": "增加数量",
+      "decrease_quantity": "减少数量",
+      "open_menu": "打开菜单",
+      "open_filters": "打开筛选工具",
+      "open_search": "打开搜索",
+      "open_cart": "打开购物车",
+      "close_sidebar": "关闭侧边栏",
+      "close_popup": "关闭弹窗",
       "skip_to_content": "直接跳至内容部分",
       "next": "下一个",
       "previous": "上一个",
@@ -67,7 +87,7 @@
       "back": "返回",
       "play_video": "播放视频",
       "language_dropdown_label": "语言",
-      "country_dropdown_label": "国家\/地区",
+      "country_dropdown_label": "国家/地区",
       "quantity": "数量",
       "price": {
         "regular": "常规价格",
@@ -81,12 +101,21 @@
         "pinterest": "在 pinterest 上分享"
       },
       "rating": "评分",
-      "rating_info": "评分：{{ rating_value }}，共 {{ rating_max }} 条"
+      "rating_info": "评分：{{ rating_value }}，共 {{ rating_max }} 条",
+      "top": "向上",
+      "go_to_top": "向上"
+    },
+    "cookies_popup": {
+      "title": "Cookies",
+      "content": "本网站使用 cookies 以确保您在我们的设备上获得最佳体验。",
+      "button_label": "接受所有的 cookie"
     },
     "onboarding": {
-      "product_title": "您的产品名称",
-      "collection_title": "您的产品系列名称",
-      "article_title": "您的文章标题"
+      "product_title": "产品名",
+      "collection_title": "产品系列名",
+      "author_name": "作者姓名",
+      "article_title": "文章名称",
+      "seven_comments": "7 条评论"
     }
   },
   "collections": {
@@ -116,7 +145,7 @@
     "sort_button": "排序",
     "sort_by_label": "排序方式：",
     "to": "到",
-    "use_fewer_filters_html": "使用较少的过滤条件或<a class=\"{{ class }}\" href=\"{{ link }}\">全部清除<\/a>",
+    "use_fewer_filters_html": "使用较少的过滤条件或<a class=\"{{ class }}\" href=\"{{ link }}\">全部清除</a>",
     "view_all_products": "查看全部产品",
     "no_collections": "很抱歉，但目前该店没有产品系列。"
   },
@@ -128,7 +157,10 @@
       "on_sale_product": "在售",
       "new_product": "新品",
       "preorder_product": "预购",
-      "no_products_text": "此产品系列中目前没有任何产品。"
+      "no_products_text": "此产品系列中目前没有任何产品。",
+      "save_amount_html": "节省 {{ amount }}",
+      "quick_view": "选择选项",
+      "quick_buy": "添加至购物车"
     },
     "page": {
       "sku": "SKU:",
@@ -141,7 +173,7 @@
         "one_product": "仅剩一件产品！",
         "few_products": "还剩 {{ count }} 个产品",
         "no_products": "已无剩余产品",
-        "preoder": "该产品目前缺货，但您仍可订购。"
+        "preorder": "该产品目前缺货，但您仍可订购。"
       },
       "add_to_cart_button": "添加至购物车",
       "preorder_button": "预订",
@@ -152,7 +184,7 @@
       },
       "loading_reviews": "正在加载更多评论",
       "include_taxes": "含税。",
-      "shipping_policy_html": "<a href=\"{{ link }}\">运费<\/a>在结算时计算。",
+      "shipping_policy_html": "<a href=\"{{ link }}\">运费</a>在结算时计算。",
       "view_in_space": "在您的空间中查看",
       "view_in_space_label": "在您的空间中查看，在增强现实窗口中加载商品"
     },
@@ -164,16 +196,21 @@
   "cart": {
     "title": "购物车",
     "total": "总计：",
-    "subtotal": "小计：",
+    "subtotal": "小计",
     "discount": "折扣：",
     "discounts": "折扣：",
     "checkout": "结账",
     "update": "更新",
-    "note": "针对卖家的特殊说明",
-    "shipping_at_checkout": "运费和税费在结账时计算。",
+    "note": "卖方特别说明",
+    "policies": {
+      "taxes_and_shipping_policy_at_checkout_html": "结账时计算的税费和<a href=\"{{ link }}\">运费</a>",
+      "taxes_included_but_shipping_at_checkout": "结账时包含的税费和计算的运费",
+      "taxes_included_and_shipping_policy_html": "含税费。结账时计算的<a href=\"{{ link }}\">运费</a>。",
+      "taxes_and_shipping_at_checkout": "结账时计算的税费和运费"
+    },
     "empty": "您的购物车目前是空的。",
     "continue_browsing": "继续浏览",
-    "remove_item": "从购物车中移除商品",
+    "remove_item": "从购物车中移除物品",
     "add_error": "所有 {{ title }} 都在您的购物车中。",
     "general_error": "出现了一个错误。请刷新页面然后重试。",
     "view_cart": "查看购物车",
@@ -184,11 +221,28 @@
     "added_items_count": {
       "one": "{{ count }} 件产品已添加到您的购物车中",
       "other": "{{ count }} 件产品已添加到您的购物车中"
+    },
+    "free_shipping_remaining_html": "您还需购买 {{ remaining_amount }} 产品就能享受免费送货。",
+    "free_shipping_eligible": "您能享受免费送货服务！",
+    "shipping_calculator": {
+      "title": "预估运费",
+      "form_button_label": "估计",
+      "results_heading_one": "您的地址只有一种运费",
+      "results_heading_multiple": "您地址的运费"
+    },
+    "table": {
+      "product": "产品",
+      "quantity": "数量",
+      "total": "总计"
     }
   },
   "blog": {
     "grid": {
-      "comments_count": "评论",
+      "comments_count": {
+        "one": "{{ count }} 条评论",
+        "other": "{{ count }} 条评论"
+      },
+      "tags_label": "标签",
       "read_more_label": "继续阅读",
       "no_articles_text": "此博客中目前没有文章。",
       "tags_dropdown": {
@@ -219,19 +273,20 @@
       "collection_results_title": "产品系列",
       "page_results_title": "页面",
       "article_results_title": "博客文章",
-      "search_for_html": "搜索“{{ terms }}”"
+      "search_for_html": "搜索“{{ terms }}”",
+      "product_results_title": "产品"
     },
     "page": {
       "title": "搜索",
       "subtitle": "使用下面的搜索栏查找产品：",
       "no_results": "找不到与“{{ terms }}”相关的结果",
-      "results": "与“{{ terms }}”相关的搜索结果",
-      "products_found": "与“{{ terms }}”相关的产品",
+      "results": "“{{ terms }}” 的搜索结果",
+      "products_found": "“{{ terms }}” 的产品",
       "pages_and_articles_found": "与“{{ terms }}”相关的页面和文章",
       "results_count": {
         "zero": "没有结果",
-        "one": "显示 {{count}} 条结果",
-        "other": "显示 {{count}} 条结果中的第 {{offset}} - {{page_size}} 条"
+        "one": "显示 {{ count }} 条结果",
+        "other": "显示 {{ count }} 条结果中的第 {{ offset }} - {{ page_size }} 条"
       },
       "form_placeholder": "在此处输入关键词",
       "search_button_label": "搜索",
@@ -291,6 +346,7 @@
     },
     "register_page": {
       "title": "创建账户",
+      "login_text": "已有账户？",
       "form": {
         "first_name_label": "名字",
         "last_name_label": "姓氏",
@@ -312,8 +368,8 @@
         "first_name_label": "名字",
         "last_name_label": "姓氏",
         "company_label": "公司",
-        "address_1_label": "地址 1",
-        "address_2_label": "地址 2",
+        "address_1_label": "地址栏 1",
+        "address_2_label": "地址栏 2",
         "city_label": "城市",
         "country_label": "国家（或地区）",
         "province_label": "省（或州）",
@@ -323,7 +379,8 @@
         "update_button": "更新地址",
         "set_as_default_check": "设为默认地址？",
         "delete_check": "您确定要删除此地址吗？"
-      }
+      },
+      "return": "回到账户页面"
     },
     "orders_page": {
       "title": "我的账户",
@@ -364,8 +421,8 @@
     "check_other_stores": "查看其他店铺的供货情况",
     "pick_up_available": "可提货",
     "pick_up_currently_unavailable": "目前无法提货",
-    "pick_up_available_at_html": "可在 <strong>{{ location_name }}<\/strong> 取货",
-    "pick_up_unavailable_at_html": "目前无法在 <strong>{{ location_name }}<\/strong> 取货",
+    "pick_up_available_at_html": "可在 <strong>{{ location_name }}</strong> 取货",
+    "pick_up_unavailable_at_html": "目前无法在 <strong>{{ location_name }}</strong> 取货",
     "invalid_location_address": "联系商家以确认地址",
     "refresh": "刷新"
   }

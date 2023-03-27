@@ -1,10 +1,10 @@
 <product-recommendations class="product-recommendations" data-url="{{ routes.product_recommendations_url }}?section_id={{ section.id }}&product_id={{ product.id }}&limit=8">
   {%- if recommendations.performed and recommendations.products_count > 0 -%}
     <div class="content-section full-width-section-content gutter--on">
-      <h3 class="h1">{{ section.settings.heading }}</h3>
+      <span class="h1">{{ section.settings.heading | escape }}</span>
       <css-slider 
         style="display:block" 
-        class="collection--slider collection--{{ settings.grid_style }} css-slider--simple-dots"
+        class="collection--slider css-slider--simple-dots"
         data-options='{
           "selector": ".product-item",
           "navigation": false,
@@ -24,7 +24,7 @@
 {% schema %}
   {
     "name": "t:sections.product-recommendations.name",
-    "class": "shopify-section-product-recommendations",
+    "class": "shopify-section-product-recommendations mount-css-slider",
     "settings": [
       {
         "type": "header",

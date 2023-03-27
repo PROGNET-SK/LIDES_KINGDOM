@@ -34,21 +34,27 @@
 	if product.tags contains 'featured' and grid_enhance == true and template != 'search'
 		assign media_sizes = 'sizes="(max-width: 768px) calc(100vw - 20px), (min-width: 768px) and (max-width: 948px) 50vw, (min-width: 948px) and (max-width: 1174px) calc(100vw - 200px), calc((100vw - 300px)/2)"'
 	endif
+	
+	if settings.within_filter_enabled and product_collection
+		assign product_url = product.url | within: product_collection
+	else
+		assign product_url = product.url
+	endif
 
 -%}
 
 <div class="product-item {% if product.tags contains 'featured' and grid_enhance == true and template != 'search' and blank_product != true %} featured {% endif %}" data-js-product-item>
 
-	<a href="{{ product.url }}" class="product-item__link">
+	<a href="{{ product_url }}" class="product-item__link">
 
-		{% if blank_product or product.media.size == 0 %} 
+		{%- if blank_product or product.media.size == 0 -%} 
 
 	  	<span class="product-item__thumbnail onboarding-svg onboarding-background" style="padding-top:100%" data-padding="{{ 100 }}">
    			{% assign no = index | modulo: 6 | plus: 1 %}
 		    {{ 'product-X' | replace: 'X', no | placeholder_svg_tag }}
 		   </span>
 
-		{% else %}
+		{%- else -%}
 
 			<div class="product-item__thumbnail" style="padding-top:{{ 100 | divided_by: aspect_ratio }}%" data-padding="{{ 100 | divided_by: aspect_ratio }}">
 				
@@ -60,7 +66,7 @@
 					endif
 				-%}
 
-		  	{% if grid_show_secondary_image and product.media.size >= 2 %}
+		  	{%- if grid_show_secondary_image and product.media.size >= 2 -%}
 
 					<div class="product-item__secondary-image">
 						{%- liquid
@@ -72,11 +78,17 @@
 						-%}
 					</div>
 
-		  	{% endif %}
+		  	{%- endif -%}
+
+				{%- liquid
+					if settings.enable_quick_buy
+						render 'quick-buy', product: product, id: index
+					endif
+				-%}
 
 		  </div>
 
-		{% endif %}
+		{%- endif -%}
 
 	  <div class="product-item__caption">
 

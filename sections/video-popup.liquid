@@ -1,8 +1,18 @@
+{{ 'section-video-popup.css' | asset_url | stylesheet_tag }}
+
 <video-popup id="video-popup-{{ section.id }}"  
   class="content-section video-popup gutter--{% if section.settings.gutter_enabled %}on{% else %}off{% endif %}" style="display:block"
   data-video data-product-media-type="{{ section.settings.video.type }}"
 >
 
+  <script class="gutter-script">
+    {%- if section.settings.gutter_enabled -%}
+      document.getElementById('video-popup-{{ section.id }}').parentElement.classList.add('with-gutter');
+    {%- else -%}
+      document.getElementById('video-popup-{{ section.id }}').parentElement.classList.add('without-gutter');
+    {%- endif -%}
+  </script>
+  
   <template>
     {%- if section.settings.video.type == 'youtube' -%}
       <iframe src="https://www.youtube.com/embed/{{ section.settings.video.id }}?enablejsapi=1&autoplay=1" class="js-youtube video-popup__iframe" allow="autoplay; encrypted-media" allowfullscreen title="{{ section.settings.heading | escape }}"></iframe>
@@ -11,17 +21,16 @@
     {%- endif -%}
   </template>
 
+  <div class="video-popup__container" data-js-video-popup-container>
 
-  <div class="video-popup__container">
-
-    <a class="video-popup__link" href="{{ section.settings.video }}">
+    <a class="video-popup__link" href="{{ section.settings.video }}" data-js-video-popup-link>
 
       <div class="video-popup__text">
 
         {%- for block in section.blocks -%}
           {%- case block.type -%}
             {%- when 'heading' -%}
-              <h2 class="video-popup__title h1"><span>{{ block.settings.heading | escape }}</span></h2>
+              <{{ block.settings.seo_h_tag }} class="video-popup__title h1"><span>{{ block.settings.heading | escape }}</span></{{ block.settings.seo_h_tag }}>
             {%- when 'text' -%}
               <div class="video-popup__body rte">{{ block.settings.text }}</div>
           {%- endcase -%}
@@ -53,6 +62,8 @@
   </div>
 
 </video-popup>
+
+<script src="{{ 'component-video.js' | asset_url }}" defer></script>
 
 {%- if section.settings.color_bg != 'rgba(0,0,0,0)' -%}
   {% style %}
@@ -108,6 +119,35 @@
               }
             ],
             "default": "regular"
+          },
+          {
+            "type": "select",
+            "id": "seo_h_tag",
+            "label": "t:sections.refactor_words.seo.label",
+            "info": "t:sections.refactor_words.seo.info",
+            "options": [
+              {
+                "value": "h1",
+                "label": "H1"
+              },
+              {
+                "value": "h2",
+                "label": "H2"
+              },
+              {
+                "value": "h3",
+                "label": "H3"
+              },
+              {
+                "value": "h4",
+                "label": "H4"
+              },
+              {
+                "value": "span",
+                "label": "span"
+              }
+            ],
+            "default": "h2"
           }
         ]
       },
@@ -160,7 +200,7 @@
       },
       {
         "type": "header",
-        "content": "t:sections.custom-colors.heading.label"
+        "content": "t:settings_schema.colors.name"
       },
       {
         "type": "color",

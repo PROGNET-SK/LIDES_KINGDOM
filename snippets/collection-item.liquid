@@ -24,8 +24,10 @@
 
 				unless image == blank
 					assign collection_image = image
+					assign image_alignment = true
 				else
 					assign collection_image = collection.featured_image
+					assign image_alignment = false
 				endunless
 
 				assign modulo = index | modulo: 2
@@ -40,7 +42,7 @@
 			-%}
 
 			{%- unless collection_image == blank %}
-				{%- render 'lazy-image', image: collection_image, type: 'background', alt: collection.title, sizes: sizes -%}
+				{%- render 'lazy-image', image: collection_image, type: 'background', image_alignment: image_alignment, alt: collection.title, sizes: sizes -%}
 			{%- else -%}
 				<span class="onboarding-svg">
 	   			{%- assign no = index | modulo: 6 | plus: 1 -%}

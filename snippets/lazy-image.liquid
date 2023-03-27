@@ -74,6 +74,7 @@
 		{% if image_alignment %} style="object-position: {{ image.presentation.focal_point }}" {% endif %}
 	  {{ sizes }}
 	  {% unless preload %} loading="lazy" {% endunless %}
+		onload="this.classList.add('lazyloaded')"
  	/>
 
 	{%- if settings.show_preloader -%}

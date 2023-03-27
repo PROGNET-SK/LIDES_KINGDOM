@@ -1,5 +1,15 @@
-<div class="content-section full-width-section-content gutter--{% if section.settings.gutter_enabled %}on{% else %}off{% endif %} image-text image-text--size-{{ section.blocks.size }}">
+{{ 'section-image-with-text.css' | asset_url | stylesheet_tag }}
 
+<div id="image-with-text-{{ section.id }}" class="content-section full-width-section-content gutter--{% if section.settings.gutter_enabled %}on{% else %}off{% endif %} image-text image-text--size-{{ section.blocks.size }}">
+
+  <script class="gutter-script">
+    {%- if section.settings.gutter_enabled -%}
+      document.getElementById('image-with-text-{{ section.id }}').parentElement.classList.add('with-gutter');
+    {%- else -%}
+      document.getElementById('image-with-text-{{ section.id }}').parentElement.classList.add('without-gutter');
+    {%- endif -%}
+  </script>
+  
   {%- for block in section.blocks -%}
 
     <div class="image-text__container" {{ block.shopify_attributes }}>
@@ -11,7 +21,7 @@
         <div class="image-text__content aligned-text-content {{ section.settings.text_alignment }}">
           <div>
             
-            <h3 class="image-text__title {% if section.settings.text_size == 'regular' %} h1 {% elsif section.settings.text_size == 'large' %} h0 {% else %} hh {% endif %}"><span>{{ block.settings.title | escape }}</span></h3>
+            <{{ section.settings.seo_h_tag }} class="image-text__title {% if section.settings.text_size == 'regular' %} h1 {% elsif section.settings.text_size == 'large' %} h0 {% else %} hh {% endif %}"><span>{{ block.settings.title | escape }}</span></{{ section.settings.seo_h_tag }}>
 
             {%- unless block.settings.body == blank -%}
               <div class="image-text__body rte">{{ block.settings.body }}</div>
@@ -251,7 +261,7 @@
       },
       {
         "type": "header",
-        "content": "t:sections.custom-colors.heading.label"
+        "content": "t:settings_schema.colors.name"
       },
       {
         "type": "color",
@@ -273,6 +283,35 @@
         "type": "checkbox",
         "id": "gutter_enabled",
         "label": "t:sections.custom-gutter.gutter_enabled.label"
+      },
+      {
+        "type": "select",
+        "id": "seo_h_tag",
+        "label": "t:sections.refactor_words.seo.label",
+        "info": "t:sections.refactor_words.seo.info",
+        "options": [
+          {
+            "value": "h1",
+            "label": "H1"
+          },
+          {
+            "value": "h2",
+            "label": "H2"
+          },
+          {
+            "value": "h3",
+            "label": "H3"
+          },
+          {
+            "value": "h4",
+            "label": "H4"
+          },
+          {
+            "value": "span",
+            "label": "span"
+          }
+        ],
+        "default": "h3"
       }
     ], 
     "presets": [{

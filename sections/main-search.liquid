@@ -1,3 +1,5 @@
+{{ 'section-main-search.css' | asset_url | stylesheet_tag }}
+
 <div class="compact-header">
 	<div class="compact-header-container">
     {%- render 'breadcrumb', terms: search.terms -%}
@@ -41,13 +43,13 @@
 
 			<div class="compact-header">
 
-				<div class="compact-header-container">
+				<div style="width:100%">
 
 			    <h1 class="search-header__title h1">{{ 'search.page.products_found' | t: terms: search.terms }}</h1>
 
 			    {%- if section.settings.enable_filtering or section.settings.enable_sorting -%}
-			    	{%- render 'facets', results: search, enable_filtering: section.settings.enable_filtering, enable_sorting: section.settings.enable_sorting, offset: offset, page_size: page_size -%}
-					
+						{{ 'component-facets.css' | asset_url | stylesheet_tag }}
+			    	{%- render 'facets', results: search, type: 'desktop', enable_filtering: section.settings.enable_filtering, enable_sorting: section.settings.enable_sorting, offset: offset, page_size: page_size -%}
 			    {%- else -%}
 			    	<div class="search-header__description rte">{{ 'search.page.results_count' | t: offset: offset, page_size: page_size, count: paginate.items }}</div>
 			    {%- endif -%}
@@ -80,7 +82,7 @@
 							assign terms = search.terms | escape
 							assign search_url = '?q=' | append: terms | append: '&options%5Bprefix%5D=last&sort_by=' | append: sort_by
 						-%}
-						<p style="margin-left:calc(var(--grid-gutter)/2); margin-top: 1.5em" class="no-content-message">
+						<p style="margin-inline-start:calc(var(--grid-gutter)/2); margin-top: 1.5em" class="no-content-message">
 							{{ 'collections.empty' | t }}<br/>
 							{{ 'collections.use_fewer_filters_html' | t: link: search_url, class: 'button--text' }}
 						</p>
@@ -155,6 +157,22 @@
 
 	{%- endpaginate -%}
 
+{%- endif -%}
+
+{%- if section.settings.enable_filtering or section.settings.enable_sorting -%}
+  <sidebar-drawer data-overlay="sidebar" class="collection__filters sidebar-parent-element" style="display:none">
+    <div class="sidebar-element sidebar-element--right-side">
+      <span class="collection__filters-close sidebar-close-element" data-js-close tabindex="0">
+        <span class="visually-hidden">{{ 'general.accessibility_labels.close' | t }}</span>
+        <span aria-hidden="true">{%- render 'theme-symbols', icon: 'close' -%}</span>
+      </span>
+      <div class="collection__filters-holder sidebar-content-element">
+        <div class="collection__filters-title body-text-sm sidebar-title-element"><span>{{ 'collections.filter_and_sort' | t }}</span></div>
+				{%- render 'facets', results: search, type: 'mobile', enable_filtering: section.settings.enable_filtering, enable_sorting: section.settings.enable_sorting, offset: offset, page_size: page_size -%}
+      </div>
+    </div>
+  </sidebar-drawer>
+  <script src="{{ 'component-facets.js' | asset_url }}" defer></script>
 {%- endif -%}
 
 {% schema %}

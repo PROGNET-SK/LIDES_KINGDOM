@@ -1,32 +1,37 @@
 {%- if predictive_search.performed -%}
 
   <div class="sidebar__search-link">
-  	<a tabindex="-1" class="search-more button button--solid" href="{{ routes.search_url }}?q={{ predictive_search.terms }}&type=product{% if settings.predictive_search_include_pages %},page{% endif %}{% if settings.predictive_search_include_articles %},article{% endif %}&options[prefix]=last">{{ 'search.form.search_for_html' | t: terms: predictive_search.terms }}</a>
+  	<a tabindex="-1" class="search-more button button--solid" href="{{ routes.search_url }}?q={{ predictive_search.terms }}">{{ 'search.form.search_for_html' | t: terms: predictive_search.terms }}</a>
   </div>
 
 	<div class="sidebar__search-results">
 
+    {%- if predictive_search.resources.queries.size > 0 -%}
+			{%- for query in predictive_search.resources.queries -%}
+				<a class="search-item first" href="{{ query.url }}" data-js-search-item tabindex="-1" style="padding:{% if forloop.first %}25px 0 10px{% else %}10px 0{% endif %}"><span class="underline-animation">{{ query.styled_text }}</span></a>
+			{%- endfor -%}
+			{%- capture products_results_title -%}
+				<span class="search-title">{{ 'search.form.product_results_title' | t }}</span>
+			{%- endcapture -%}
+    {%- endif -%}
+
 		{%- if predictive_search.resources.products.size > 0 -%}
+			{{ products_results_title }}
 			{%- for product in predictive_search.resources.products -%}
 				<a 
 					class="search-item {% if forloop.first %} first {% endif %}" 
-					href="{{ product.url }}" title="{{ product.title }}" tabindex="-1"
+					href="{{ product.url }}" title="{{ product.title }}"
+					data-js-search-item tabindex="-1"
 				>
 					<div class="thumbnail">
 						{%- if product.featured_media != blank -%}
-							<img class="lazyload" 
-								src="{{ product.featured_media | image_url: width: 80, height: 90, crop: 'center' }}"
-								srcset="{{ product.featured_media | image_url: width: 80, height: 90, crop: 'center' }} 80w, {{ product.featured_media | image_url: width: 160, height: 180, crop: 'center' }} 160w"
-								sizes="90px"
-              	alt="{{ product.featured_media.alt }}"
-              	loading="lazy"
-              	width="80" height="90" />
+							{%- render 'lazy-image-small', image: product.featured_media -%}
 						{%- else -%}
 							<span class="onboarding-svg">{{ 'product-1' | placeholder_svg_tag }}</span>
 						{%- endif -%}
 					</div>
 					<div class="content">
-						<span class="title">{{ product.title }}</span>
+						<span class="title underline-animation">{{ product.title | escape }}</span>
 						<span class="caption">
 							{%- if settings.predictive_search_show_vendor -%}
 								<span class="vendor">{{ product.vendor }}</span>
@@ -54,20 +59,15 @@
 				<a 
 					href="{{ collection.url }}" tabindex="-1" 
 					class="search-item {% if forloop.first %} first {% endif %} {% unless collection.featured_image %} article {% endunless %}"
+					data-js-search-item 
 				>
 					{%- if collection.featured_image != blank -%}
 						<div class="thumbnail">
-							<img class="lazyload" 
-								src="{{ collection.featured_image | image_url: width: 80, height: 90, crop: 'center' }}"
-								srcset="{{ collection.featured_image | image_url: width: 80, height: 90, crop: 'center' }} 80w, {{ collection.featured_image | image_url: width: 160, height: 180, crop: 'center' }} 160w"
-								sizes="90px"
-	            	alt="{{ collection.featured_image.alt }}"
-	            	loading="lazy"
-	            	width="80" height="90" />
+							{%- render 'lazy-image-small', image: collection.featured_image -%}
 						</div>
 					{%- endif -%}
 					<div class="content">
-						<span class="title">{{ collection.title }}</span>
+						<span class="title underline-animation">{{ collection.title | escape }}</span>
 					</div>
 				</a>
 			{%- endfor -%}
@@ -80,20 +80,15 @@
 				<a 
 					href="{{ article.url }}" tabindex="-1" 
 					class="search-item {% if forloop.first %} first {% endif %} {% unless article.image %} article {% endunless %}"
+					data-js-search-item 
 				>
 					{%- if article.image != blank -%}
 						<div class="thumbnail">
-							<img class="lazyload" 
-								src="{{ article.image | image_url: width: 80, height: 90, crop: 'center' }}"
-								srcset="{{ article.image | image_url: width: 80, height: 90, crop: 'center' }} 80w, {{ article.image | image_url: width: 160, height: 180, crop: 'center' }} 160w"
-								sizes="90px"
-	            	alt="{{ article.image.alt }}"
-	            	loading="lazy"
-	            	width="80" height="90" />
+							{%- render 'lazy-image-small', image: article.image -%}
 						</div>
 					{%- endif -%}
 					<div class="content">
-						<span class="title">{{ article.title }}</span>
+						<span class="title underline-animation">{{ article.title | escape }}</span>
 						<span class="caption">
 							<span class="vendor" style="opacity:.66">{{ article.published_at | date: date_format }}</span>
 						</span>
@@ -108,9 +103,10 @@
 				<a 
 					class="search-item article {% if forloop.first %} first {% endif %}" 
 					href="{{ page.url }}" tabindex="-1"
+					data-js-search-item 
 				>
 					<div class="content">
-						<span class="title">{{ page.title }}</span>
+						<span class="title underline-animation">{{ page.title | escape }}</span>
 						{%- if page.body != blank -%}
 							<span class="caption"><span class="vendor">{{ page.body | strip_html | truncatewords: 12, "..." }}</span></span>
 						{%- endif -%}

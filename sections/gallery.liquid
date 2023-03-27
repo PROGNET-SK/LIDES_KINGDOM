@@ -1,5 +1,7 @@
 {%- assign aspect_ratio = section.settings.gallery_aspect -%}
 
+{{ 'section-gallery.css' | asset_url | stylesheet_tag }}
+
 <masonry-gallery class="content-section gutter--off gallery gallery--grid gallery--mobile-slider-{{ section.settings.style_mobile }}" 
   data-blocks-size="{{ section.blocks.size }}" 
   data-slider-height="{{ section.settings.slider_height }}" 
@@ -26,7 +28,7 @@
 
         <div class="gallery__image">
 
-          {%- if section.settings.lightbox and block.settings.image != blank -%}
+          {%- if section.settings.lightbox and block.settings.image != blank and block.settings.link == blank -%}
             <gallery-zoom class="gallery__zoom" data-src="{{ block.settings.image | image_url }}" aria-hidden="true">
               {%- render 'theme-symbols', icon: 'zoom-in' -%}
             </gallery-zoom>
@@ -34,26 +36,34 @@
 
           {%- unless block.settings.image == blank -%}
 
-            {%- if section.settings.style_mobile -%}
-              {%- if block.settings.featured -%}
-                {%- capture sizes -%}
-                  sizes="(max-width: 948px) max(100vw, {{ section.settings.slider_height }}), (min-width: 949px) and (max-width: 1174px) calc(100vw - 200px), calc((100vw - 200px) / 2)"
-                {%- endcapture -%}
-              {%- else -%}
-                {%- capture sizes -%}
-                  sizes="(max-width: 948px) max(100vw, {{ section.settings.slider_height }}), (min-width: 949px) and (max-width: 1174px) calc(50vw - 200px), calc((100vw - 200px) / 4)"
-                {%- endcapture -%}
-              {%- endif -%}
-            {%- else -%}
-              {%- liquid
-                if block.settings.featured
-                  assign sizes = 'sizes="(max-width: 768px) 100vw, (min-width: 769px) and (max-width: 948px) 50vw, (min-width: 949px) and (max-width: 1174px) calc(100vw - 200px), calc((100vw - 200px) / 2)"'
-                else 
-                  assign sizes = 'sizes="(max-width: 768px) 50vw, (min-width: 769px) and (max-width: 948px) 25vw, (min-width: 949px) and (max-width: 1174px) calc(50vw - 200px), calc((100vw - 200px) / 4)"'
-                endif
-              -%}
+            {%- if block.settings.link != blank -%}
+              <a href="{{ block.settings.link }}" {% if block.settings.open_in_new_window %} target="_blank" {% endif %}>
             {%- endif -%}
-            {%- render 'lazy-image', image: block.settings.image, type: 'image', ratio: aspect_ratio, alt: block.settings.caption, caption: block.settings.caption, sizes: sizes -%}
+
+              {%- if section.settings.style_mobile -%}
+                {%- if block.settings.featured -%}
+                  {%- capture sizes -%}
+                    sizes="(max-width: 948px) max(100vw, {{ section.settings.slider_height }}), (min-width: 949px) and (max-width: 1174px) calc(100vw - 200px), calc((100vw - 200px) / 2)"
+                  {%- endcapture -%}
+                {%- else -%}
+                  {%- capture sizes -%}
+                    sizes="(max-width: 948px) max(100vw, {{ section.settings.slider_height }}), (min-width: 949px) and (max-width: 1174px) calc(50vw - 200px), calc((100vw - 200px) / 4)"
+                  {%- endcapture -%}
+                {%- endif -%}
+              {%- else -%}
+                {%- liquid
+                  if block.settings.featured
+                    assign sizes = 'sizes="(max-width: 768px) 100vw, (min-width: 769px) and (max-width: 948px) 50vw, (min-width: 949px) and (max-width: 1174px) calc(100vw - 200px), calc((100vw - 200px) / 2)"'
+                  else 
+                    assign sizes = 'sizes="(max-width: 768px) 50vw, (min-width: 769px) and (max-width: 948px) 25vw, (min-width: 949px) and (max-width: 1174px) calc(50vw - 200px), calc((100vw - 200px) / 4)"'
+                  endif
+                -%}
+              {%- endif -%}
+              {%- render 'lazy-image', image: block.settings.image, type: 'image', ratio: aspect_ratio, alt: block.settings.caption, caption: block.settings.caption, sizes: sizes -%}
+
+            {%- if block.settings.link != blank -%}
+              </a>
+            {%- endif -%}
 
           {%- else -%}
 
@@ -73,10 +83,13 @@
 
 </masonry-gallery>
 
+<script src="{{ 'component-lightbox.js' | asset_url }}" defer></script>
+<script src="{{ 'section-gallery.js' | asset_url }}" defer></script>
+
 {% schema %}
   {
     "name": "t:sections.gallery.name",
-    "class": "mount-gallery",
+    "class": "mount-gallery without-gutter",
     "max_blocks": 99,
     "blocks": [
       {
@@ -97,6 +110,17 @@
             "type": "checkbox",
             "id": "featured",
             "label": "t:sections.gallery.blocks.image.settings.featured.label"
+          },
+          {
+            "type": "url",
+            "id": "link",
+            "label": "t:sections.local-extra-words.sections.announcement-bar.blocks.content.settings.link"
+          },
+          {
+            "type": "checkbox",
+            "id": "open_in_new_window",
+            "label": "t:sections.local-extra-words.sections.announcement-bar.blocks.content.settings.target",
+            "default": false
           }
         ]
       }

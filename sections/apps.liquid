@@ -1,9 +1,17 @@
-<div class="{% if section.settings.gutter_enabled %}content-section full-width-section-content gutter--on{% endif %}">
+<div id="app-{{ section.id }}" class="{% if section.settings.gutter_enabled %}content-section full-width-section-content gutter--on{% endif %}">
+  
+  <script class="gutter-script">
+    {%- if section.settings.gutter_enabled -%}
+      document.getElementById('app-{{ section.id }}').parentElement.classList.add('with-gutter');
+    {%- endif -%}
+  </script>
+
   {%- liquid
     for block in section.blocks
       render block
     endfor
   -%}
+
 </div>
 
 {% schema %}

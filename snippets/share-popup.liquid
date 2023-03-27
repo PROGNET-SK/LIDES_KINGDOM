@@ -1,6 +1,6 @@
 <share-popup>
 
-	<a class="share-link" data-micromodal-trigger="share-popup" tabindex="0">
+	<a class="share-link" id="share-link" data-micromodal-trigger="share-popup" tabindex="0">
 	  <span aria-hidden="true">{% render 'theme-symbols', icon: 'share' %}</span>
 	  <span class="text">{{ 'products.page.share_link' | t }}</span>
 	</a>
@@ -24,3 +24,13 @@
 	</div>
 
 </share-popup>
+
+<script src="{{ 'component-lightbox.js' | asset_url }}" defer></script>
+<script>
+	window.addEventListener('load', ()=>{
+		window.basicLightbox.create(document.getElementById('share-popup'), {
+			trigger: document.getElementById('share-link'),
+			focus: 'a'
+		});
+	})
+</script>

@@ -1,3 +1,5 @@
+{{ 'section-footer.css' | asset_url | stylesheet_tag }}
+
 <div class="footer"> 
 
   {%- for block in section.blocks -%}
@@ -9,7 +11,7 @@
         <div class="footer-item footer-text {{ block.settings.size }}" {{ block.shopify_attributes }}>
         
           {%- unless block.settings.title == blank -%}
-            <h5 class="footer-item__title h4">{{ block.settings.title | escape }}</h5>
+            <{{ section.settings.seo_h_tag }} class="footer-item__title h4">{{ block.settings.title | escape }}</{{ section.settings.seo_h_tag }}>
           {%- endunless -%}
 
           <div class="rte">
@@ -27,7 +29,7 @@
             <div>
 
               {%- unless block.settings.title_1 == blank -%}
-                <h5 class="footer-item__title h4">{{ block.settings.title_1 | escape }}</h5>
+                <{{ section.settings.seo_h_tag }} class="footer-item__title h4">{{ block.settings.title_1 | escape }}</{{ section.settings.seo_h_tag }}>
               {%- endunless -%}
               
               <div class="footer-links body-text-sm">
@@ -47,7 +49,7 @@
             <div>
 
               {%- unless block.settings.title_2 == blank -%}
-                <h5 class="footer-item__title h4">{{ block.settings.title_2 | escape }}</h5>
+                <{{ section.settings.seo_h_tag }} class="footer-item__title h4">{{ block.settings.title_2 | escape }}</{{ section.settings.seo_h_tag }}>
               {%- endunless -%}
               
               <div class="footer-links body-text-sm">
@@ -65,11 +67,13 @@
         </div>
 
       {%- when 'newsletter' -%}
+        
+        {{ 'component-newsletter.css' | asset_url | stylesheet_tag }}
 
         <div class="footer-item footer-newsletter" {{ block.shopify_attributes }}>
 
           {%- unless block.settings.title == blank -%}
-            <h5 class="footer-item__title h4">{{ block.settings.title | escape }}</h5>
+            <{{ section.settings.seo_h_tag }} class="footer-item__title h4">{{ block.settings.title | escape }}</{{ section.settings.seo_h_tag }}>
           {%- endunless -%}
 
           {%- assign form_id = 'newsletter-form-' | append: section.id -%}
@@ -82,7 +86,7 @@
         <div class="footer-item footer-social" {{ block.shopify_attributes }}>
           
           {%- unless block.settings.title == blank -%}
-            <h5 class="footer-item__title h4">{{ block.settings.title | escape }}</h5>
+            <{{ section.settings.seo_h_tag }} class="footer-item__title h4">{{ block.settings.title | escape }}</{{ section.settings.seo_h_tag }}>
           {%- endunless -%}
 
           {%- render 'social-icons' -%}
@@ -156,6 +160,35 @@
         "id": "show_country_selector",
         "label": "t:sections.footer.settings.country_selector_show.label",
         "default": true
+      },
+      {
+        "type": "select",
+        "id": "seo_h_tag",
+        "label": "t:sections.refactor_words.seo.label",
+        "info": "t:sections.refactor_words.seo.info",
+        "options": [
+          {
+            "value": "h1",
+            "label": "H1"
+          },
+          {
+            "value": "h2",
+            "label": "H2"
+          },
+          {
+            "value": "h3",
+            "label": "H3"
+          },
+          {
+            "value": "h4",
+            "label": "H4"
+          },
+          {
+            "value": "span",
+            "label": "span"
+          }
+        ],
+        "default": "h4"
       }
     ],
     "blocks": [

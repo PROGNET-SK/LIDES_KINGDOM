@@ -6,6 +6,12 @@
       "search_placeholder": "Chercher un produit",
       "continue_browsing": "Continuer ma visite"
     },
+    "sharing": {
+      "title": "Partager",
+      "facebook": "Facebook",
+      "twitter": "Twitter",
+      "pinterest": "Pinterest"
+    },
     "newsletter": {
       "email_label": "Entrez votre adresse mail",
       "confirmation": "Bienvenue ! ",
@@ -17,6 +23,7 @@
       "phone_label": "Télphone",
       "title": "Objet",
       "message_label": "Votre message",
+      "subject_label": "Objet",
       "submit_label": "Envoyer",
       "success_message": "Merci pour votre message ! On vous répond au plus vite."
     },
@@ -48,10 +55,15 @@
     "breadcrumb": {
       "homepage": "Accueil",
       "collections": "Collections",
-      "search": "Rechercher «{{ terms }}»",
+      "search": "Rechercher",
       "blog": "Blog",
-      "account": "Mon compte",
-      "cart": "Panier"
+      "account": {
+        "title": "Compte",
+        "addresses": "Adresses",
+        "orders": "Commandes"
+      },
+      "cart": "Panier",
+      "search_results": "Résultats de la recherche pour \"{{ terms }}\""
     },
     "meta": {
       "tags": "Tagués  \"{{ tags }}\"",
@@ -59,7 +71,15 @@
     },
     "share_on": "Partager sur",
     "accessibility_labels": {
-      "home": "Accueil",
+      "menu": "Menu",
+      "increase_quantity": "Augmenter la quantité",
+      "decrease_quantity": "Diminuer la quantité",
+      "open_menu": "Ouvrir le menu",
+      "open_filters": "Ouvrir les filtres",
+      "open_search": "Ouvrir la fenêtre de recherche",
+      "open_cart": "Ouvrir le panier",
+      "close_sidebar": "Fermer la barre latérale",
+      "close_popup": "Fermer la fenêtre pop-up",
       "skip_to_content": "Passer au contenu",
       "next": "Suivant",
       "previous": "Précédent",
@@ -67,7 +87,7 @@
       "close": "Fermer",
       "play_video": "Lire la vidéo",
       "language_dropdown_label": "Langue",
-      "country_dropdown_label": "Pays\/région",
+      "country_dropdown_label": "Pays/région",
       "price": {
         "regular": "Prix régulier",
         "sale": "Prix de solde",
@@ -81,12 +101,21 @@
         "pinterest": "Partager sur Pinterest"
       },
       "rating": "rating",
-      "rating_info": "Rating: {{ rating_value }} out of {{ rating_max }}"
+      "rating_info": "Rating: {{ rating_value }} out of {{ rating_max }}",
+      "top": "Haut",
+      "go_to_top": "Haut"
+    },
+    "cookies_popup": {
+      "title": "Cookies",
+      "content": "Ce site web utilise des cookies pour vous garantir la meilleure expérience sur votre terminal.",
+      "button_label": "Accepter tous les cookies"
     },
     "onboarding": {
-      "product_title": "Le nom de votre produit",
-      "collection_title": "Le nom de votre collection",
-      "article_title": "Le titre de votre article"
+      "product_title": "Titre du produit",
+      "collection_title": "Titre de la collection",
+      "author_name": "Nom de l'auteur",
+      "article_title": "Titre de l'article",
+      "seven_comments": "7 commentaires"
     }
   },
   "collections": {
@@ -104,7 +133,7 @@
     "max_price": "Le prix le plus élevé est de {{ price }}",
     "reset": "Réinitialiser",
     "to": "À",
-    "use_fewer_filters_html": "Utiliser moins de filtres ou <a class=\"{{ class }}\" href=\"{{ link }}\">tout effacer<\/a>",
+    "use_fewer_filters_html": "Utiliser moins de filtres ou <a class=\"{{ class }}\" href=\"{{ link }}\">tout effacer</a>",
     "product_count": {
       "one": "{{ product_count }} produit sur {{ count }}",
       "other": "{{ product_count }} produits sur {{ count }}"
@@ -128,7 +157,10 @@
       "on_sale_product": "En soldes",
       "new_product": "Nouveauté",
       "preorder_product": "Pré-commande",
-      "no_products_text": "Il n'y a actuellement aucun produit dans cette collection."
+      "no_products_text": "Il n'y a actuellement aucun produit dans cette collection.",
+      "save_amount_html": "Économisez {{ amount }}",
+      "quick_view": "Choisir les options",
+      "quick_buy": "Ajouter au panier"
     },
     "page": {
       "sku": "SKU: ",
@@ -141,7 +173,7 @@
         "one_product": "Il reste un seul produit disponible.",
         "few_products": "Il reste {{ count }} produits disponibles",
         "no_products": "Il n'y a plus de produit disponible",
-        "preoder": "Ce produit est en rupture de stock, mais vous pouvez toujours le commander."
+        "preorder": "Ce produit est en rupture de stock, mais vous pouvez toujours le commander."
       },
       "add_to_cart_button": "Ajouter au panier",
       "preorder_button": "Pré-commande",
@@ -152,7 +184,7 @@
       },
       "loading_reviews": "Voir plus de commentaires",
       "include_taxes": "Taxes incluses.",
-      "shipping_policy_html": "<a href=\"{{ link }}\">Frais d'expédition<\/a> calculés lors du passage à la caisse.",
+      "shipping_policy_html": "<a href=\"{{ link }}\">Frais d'expédition</a> calculés lors du passage à la caisse.",
       "view_in_space": "Afficher dans votre espace.",
       "view_in_space_label": "Affichage dans votre espace, charge l'article dans une fenêtre de réalité augmentée."
     },
@@ -163,17 +195,22 @@
   },
   "cart": {
     "title": "Mon panier",
-    "total": "Total:",
-    "subtotal": "Sous-total:",
-    "discount": "Remise:",
-    "discounts": "Remises:",
+    "total": "Total :",
+    "subtotal": "Sous-total",
+    "discount": "Réduction :",
+    "discounts": "Réductions :",
     "checkout": "Commander",
     "update": "Mettre à jour",
-    "note": "Un commentaire sur votre commande ? ",
-    "shipping_at_checkout": "Les frais de livraison et les taxes sont calculés au moment du paiement",
+    "note": "Instructions spéciales pour le vendeur",
+    "policies": {
+      "taxes_and_shipping_policy_at_checkout_html": "Taxes et <a href=\"{{ link }}\">frais d'expédition</a> calculés lors du paiement",
+      "taxes_included_but_shipping_at_checkout": "Taxes incluses et frais d'expédition calculés lors du paiement",
+      "taxes_included_and_shipping_policy_html": "Taxes incluses. <a href=\"{{ link }}\">Frais d'expédition</a> calculés à l'étape de paiement.",
+      "taxes_and_shipping_at_checkout": "Taxes et frais d'expédition calculés lors du paiement"
+    },
     "empty": "Votre panier est vide",
     "continue_browsing": "Continuer la visite",
-    "remove_item": "Retirer ce produit du panier",
+    "remove_item": "Retirer l'article du panier",
     "add_error": "Tous les {{ title }} sont dans votre panier.",
     "general_error": "Il y a eu une erreur. Veuillez actualiser la page et réessayer.",
     "view_cart": "Voir mon panier",
@@ -184,11 +221,28 @@
     "added_items_count": {
       "one": "{{ count }} produit a été ajouté à votre panier",
       "other": "{{ count }} produits ont été ajoutés à votre panier"
+    },
+    "free_shipping_remaining_html": "Vous êtes loin de {{ remaining_amount }} de la livraison gratuite.",
+    "free_shipping_eligible": "Vous pouvez bénéficier de la livraison gratuite !",
+    "shipping_calculator": {
+      "title": "Estimation de l'expédition",
+      "form_button_label": "Estimer",
+      "results_heading_one": "Il n'y a qu'un seul tarif d'expédition pour votre adresse",
+      "results_heading_multiple": "Tarifs de livraison pour votre adresse"
+    },
+    "table": {
+      "product": "Produit",
+      "quantity": "Quantité",
+      "total": "Total"
     }
   },
   "blog": {
     "grid": {
-      "comments_count": "Commentaires",
+      "comments_count": {
+        "one": "{{ count }} commentaire",
+        "other": "{{ count }} commentaires"
+      },
+      "tags_label": "Mots clés",
       "read_more_label": "Lire plus",
       "no_articles_text": "Il n'y a actuellement aucun article dans ce blog.",
       "tags_dropdown": {
@@ -213,25 +267,26 @@
   },
   "search": {
     "form": {
-      "placeholder": "Rechercher un produit",
+      "placeholder": "Recherche...",
       "responsive_placeholder": "Tapez un mot-clé et appuyez sur Entrée",
       "submit": "Envoyer",
       "collection_results_title": "Collections",
       "page_results_title": "Pages",
       "article_results_title": "Article",
-      "search_for_html": "Rechercher \"{{ terms }}\""
+      "search_for_html": "Rechercher \"{{ terms }}\"",
+      "product_results_title": "Produits"
     },
     "page": {
-      "title": "Recherche",
+      "title": "Rechercher",
       "subtitle": "Utilisez la barre de recherche ci-dessous pour trouver des produits:",
       "no_results": "Aucun résultat n'a été trouvé pour \"{{ terms }}\"",
-      "results": "Résultats pour \"{{ terms }}\"",
+      "results": "Résultats de la recherche pour \"{{ terms }}\"",
       "products_found": "Produits pour \"{{ terms }}\"",
       "pages_and_articles_found": "Pages pour \"{{ terms }}\"",
       "results_count": {
         "zero": "Aucun produit",
-        "one": "Affiche {{offset}} - {{page_size}} de {{count}} produit",
-        "other": "Affiche {{offset}} - {{page_size}} de {{count}} produits"
+        "one": "Affiche {{ offset }} - {{ page_size }} de {{ count }} produit",
+        "other": "Affiche {{ offset }} - {{ page_size }} de {{ count }} produits"
       },
       "form_placeholder": "Veuillez saisir un mot clé ici",
       "search_button_label": "Rechercher",
@@ -291,6 +346,7 @@
     },
     "register_page": {
       "title": "Créer un compte",
+      "login_text": "Vous avez déjà un compte ?",
       "form": {
         "first_name_label": "Prénom",
         "last_name_label": "Nom",
@@ -312,8 +368,8 @@
         "first_name_label": "Prénom",
         "last_name_label": "Nom",
         "company_label": "Société",
-        "address_1_label": "Adresse 1",
-        "address_2_label": "Adresse 2",
+        "address_1_label": "Adresse ligne 1",
+        "address_2_label": "Adresse ligne 2",
         "city_label": "Ville",
         "country_label": "Pays",
         "province_label": "Province",
@@ -323,7 +379,8 @@
         "update_button": "Mettre à jour votre adresse",
         "set_as_default_check": "Définir comme adresse par défaut ?",
         "delete_check": "Voulez-vous vraiment supprimer cette adresse ?"
-      }
+      },
+      "return": "Retour à la page du compte"
     },
     "orders_page": {
       "title": "Mon compte",
@@ -364,8 +421,8 @@
     "check_other_stores": "Vérifier la disponibilité dans d'autres boutiques",
     "pick_up_available": "Ramassage disponible",
     "pick_up_currently_unavailable": "Ramassage actuellement indisponible",
-    "pick_up_available_at_html": "Ramassage disponible à <strong>{{ location_name }}<\/strong>",
-    "pick_up_unavailable_at_html": "Ramassage actuellement indisponible à <strong>{{ location_name }}<\/strong>",
+    "pick_up_available_at_html": "Ramassage disponible à <strong>{{ location_name }}</strong>",
+    "pick_up_unavailable_at_html": "Ramassage actuellement indisponible à <strong>{{ location_name }}</strong>",
     "invalid_location_address": "Contactez le boutique pour confirmer l'adresse",
     "refresh": "Actualiser"
   }

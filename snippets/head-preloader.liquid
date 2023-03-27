@@ -1,3 +1,22 @@
+{%- liquid
+
+  echo 'theme.css' | asset_url | preload_tag: as: 'style'
+  echo 'section-sidebar.css' | asset_url | preload_tag: as: 'style'
+
+	echo 'component-product-item.css' | asset_url | preload_tag: as: 'style'
+
+	if template contains 'index'
+		echo 'section-slideshow.js' | asset_url | preload_tag: as: 'script'
+  elsif template contains 'article'
+    echo 'section-main-article.css' | asset_url | preload_tag: as: 'style'
+  elsif template contains 'blog'
+    echo 'component-blog-item.css' | asset_url | preload_tag: as: 'style'
+  elsif template contains 'product' 
+    echo 'section-main-product.css' | asset_url | preload_tag: as: 'style'
+  endif
+    
+-%}
+
 {%- if template contains 'product' and product.featured_media -%}
 
 	{%- assign image = product.featured_media -%}
@@ -12,9 +31,11 @@
 		{%- if image.width >= 1860 -%}{{ image | image_url: width: 1860 }} 1860w,{%- endif -%} 
 		{%- if image.width >= 2100 -%}{{ image | image_url: width: 2100 }} 2100w{%- endif -%}
 	{%- endcapture -%}
+
 	<link rel="preload" as="image" href="{{ image | image_url: width: 480 }}" imagesrcset="{{ srcset }}" imagesizes="(max-width: 767px) 100vw, 70vw">
 
 {%- elsif template contains 'collection' -%}
+
  	{%- for product in collection.products limit: 2 -%}
  		{%- liquid 
  			assign image = product.featured_media
@@ -64,4 +85,5 @@
 		{%- endif -%}
 		<link rel="preload" as="image" href="{{ image | image_url: width: 480 }}" imagesrcset="{{ srcset }}" imagesizes="{{ media_sizes }}">
  	{%- endfor -%}
+
 {%- endif -%}

@@ -1,3 +1,5 @@
+{{ 'section-main-article.css' | asset_url | stylesheet_tag }}
+
 <div class="full-width-section-content gutter--on">
 
   {%- capture date_format -%} {{ 'general.date_format.month_day_year' | t }} {%- endcapture -%}
@@ -66,13 +68,13 @@
         {%- if blog.next_article or blog.previous_article -%}
           <nav class="article__navigation article-element">
             {%- if blog.next_article -%}
-              <a class="previous-article" href="{{ blog.next_article }}" title="{{ 'blog.article.previous_article_link' | t }}"> 
+              <a class="share__link previous-article" href="{{ blog.next_article }}" title="{{ 'blog.article.previous_article_link' | t }}"> 
                 <span aria-hidden="true">{%- render 'theme-symbols', icon: 'arrow-left' -%}</span> 
                 <span class="text">{{ 'blog.article.previous_article_link' | t }}</span>
               </a>
             {%- endif -%}
             {%- if blog.previous_article -%}
-              <a class="next-article" href="{{ blog.previous_article }}" title="{{ 'blog.article.next_article_link' | t }}"> 
+              <a class="share__link next-article" href="{{ blog.previous_article }}" title="{{ 'blog.article.next_article_link' | t }}"> 
                 <span class="text">{{ 'blog.article.next_article_link' | t }}</span>
                 <span aria-hidden="true">{%- render 'theme-symbols', icon: 'arrow-right' -%}</span>
               </a>

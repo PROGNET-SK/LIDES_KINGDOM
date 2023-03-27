@@ -38,6 +38,8 @@
 
 	-%}
 
+	{{ 'component-collection-item.css' | asset_url | stylesheet_tag }}
+	
 	<div class="collection-list full-width-section-content gutter--on {{ section.settings.layout }} {% if isEmpty %} collection-list--empty {% endif %}">
 
 	  {%- if section.settings.display_type == 'all' -%}
@@ -176,7 +178,7 @@
       },
       {
         "type": "header",
-        "content": "t:sections.custom-colors.heading.label"
+        "content": "t:settings_schema.colors.name"
       },
       {
         "type": "color",

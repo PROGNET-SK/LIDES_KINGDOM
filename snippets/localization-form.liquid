@@ -9,6 +9,8 @@
 -%}
 
 {%- if country_selector or locale_selector -%}
+
+  {{ 'component-localization-form.css' | asset_url | stylesheet_tag }}
   
   {%- assign formId = 'localization_form-' | append: location -%}
   {%- form 'localization', id: formId, class: 'localization-form' -%}
@@ -20,13 +22,13 @@
 
         <input type="hidden" name="locale_code" value="{{ localization.language.iso_code }}" />
 
-        <button class="regular-select-cover" aria-expanded="false" aria-controls="lang-list-{{ location }}" data-location="{{ location }}">
+        <button class="regular-select-cover" aria-expanded="false" aria-controls="lang-list-{{ location }}" data-location="{{ location }}" data-js-localization-form-button>
           <span class="regular-select-inner">
             {{ localization.language.endonym_name | capitalize }}
           </span>
         </button>
 
-        <ul id="lang-list-{{ location }}" class="regular-select-content invert-with-fixed">
+        <ul id="lang-list-{{ location }}" class="regular-select-content invert-with-fixed" data-js-localization-form-content>
           {%- for language in localization.available_languages -%}
             <li class="regular-select-item {% if language.iso_code == localization.language.iso_code %}regular-select-item--selected{% endif %}">
               <button type="submit" name="locale_code" lang="{{ language.iso_code }}" value="{{ language.iso_code }}" {% if language.iso_code == localization.language.iso_code %}aria-current="true"{% endif %}>{{ language.endonym_name | capitalize }}</button>
@@ -44,14 +46,14 @@
 
         <input type="hidden" name="country_code" id="CurrencySelector-{{ location }}" value="{{ localization.country.iso_code }}" />
 
-        <button class="regular-select-cover" aria-expanded="false" aria-controls="currency-list-{{ location }}" data-location="{{ location }}">
+        <button class="regular-select-cover" aria-expanded="false" aria-controls="currency-list-{{ location }}" data-location="{{ location }}" data-js-localization-form-button>
           <span class="regular-select-inner">
             <span class="localization-form__country">{{ localization.country.name }}</span>
             <span class="localization-form__currency">({{ localization.country.currency.iso_code }} {{ localization.country.currency.symbol }})</span>
           </span>
         </button>
 
-        <ul id="currency-list-{{ location }}" class="regular-select-content invert-with-fixed">
+        <ul id="currency-list-{{ location }}" class="regular-select-content invert-with-fixed" data-js-localization-form-content>
           {% for country in localization.available_countries %}
             <li class="regular-select-item {% if country.iso_code == localization.country.iso_code %}regular-select-item--selected{% endif %}">
               <button type="submit" name="country_code" value="{{ country.iso_code }}" {% if country.iso_code == localization.country.iso_code %}aria-current="true"{% endif %}>
@@ -66,5 +68,7 @@
     {%- endif -%}
 
   {%- endform -%}
+
+  <script src="{{ 'component-localization-form.js' | asset_url }}" defer></script>
 
 {%- endif -%}

@@ -1,6 +1,8 @@
 {%- if section.settings.bar_show -%} 
 
 	{%- if section.settings.bar_show_on_homepage == false or template == 'index' and section.settings.bar_show_on_homepage -%}
+
+    {{ 'section-announcement-bar.css' | asset_url | stylesheet_tag }}
 		
 		<announcement-bar>
       {%- unless section.settings.bar_link == blank -%} <a class="announcement" href="{{ section.settings.bar_link | escape }}"> {%- else -%} <span class="announcement"> {%- endunless -%}
@@ -25,7 +27,7 @@
 			}
 			{%- if section.settings.bar_show_dismiss -%}
 				.announcement {
-					padding-right: 40px;
+					padding-inline-end: 40px;
 				}
 			{%- endif -%}
 		{% endstyle %}
@@ -40,6 +42,8 @@
 	{%- endif -%}
 
 {%- endif -%}
+
+<script src="{{ 'component-announcement-bar.js' | asset_url }}" defer></script>
 
 {% schema %}
   {

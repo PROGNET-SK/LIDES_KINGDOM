@@ -9,21 +9,22 @@
   endif
 -%}
 
-{%- unless results.products.size == 0 -%}
-  {%- if results.results_count -%}
-    <div class="search-header__description rte" id="CollectionProductCount" role="status">
-      {{ 'search.page.results_count' | t: offset: offset, page_size: page_size, count: results.results_count }}
-    </div>
-  {%- endif -%}
-{%- endunless -%}
+{%- if type == 'desktop' %}
+  {%- unless results.products.size == 0 -%}
+    {%- if results.results_count -%}
+      <div class="search-header__description rte" id="CollectionProductCount" role="status">
+        {{ 'search.page.results_count' | t: offset: offset, page_size: page_size, count: results.results_count }}
+      </div>
+    {%- endif -%}
+  {%- endunless -%}
+{%- endif -%}
 
-<facet-filters-form class="facets hide-on-mobile">
+<facet-filters-form class="{% unless type == 'mobile' %} facets hide-on-mobile {% endunless %}">
 
-  <form id="FacetFiltersForm" class="facets__form">
+  <form id="FacetFiltersForm{% if type == 'mobile' %}Mobile{% endif %}" class="facets__form facets__form--{{ type }}">
 
     {%- if results.terms -%}
       <input type="hidden" name="q" value="{{ results.terms | escape }}">
-      <input name="options[prefix]" type="hidden" value="last">
     {%- elsif results.current_vendor or results.current_type -%}
       <input type="hidden" name="q" value="{{ results.current_vendor }}{{ results.current_type }}">
     {%- endif -%}
@@ -46,7 +47,7 @@
              
               {%- when 'boolean' or 'list' -%}
 
-                <details class="disclosure-has-popup facets__disclosure js-filter" data-index="{{ forloop.index }}">
+                <details class="disclosure-has-popup facets__disclosure js-filter" data-index="{{ forloop.index }}-{{ type }}">
                   <summary class="facets__summary regular-select-cover">
                     <span class="regular-select-inner">
                       {{ filter.label | escape }} 
@@ -61,11 +62,11 @@
                     <ul class="facets__list list-unstyled" role="list">
                       {%- for value in filter.values -%}
                         <li class="list-menu__item facets__item">
-                          <label for="Filter-{{ filter.label | escape }}-{{ forloop.index }}" class="facet-checkbox{% if value.count == 0 and value.active == false %} facet-checkbox--disabled{% endif %}">
+                          <label for="{{ type }}-Filter-{{ filter.label | escape }}-{{ forloop.index }}" class="facet-checkbox{% if value.count == 0 and value.active == false %} facet-checkbox--disabled{% endif %}">
                             <input type="checkbox"
                               name="{{ value.param_name }}"
                               value="{{ value.value }}"
-                              id="Filter-{{ filter.label | escape }}-{{ forloop.index }}"
+                              id="{{ type }}-Filter-{{ filter.label | escape }}-{{ forloop.index }}"
                               {% if value.active %}checked{% endif %}
                               {% if value.count == 0 and value.active == false %}disabled{% endif %}
                             >
@@ -87,7 +88,7 @@
                   endif
                 -%}
 
-                <details class="disclosure-has-popup facets__disclosure js-filter" data-index="{{ forloop.index }}">
+                <details class="disclosure-has-popup facets__disclosure js-filter" data-index="{{ forloop.index }}-{{ type }}">
                   <summary class="facets__summary regular-select-cover">
                     <span class="regular-select-inner">
                       {{ filter.label | escape }} 
@@ -105,7 +106,7 @@
                         <span class="field__currency">{{ cart.currency.symbol }}</span>
                         <input class="field__input"
                           name="{{ filter.min_value.param_name }}"
-                          id="Filter-{{ filter.label | escape }}-GTE"
+                          id="{{ type }}-Filter-{{ filter.label | escape }}-GTE"
                           {%- if filter.min_value.value -%}
                             {%- if uses_comma_decimals -%}value="{{ filter.min_value.value | money_without_currency | replace: '.', '' | replace: ',', '.' }}"{%- else -%}value="{{ filter.min_value.value | money_without_currency | replace: ',', '' }}"{% endif %}
                           {%- endif -%}
@@ -120,7 +121,7 @@
                         <span class="field__currency">{{ cart.currency.symbol }}</span>
                         <input class="field__input"
                           name="{{ filter.max_value.param_name }}"
-                          id="Filter-{{ filter.label | escape }}-LTE"
+                          id="{{ type }}-Filter-{{ filter.label | escape }}-LTE"
                           {%- if filter.max_value.value -%}{%- if uses_comma_decimals -%}value="{{ filter.max_value.value | money_without_currency | replace: '.', '' | replace: ',', '.' }}"{%- else -%}value="{{ filter.max_value.value | money_without_currency | replace: ',', '' }}"{% endif %}
                           {%- endif -%}
                           type="number"
@@ -148,7 +149,7 @@
 
         </div>
 
-        <div class="active-facets active-facets-desktop">
+        <div class="active-facets active-facets-{{ type }}">
           {%- assign has_active_filter = false -%}
           {%- for filter in results.filters -%}
             {%- for value in filter.active_values -%}
@@ -184,10 +185,10 @@
       {%- if enable_sorting and results.products.size != 0 -%}
         <div class="collection-filters__item sorting">
           <div class="collection-filters__field">
-            <label class="collection-filters__label body-text-sm" for="SortBy">{{ 'collections.sort_by_label' | t }}</label>
+            <label class="collection-filters__label body-text-sm" for="{{ type }}-SortBy">{{ 'collections.sort_by_label' | t }}</label>
             <div class="select">
               {%- assign sort_by = results.sort_by | default: results.default_sort_by -%}
-              <select name="sort_by" class="select__select collection-filters__sort" id="SortBy" aria-describedby="a11y-refresh-page-message">
+              <select name="sort_by" class="select__select collection-filters__sort" id="{{ type }}-SortBy" aria-describedby="a11y-refresh-page-message">
                 {%- for option in results.sort_options -%}
                   <option value="{{ option.value | escape }}"{% if option.value == sort_by %} selected="selected"{% endif %}>{{ option.name | escape }}</option>
                 {%- endfor -%}
@@ -205,34 +206,27 @@
 
 </facet-filters-form>
 
-<sidebar-drawer data-overlay="sidebar" class="collection__filters sidebar-parent-element">
-  <div class="sidebar-element sidebar-element--right-side">
-    <span class="collection__filters-close sidebar-close-element" data-close tabindex="0">
-      <span class="visually-hidden">{{ 'general.accessibility_labels.close' | t }}</span>
-      <span aria-hidden="true">{%- render 'theme-symbols', icon: 'close' -%}</span>
-    </span>
-    <div class="collection__filters-holder sidebar-content-element">
-      <div class="collection__filters-title body-text-sm sidebar-title-element"><span>{{ 'collections.filter_and_sort' | t }}</span></div>
-      <form id="FacetFiltersFormMobile" class="facets__form facets__form--mobile"></form>
-    </div>
-  </div>
-</sidebar-drawer>
+{%- unless type == 'mobile' -%}
 
-<collection-filters-mobile-handle class="collection-filters-handle-holder">
-  <button id="collection-filters-handle" class="button button--small button--outline">
-    {{ 'collections.filter_and_sort' | t }}
-    <span aria-hidden="true">{% render 'theme-symbols', icon: 'filter' %}</span>
-  </button>
-</collection-filters-mobile-handle>
+  <collection-filters-mobile-handle class="collection-filters-handle-holder">
+    <button id="collection-filters-handle" class="button button--small button--outline"
+      onclick="document.querySelector('.collection__filters').show();"
+    >
+      {{ 'collections.filter_and_sort' | t }}
+      <span aria-hidden="true">{% render 'theme-symbols', icon: 'filter' %}</span>
+    </button>
+  </collection-filters-mobile-handle>
 
-{%- unless results.products.size == 0 -%}
-  {%- unless results.results_count -%}
-    <p id="CollectionProductCount" class="collection-product-count" role="status">
-      {%- if results.products_count == results.all_products_count -%}
-        {{ 'collections.product_count_simple' | t: count: results.products_count }}
-      {%- else -%}
-        {{ 'collections.product_count' | t: product_count: results.products_count, count: results.all_products_count }}
-      {%- endif -%}
-    </p>
+  {%- unless results.products.size == 0 -%}
+    {%- unless results.results_count -%}
+      <p id="CollectionProductCount" class="collection-product-count" role="status">
+        {%- if results.products_count == results.all_products_count -%}
+          {{ 'collections.product_count_simple' | t: count: results.products_count }}
+        {%- else -%}
+          {{ 'collections.product_count' | t: product_count: results.products_count, count: results.all_products_count }}
+        {%- endif -%}
+      </p>
+    {%- endunless -%}
   {%- endunless -%}
+
 {%- endunless -%}

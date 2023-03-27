@@ -1,5 +1,14 @@
 <div id="collection-list-{{ section.id }}" class="content-section full-width-section-content gutter--{% if section.settings.gutter_enabled %}on{% else %}off{% endif %} collection-list {{ section.settings.layout }}">
 
+  {{ 'component-collection-item.css' | asset_url | stylesheet_tag }}
+  <script class="gutter-script">
+    {%- if section.settings.gutter_enabled -%}
+      document.getElementById('collection-list-{{ section.id }}').parentElement.classList.add('with-gutter');
+    {%- else -%}
+      document.getElementById('collection-list-{{ section.id }}').parentElement.classList.add('without-gutter');
+    {%- endif -%}
+  </script>
+  
   {%- liquid
     for block in section.blocks
       render 'collection-item', collection: collections[block.settings.collection], text_alignment: section.settings.alignment, index: forloop.index, last: forloop.last, image: block.settings.image, layout: section.settings.layout
@@ -95,7 +104,7 @@
       },
       {
         "type": "header",
-        "content": "t:sections.custom-colors.heading.label"
+        "content": "t:settings_schema.colors.name"
       },
       {
         "type": "color",
