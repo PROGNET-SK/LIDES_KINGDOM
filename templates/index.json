@@ -1,7 +1,7 @@
 {
   "sections": {
     "1628781966b6fb8bab": {
-      "type": "slider-vertical",
+      "type": "slider-horizontal",
       "blocks": {
         "1628781966b6fb8bab-0": {
           "type": "image",
@@ -277,8 +277,7 @@
       "blocks": {
         "1628782268aab83134-0": {
           "type": "title",
-          "settings": {
-          }
+          "settings": {}
         },
         "1628782268aab83134-1": {
           "type": "info",
@@ -289,8 +288,7 @@
         },
         "1628782268aab83134-2": {
           "type": "summary",
-          "settings": {
-          }
+          "settings": {}
         }
       },
       "block_order": [
