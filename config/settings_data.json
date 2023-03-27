@@ -203,16 +203,18 @@
       "header-content": {
         "type": "header-content",
         "settings": {
+          "logo_width": 50,
+          "menu_primary": "collections",
+          "menu_secondary": "main-menu",
+          "show_locale_selector": false,
+          "show_country_selector": false,
+          "show_search": true
         }
       }
     },
-    "content_for_index": [
-
-    ]
+    "content_for_index": []
   },
   "platform_customizations": {
-    "custom_css": [
-
-    ]
+    "custom_css": []
   }
 }
