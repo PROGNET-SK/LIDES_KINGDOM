@@ -95,7 +95,7 @@
       "announcement-bar": {
         "type": "announcement-bar",
         "settings": {
-          "bar_show": false,
+          "bar_show": true,
           "bar_show_on_homepage": false,
           "bar_show_dismiss": true,
           "bar_message": "Use this bar for a short, important announcement.",
@@ -198,6 +198,11 @@
           "popup_enable": false,
           "newsletter_auto": 10,
           "newsletter_frequent": "week"
+        }
+      },
+      "header-content": {
+        "type": "header-content",
+        "settings": {
         }
       }
     },
