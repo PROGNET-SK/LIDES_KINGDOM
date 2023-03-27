@@ -1,0 +1,1446 @@
+{
+  "settings_schema": {
+    "colors": {
+      "name": "Цвета",
+      "settings": {
+        "header__1": {
+          "content": "Боковая панель"
+        },
+        "header__2": {
+          "content": "Тело"
+        },
+        "header__3": {
+          "content": "Нижний колонтитул"
+        },
+        "bg_color": {
+          "label": "Фон"
+        },
+        "txt_color": {
+          "label": "Текст"
+        },
+        "link_color": {
+          "label": "Ссылки"
+        }
+      }
+    },
+    "typography": {
+      "name": "Типография",
+      "settings": {
+        "headings_font": {
+          "label": "Заголовки"
+        },
+        "base_size": {
+          "label": "Базовый размер"
+        },
+        "large_size": {
+          "label": "Большие заголовки",
+          "info": "Влияет на большие заголовки из слайд-шоу, форматированный текст и изображение с текстовыми разделами."
+        },
+        "body_font": {
+          "label": "Тело"
+        },
+        "nav_size": {
+          "label": "Основная навигация"
+        }
+      }
+    },
+    "product-grid": {
+      "name": "Сетка товаров",
+      "settings": {
+        "aspect_ratio": {
+          "label": "Соотношение сторон информационных материалов"
+        },
+        "show_secondary_image": {
+          "label": "Показывать второй информационный материал товара при наведении курсора"
+        },
+        "enhance_featured_products": {
+          "label": "Выделить избранные товары",
+          "info": "[Узнайте больше](https://shopify-support.krownthemes.com/article/471-general-settings#featured-products)"
+        },
+        "show_discount": {
+          "label": "Показывать скидку как...",
+          "options__1": {
+            "label": "Текст"
+          },
+          "options__2": {
+            "label": "Процент"
+          }
+        },
+        "caption_placement": {
+          "label": "Размещение подписи",
+          "options__1": {
+            "label": "Наложение",
+            "group": "Видно при одновременном нажатии"
+          },
+          "options__2": {
+            "label": "Изображение ниже",
+            "group": "Всегда видно"
+          }
+        },
+        "grid_color_bg": {
+          "label": "Наложение фона подписи"
+        },
+        "grid_color_text": {
+          "label": "Наложение цвета текста подписи"
+        },
+        "header__1": {
+          "content": "Рейтинг продукции",
+          "info": "Чтобы отображать рейтинги, добавьте приложение для оценки продукта. [Учить больше](https://help.shopify.com/en/manual/products/product-reviews/installation)"
+        },
+        "header__2": {
+          "content": "Обзоры продуктов"
+        },
+        "show_reviews": {
+          "label": "Обзоры продуктов"
+        }
+      }
+    },
+    "favicon": {
+      "name": "Значок сайта",
+      "settings": {
+        "favicon": {
+          "label": "Изображение значка сайта",
+          "info": "требуется 32 x 32px .png"
+        }
+      }
+    },
+    "cart-page": {
+      "name": "Страница корзины",
+      "settings": {
+        "cart_type": {
+          "label": "Тип корзины",
+          "options__1": {
+            "label": "Страница"
+          },
+          "options__2": {
+            "label": "Боковая панель"
+          }
+        },
+        "cart_notes": {
+          "label": "Включить примечания в корзине"
+        },
+        "cart_buttons": {
+          "label": "Показывать дополнительные кнопки оформления заказа"
+        }
+      }
+    },
+    "embellishments": {
+      "name": "Украшения",
+      "settings": {
+        "show_preloader": {
+          "label": "Предзагрузчик изображений",
+          "info": "Показывает небольшой круговой предзагрузчик, пока изображения в вашем магазине еще загружаются."
+        },
+        "show_breadcrumb": {
+          "label": "Показывать навигационную цепочку",
+          "info": "Навигационная цепочка помогает пользователям перемещаться по магазину и отображается только на страницах подборок, товаров и поиска."
+        }
+      }
+    },
+    "search": {
+      "name": "Поиск",
+      "settings": {
+        "predictive_search": {
+          "label": "Включить предиктивный поиск"
+        },
+        "show_vendor": {
+          "label": "Показывать продавца"
+        },
+        "show_price": {
+          "label": "Показывать цену"
+        },
+        "include_articles": {
+          "label": "Включить статьи в результаты поиска"
+        },
+        "include_pages": {
+          "label": "Включить страницы в результаты поиска"
+        }
+      }
+    },
+    "social": {
+      "name": "Соцсети"
+    }
+  },
+  "sections": {
+    "main-cart-footer": {
+      "name": "Промежуточный итог по корзине",
+      "blocks": {
+        "subtotal_button": {
+          "name": "Промежуточный итог и оформление заказа"
+        }
+      }
+    },
+    "main-cart-items": {
+      "name": "Товары в корзине"
+    },
+    "main-list-collections": {
+      "name": "Страница со списком подборок",
+      "blocks": {
+        "collection": {
+          "name": "Подборка",
+          "settings": {
+            "collection": {
+              "label": "Подборка"
+            },
+            "image": {
+              "label": "Изображение",
+              "info": "Если вы хотите добавить пользовательское изображение для подборки."
+            }
+          }
+        }
+      },
+      "settings": {
+        "header": {
+          "content": "Коллекции"
+        },
+        "layout": {
+          "label": "Макет",
+          "options__1": {
+            "label": "Одна колонка"
+          },
+          "options__2": {
+            "label": "Две колонки"
+          }
+        },
+        "paragraph": {
+          "content": "Все ваши подборки показаны по умолчанию. Чтобы настроить свой список, выберите \"Избранное\" и добавьте подборки."
+        },
+        "display_type": {
+          "label": "Выберите подборки для отображения",
+          "options__1": {
+            "label": "Все"
+          },
+          "options__2": {
+            "label": "Выбрано"
+          }
+        },
+        "sort": {
+          "label": "Сортировать подборки по:",
+          "info": "Сортировка действует только в том случае, если выбрано \"Все\"",
+          "options__1": {
+            "label": "В алфавитном порядке, A–Z"
+          },
+          "options__2": {
+            "label": "В алфавитном порядке, Z–A"
+          },
+          "options__3": {
+            "label": "По дате, от новых до старых"
+          },
+          "options__4": {
+            "label": "По дате, от старых до новых"
+          },
+          "options__5": {
+            "label": "Количество товаров, от большого к маленькому"
+          },
+          "options__6": {
+            "label": "Количество товаров, от маленького к большому"
+          }
+        }
+      }
+    },
+    "sidebar": {
+      "name": "Боковая панель",
+      "settings": {
+        "image": {
+          "label": "Изображение логотипа"
+        },
+        "image_width": {
+          "label": "Ширина изображения логотипа"
+        },
+        "primary_navigation": {
+          "label": "Основная навигация"
+        },
+        "secondary_navigation": {
+          "label": "Вторичная навигация"
+        },
+        "search": {
+          "content": "Поиск",
+          "label": "Показывать поиск"
+        }
+      }
+    },
+    "text-columns-with-icons": {
+      "name": "Текстовые колонки со значками",
+      "settings": {
+        "content": {
+          "label": "Показывать только на выбранных страницах:"
+        },
+        "show_on_homepage": {
+          "label": "Домашняя страница"
+        },
+        "show_on_product": {
+          "label": "Страницы товаров"
+        },
+        "show_on_collection": {
+          "label": "Страницы подборок"
+        },
+        "show_on_blog": {
+          "label": "Страницы блогов и статей"
+        },
+        "show_on_regular": {
+          "label": "Обычные страницы"
+        },
+        "icons": {
+          "label": "Значки",
+          "info": "Чтобы увидеть все значки, включенные в тему, пожалуйста, перейдите по [этой ссылке](https://krownthemes.com/krown-icons/)"
+        }
+      },
+      "blocks": {
+        "icon": {
+          "name": "Текст со значком",
+          "settings": {
+            "title": {
+              "label": "Заголовок"
+            },
+            "text": {
+              "label": "Текст"
+            },
+            "icon": {
+              "label": "Выбрать значок"
+            }
+          }
+        }
+      }
+    },
+    "footer": {
+      "name": "Нижний колонтитул",
+      "settings": {
+        "show_payment_icons": {
+          "label": "Показывать значки оплаты"
+        },
+        "language_selector": {
+          "content": "Выбор языка",
+          "info": "Чтобы добавить язык, перейдите в [языковые настройки.](/admin/settings/languages)"
+        },
+        "language_selector_show": {
+          "label": "Показывать выбор языка"
+        },
+        "country_selector": {
+          "content": "Выбор cтрана/регион",
+          "info": "Чтобы добавить cтрана/регион, перейдите в [настройки оплаты.](/admin/settings/payments)"
+        },
+        "country_selector_show": {
+          "label": "Показывать выбор cтрана/регион"
+        }
+      },
+      "blocks": {
+        "text": {
+          "name": "Текст",
+          "settings": {
+            "title": {
+              "label": "Заголовок"
+            },
+            "content": {
+              "label": "Контент"
+            },
+            "text_size": {
+              "label": "Размер текста",
+              "options__1": {
+                "label": "Обычный"
+              },
+              "options__2": {
+                "label": "Большой"
+              }
+            }
+          }
+        },
+        "menus": {
+          "name": "Меню",
+          "settings": {
+            "title_1": {
+              "label": "Первый заголовок меню"
+            },
+            "title_2": {
+              "label": "Второй заголовок меню"
+            },
+            "menu_1": {
+              "label": "Первое меню",
+              "info": "В этом меню не будут отображаться выпадающие элементы"
+            },
+            "menu_2": {
+              "label": "Второе меню"
+            }
+          }
+        },
+        "newsletter": {
+          "name": "Регистрация по электронной почте"
+        },
+        "social": {
+          "name": "Ссылки на соцсети"
+        },
+        "image": {
+          "name": "Изображение",
+          "settings": {
+            "image": {
+              "label": "Выбрать изображение"
+            }
+          }
+        }
+      }
+    },
+    "contact-form": {
+      "name": "Контактная форма",
+      "settings": {
+        "title": {
+          "label": "Заголовок"
+        }
+      },
+      "blocks": {
+        "field": {
+          "name": "Поле формы",
+          "settings": {
+            "type": {
+              "label": "Тип",
+              "options__1": {
+                "label": "Одна строка"
+              },
+              "options__2": {
+                "label": "Много строк"
+              }
+            },
+            "required_field": {
+              "label": "Обязательно"
+            },
+            "labels": {
+              "label": "Метка",
+              "info": "Убедитесь, что все ваши поля имеют уникальные метки!"
+            }
+          }
+        },
+        "email": {
+          "name": "Имя и адрес электронной почты"
+        },
+        "button": {
+          "name": "Кнопка Отправить",
+          "settings": {
+            "label": {
+              "label": "Метка"
+            }
+          }
+        }
+      },
+      "presets": {
+        "name": "Контактная форма"
+      }
+    },
+    "image-with-text": {
+      "name": "Изображения с текстом",
+      "blocks": {
+        "image": {
+          "name": "Изображение с текстом",
+          "settings": {
+            "title": {
+              "label": "Заголовок"
+            },
+            "body": {
+              "label": "Текст"
+            },
+            "button_label": {
+              "label": "Метка кнопки"
+            },
+            "url": {
+              "label": "Ссылка",
+              "info": "Весь блок превратится в ссылку, если для кнопки не будет метки"
+            },
+            "image": {
+              "label": "Фоновое изображение"
+            }
+          }
+        }
+      },
+      "settings": {
+        "image_height": {
+          "label": "Высота изображения",
+          "options__1": {
+            "label": "Маленькая"
+          },
+          "options__2": {
+            "label": "Средняя"
+          },
+          "options__3": {
+            "label": "Большой"
+          },
+          "options__4": {
+            "label": "Полная"
+          }
+        },
+        "text_width": {
+          "label": "Ширина текстового контейнера",
+          "options__1": {
+            "label": "Средняя"
+          },
+          "options__2": {
+            "label": "Большой"
+          },
+          "options__3": {
+            "label": "Полная"
+          }
+        },
+        "text_size": {
+          "label": "Размер заголовка",
+          "options__1": {
+            "label": "Обычный"
+          },
+          "options__2": {
+            "label": "Большой"
+          },
+          "options__3": {
+            "label": "Очень большой"
+          }
+        },
+        "text_alignment": {
+          "label": "Выравнивание текста",
+          "options__1": {
+            "label": "Слева сверху"
+          },
+          "options__2": {
+            "label": "По центру сверху"
+          },
+          "options__3": {
+            "label": "Справа сверху"
+          },
+          "options__4": {
+            "label": "Слева посередине"
+          },
+          "options__5": {
+            "label": "По центру посередине"
+          },
+          "options__6": {
+            "label": "Справа посередине"
+          },
+          "options__7": {
+            "label": "Слева снизу"
+          },
+          "options__8": {
+            "label": "По центру снизу"
+          },
+          "options__9": {
+            "label": "Справа снизу"
+          }
+        }
+      },
+      "presets": {
+        "name": "Изображения с текстом"
+      }
+    },
+    "featured-product": {
+      "name": "Избранный товар",
+      "settings": {
+        "product": {
+          "label": "Выбрать товар"
+        }
+      },
+      "blocks": {
+        "product_link": {
+          "name": "Ссылка на товар"
+        }
+      }
+    },
+    "featured-collection": {
+      "name": "Избранная подборка",
+      "settings": {
+        "title": {
+          "label": "Заголовок"
+        },
+        "show_view_all": {
+          "label": "Показывать ссылку на страницу подборки"
+        },
+        "layout": {
+          "label": "Макет",
+          "options__1": {
+            "label": "Слайд-шоу"
+          },
+          "options__2": {
+            "label": "Сетка"
+          }
+        },
+        "products_number": {
+          "label": "Показано максимальное количество товаров"
+        },
+        "collection": {
+          "label": "Подборка"
+        }
+      },
+      "presets": {
+        "name": "Сделать подборку избранной"
+      }
+    },
+    "gallery": {
+      "name": "Галерея",
+      "blocks": {
+        "image": {
+          "name": "Изображение",
+          "settings": {
+            "image": {
+              "label": "Изображение"
+            },
+            "caption": {
+              "label": "Подпись"
+            },
+            "featured": {
+              "label": "Увеличить изображение в сетке"
+            }
+          }
+        }
+      },
+      "settings": {
+        "aspect_ratio": {
+          "label": "Соотношение сторон изображений",
+          "options__1": {
+            "label": "Короткое (4:3)",
+            "group": "Кадрированное"
+          },
+          "options__2": {
+            "label": "Квадрат (1:1)"
+          },
+          "options__3": {
+            "label": "Высокое (5:6)"
+          },
+          "options__4": {
+            "label": "Выше (2:3)"
+          },
+          "options__5": {
+            "label": "Естественное",
+            "group": "Некадрированное"
+          },
+          "info": "При использовании естественного соотношения сторон убедитесь, что вы изменили размер миниатюр на тот же размер, чтобы создать чистую сетку. Используя один из параметров кадрирования, все миниатюры будут изменены до одного и того же размера."
+        },
+        "style_mobile": {
+          "label": "Превратите галерею в слайд-шоу на мобильном устройстве"
+        },
+        "slider_height": {
+          "label": "Высота слайд-шоу на мобильном устройстве",
+          "options__1": {
+            "label": "Средняя"
+          },
+          "options__2": {
+            "label": "Большой"
+          },
+          "options__3": {
+            "label": "Полная"
+          }
+        },
+        "lightbox": {
+          "label": "Включить lightbox",
+          "info": "Показывает увеличенное изображение при нажатии"
+        }
+      },
+      "presets": {
+        "name": "Галерея"
+      }
+    },
+    "heading": {
+      "name": "Заголовок",
+      "settings": {
+        "title": {
+          "label": "Заглавие"
+        }
+      },
+      "presets": {
+        "name": "Заголовок"
+      }
+    },
+    "image": {
+      "name": "Изображение"
+    },
+    "apps": {
+      "name": "Приложения",
+      "settings": {
+        "include_margins": {
+          "label": "Сделайте поля раздела такими же, как у темы"
+        }
+      },
+      "presets": {
+        "name": "Приложения"
+      }
+    },
+    "rich-text": {
+      "name": "Форматированный текст",
+      "blocks": {
+        "heading": {
+          "name": "Заголовок",
+          "settings": {
+            "heading": {
+              "label": "Заголовок"
+            },
+            "heading_size": {
+              "label": "Размер заголовка",
+              "options__1": {
+                "label": "Обычный"
+              },
+              "options__2": {
+                "label": "Большой"
+              },
+              "options__3": {
+                "label": "Очень большой"
+              }
+            }
+          }
+        },
+        "icon": {
+          "name": "Значок"
+        },
+        "text": {
+          "name": "Текст",
+          "settings": {
+            "text": {
+              "label": "Текст"
+            }
+          }
+        },
+        "button": {
+          "name": "Кнопка",
+          "settings": {
+            "button_label": {
+              "label": "Метка кнопки"
+            },
+            "button_link": {
+              "label": "Ссылка на кнопку"
+            },
+            "button_size": {
+              "label": "Размер кнопки",
+              "options__1": {
+                "label": "Обычный"
+              },
+              "options__2": {
+                "label": "Большой"
+              }
+            }
+          }
+        }
+      },
+      "settings": {
+        "text_alignment": {
+          "label": "Выравнивание текста",
+          "options__1": {
+            "label": "Слева"
+          },
+          "options__2": {
+            "label": "По центру"
+          },
+          "options__3": {
+            "label": "Справа"
+          }
+        },
+        "image": {
+          "label": "Изображение"
+        },
+        "image_position": {
+          "label": "Положение изображения",
+          "options__1": {
+            "label": "Слева"
+          },
+          "options__2": {
+            "label": "Справа"
+          }
+        },
+        "image_height": {
+          "label": "Высота изображения",
+          "options__1": {
+            "label": "Обычный"
+          },
+          "options__2": {
+            "label": "Большой"
+          },
+          "options__3": {
+            "label": "Полная"
+          }
+        }
+      },
+      "presets": {
+        "name": "Форматированный текст"
+      }
+    },
+    "shop-the-look": {
+      "name": "Купить вид",
+      "settings": {
+        "heading": {
+          "label": "Заголовок"
+        },
+        "subheading": {
+          "label": "Подзаголовок"
+        },
+        "image": {
+          "label": "Фоновое изображение"
+        }
+      },
+      "blocks": {
+        "product": {
+          "name": "Товар",
+          "settings": {
+            "select_product": {
+              "label": "Выбрать товар"
+            }
+          }
+        }
+      },
+      "presets": {
+        "name": "Купить вид"
+      }
+    },
+    "testimonials": {
+      "name": "Рекомендации",
+      "blocks": {
+        "testimonial": {
+          "name": "Рекомендация",
+          "settings": {
+            "quote": {
+              "label": "Цитата"
+            },
+            "author_name": {
+              "label": "Имя автора"
+            },
+            "author_title": {
+              "label": "Авторское название"
+            },
+            "author_avatar": {
+              "label": "Аватар автора"
+            }
+          }
+        }
+      },
+      "presets": {
+        "name": "Рекомендации"
+      }
+    },
+    "announcement-bar": {
+      "name": "Панель объявлений",
+      "settings": {
+        "bar_show": {
+          "label": "Показывать панель объявлений"
+        },
+        "bar_show_on_homepage": {
+          "label": "Показывать только на главной странице"
+        },
+        "bar_show_dismiss": {
+          "label": "Показывать кнопку Отклонить"
+        },
+        "bar_message": {
+          "label": "Контент"
+        },
+        "bar_link": {
+          "label": "Ссылка"
+        },
+        "bar_bgcolor": {
+          "label": "Цвет фона"
+        },
+        "bar_txtcolor": {
+          "label": "Цвет текста"
+        }
+      }
+    },
+    "text-columns-with-images": {
+      "name": "Текстовые колонки с изображениями",
+      "blocks": {
+        "text": {
+          "name": "Текст",
+          "settings": {
+            "title": {
+              "label": "Заголовок"
+            },
+            "text": {
+              "label": "Текст"
+            },
+            "image": {
+              "label": "Изображение"
+            }
+          }
+        }
+      },
+      "presets": {
+        "name": "Текстовые колонки с изображениями"
+      }
+    },
+    "slider": {
+      "slider_horizontal": {
+        "name": "Слайд-шоу: горизонтальное"
+      },
+      "slider_vertical": {
+        "name": "Слайд-шоу: вертикальное"
+      },
+      "settings": {
+        "desktop_height": {
+          "label": "Высота слайд-шоу в настольной версии",
+          "options__1": {
+            "label": "Маленькая"
+          },
+          "options__2": {
+            "label": "Средняя"
+          },
+          "options__3": {
+            "label": "Большой"
+          },
+          "options__4": {
+            "label": "Полная"
+          }
+        },
+        "mobile_height": {
+          "label": "Высота слайд-шоу на мобильном устройстве"
+        },
+        "text_style": {
+          "header": "Стиль текста"
+        },
+        "mobile_design": {
+          "header": "Мобильный дизайн",
+          "label": "Превратите вертикальное слайд-шоу в горизонтальное на мобильном устройстве"
+        }
+      },
+      "blocks": {
+        "image": {
+          "name": "Изображение",
+          "settings": {
+            "image": {
+              "label": "Изображение"
+            },
+            "heading": {
+              "label": "Заголовок"
+            },
+            "subheading": {
+              "label": "Подзаголовок"
+            },
+            "caption": {
+              "label": "Подпись"
+            },
+            "button_label": {
+              "label": "Метка кнопки"
+            },
+            "link": {
+              "label": "Ссылка",
+              "info": "Если для кнопки нет метки, ссылка будет в тексте."
+            }
+          }
+        }
+      }
+    },
+    "video-popup": {
+      "name": "Видео: всплывающее окно",
+      "settings": {
+        "video": {
+          "label": "URL-адрес видео"
+        },
+        "image": {
+          "label": "Фоновое изображение"
+        }
+      }
+    },
+    "video-background": {
+      "name": "Видео: фон (MP4)",
+      "settings": {
+        "video": {
+          "label": "URL-адрес видео",
+          "info": "Путь к файлу .mp4"
+        },
+        "image": {
+          "label": "Резервное изображение",
+          "info": "Резервное изображение будет использоваться на мобильных устройствах, где \tавтовоспроизведение может быть отключен."
+        },
+        "size_alignment": {
+          "content": "Размер и выравнивание"
+        },
+        "video_height": {
+          "label": "Высота видео",
+          "options__1": {
+            "label": "Естественное (16:9)",
+            "group": "Некадрированное"
+          },
+          "options__2": {
+            "label": "Большой",
+            "group": "Кадрированное"
+          },
+          "options__3": {
+            "label": "Полная"
+          }
+        }
+      }
+    },
+    "main-password-header": {
+      "name": "Заголовок пароля"
+    },
+    "main-password-content": {
+      "name": "Содержание пароля"
+    },
+    "main-password-footer": {
+      "name": "Нижний колонтитул пароля",
+      "settings": {
+        "show_social": {
+          "label": "Показывать значки соцсетей"
+        }
+      }
+    },
+    "main-article": {
+      "name": "Пост в блоге",
+      "blocks": {
+        "featured_image": {
+          "name": "Избранное изображение",
+          "settings": {
+            "image_height": {
+              "label": "Высота избранного изображения",
+              "options__1": {
+                "label": "Адаптировать к изображению"
+              },
+              "options__2": {
+                "label": "Средняя"
+              },
+              "options__3": {
+                "label": "Большой"
+              }
+            }
+          }
+        },
+        "title": {
+          "name": "Заглавие",
+          "settings": {
+            "blog_show_date": {
+              "label": "Показывать дату"
+            },
+            "blog_show_author": {
+              "label": "Показывать автора"
+            },
+            "blog_show_comments": {
+              "label": "Показывать количество комментариев"
+            }
+          }
+        },
+        "content": {
+          "name": "Контент"
+        },
+        "social_sharing": {
+          "name": "Кнопки для распространения в соцсетях"
+        },
+        "blog_navigation": {
+          "name": "Показывать ссылки на соседние посты"
+        }
+      }
+    },
+    "main-blog": {
+      "settings": {
+        "header": {
+          "content": "Открытка для блога"
+        },
+        "enable_tags": {
+          "label": "Включить фильтрацию по тегам"
+        },
+        "post_limit": {
+          "label": "Количество постов на странице"
+        }
+      }
+    },
+    "blog-posts": {
+      "name": "Посты в блоге",
+      "blocks": {
+        "title": {
+          "name": "Заглавие"
+        },
+        "info": {
+          "name": "Информация",
+          "settings": {
+            "show_date": {
+              "label": "Показывать дату"
+            },
+            "show_author": {
+              "label": "Показывать автора"
+            }
+          }
+        },
+        "summary": {
+          "name": "Выдержка"
+        },
+        "link": {
+          "name": "Ссылка"
+        }
+      },
+      "settings": {
+        "title": {
+          "label": "Заголовок"
+        },
+        "blog": {
+          "label": "Блог"
+        },
+        "post_limit": {
+          "label": "Посты"
+        },
+        "show_image": {
+          "label": "Показывать избранное изображение"
+        },
+        "show_view_all": {
+          "label": "Показывать ссылку на страницу блога"
+        },
+        "layout": {
+          "label": "Макет"
+        },
+        "option_1": {
+          "label": "Одна колонка",
+          "group": "Сетка"
+        },
+        "option_2": {
+          "label": "Две колонки"
+        },
+        "option_3": {
+          "label": "Гибкий (2–5 колонок)",
+          "group": "Слайд-шоу"
+        }
+      },
+      "presets": {
+        "name": "Посты в блоге"
+      }
+    },
+    "custom-colors": {
+      "heading": {
+        "label": "Заголовок"
+      },
+      "text": {
+        "label": "Пользовательский цвет текста"
+      },
+      "overlay": {
+        "label": "Цвет наложения"
+      },
+      "background": {
+        "label": "Пользовательский цвет фона"
+      }
+    },
+    "custom-gutter": {
+      "heading": {
+        "content": "Промежуток"
+      },
+      "gutter_enabled": {
+        "label": "Включить интервал между внутренним контентом"
+      }
+    },
+    "newsletter": {
+      "name": "Регистрация по электронной почте",
+      "blocks": {
+        "heading": {
+          "name": "Заголовок",
+          "settings": {
+            "heading": {
+              "label": "Заголовок"
+            }
+          }
+        },
+        "paragraph": {
+          "name": "Подзаголовок",
+          "settings": {
+            "paragraph": {
+              "label": "Описание"
+            }
+          }
+        },
+        "email_form": {
+          "name": "Форма электронной почты"
+        }
+      },
+      "presets": {
+        "name": "Регистрация по электронной почте"
+      }
+    },
+    "product-recommendations": {
+      "name": "Рекомендации по товару",
+      "settings": {
+        "heading": {
+          "label": "Заголовок"
+        },
+        "header__1": {
+          "content": "Рекомендации по товару",
+          "info": "Динамические рекомендации используют информацию о заказах и товарах для изменения и улучшения с течением времени. [Узнайте больше](https://help.shopify.com/en/themes/development/recommended-products)"
+        }
+      }
+    },
+    "custom-liquid": {
+      "name": "Пользовательский Liquid",
+      "settings": {
+        "custom_liquid": {
+          "label": "Пользовательский Liquid"
+        }
+      },
+      "presets": {
+        "name": "Пользовательский Liquid"
+      }
+    },
+    "collection-list": {
+      "name": "Список подборок",
+      "presets": {
+        "name": "Список подборок"
+      }
+    },
+    "faq": {
+      "name": "Вопросы и ответы",
+      "settings": {
+        "title": {
+          "label": "Заголовок"
+        },
+        "open_first": {
+          "label": "По умолчанию первый переключатель открыт"
+        }
+      },
+      "blocks": {
+        "text": {
+          "name": "Вопросы и ответы",
+          "settings": {
+            "title": {
+              "label": "Заглавие"
+            },
+            "text": {
+              "label": "Текст"
+            },
+            "image": {
+              "label": "Изображение"
+            }
+          }
+        }
+      },
+      "presets": {
+        "name": "Вопросы и ответы"
+      }
+    },
+    "popup": {
+      "name": "Всплывающее окно",
+      "settings": {
+        "title": {
+          "label": "Заголовок"
+        },
+        "content": {
+          "label": "Контент"
+        },
+        "show_newsletter": {
+          "label": "Показывать форму регистрации по электронной почте"
+        },
+        "functionality": {
+          "content": "Функциональность"
+        },
+        "enable": {
+          "label": "Включить всплывающее окно"
+        },
+        "show_after": {
+          "label": "Показывать всплывающее окно после",
+          "info": "сек"
+        },
+        "frequency": {
+          "label": "Частота показа всплывающих окон",
+          "options__1": {
+            "label": "Показывать каждый день"
+          },
+          "options__2": {
+            "label": "Показывать каждую неделю"
+          },
+          "options__3": {
+            "label": "Показывать каждый месяц"
+          }
+        },
+        "image": {
+          "label": "Изображение",
+          "info": "Рекомендуется 1240 x 400px .jpg. Оно появляется только на настольной версии"
+        }
+      }
+    },
+    "main-search": {
+      "name": "Результаты поиска",
+      "settings": {
+        "products_per_page": {
+          "label": "Результатов на странице"
+        }
+      }
+    },
+    "main-collection-product-grid": {
+      "name": "Сетка товаров",
+      "settings": {
+        "products_per_page": {
+          "label": "Товаров на странице"
+        },
+        "enable_filtering": {
+          "label": "Включить фильтрацию",
+          "info": "[Настройка фильтров](/admin/menus)"
+        },
+        "enable_sorting": {
+          "label": "Включить сортировку"
+        },
+        "header__1": {
+          "content": "Фильтрация и сортировка"
+        }
+      }
+    },
+    "main-collection-banner": {
+      "name": "Баннер подборки",
+      "settings": {
+        "paragraph": {
+          "content": "Чтобы изменить описания подборок или изображения подборок, [отредактируйте свои подборки.](/admin/collections)"
+        },
+        "show_collection_description": {
+          "label": "Показывать описание подборки"
+        },
+        "show_collection_image": {
+          "label": "Показывать изображение подборки",
+          "info": "Для наилучших результатов используйте изображение с соотношением сторон 16:9."
+        }
+      }
+    },
+    "main-product": {
+      "name": "Информация о товаре",
+      "blocks": {
+        "text": {
+          "name": "Текст",
+          "settings": {
+            "text": {
+              "label": "Текст"
+            },
+            "text_style": {
+              "label": "Стиль текста",
+              "options__1": {
+                "label": "Тело"
+              },
+              "options__2": {
+                "label": "Подзаголовок"
+              },
+              "options__3": {
+                "label": "Заглавная буква"
+              }
+            }
+          }
+        },
+        "title": {
+          "name": "Заглавие"
+        },
+        "price": {
+          "name": "Цена"
+        },
+        "tax_info": {
+          "name": "Налоговая информация"
+        },
+        "sku_barcode": {
+          "name": "АРТИКУЛ / ШТРИХ-КОД"
+        },
+        "quantity_selector": {
+          "name": "Выбор количества"
+        },
+        "variant_picker": {
+          "name": "Подборщик вариантов",
+          "settings": {
+            "show_variant_labels": {
+              "label": "Показывать метки вариантов"
+            },
+            "hide_out_of_stock_variants": {
+              "label": "Скрыть отсутствующие на складе варианты"
+            },
+            "low_inventory_notification": {
+              "label": "Уведомление о запасах",
+              "info": "Для работы этой функции в вариантах необходимо включить отслеживание запасов. [Узнайте больше](https://help.shopify.com/en/manual/products/inventory/track_inventory)",
+              "options__1": {
+                "label": "Не показывать информацию о запасах"
+              },
+              "options__2": {
+                "label": "Показать уведомление, если запасы опустятся ниже 5"
+              },
+              "options__3": {
+                "label": "Всегда показывать запасы"
+              }
+            }
+          }
+        },
+        "buy_buttons": {
+          "name": "Купить кнопки",
+          "settings": {
+            "show_dynamic_checkout": {
+              "label": "Показывать динамические кнопки оформления заказа",
+              "info": "Используя способы оплаты, доступные в вашем магазине, клиенты видят предпочтительный вариант, например PayPal или Apple Pay. [Узнайте больше](https://help.shopify.com/manual/using-themes/change-the-layout/dynamic-checkout)"
+            },
+            "show_quantity_selector": {
+              "label": "Показывать выбор количества"
+            }
+          }
+        },
+        "pickup_availability": {
+          "name": "Доступность самовывоза"
+        },
+        "description": {
+          "name": "Описание",
+          "settings": {
+            "product_description_truncated": {
+              "label": "Сокращенное описание",
+              "info": "Сократить",
+              "options__1": {
+                "label": "Не сокращать"
+              },
+              "options__2": {
+                "label": "Показывать небольшую выдержку"
+              },
+              "options__3": {
+                "label": "Показывать среднюю выдержку"
+              },
+              "options__4": {
+                "label": "Показывать большую выдержку"
+              }
+            }
+          }
+        },
+        "share": {
+          "name": "Поделиться",
+          "settings": {
+            "featured_image_info": {
+              "content": "Если вы включите ссылку в посты в соцсетях, избранное изображение страницы будет отображаться как изображение для предварительного просмотра. [Узнайте больше](https://help.shopify.com/en/manual/online-store/images/showing-social-media-thumbnail-images)."
+            },
+            "title_info": {
+              "content": "Название магазина и описание включены в изображение для предварительного просмотра. [Узнайте больше](https://help.shopify.com/en/manual/promoting-marketing/seo/adding-keywords#set-a-title-and-description-for-your-online-store)."
+            }
+          }
+        },
+        "collapsible_tab": {
+          "name": "Сворачиваемая вкладка",
+          "settings": {
+            "heading": {
+              "info": "Включить заголовок, в котором объясняется контент.",
+              "label": "Заголовок"
+            },
+            "content": {
+              "label": "Контент вкладки"
+            },
+            "page": {
+              "label": "Контент вкладки со страницы"
+            },
+            "image": {
+              "label": "Изображение вкладки"
+            }
+          }
+        }
+      },
+      "settings": {
+        "header": {
+          "content": "Информационные материалы",
+          "info": "Узнайте больше о [типах информационных материалов](https://help.shopify.com/manual/products/product-media)"
+        },
+        "enable_sticky_info": {
+          "label": "Включить отображение закрепленной информации о товаре на больших экранах"
+        },
+        "enable_video_looping": {
+          "label": "Включить циклическое воспроизведение видео"
+        },
+        "enable_zoom": {
+          "label": "Включить масштабирование изображения"
+        },
+        "gallery_gutter": {
+          "label": "Добавить интервал между информационными материалами"
+        },
+        "gallery_slider_style": {
+          "label": "Масштабировать изображения ползунка по размеру окна просмотра"
+        },
+        "gallery_style": {
+          "label": "Стиль галереи",
+          "info": "По умолчанию для мобильных устройств используется слайд-шоу",
+          "options__1": {
+            "label": "Прокрутить"
+          },
+          "options__2": {
+            "label": "Слайд-шоу"
+          }
+        },
+        "gallery_pagination": {
+          "label": "Разбивка на страницы галереи",
+          "options__1": {
+            "label": "Точки"
+          },
+          "options__2": {
+            "label": "Миниатюры"
+          }
+        }
+      }
+    }
+  }
+}

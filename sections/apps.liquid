@@ -1,0 +1,36 @@
+<div class="{% if section.settings.gutter_enabled %}content-section full-width-section-content gutter--on{% endif %}">
+  {%- liquid
+    for block in section.blocks
+      render block
+    endfor
+  -%}
+</div>
+
+{% schema %}
+{
+  "name": "t:sections.apps.name",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "header",
+      "content": "t:sections.custom-gutter.heading.content"
+    },
+    {
+      "type": "checkbox",
+      "id": "gutter_enabled",
+      "label": "t:sections.custom-gutter.gutter_enabled.label",
+      "default": true
+    }
+  ],
+  "blocks": [
+    {
+      "type": "@app"
+    }
+  ],
+  "presets": [
+    {
+      "name": "t:sections.apps.presets.name"
+    }
+  ]
+}
+{% endschema %}

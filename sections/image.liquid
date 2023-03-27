@@ -1,0 +1,31 @@
+<div class="content-section gutter--off" id="image-{{ section.id }}">
+
+  {%- liquid
+    unless section.settings.image == blank
+      assign sizes = 'sizes="(max-width: 948px) 100vw, calc(100vw - 200px)"'
+      render 'lazy-image', image: section.settings.image, sizes: sizes
+    else
+      echo '<span class="onboarding-svg">'
+        echo 'image' | placeholder_svg_tag
+      echo '</span>'
+    endunless
+  -%}
+</div>
+
+{% schema %}
+  {
+    "name": "t:sections.image.name",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "image",
+        "label": "t:sections.image.name"
+      }
+    ], 
+    "presets": [
+      {
+        "name": "t:sections.image.name"
+      }
+    ]
+  }
+{% endschema %}

@@ -1,0 +1,23 @@
+<div class="content-section full-width-section-content gutter--on heading heading--alignment-left">
+  <div class="heading__content">
+    <h2 class="heading__title h1">{{ section.settings.title | escape }}</h2>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "t:sections.heading.name",
+    "class": "mount-heading",
+    "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "label": "t:sections.heading.settings.title.label",
+        "default": "Heading"
+      }
+    ], 
+    "presets": [{
+      "name": "t:sections.heading.presets.name"
+    }]
+  }
+{% endschema %}
