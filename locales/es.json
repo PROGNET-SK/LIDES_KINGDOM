@@ -37,7 +37,7 @@
       "signup_form_email_placeholder": "Tu email",
       "signup_form_submit": "Enviar",
       "signup_form_success": "Te enviaremos un email cuando vayamos a abrir",
-      "admin_link_html": "¿Eres el propietario de la tienda? <a href=\"/admin\">Accede aquí</a>",
+      "admin_link_html": "¿Eres el propietario de la tienda? <a href=\"\/admin\">Accede aquí<\/a>",
       "password_link": "Introduce tu Contraseña",
       "powered_by_shopify_html": "Esta tienda estará basada en {{ shopify }}"
     },
@@ -87,7 +87,7 @@
       "back": "Volver",
       "play_video": "Reproducir vídeo",
       "language_dropdown_label": "Idioma",
-      "country_dropdown_label": "País/región",
+      "country_dropdown_label": "País\/región",
       "price": {
         "regular": "Precio normal",
         "sale": "Precio rebajado",
@@ -133,7 +133,7 @@
     "max_price": "El precio más alto es {{ price }}",
     "reset": "Restablecer",
     "to": "A",
-    "use_fewer_filters_html": "Usa menos filtros o <a class=\"{{ class }}\" href=\"{{ link }}\">borra todo</a>",
+    "use_fewer_filters_html": "Usa menos filtros o <a class=\"{{ class }}\" href=\"{{ link }}\">borra todo<\/a>",
     "product_count": {
       "one": "{{ product_count }} de {{ count }} producto",
       "other": "{{ product_count }} de {{ count }} productos"
@@ -184,7 +184,7 @@
       },
       "loading_reviews": "Cargando opiniones",
       "include_taxes": "Taxes incluses.",
-      "shipping_policy_html": "Los <a href=\"{{ link }}\">gastos de envío</a> se calculan en la pantalla de pagos.",
+      "shipping_policy_html": "Los <a href=\"{{ link }}\">gastos de envío<\/a> se calculan en la pantalla de pagos.",
       "view_in_space": "Ver en tu espacio",
       "view_in_space_label": "Ver en tu espacio, carga el artículo en la ventana de realidad aumentada."
     },
@@ -203,9 +203,9 @@
     "update": "Actualizar",
     "note": "Instrucciones especiales para el vendedor",
     "policies": {
-      "taxes_and_shipping_policy_at_checkout_html": "Los impuestos y <a href=\"{{ link }}\">gastos de envío</a> se calculan en la pantalla de pago",
+      "taxes_and_shipping_policy_at_checkout_html": "Los impuestos y <a href=\"{{ link }}\">gastos de envío<\/a> se calculan en la pantalla de pago",
       "taxes_included_but_shipping_at_checkout": "Impuesto incluido y los gastos de envío se calculan en la pantalla de pago",
-      "taxes_included_and_shipping_policy_html": "Impuesto incluido. Los <a href=\"{{ link }}\">gastos de envío</a> se calculan en la pantalla de pago.",
+      "taxes_included_and_shipping_policy_html": "Impuesto incluido. Los <a href=\"{{ link }}\">gastos de envío<\/a> se calculan en la pantalla de pago.",
       "taxes_and_shipping_at_checkout": "Los impuestos y gastos de envío se calculan en la pantalla de pago"
     },
     "empty": "Tu Carrito está vacío.",
@@ -371,7 +371,7 @@
         "address_1_label": "Dirección 1",
         "address_2_label": "Dirección 2",
         "city_label": "Ciudad",
-        "country_label": "País / Región",
+        "country_label": "País \/ Región",
         "province_label": "Provincia",
         "zip_label": "Código postal",
         "phone_label": "Teléfono",
@@ -421,8 +421,8 @@
     "check_other_stores": "Verificar disponibilidad en otras tiendas",
     "pick_up_available": "Retiro disponible",
     "pick_up_currently_unavailable": "Retiro no disponible actualmente",
-    "pick_up_available_at_html": "Retiro disponible en <strong>{{ location_name }}</strong>",
-    "pick_up_unavailable_at_html": "Retiro no disponible actualmente en <strong>{{ location_name }}</strong>",
+    "pick_up_available_at_html": "Retiro disponible en <strong>{{ location_name }}<\/strong>",
+    "pick_up_unavailable_at_html": "Retiro no disponible actualmente en <strong>{{ location_name }}<\/strong>",
     "invalid_location_address": "Póngase en contacto con la tienda para confirmar la dirección",
     "refresh": "Actualizar"
   }

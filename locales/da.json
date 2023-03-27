@@ -37,7 +37,7 @@
       "signup_form_email_placeholder": "Din e-mail",
       "signup_form_submit": "Indsend",
       "signup_form_success": "Vi sender dig en e-mail lige før vi åbner!",
-      "admin_link_html": "Er du butiksejeren? <a href=\"/admin\">Log ind her</a>",
+      "admin_link_html": "Er du butiksejeren? <a href=\"\/admin\">Log ind her<\/a>",
       "password_link": "Kom ind med en adgangskode",
       "powered_by_shopify_html": "Denne butik vil blive drevet af {{ shopify }}"
     },
@@ -87,7 +87,7 @@
       "back": "Tilbage",
       "play_video": "Afspil video",
       "language_dropdown_label": "Sprog",
-      "country_dropdown_label": "Land/område",
+      "country_dropdown_label": "Land\/område",
       "quantity": "Antal",
       "price": {
         "regular": "Normal pris",
@@ -145,7 +145,7 @@
     "sort_button": "Sorter",
     "sort_by_label": "Sorter efter:",
     "to": "Til",
-    "use_fewer_filters_html": "Brug færre filtre eller <a class=\"{{ class }}\" href=\"{{ link }}\">clear all</a>",
+    "use_fewer_filters_html": "Brug færre filtre eller <a class=\"{{ class }}\" href=\"{{ link }}\">clear all<\/a>",
     "view_all_products": "Se alle produkter",
     "no_collections": "Vi beklager, der er i øjeblikket ingen kollektioner i denne butik."
   },
@@ -184,7 +184,7 @@
       },
       "loading_reviews": "Indlæser flere anmeldelser",
       "include_taxes": "Moms inkluderet.",
-      "shipping_policy_html": "<a href=\"{{ link }}\">Shipping</a> beregnes ved kassen.",
+      "shipping_policy_html": "<a href=\"{{ link }}\">Shipping<\/a> beregnes ved kassen.",
       "view_in_space": "Se i dit rum",
       "view_in_space_label": "Se i dit rum, indlæser element i augmented reality-vinduet"
     },
@@ -203,9 +203,9 @@
     "update": "Opdater indkøbsvogn",
     "note": "Særlige instruktioner til sælger",
     "policies": {
-      "taxes_and_shipping_policy_at_checkout_html": "Moms og <a href=\"{{ link }}\">shipping</a> beregnes ved kassen",
+      "taxes_and_shipping_policy_at_checkout_html": "Moms og <a href=\"{{ link }}\">shipping<\/a> beregnes ved kassen",
       "taxes_included_but_shipping_at_checkout": "Moms inkluderet og fragt beregnes ved kassen",
-      "taxes_included_and_shipping_policy_html": "Moms inkluderet. <a href=\"{{ link }}\">Shipping</a> beregnes ved kassen.",
+      "taxes_included_and_shipping_policy_html": "Moms inkluderet. <a href=\"{{ link }}\">Shipping<\/a> beregnes ved kassen.",
       "taxes_and_shipping_at_checkout": "Moms og forsendelse beregnes ved kassen"
     },
     "empty": "Din indkøbskurv er i øjeblikket tom.",
@@ -421,8 +421,8 @@
     "check_other_stores": "Tjek tilgængelighed i andre butikker",
     "pick_up_available": "Mulighed for afhentning",
     "pick_up_currently_unavailable": "Afhentning i øjeblikket ikke tilgængelig",
-    "pick_up_available_at_html": "Kan afhentes <strong>{{ location_name }}</strong>",
-    "pick_up_unavailable_at_html": "Afhentning i øjeblikket ikke tilgængelig <strong>{{ location_name }}</strong>",
+    "pick_up_available_at_html": "Kan afhentes <strong>{{ location_name }}<\/strong>",
+    "pick_up_unavailable_at_html": "Afhentning i øjeblikket ikke tilgængelig <strong>{{ location_name }}<\/strong>",
     "invalid_location_address": "Kontakt butikken for at bekræfte adressen",
     "refresh": "Opdater"
   }

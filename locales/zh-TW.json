@@ -37,7 +37,7 @@
       "signup_form_email_placeholder": "您的電子信箱",
       "signup_form_submit": "提交",
       "signup_form_success": "我們會在營業前傳送電子郵件給您！",
-      "admin_link_html": "您是商店的所有人嗎？<a href=\"/admin\">Log in here</a>",
+      "admin_link_html": "您是商店的所有人嗎？<a href=\"\/admin\">Log in here<\/a>",
       "password_link": "使用密碼進入",
       "powered_by_shopify_html": "這家商店將由 {{ shopify }} 提供支援"
     },
@@ -87,7 +87,7 @@
       "back": "返回",
       "play_video": "播放影片",
       "language_dropdown_label": "語言",
-      "country_dropdown_label": "國家/地區",
+      "country_dropdown_label": "國家\/地區",
       "quantity": "數量",
       "price": {
         "regular": "正常價格",
@@ -145,7 +145,7 @@
     "sort_button": "排序",
     "sort_by_label": "排序依據：",
     "to": "至",
-    "use_fewer_filters_html": "使用較少篩選條件或 <a class=\"{{ class }}\" href=\"{{ link }}\">clear all</a>",
+    "use_fewer_filters_html": "使用較少篩選條件或 <a class=\"{{ class }}\" href=\"{{ link }}\">clear all<\/a>",
     "view_all_products": "檢視所有產品",
     "no_collections": "很抱歉，本商店目前沒有系列商品。"
   },
@@ -184,7 +184,7 @@
       },
       "loading_reviews": "載入更多評論",
       "include_taxes": "已包含稅金。",
-      "shipping_policy_html": "<a href=\"{{ link }}\">Shipping</a> 於結帳時計算。",
+      "shipping_policy_html": "<a href=\"{{ link }}\">Shipping<\/a> 於結帳時計算。",
       "view_in_space": "在您的空間中檢視",
       "view_in_space_label": "在您的空間中檢視，在擴增實境視窗中載入商品"
     },
@@ -203,9 +203,9 @@
     "update": "更新",
     "note": "賣家特別說明",
     "policies": {
-      "taxes_and_shipping_policy_at_checkout_html": "結帳時計算稅金和<a href=\"{{ link }}\">運費</a>",
+      "taxes_and_shipping_policy_at_checkout_html": "結帳時計算稅金和<a href=\"{{ link }}\">運費<\/a>",
       "taxes_included_but_shipping_at_checkout": "內含稅金，結帳時計算運費",
-      "taxes_included_and_shipping_policy_html": "內含稅金。結帳時計算<a href=\"{{ link }}\">運費</a>。",
+      "taxes_included_and_shipping_policy_html": "內含稅金。結帳時計算<a href=\"{{ link }}\">運費<\/a>。",
       "taxes_and_shipping_at_checkout": "結帳時計算稅金和運費"
     },
     "empty": "您的購物車目前是空的。",
@@ -421,8 +421,8 @@
     "check_other_stores": "查詢其它商店的供貨狀況",
     "pick_up_available": "提供取貨服務",
     "pick_up_currently_unavailable": "目前沒有提供取貨服務",
-    "pick_up_available_at_html": "可在 <strong>{{ location_name }}</strong> 取貨",
-    "pick_up_unavailable_at_html": "目前無法在 <strong>{{ location_name }}</strong> 取貨",
+    "pick_up_available_at_html": "可在 <strong>{{ location_name }}<\/strong> 取貨",
+    "pick_up_unavailable_at_html": "目前無法在 <strong>{{ location_name }}<\/strong> 取貨",
     "invalid_location_address": "請聯絡商店以確認地址",
     "refresh": "重新整理"
   }

@@ -55,7 +55,7 @@
         },
         "enhance_featured_products": {
           "label": "Fremhev utvalgte produkter",
-          "info": "[Få vite mer](https://shopify-support.krownthemes.com/article/471-general-settings#featured-products)"
+          "info": "[Få vite mer](https:\/\/shopify-support.krownthemes.com\/article\/471-general-settings#featured-products)"
         },
         "show_discount": {
           "label": "Vis rabatt som …",
@@ -85,7 +85,7 @@
         },
         "header__1": {
           "content": "Produktvurdering",
-          "info": "Legg til en produktvurderingsapp for å vise vurderinger. [Lære mer](https://help.shopify.com/en/manual/products/product-reviews/installation)"
+          "info": "Legg til en produktvurderingsapp for å vise vurderinger. [Lære mer](https:\/\/help.shopify.com\/en\/manual\/products\/product-reviews\/installation)"
         },
         "header__2": {
           "content": "Produktanmeldelser"
@@ -224,7 +224,7 @@
         "embellishments": "Dekor"
       },
       "text": {
-        "icons_info": "For å visualisere og laste ned flere ikoner, besøk [this link](https://resources.krownthemes.com/icons/)."
+        "icons_info": "For å visualisere og laste ned flere ikoner, besøk [this link](https:\/\/resources.krownthemes.com\/icons\/)."
       },
       "borders": {
         "top_border": "Toppkantlinje",
@@ -346,18 +346,18 @@
       "cart_upsell": {
         "name": "Individuell produktanbefaling",
         "product": "Produkt",
-        "info": "Dynamiske anbefalinger er basert på varene i handlekurven din. De endres og forbedres over tid. [Lær mer](https://help.shopify.com/en/themes/development/recommended-products)"
+        "info": "Dynamiske anbefalinger er basert på varene i handlekurven din. De endres og forbedres over tid. [Lær mer](https:\/\/help.shopify.com\/en\/themes\/development\/recommended-products)"
       },
       "gift_wrapping": {
         "name": "Gaveinnpakning",
-        "info": "Gaveinnpakning må settes opp som et produkt. [Lær mer](https://shopify-support.krownthemes.com/article/696-cart-features#gift-wrap)",
+        "info": "Gaveinnpakning må settes opp som et produkt. [Lær mer](https:\/\/shopify-support.krownthemes.com\/article\/696-cart-features#gift-wrap)",
         "settings": {
           "label": "Tekst",
           "button": "Merkelapp for knapp"
         }
       },
       "custom_code": {
-        "name": "Tilpasset HTML / Liquid"
+        "name": "Tilpasset HTML \/ Liquid"
       },
       "rating": {
         "name": "Appvurderinger",
@@ -427,7 +427,7 @@
             "amount_saved": "Beløp spart"
           },
           "regular_badges": {
-            "info": "Lær mer om produktmerkelapper [her](https://shopify-support.krownthemes.com/article/377-collection-pages#product-badges)."
+            "info": "Lær mer om produktmerkelapper [her](https:\/\/shopify-support.krownthemes.com\/article\/377-collection-pages#product-badges)."
           },
           "sold_out": {
             "name": "Utsolgt merkelapp",
@@ -436,8 +436,8 @@
           },
           "custom_badges": {
             "name": "Egendefinerte produktmerker",
-            "info": "Dette temaet bruker egentilpassede produktmerkelapper som du kan definere her. [Lær mer](https://shopify-support.krownthemes.com/article/564-product-pages#product-badges)",
-            "split_info": "Dette temaet bruker egentilpassede produktmerkelapper som du kan definere her. [Lær mer](https://shopify-support.krownthemes.com/article/377-collection-pages#product-badges)",
+            "info": "Dette temaet bruker egentilpassede produktmerkelapper som du kan definere her. [Lær mer](https:\/\/shopify-support.krownthemes.com\/article\/564-product-pages#product-badges)",
+            "split_info": "Dette temaet bruker egentilpassede produktmerkelapper som du kan definere her. [Lær mer](https:\/\/shopify-support.krownthemes.com\/article\/377-collection-pages#product-badges)",
             "name__1": "Egendefinert merke 1",
             "name__2": "Egendefinert merke 2",
             "name__3": "Egendefinert merke 3",
@@ -512,7 +512,7 @@
             "name": "Frakt",
             "show": {
               "label": "Vis minimumsbeløp for gratis frakt",
-              "info": "For å konfigurere fraktpriser går du til [fraktinnstillinger](/admin/innstillinger/frakt)."
+              "info": "For å konfigurere fraktpriser går du til [fraktinnstillinger](\/admin\/innstillinger\/frakt)."
             },
             "amount": {
               "label": "Minimumsbeløp for gratis frakt",
@@ -543,7 +543,7 @@
           },
           "local-pickup": {
             "name": "Lokal tilgjengelighet",
-            "info": "Dette temaet viser lokal tilgjengelighet for produkter. [Les mer](https://shopify-support.krownthemes.com/article/641-collection-page-product-grids#dynamic-text)"
+            "info": "Dette temaet viser lokal tilgjengelighet for produkter. [Les mer](https:\/\/shopify-support.krownthemes.com\/article\/641-collection-page-product-grids#dynamic-text)"
           },
           "badges": {
             "name": "Standard produktmerker",
@@ -559,7 +559,7 @@
             },
             "custom_badges": {
               "name": "Egendefinerte produktmerker",
-              "info": "Dette temaet bruker egendefinerte produktmerker som du kan definere her. [Les mer](https://shopify-support.krownthemes.com/article/639-theme-settings#product-badges)",
+              "info": "Dette temaet bruker egendefinerte produktmerker som du kan definere her. [Les mer](https:\/\/shopify-support.krownthemes.com\/article\/639-theme-settings#product-badges)",
               "name__1": "Egendefinert merke 1",
               "name__2": "Egendefinert merke 2",
               "name__3": "Egendefinert merke 3",
@@ -612,7 +612,7 @@
               "info": "256 x 256 px"
             },
             "select_icon": {
-              "info": "For å se og laste ned flere ikoner kan du besøke [denne koblingen](https://resources.krownthemes.com/icons/)"
+              "info": "For å se og laste ned flere ikoner kan du besøke [denne koblingen](https:\/\/resources.krownthemes.com\/icons\/)"
             },
             "icon_color": {
               "label": "Ikon",
@@ -734,7 +734,7 @@
               "settings": {
                 "name": {
                   "label": "Navn",
-                  "info": "Butikknavnet må samsvare med navnet til butikken definert i [lokasjonsinnstillingene](/admin/instillinger/lokasjoner)"
+                  "info": "Butikknavnet må samsvare med navnet til butikken definert i [lokasjonsinnstillingene](\/admin\/instillinger\/lokasjoner)"
                 },
                 "pickup_price": {
                   "label": "Hentepris"
@@ -758,7 +758,7 @@
                 },
                 "map": {
                   "name": "Kartnål",
-                  "info": "Hvis kartet er aktivert, må du definere en egendefinert nål for denne adressen. [Finn ut hvordan du finner koordinatene til adressen din](https://support.google.com/maps/answer/18539?hl=en)"
+                  "info": "Hvis kartet er aktivert, må du definere en egendefinert nål for denne adressen. [Finn ut hvordan du finner koordinatene til adressen din](https:\/\/support.google.com\/maps\/answer\/18539?hl=en)"
                 },
                 "map_latitude": {
                   "label": "Breddegrad",
@@ -819,15 +819,15 @@
             },
             "store-selector": {
               "name": "Butikkvelger",
-              "content": "Butikkvelgeren kan konfigureres i Butikkvelger-delen. [Les mer](https://shopify-support.krownthemes.com/article/640-header-the-store-selector#store-selector)",
-              "info": "Med dette temaet kan du koble ekte butikklokasjoner til en interaktiv butikkvelger. [Les mer](https://shopify-support.krownthemes.com/article/640-header-the-store-selector#store-selector)"
+              "content": "Butikkvelgeren kan konfigureres i Butikkvelger-delen. [Les mer](https:\/\/shopify-support.krownthemes.com\/article\/640-header-the-store-selector#store-selector)",
+              "info": "Med dette temaet kan du koble ekte butikklokasjoner til en interaktiv butikkvelger. [Les mer](https:\/\/shopify-support.krownthemes.com\/article\/640-header-the-store-selector#store-selector)"
             },
             "mega-menu": {
               "name": "Megameny",
               "settings": {
                 "menu_handle": {
                   "label": "Menyhåndtak",
-                  "info": "Dette teamet bruker megamenyer. [Les mer](https://shopify-support.krownthemes.com/article/640-header-the-store-selector#mega-menus)"
+                  "info": "Dette teamet bruker megamenyer. [Les mer](https:\/\/shopify-support.krownthemes.com\/article\/640-header-the-store-selector#mega-menus)"
                 }
               }
             }
@@ -1020,8 +1020,8 @@
             },
             "icons": {
               "name": "Ikonliste",
-              "info": "For å se og laste ned ikoner som er inkludert i teamet, kan du besøke [denne koblingen](https://resources.krownthemes.com/icons/).",
-              "help": "Med dette temaet kan du legge til egendefinerte produktikoner gjennom dynamisk innhold. [Les mer](https://shopify-support.krownthemes.com/article/639-theme-settings#dynamic-icons)",
+              "info": "For å se og laste ned ikoner som er inkludert i teamet, kan du besøke [denne koblingen](https:\/\/resources.krownthemes.com\/icons\/).",
+              "help": "Med dette temaet kan du legge til egendefinerte produktikoner gjennom dynamisk innhold. [Les mer](https:\/\/shopify-support.krownthemes.com\/article\/639-theme-settings#dynamic-icons)",
               "headers": {
                 "icon_1": "Ikon 1",
                 "icon_2": "Ikon 2",
@@ -1053,7 +1053,7 @@
         },
         "main-article-comments": {
           "name": "Artikkelkommentarer",
-          "info": "For å aktivere kommentarer går du til [blogginnstillinger].(/admin/blogger)"
+          "info": "For å aktivere kommentarer går du til [blogginnstillinger].(\/admin\/blogger)"
         },
         "main-article-navigation": {
           "name": "Artikkelnavigasjon",
@@ -1079,7 +1079,7 @@
           "blocks": {
             "payment": {
               "name": "Betalingsikoner",
-              "info": "Ikonene som vises fastslås av butikkens [betalingsinnstillinger](/admin/innstillinger/betalinger) og kundens region og valuta."
+              "info": "Ikonene som vises fastslås av butikkens [betalingsinnstillinger](\/admin\/innstillinger\/betalinger) og kundens region og valuta."
             }
           }
         },
@@ -1156,7 +1156,7 @@
             "vendor": "Leverandør",
             "text": {
               "name": "Dynamisk tekst",
-              "info": "Bruk en dynamisk kilde til å fremheve en unik egenskap ved å opprette et produktmetafelt. [Les mer](https://shopify-support.krownthemes.com/article/641-collection-page-product-grids#dynamic-text)",
+              "info": "Bruk en dynamisk kilde til å fremheve en unik egenskap ved å opprette et produktmetafelt. [Les mer](https:\/\/shopify-support.krownthemes.com\/article\/641-collection-page-product-grids#dynamic-text)",
               "settings": {
                 "text": {
                   "label": "Etikettmetafelt"
@@ -1178,7 +1178,7 @@
               }
             },
             "icons": {
-              "info": "Bruk dynamiske kilder for å fremheve unike egenskaper ved å opprette produktmetafelt for ikonlisten. [Les mer](https://shopify-support.krownthemes.com/article/639-theme-settings#dynamic-icons)",
+              "info": "Bruk dynamiske kilder for å fremheve unike egenskaper ved å opprette produktmetafelt for ikonlisten. [Les mer](https:\/\/shopify-support.krownthemes.com\/article\/639-theme-settings#dynamic-icons)",
               "settings": {
                 "icon": "Ikonmetafelt",
                 "label": "Etikettmetafelt"
@@ -1201,7 +1201,7 @@
       "name": "Komplimentære produkter",
       "settings": {
         "paragraph": {
-          "content": "Legg til Search & Discovery-appen for å velge komplimentære produkter. [Finn ut mer](https://help.shopify.com/manual/online-store/search-and-discovery/product-recommendations)"
+          "content": "Legg til Search & Discovery-appen for å velge komplimentære produkter. [Finn ut mer](https:\/\/help.shopify.com\/manual\/online-store\/search-and-discovery\/product-recommendations)"
         }
       }
     },
@@ -1380,7 +1380,7 @@
             },
             "color_swatches": {
               "label": "Vis fargekart (kun for blokkstil)",
-              "info": "Dette temaet kan vise egendefinerte bilder for fargekart. [Learn more](https://shopify-support.krownthemes.com/article/554-using-color-swatches)"
+              "info": "Dette temaet kan vise egendefinerte bilder for fargekart. [Learn more](https:\/\/shopify-support.krownthemes.com\/article\/554-using-color-swatches)"
             }
           }
         },
@@ -1523,7 +1523,7 @@
         },
         "icons": {
           "label": "Ikoner",
-          "info": "For å visualisere alle ikoner som er med i temaet: Vennligst besøk [denne lenken](https://krownthemes.com/krown-icons/)"
+          "info": "For å visualisere alle ikoner som er med i temaet: Vennligst besøk [denne lenken](https:\/\/krownthemes.com\/krown-icons\/)"
         }
       },
       "blocks": {
@@ -1551,17 +1551,17 @@
         },
         "language_selector": {
           "content": "Språkvelger",
-          "info": "For å legge til et språk går du til [språkinnstillingene dine.](/admin/settings/languages)"
+          "info": "For å legge til et språk går du til [språkinnstillingene dine.](\/admin\/settings\/languages)"
         },
         "language_selector_show": {
           "label": "Vis språkvelger"
         },
         "country_selector": {
-          "content": "Land-/regionvelger",
-          "info": "Gå til [betalingsinnstillingene](/admin/settings/payments) for å legge til et land/region."
+          "content": "Land-\/regionvelger",
+          "info": "Gå til [betalingsinnstillingene](\/admin\/settings\/payments) for å legge til et land\/region."
         },
         "country_selector_show": {
-          "label": "Vis land-/regionvelger"
+          "label": "Vis land-\/regionvelger"
         }
       },
       "blocks": {
@@ -2252,7 +2252,7 @@
           "name": "Knapper for deling på sosiale medier"
         },
         "blog_navigation": {
-          "name": "Vis lenker til innlegg før/etter"
+          "name": "Vis lenker til innlegg før\/etter"
         }
       }
     },
@@ -2385,7 +2385,7 @@
         },
         "header__1": {
           "content": "Produktanbefalinger",
-          "info": "Dynamiske anbefalinger bruker rekkefølge og produktinformasjon til å skape endring og forbedringer over tid. [Finn ut mer](https://help.shopify.com/en/themes/development/recommended-products)"
+          "info": "Dynamiske anbefalinger bruker rekkefølge og produktinformasjon til å skape endring og forbedringer over tid. [Finn ut mer](https:\/\/help.shopify.com\/en\/themes\/development\/recommended-products)"
         }
       }
     },
@@ -2492,7 +2492,7 @@
         },
         "enable_filtering": {
           "label": "Aktiver filtrering",
-          "info": "[Tilpass filtre](/admin/menus)"
+          "info": "[Tilpass filtre](\/admin\/menus)"
         },
         "enable_sorting": {
           "label": "Aktiver sortering"
@@ -2506,7 +2506,7 @@
       "name": "Banner for kolleksjon",
       "settings": {
         "paragraph": {
-          "content": "For å endre kolleksjonsbeskrivelser eller kolleksjonsbilder, [edit your collections.](/admin/collections)"
+          "content": "For å endre kolleksjonsbeskrivelser eller kolleksjonsbilder, [edit your collections.](\/admin\/collections)"
         },
         "show_collection_description": {
           "label": "Vis kolleksjonsbeskrivelse"
@@ -2550,7 +2550,7 @@
           "name": "Avgiftsinformasjon"
         },
         "sku_barcode": {
-          "name": "LAGERENHET/STREKKODE"
+          "name": "LAGERENHET\/STREKKODE"
         },
         "quantity_selector": {
           "name": "Velger for antall"
@@ -2566,7 +2566,7 @@
             },
             "low_inventory_notification": {
               "label": "Varsel om lagerbeholdning",
-              "info": "Varianter må ha sporing av lagerstatus aktivert for at denne funksjonen skal virke. [Finn ut mer](https://help.shopify.com/en/manual/products/inventory/track_inventory)",
+              "info": "Varianter må ha sporing av lagerstatus aktivert for at denne funksjonen skal virke. [Finn ut mer](https:\/\/help.shopify.com\/en\/manual\/products\/inventory\/track_inventory)",
               "options__1": {
                 "label": "Ikke vis informasjon om lagerbeholdning"
               },
@@ -2584,7 +2584,7 @@
           "settings": {
             "show_dynamic_checkout": {
               "label": "Vis dynamiske kasseområde-knapper",
-              "info": "Ved bruk av betalingsmetodene som er tilgjengelige i butikken din ser kundene alternativet de foretrekker, som PayPal eller Apple Pay. [Finn ut mer](https://help.shopify.com/manual/using-themes/change-the-layout/dynamic-checkout)"
+              "info": "Ved bruk av betalingsmetodene som er tilgjengelige i butikken din ser kundene alternativet de foretrekker, som PayPal eller Apple Pay. [Finn ut mer](https:\/\/help.shopify.com\/manual\/using-themes\/change-the-layout\/dynamic-checkout)"
             },
             "show_quantity_selector": {
               "label": "Vis velger for antall"
@@ -2619,10 +2619,10 @@
           "name": "Del",
           "settings": {
             "featured_image_info": {
-              "content": "Dersom du legger til en lenke i innlegg på sosiale medier, vil det utvalgte bildet på siden bli vist som forhåndsvisningsbilde. [Finn ut mer](https://help.shopify.com/en/manual/online-store/images/showing-social-media-thumbnail-images)."
+              "content": "Dersom du legger til en lenke i innlegg på sosiale medier, vil det utvalgte bildet på siden bli vist som forhåndsvisningsbilde. [Finn ut mer](https:\/\/help.shopify.com\/en\/manual\/online-store\/images\/showing-social-media-thumbnail-images)."
             },
             "title_info": {
-              "content": "Det følger med en butikktittel og beskrivelse til forhåndsvisningsbildet. [Finn ut mer](https://help.shopify.com/en/manual/promoting-marketing/seo/adding-keywords#set-a-title-and-description-for-your-online-store)."
+              "content": "Det følger med en butikktittel og beskrivelse til forhåndsvisningsbildet. [Finn ut mer](https:\/\/help.shopify.com\/en\/manual\/promoting-marketing\/seo\/adding-keywords#set-a-title-and-description-for-your-online-store)."
             }
           }
         },
@@ -2648,7 +2648,7 @@
       "settings": {
         "header": {
           "content": "medier",
-          "info": "Lær mer om [medietyper](https://help.shopify.com/manual/products/product-media)"
+          "info": "Lær mer om [medietyper](https:\/\/help.shopify.com\/manual\/products\/product-media)"
         },
         "enable_sticky_info": {
           "label": "Aktiver fastvisning av produktinformasjon på store skjermer"

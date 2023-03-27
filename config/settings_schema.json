@@ -1,12 +1,12 @@
 [
   {
-  "name": "theme_info",
-  "theme_name": "Kingdom",
-  "theme_author": "KrownThemes",
-  "theme_version": "5.0.0",
-  "theme_documentation_url": "https://shopify-support.krownthemes.com/",
-  "theme_support_url": "https://krownthemes.com/shopify-support-contact/"
-},
+    "name": "theme_info",
+    "theme_name": "Kingdom",
+    "theme_author": "KrownThemes",
+    "theme_version": "5.0.0",
+    "theme_documentation_url": "https:\/\/shopify-support.krownthemes.com\/",
+    "theme_support_url": "https:\/\/krownthemes.com\/shopify-support-contact\/"
+  },
   {
     "name": "t:settings_schema.colors.name",
     "settings": [
@@ -125,49 +125,49 @@
       }
     ]
   },
-	{
-		"name": "t:sections.local-extra-words.settings_schema.layout.name",
-		"settings": [
+  {
+    "name": "t:sections.local-extra-words.settings_schema.layout.name",
+    "settings": [
       {
         "type": "header",
         "content": "t:settings_schema.layout.sections.name"
       },
-			{
-				"type": "range",
-				"id": "layout_vertical_space",
-				"label": "t:settings_schema.layout.sections.setting_1",
-				"min": 50,
-				"max": 200,
-				"step": 10,
-				"unit": "px",
-				"default": 100
-			},
-			{
-				"type": "range",
-				"id": "layout_horizontal_space",
-				"label": "t:settings_schema.layout.sections.setting_2",
-				"min": 25,
-				"max": 180,
-				"step": 5,
-				"unit": "px",
-				"default": 90
-			},
+      {
+        "type": "range",
+        "id": "layout_vertical_space",
+        "label": "t:settings_schema.layout.sections.setting_1",
+        "min": 50,
+        "max": 200,
+        "step": 10,
+        "unit": "px",
+        "default": 100
+      },
+      {
+        "type": "range",
+        "id": "layout_horizontal_space",
+        "label": "t:settings_schema.layout.sections.setting_2",
+        "min": 25,
+        "max": 180,
+        "step": 5,
+        "unit": "px",
+        "default": 90
+      },
       {
         "type": "header",
         "content": "t:settings_schema.layout.grid.name"
       },
-			{
-				"type": "range",
-				"id": "layout_grid_space",
-				"label": "t:settings_schema.layout.grid.setting_1",
-				"min": 20,
-				"max": 80,
-				"step": 2,
-				"unit": "px",
-				"default": 40
-			}
-		]
-	},
+      {
+        "type": "range",
+        "id": "layout_grid_space",
+        "label": "t:settings_schema.layout.grid.setting_1",
+        "min": 20,
+        "max": 80,
+        "step": 2,
+        "unit": "px",
+        "default": 40
+      }
+    ]
+  },
   {
     "name": "t:sections.refactor_words.product-card.name",
     "settings": [
@@ -254,10 +254,10 @@
         "label": "t:settings_schema.product-grid.settings.grid_color_text.label",
         "default": "#ffffff"
       },
-			{
-				"type": "header",
-				"content": "t:sections.refactor_words.product-card.badges.name"
-			},
+      {
+        "type": "header",
+        "content": "t:sections.refactor_words.product-card.badges.name"
+      },
       {
         "type": "select",
         "id": "grid_discount",
@@ -344,37 +344,37 @@
         "id": "cart_additional_buttons",
         "label": "t:settings_schema.cart-page.settings.cart_buttons.label"
       },
-			{
-				"type": "header",
-				"content": "t:sections.local-extra-words.settings_schema.cart.settings.media.header"
-			},
-			{
-				"type": "paragraph",
+      {
+        "type": "header",
+        "content": "t:sections.local-extra-words.settings_schema.cart.settings.media.header"
+      },
+      {
+        "type": "paragraph",
         "content": "t:sections.local-extra-words.settings_schema.cart.settings.media.info_cart"
       },
-			{
-				"type": "select",
-				"id": "cart_image_ratio",
-				"label": "t:sections.local-extra-words.settings_schema.cart.settings.media.label",
-				"options": [
-					{
-						"value": "1",
-						"label": "t:sections.gallery.settings.aspect_ratio.options__2.label",
-						"group": "t:sections.gallery.settings.aspect_ratio.options__1.group"
-					},
-					{
-						"value": "0.83333",
-						"label": "t:sections.gallery.settings.aspect_ratio.options__3.label",
-						"group": "t:sections.gallery.settings.aspect_ratio.options__1.group"
-					},
-					{
-						"value": "0.666667",
-						"label": "t:sections.gallery.settings.aspect_ratio.options__4.label",
-						"group": "t:sections.gallery.settings.aspect_ratio.options__1.group"
-					}
-				],
-				"default": "0.83333"
-			}
+      {
+        "type": "select",
+        "id": "cart_image_ratio",
+        "label": "t:sections.local-extra-words.settings_schema.cart.settings.media.label",
+        "options": [
+          {
+            "value": "1",
+            "label": "t:sections.gallery.settings.aspect_ratio.options__2.label",
+            "group": "t:sections.gallery.settings.aspect_ratio.options__1.group"
+          },
+          {
+            "value": "0.83333",
+            "label": "t:sections.gallery.settings.aspect_ratio.options__3.label",
+            "group": "t:sections.gallery.settings.aspect_ratio.options__1.group"
+          },
+          {
+            "value": "0.666667",
+            "label": "t:sections.gallery.settings.aspect_ratio.options__4.label",
+            "group": "t:sections.gallery.settings.aspect_ratio.options__1.group"
+          }
+        ],
+        "default": "0.83333"
+      }
     ]
   },
   {
@@ -394,12 +394,12 @@
         "default": true,
         "info": "t:settings_schema.embellishments.settings.show_preloader.info"
       },
-			{
-				"type": "checkbox",
-				"id": "show_gotop",
-				"label": "t:settings_schema.embellishments.settings.show_go_top.label",
-				"default": false
-			}
+      {
+        "type": "checkbox",
+        "id": "show_gotop",
+        "label": "t:settings_schema.embellishments.settings.show_go_top.label",
+        "default": false
+      }
     ]
   },
   {
@@ -412,83 +412,83 @@
         "default": false,
         "info": "t:sections.refactor_words.seo.microdata.info"
       },
-			{
+      {
         "type": "checkbox",
         "id": "within_filter_enabled",
         "label": "t:sections.refactor_words.seo_late.breadcrumbs.label",
         "default": true,
         "info": "t:sections.refactor_words.seo_late.breadcrumbs.info"
-			}
+      }
     ]
   },
   {
     "name": "t:settings_schema.social.name",
-    "settings": [ 
+    "settings": [
       {
         "type": "text",
         "id": "social_facebook",
         "label": "Facebook",
-        "info": "https://www.facebook.com/shopify"
+        "info": "https:\/\/www.facebook.com\/shopify"
       },
       {
         "type": "text",
         "id": "social_instagram",
         "label": "Instagram",
-        "info": "https://instagram.com/shopify"
+        "info": "https:\/\/instagram.com\/shopify"
       },
       {
         "type": "text",
         "id": "social_twitter",
         "label": "Twitter",
-        "info": "https://twitter.com/shopify"
+        "info": "https:\/\/twitter.com\/shopify"
       },
       {
         "type": "text",
         "id": "social_youtube",
         "label": "YouTube",
-        "info": "https://www.youtube.com/user/shopify"
+        "info": "https:\/\/www.youtube.com\/user\/shopify"
       },
       {
         "type": "text",
         "id": "social_vimeo",
         "label": "Vimeo",
-        "info": "https://vimeo.com/shopify"
+        "info": "https:\/\/vimeo.com\/shopify"
       },
       {
         "type": "text",
         "id": "social_pinterest",
         "label": "Pinterest",
-        "info": "https://www.pinterest.com/shopify"
+        "info": "https:\/\/www.pinterest.com\/shopify"
       },
       {
         "type": "text",
         "id": "social_tiktok",
         "label": "TikTok",
-        "info": "https://www.tiktok.com/@shopify"
+        "info": "https:\/\/www.tiktok.com\/@shopify"
       },
       {
         "type": "text",
         "id": "social_tumblr",
         "label": "Tumblr",
-        "info": "http://shopify.tumblr.com"
+        "info": "http:\/\/shopify.tumblr.com"
       },
       {
         "type": "text",
         "id": "social_linkedin",
         "label": "LinkedIn",
-        "info": "https://www.linkedin.com/company/shopify"
+        "info": "https:\/\/www.linkedin.com\/company\/shopify"
       },
       {
         "type": "text",
         "id": "social_reddit",
         "label": "Reddit",
-        "info": "https://www.reddit.com/user/shopify/"
+        "info": "https:\/\/www.reddit.com\/user\/shopify\/"
       },
       {
         "type": "text",
         "id": "social_flickr",
         "label": "Flickr",
-        "info": "https://www.flickr.com/photos/shopify/"
+        "info": "https:\/\/www.flickr.com\/photos\/shopify\/"
       },
       {
         "type": "text",

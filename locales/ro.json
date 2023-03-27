@@ -37,7 +37,7 @@
       "signup_form_email_placeholder": "Adresa ta de e-mail",
       "signup_form_submit": "Trimitere",
       "signup_form_success": "Îți vom trimite un mesaj e-mail chiar înainte să deschidem!",
-      "admin_link_html": "Ești proprietarul magazinului? <a href=\"/admin\">Log in here</a>",
+      "admin_link_html": "Ești proprietarul magazinului? <a href=\"\/admin\">Log in here<\/a>",
       "password_link": "Intră folosind parola",
       "powered_by_shopify_html": "Acest magazin va folosi platforma {{ shopify }}"
     },
@@ -87,7 +87,7 @@
       "back": "Înapoi",
       "play_video": "Redare clip video",
       "language_dropdown_label": "Limbă",
-      "country_dropdown_label": "Țară/Regiune",
+      "country_dropdown_label": "Țară\/Regiune",
       "quantity": "Cantitate",
       "price": {
         "regular": "Preț obișnuit",
@@ -145,7 +145,7 @@
     "sort_button": "Sortare",
     "sort_by_label": "Sortare după:",
     "to": "Către",
-    "use_fewer_filters_html": "Folosește mai puține filtre sau <a class=\"{{ class }}\" href=\"{{ link }}\">clear all</a>",
+    "use_fewer_filters_html": "Folosește mai puține filtre sau <a class=\"{{ class }}\" href=\"{{ link }}\">clear all<\/a>",
     "view_all_products": "Vizualizați toate produsele",
     "no_collections": "Ne pare rău, dar magazinul nu are nicio colecție în acest moment."
   },
@@ -184,7 +184,7 @@
       },
       "loading_reviews": "Se încarcă mai multe recenzii",
       "include_taxes": "Incluzând taxele.",
-      "shipping_policy_html": "<a href=\"{{ link }}\">Shipping</a> se calculează la finalizare.",
+      "shipping_policy_html": "<a href=\"{{ link }}\">Shipping<\/a> se calculează la finalizare.",
       "view_in_space": "Vizualizează în spațiul tău",
       "view_in_space_label": "„Vizualizează în spațiul tău” încarcă elementul în fereastra de realitate augmentată"
     },
@@ -203,9 +203,9 @@
     "update": "Actualizare coș",
     "note": "Instrucțiuni speciale pentru vânzător",
     "policies": {
-      "taxes_and_shipping_policy_at_checkout_html": "Taxele și <a href=\"{{ link }}\">transportul</a> sunt calculate la finalizarea comenzii",
+      "taxes_and_shipping_policy_at_checkout_html": "Taxele și <a href=\"{{ link }}\">transportul<\/a> sunt calculate la finalizarea comenzii",
       "taxes_included_but_shipping_at_checkout": "Taxele sunt incluse și transportul este calculat la finalizarea comenzii",
-      "taxes_included_and_shipping_policy_html": "Taxele sunt incluse. <a href=\"{{ link }}\">Transportul</a> este calculat la finalizarea comenzii.",
+      "taxes_included_and_shipping_policy_html": "Taxele sunt incluse. <a href=\"{{ link }}\">Transportul<\/a> este calculat la finalizarea comenzii.",
       "taxes_and_shipping_at_checkout": "Taxele și transportul sunt calculate la finalizarea comenzii"
     },
     "empty": "Coșul tău este gol în acest moment.",
@@ -373,7 +373,7 @@
         "city_label": "Oraș",
         "country_label": "Țară",
         "province_label": "Provincie",
-        "zip_label": "Cod poștal/zip",
+        "zip_label": "Cod poștal\/zip",
         "phone_label": "Număr de telefon",
         "add_button": "Adăugare adresă",
         "update_button": "Actualizare adresă",
@@ -421,8 +421,8 @@
     "check_other_stores": "Verifică disponibilitatea în alte magazine",
     "pick_up_available": "Ridicare disponibilă",
     "pick_up_currently_unavailable": "Ridicare indisponibilă în acest moment",
-    "pick_up_available_at_html": "Ridicare disponibilă la <strong>{{ location_name }}</strong>",
-    "pick_up_unavailable_at_html": "Ridicare indisponibilă în acest moment la <strong>{{ location_name }}</strong>",
+    "pick_up_available_at_html": "Ridicare disponibilă la <strong>{{ location_name }}<\/strong>",
+    "pick_up_unavailable_at_html": "Ridicare indisponibilă în acest moment la <strong>{{ location_name }}<\/strong>",
     "invalid_location_address": "Contactează magazinul pentru a confirma adresa",
     "refresh": "Împrospătare"
   }

@@ -37,7 +37,7 @@
       "signup_form_email_placeholder": "Your email",
       "signup_form_submit": "Submit",
       "signup_form_success": "We will send you an email right before we open!",
-      "admin_link_html": "Are you the store owner? <a href=\"/admin\">Log in here</a>",
+      "admin_link_html": "Are you the store owner? <a href=\"\/admin\">Log in here<\/a>",
       "password_link": "Enter using password",
       "powered_by_shopify_html": "This shop will be powered by {{ shopify }}"
     },
@@ -87,7 +87,7 @@
       "back": "Back",
       "play_video": "Play video",
       "language_dropdown_label": "Language",
-      "country_dropdown_label": "Country/region",
+      "country_dropdown_label": "Country\/region",
       "quantity": "Quantity",
       "price": {
         "regular": "Regular price",
@@ -145,7 +145,7 @@
     "sort_button": "Sort",
     "sort_by_label": "Sort by:",
     "to": "To",
-    "use_fewer_filters_html": "Use fewer filters or <a class=\"{{ class }}\" href=\"{{ link }}\">clear all</a>",
+    "use_fewer_filters_html": "Use fewer filters or <a class=\"{{ class }}\" href=\"{{ link }}\">clear all<\/a>",
     "view_all_products": "View all products",
     "no_collections": "We are sorry, there are currently no collections on this store."
   },
@@ -184,7 +184,7 @@
       },
       "loading_reviews": "Loading more reviews",
       "include_taxes": "Tax included.",
-      "shipping_policy_html": "<a href=\"{{ link }}\">Shipping</a> calculated at checkout.",
+      "shipping_policy_html": "<a href=\"{{ link }}\">Shipping<\/a> calculated at checkout.",
       "view_in_space": "View in your space",
       "view_in_space_label": "View in your space, loads item in augmented reality window"
     },
@@ -203,9 +203,9 @@
     "update": "Update cart",
     "note": "Special instructions for seller",
     "policies": {
-      "taxes_and_shipping_policy_at_checkout_html": "Taxes and <a href=\"{{ link }}\">shipping</a> calculated at checkout",
+      "taxes_and_shipping_policy_at_checkout_html": "Taxes and <a href=\"{{ link }}\">shipping<\/a> calculated at checkout",
       "taxes_included_but_shipping_at_checkout": "Tax included and shipping calculated at checkout",
-      "taxes_included_and_shipping_policy_html": "Tax included. <a href=\"{{ link }}\">Shipping</a> calculated at checkout.",
+      "taxes_included_and_shipping_policy_html": "Tax included. <a href=\"{{ link }}\">Shipping<\/a> calculated at checkout.",
       "taxes_and_shipping_at_checkout": "Taxes and shipping calculated at checkout"
     },
     "empty": "Your cart is currently empty.",
@@ -373,7 +373,7 @@
         "city_label": "City",
         "country_label": "Country",
         "province_label": "Province",
-        "zip_label": "Postal/Zip Code",
+        "zip_label": "Postal\/Zip Code",
         "phone_label": "Phone",
         "add_button": "Add Address",
         "update_button": "Update Address",
@@ -421,8 +421,8 @@
     "check_other_stores": "Check availability at other stores",
     "pick_up_available": "Pickup available",
     "pick_up_currently_unavailable": "Pickup currently unavailable",
-    "pick_up_available_at_html": "Pickup available at <strong>{{ location_name }}</strong>",
-    "pick_up_unavailable_at_html": "Pickup currently unavailable at <strong>{{ location_name }}</strong>",
+    "pick_up_available_at_html": "Pickup available at <strong>{{ location_name }}<\/strong>",
+    "pick_up_unavailable_at_html": "Pickup currently unavailable at <strong>{{ location_name }}<\/strong>",
     "invalid_location_address": "Contact store to confirm address",
     "refresh": "Refresh"
   }

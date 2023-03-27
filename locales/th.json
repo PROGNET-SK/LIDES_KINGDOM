@@ -37,7 +37,7 @@
       "signup_form_email_placeholder": "อีเมลของคุณ",
       "signup_form_submit": "ส่ง",
       "signup_form_success": "เราจะส่งอีเมลถึงคุณก่อนที่เราจะเปิดร้านนะ!",
-      "admin_link_html": "คุณเป็นเจ้าของร้านหรือไม่ <a href=\"/admin\">เข้าสู่ระบบที่นี่</a>",
+      "admin_link_html": "คุณเป็นเจ้าของร้านหรือไม่ <a href=\"\/admin\">เข้าสู่ระบบที่นี่<\/a>",
       "password_link": "เข้าโดยใช้รหัสผ่าน",
       "powered_by_shopify_html": "ร้านค้านี้จะถูกขับเคลื่อนโดย {{ shopify }}"
     },
@@ -87,7 +87,7 @@
       "back": "กลับ",
       "play_video": "เล่นวิดีโอ",
       "language_dropdown_label": "ภาษา",
-      "country_dropdown_label": "ประเทศ/ภูมิภาค",
+      "country_dropdown_label": "ประเทศ\/ภูมิภาค",
       "quantity": "ปริมาณ",
       "price": {
         "regular": "ราคาปกติ",
@@ -145,7 +145,7 @@
     "sort_button": "เรียงลำดับ",
     "sort_by_label": "เรียงตาม:",
     "to": "ไปยัง",
-    "use_fewer_filters_html": "ใช้ตัวกรองน้อยลงหรือ <a class=\"{{ class }}\" href=\"{{ link }}\">ล้างทั้งหมด</a>",
+    "use_fewer_filters_html": "ใช้ตัวกรองน้อยลงหรือ <a class=\"{{ class }}\" href=\"{{ link }}\">ล้างทั้งหมด<\/a>",
     "view_all_products": "ดูผลิตภัณฑ์ทั้งหมด",
     "no_collections": "ขออภัย ขณะนี้ไม่มีคอลเลกชันในร้านค้านี้"
   },
@@ -184,7 +184,7 @@
       },
       "loading_reviews": "กำลังโหลดรีวิวเพิ่มเติม",
       "include_taxes": "รวมภาษีแล้ว",
-      "shipping_policy_html": "<a href=\"{{ link }}\">การจัดส่ง</a> คำนวณเมื่อเช็กเอาต์",
+      "shipping_policy_html": "<a href=\"{{ link }}\">การจัดส่ง<\/a> คำนวณเมื่อเช็กเอาต์",
       "view_in_space": "ดูในพื้นที่ของคุณ",
       "view_in_space_label": "ดูในพื้นที่ของคุณ โหลดรายการในหน้าต่างความเป็นจริงส่วนขยาย"
     },
@@ -203,9 +203,9 @@
     "update": "อัปเดตรถเข็น",
     "note": "คำแนะนำพิเศษสำหรับผู้ขาย",
     "policies": {
-      "taxes_and_shipping_policy_at_checkout_html": "ระบบจะคำนวณภาษีและ<a href=\"{{ link }}\">ค่าจัดส่ง</a>ในขั้นตอนการชำระเงิน",
+      "taxes_and_shipping_policy_at_checkout_html": "ระบบจะคำนวณภาษีและ<a href=\"{{ link }}\">ค่าจัดส่ง<\/a>ในขั้นตอนการชำระเงิน",
       "taxes_included_but_shipping_at_checkout": "ระบบจะรวมภาษีและคำนวณค่าจัดส่งในขั้นตอนการชำระเงิน",
-      "taxes_included_and_shipping_policy_html": "รวมภาษีแล้ว <a href=\"{{ link }}\">ค่าจัดส่ง</a>ที่คิดคำนวณในระหว่างขั้นตอนการชำระเงิน",
+      "taxes_included_and_shipping_policy_html": "รวมภาษีแล้ว <a href=\"{{ link }}\">ค่าจัดส่ง<\/a>ที่คิดคำนวณในระหว่างขั้นตอนการชำระเงิน",
       "taxes_and_shipping_at_checkout": "ระบบจะคำนวณภาษีและค่าจัดส่งในขั้นตอนการชำระเงิน"
     },
     "empty": "ขณะนี้รถเข็นของคุณว่างเปล่า",
@@ -421,8 +421,8 @@
     "check_other_stores": "ตรวจสอบความพร้อมการให้บริการที่ร้านค้าอื่น ๆ",
     "pick_up_available": "มีจุดรับสินค้า",
     "pick_up_currently_unavailable": "ไม่มีจุดรับสินค้าในขณะนี้",
-    "pick_up_available_at_html": "มีจุดรับสินค้าที่ <strong>{{ location_name }}</strong>",
-    "pick_up_unavailable_at_html": "ไม่มีจุดรับสินค้าในขณะนี้ที่ <strong>{{ location_name }}</strong>",
+    "pick_up_available_at_html": "มีจุดรับสินค้าที่ <strong>{{ location_name }}<\/strong>",
+    "pick_up_unavailable_at_html": "ไม่มีจุดรับสินค้าในขณะนี้ที่ <strong>{{ location_name }}<\/strong>",
     "invalid_location_address": "ติดต่อร้านค้าเพื่อยืนยันที่อยู่",
     "refresh": "รีเฟรช"
   }

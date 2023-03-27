@@ -37,7 +37,7 @@
       "signup_form_email_placeholder": "הדואר האלקטרוני שלך",
       "signup_form_submit": "שליחה",
       "signup_form_success": "נשלח לך דואר אלקטרוני ממש לפני שאנחנו פותחים!",
-      "admin_link_html": "האם אתם בעלי החנות? <a href=\"/admin\">היכנסו לחשבון כאן</a>\n",
+      "admin_link_html": "האם אתם בעלי החנות? <a href=\"\/admin\">היכנסו לחשבון כאן<\/a>\n",
       "password_link": "כניסה באמצעות סיסמה",
       "powered_by_shopify_html": "חנות זו תופעל באמצעות {{ shopify }}"
     },
@@ -87,7 +87,7 @@
       "back": "אחורה",
       "play_video": "הפעל סרטון",
       "language_dropdown_label": "שפה",
-      "country_dropdown_label": "מדינה/אזור",
+      "country_dropdown_label": "מדינה\/אזור",
       "quantity": "כמות",
       "price": {
         "regular": "מחיר רגיל",
@@ -145,7 +145,7 @@
     "sort_button": "מיון",
     "sort_by_label": "מיון לפי:",
     "to": "ל-",
-    "use_fewer_filters_html": "השתמשו בפחות מסננים או <a class=\"{{ class }}\" href=\"{{ link }}\">נקו הכל</a>",
+    "use_fewer_filters_html": "השתמשו בפחות מסננים או <a class=\"{{ class }}\" href=\"{{ link }}\">נקו הכל<\/a>",
     "view_all_products": "צפייה בכל המוצרים",
     "no_collections": "אנו מצטערים, אין כרגע אוספים בחנות הזו."
   },
@@ -184,7 +184,7 @@
       },
       "loading_reviews": "טוען ביקורות נוספות",
       "include_taxes": "המס כלול.",
-      "shipping_policy_html": "<a href=\"{{ link }}\">משלוח</a> מחושב בקופה.",
+      "shipping_policy_html": "<a href=\"{{ link }}\">משלוח<\/a> מחושב בקופה.",
       "view_in_space": "צפו במרחב שלכם",
       "view_in_space_label": "צפו במרחב שלכם, הפריט ייטען בחלון מציאות רבודה"
     },
@@ -203,9 +203,9 @@
     "update": "עדכון עגלת קניות",
     "note": "הוראות מיוחדות למוכר",
     "policies": {
-      "taxes_and_shipping_policy_at_checkout_html": "מיסים ו-<a href=\"{{ link }}\">משלוח</a> מחושבים בקופה",
+      "taxes_and_shipping_policy_at_checkout_html": "מיסים ו-<a href=\"{{ link }}\">משלוח<\/a> מחושבים בקופה",
       "taxes_included_but_shipping_at_checkout": "המס כלול והמשלוח מחושב בקופה",
-      "taxes_included_and_shipping_policy_html": "המס כלול. <a href=\"{{ link }}\">משלוח</a> מחושב בקופה.",
+      "taxes_included_and_shipping_policy_html": "המס כלול. <a href=\"{{ link }}\">משלוח<\/a> מחושב בקופה.",
       "taxes_and_shipping_at_checkout": "מיסים ומשלוח מחושבים בקופה"
     },
     "empty": "עגלת הקניות שלך ריקה כרגע.",
@@ -421,8 +421,8 @@
     "check_other_stores": "בדיקת זמינות בחנויות אחרות",
     "pick_up_available": "האיסוף זמין",
     "pick_up_currently_unavailable": "האיסוף אינו זמין כרגע",
-    "pick_up_available_at_html": "האיסוף זמין ב-<strong>{{ location_name }}</strong>",
-    "pick_up_unavailable_at_html": "האיסוף כרגע אינו זמין ב-<strong>{{ location_name }}</strong>",
+    "pick_up_available_at_html": "האיסוף זמין ב-<strong>{{ location_name }}<\/strong>",
+    "pick_up_unavailable_at_html": "האיסוף כרגע אינו זמין ב-<strong>{{ location_name }}<\/strong>",
     "invalid_location_address": "צרו קשר עם החנות לאישור הכתובת",
     "refresh": "ריענון"
   }

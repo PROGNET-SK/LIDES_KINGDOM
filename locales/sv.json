@@ -37,7 +37,7 @@
       "signup_form_email_placeholder": "Din e-post",
       "signup_form_submit": "Skicka in",
       "signup_form_success": "Vi kommer att skicka dig ett e-postmeddelande precis innan vi öppnar!",
-      "admin_link_html": "Är du butiksägaren? <a href=\"/admin\">Log in here</a>",
+      "admin_link_html": "Är du butiksägaren? <a href=\"\/admin\">Log in here<\/a>",
       "password_link": "Gå in med lösenord",
       "powered_by_shopify_html": "Den här butiken kommer att drivas av {{ shopify }}"
     },
@@ -87,7 +87,7 @@
       "back": "Tillbaka",
       "play_video": "Spela video",
       "language_dropdown_label": "Språk",
-      "country_dropdown_label": "Land/Region",
+      "country_dropdown_label": "Land\/Region",
       "quantity": "Antal",
       "price": {
         "regular": "Ordinarie pris",
@@ -145,7 +145,7 @@
     "sort_button": "Sortera",
     "sort_by_label": "Sortera efter:",
     "to": "Till",
-    "use_fewer_filters_html": "Använd färre filter eller <a class=\"{{ class }}\" href=\"{{ link }}\">rensa alla</a>",
+    "use_fewer_filters_html": "Använd färre filter eller <a class=\"{{ class }}\" href=\"{{ link }}\">rensa alla<\/a>",
     "view_all_products": "Se alla produkter",
     "no_collections": "Vi beklagar, det finns inga kollektioner i denna butik för närvarande."
   },
@@ -184,7 +184,7 @@
       },
       "loading_reviews": "Laddar upp fler recensioner",
       "include_taxes": "Inklusive skatt.",
-      "shipping_policy_html": "<a href=\"{{ link }}\">Fraktkostnaden</a> räknas ut i kassan.",
+      "shipping_policy_html": "<a href=\"{{ link }}\">Fraktkostnaden<\/a> räknas ut i kassan.",
       "view_in_space": "Visa på din plats",
       "view_in_space_label": "Väljer du att visa på din plats laddas varan i förstärkt verklighet."
     },
@@ -203,9 +203,9 @@
     "update": "Uppdatera varukorgen",
     "note": "Särskilda instruktioner till säljaren",
     "policies": {
-      "taxes_and_shipping_policy_at_checkout_html": "Moms och <a href=\"{{ link }}\">frakt</a> beräknas i kassan",
+      "taxes_and_shipping_policy_at_checkout_html": "Moms och <a href=\"{{ link }}\">frakt<\/a> beräknas i kassan",
       "taxes_included_but_shipping_at_checkout": "Moms ingår och frakt beräknas i kassan",
-      "taxes_included_and_shipping_policy_html": "Moms ingår. <a href=\"{{ link }}\">Frakt</a> beräknas i kassan.",
+      "taxes_included_and_shipping_policy_html": "Moms ingår. <a href=\"{{ link }}\">Frakt<\/a> beräknas i kassan.",
       "taxes_and_shipping_at_checkout": "Moms och frakt beräknas i kassan"
     },
     "empty": "Din varukorg är tom.",
@@ -421,8 +421,8 @@
     "check_other_stores": "Se tillgänglighet i andra butiker",
     "pick_up_available": "Upphämtning tillgängligt",
     "pick_up_currently_unavailable": "Upphämtning för närvarande ej tillgängligt",
-    "pick_up_available_at_html": "Upphämtning tillgängligt vid <strong>{{ location_name }}</strong>",
-    "pick_up_unavailable_at_html": "Upphämtning för närvarande ej tillgängligt vid <strong>{{ location_name }}</strong>",
+    "pick_up_available_at_html": "Upphämtning tillgängligt vid <strong>{{ location_name }}<\/strong>",
+    "pick_up_unavailable_at_html": "Upphämtning för närvarande ej tillgängligt vid <strong>{{ location_name }}<\/strong>",
     "invalid_location_address": "Kontakta butiken för att bekräfta adressen",
     "refresh": "Uppdatera"
   }

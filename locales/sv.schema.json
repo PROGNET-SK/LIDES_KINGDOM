@@ -55,7 +55,7 @@
         },
         "enhance_featured_products": {
           "label": "Betona utvalda produkter",
-          "info": "[Learn more](https://shopify-support.krownthemes.com/article/471-general-settings#featured-products)"
+          "info": "[Learn more](https:\/\/shopify-support.krownthemes.com\/article\/471-general-settings#featured-products)"
         },
         "show_discount": {
           "label": "Visa rabatt som...",
@@ -85,7 +85,7 @@
         },
         "header__1": {
           "content": "Produktbetyg",
-          "info": "Lägg till en produktbetygsapp för att visa betyg. [Learn more](https://help.shopify.com/en/manual/products/product-reviews/installation)"
+          "info": "Lägg till en produktbetygsapp för att visa betyg. [Learn more](https:\/\/help.shopify.com\/en\/manual\/products\/product-reviews\/installation)"
         },
         "header__2": {
           "content": "Produktrecensioner"
@@ -224,7 +224,7 @@
         "embellishments": "Utsmyckningar"
       },
       "text": {
-        "icons_info": "För att visualisera och ladda ner fler ikoner ber vi dig att gå till [denna länk](https://resources.krownthemes.com/icons/)."
+        "icons_info": "För att visualisera och ladda ner fler ikoner ber vi dig att gå till [denna länk](https:\/\/resources.krownthemes.com\/icons\/)."
       },
       "borders": {
         "top_border": "Övre kant",
@@ -346,18 +346,18 @@
       "cart_upsell": {
         "name": "Individuell produktrekommendation",
         "product": "Produkt",
-        "info": "Dynamiska rekommendationer baseras på varorna i din kundvagn. De förändras och förbättras med tiden. [Ta reda på mer](https://help.shopify.com/en/themes/development/recommended-products)"
+        "info": "Dynamiska rekommendationer baseras på varorna i din kundvagn. De förändras och förbättras med tiden. [Ta reda på mer](https:\/\/help.shopify.com\/en\/themes\/development\/recommended-products)"
       },
       "gift_wrapping": {
         "name": "Presentinslagning",
-        "info": "Presentinslagning måste ställas in som en produkt. [Ta reda på mer](https://shopify-support.krownthemes.com/article/696-cart-features#gift-wrap)",
+        "info": "Presentinslagning måste ställas in som en produkt. [Ta reda på mer](https:\/\/shopify-support.krownthemes.com\/article\/696-cart-features#gift-wrap)",
         "settings": {
           "label": "Text",
           "button": "Knappetikett"
         }
       },
       "custom_code": {
-        "name": "Anpassad HTML / Liquid"
+        "name": "Anpassad HTML \/ Liquid"
       },
       "rating": {
         "name": "Recensionsapp",
@@ -427,7 +427,7 @@
             "amount_saved": "Belopp sparat"
           },
           "regular_badges": {
-            "info": "Ta reda på mer om produktmärken [här](https://shopify-support.krownthemes.com/article/377-collection-pages#product-badges)."
+            "info": "Ta reda på mer om produktmärken [här](https:\/\/shopify-support.krownthemes.com\/article\/377-collection-pages#product-badges)."
           },
           "sold_out": {
             "name": "Märke för utsålt",
@@ -436,8 +436,8 @@
           },
           "custom_badges": {
             "name": "Anpassade produktmärken",
-            "info": "Det här temat använder anpassade produktmärken som du kan bestämma här. [Ta reda på mer](https://shopify-support.krownthemes.com/article/564-product-pages#product-badges)",
-            "split_info": "Det här temat använder anpassade produktmärken som du kan bestämma här. [Ta reda på mer](https://shopify-support.krownthemes.com/article/377-collection-pages#product-badges)",
+            "info": "Det här temat använder anpassade produktmärken som du kan bestämma här. [Ta reda på mer](https:\/\/shopify-support.krownthemes.com\/article\/564-product-pages#product-badges)",
+            "split_info": "Det här temat använder anpassade produktmärken som du kan bestämma här. [Ta reda på mer](https:\/\/shopify-support.krownthemes.com\/article\/377-collection-pages#product-badges)",
             "name__1": "Anpassad bricka 1",
             "name__2": "Anpassad bricka 2",
             "name__3": "Anpassad bricka 3",
@@ -512,7 +512,7 @@
             "name": "Försändelse",
             "show": {
               "label": "Visa minimibelopp för fri frakt",
-              "info": "För att konfigurera fraktpriserna går du till [fraktinställningar](/admin/inställningar/sfrakt)."
+              "info": "För att konfigurera fraktpriserna går du till [fraktinställningar](\/admin\/inställningar\/sfrakt)."
             },
             "amount": {
               "label": "Minsta belopp för fri frakt",
@@ -543,7 +543,7 @@
           },
           "local-pickup": {
             "name": "Lokal tillgänglighet",
-            "info": "Det här temat visar lokal tillgänglighet för produkter. [Läs mer](https://shopify-support.krownthemes.com/article/641-collection-page-product-grids#dynamic-text)"
+            "info": "Det här temat visar lokal tillgänglighet för produkter. [Läs mer](https:\/\/shopify-support.krownthemes.com\/article\/641-collection-page-product-grids#dynamic-text)"
           },
           "badges": {
             "name": "Standard produktmärken",
@@ -559,7 +559,7 @@
             },
             "custom_badges": {
               "name": "Anpassade produktmärken",
-              "info": "Det här temat använder anpassade produktmärken som du kan definiera här. [Läs mer](https://shopify-support.krownthemes.com/article/639-theme-settings#product-badges)",
+              "info": "Det här temat använder anpassade produktmärken som du kan definiera här. [Läs mer](https:\/\/shopify-support.krownthemes.com\/article\/639-theme-settings#product-badges)",
               "name__1": "Anpassad bricka 1",
               "name__2": "Anpassad bricka 2",
               "name__3": "Anpassad bricka 3",
@@ -612,7 +612,7 @@
               "info": "256 x 256px"
             },
             "select_icon": {
-              "info": "För att se och ladda ner fler ikoner, besök [den här länken](https://resources.krownthemes.com/icons/)"
+              "info": "För att se och ladda ner fler ikoner, besök [den här länken](https:\/\/resources.krownthemes.com\/icons\/)"
             },
             "icon_color": {
               "label": "Ikon",
@@ -734,7 +734,7 @@
               "settings": {
                 "name": {
                   "label": "Namn",
-                  "info": "Butiksnamnet måste matcha namnet på din butik som du har definierat i [platsinställningar](/admin/settings/locations)."
+                  "info": "Butiksnamnet måste matcha namnet på din butik som du har definierat i [platsinställningar](\/admin\/settings\/locations)."
                 },
                 "pickup_price": {
                   "label": "Pris för upphämtning"
@@ -758,7 +758,7 @@
                 },
                 "map": {
                   "name": "Kartnål",
-                  "info": "Om kartan är aktiverad måste du definiera en anpassad pin för den här adressen. [Lär dig hur du får fram adresskoordinater](https://support.google.com/maps/answer/18539?hl=en)"
+                  "info": "Om kartan är aktiverad måste du definiera en anpassad pin för den här adressen. [Lär dig hur du får fram adresskoordinater](https:\/\/support.google.com\/maps\/answer\/18539?hl=en)"
                 },
                 "map_latitude": {
                   "label": "Latitud",
@@ -819,15 +819,15 @@
             },
             "store-selector": {
               "name": "Val av butik",
-              "content": "Butiksväljaren kan konfigureras i avsnittet Butiksväljaren. [Läs mer](https://shopify-support.krownthemes.com/article/640-header-the-store-selector#store-selector)",
-              "info": "Med det här temat kan du koppla ihop dina riktiga butiker med en interaktiv butiksväljare. [Läs mer](https://shopify-support.krownthemes.com/article/640-header-the-store-selector#store-selector)"
+              "content": "Butiksväljaren kan konfigureras i avsnittet Butiksväljaren. [Läs mer](https:\/\/shopify-support.krownthemes.com\/article\/640-header-the-store-selector#store-selector)",
+              "info": "Med det här temat kan du koppla ihop dina riktiga butiker med en interaktiv butiksväljare. [Läs mer](https:\/\/shopify-support.krownthemes.com\/article\/640-header-the-store-selector#store-selector)"
             },
             "mega-menu": {
               "name": "Megameny",
               "settings": {
                 "menu_handle": {
                   "label": "Handtag för menyn",
-                  "info": "Det här temat använder megamenyer. [Läs mer](https://shopify-support.krownthemes.com/article/640-header-the-store-selector#mega-menus)"
+                  "info": "Det här temat använder megamenyer. [Läs mer](https:\/\/shopify-support.krownthemes.com\/article\/640-header-the-store-selector#mega-menus)"
                 }
               }
             }
@@ -1020,8 +1020,8 @@
             },
             "icons": {
               "name": "Lista över ikoner",
-              "info": "För att se och ladda ner de ikoner som ingår i temat, besök [den här länken](https://resources.krownthemes.com/icons/).",
-              "help": "Med det här temat kan du lägga till anpassade produktikoner genom dynamiskt innehåll. [Läs mer](https://shopify-support.krownthemes.com/article/639-theme-settings#dynamic-icons)",
+              "info": "För att se och ladda ner de ikoner som ingår i temat, besök [den här länken](https:\/\/resources.krownthemes.com\/icons\/).",
+              "help": "Med det här temat kan du lägga till anpassade produktikoner genom dynamiskt innehåll. [Läs mer](https:\/\/shopify-support.krownthemes.com\/article\/639-theme-settings#dynamic-icons)",
               "headers": {
                 "icon_1": "Ikon 1",
                 "icon_2": "Ikon 2",
@@ -1053,7 +1053,7 @@
         },
         "main-article-comments": {
           "name": "Kommentarer till artikeln",
-          "info": "För att aktivera kommentarer går du till [blogginställningar](/admin/bloggar)."
+          "info": "För att aktivera kommentarer går du till [blogginställningar](\/admin\/bloggar)."
         },
         "main-article-navigation": {
           "name": "Artikelnavigering",
@@ -1079,7 +1079,7 @@
           "blocks": {
             "payment": {
               "name": "Ikoner för betalningar",
-              "info": "Vilka ikoner som visas bestäms av butikens [betalningsinställningar](/admin/settings/payments) och kundens region och valuta."
+              "info": "Vilka ikoner som visas bestäms av butikens [betalningsinställningar](\/admin\/settings\/payments) och kundens region och valuta."
             }
           }
         },
@@ -1156,7 +1156,7 @@
             "vendor": "Leverantör",
             "text": {
               "name": "Dynamisk text",
-              "info": "Använd en dynamisk källa för att lyfta fram ett unikt attribut genom att skapa ett metafält för en produkt. [Läs mer](https://shopify-support.krownthemes.com/article/641-collection-page-product-grids#dynamic-text)",
+              "info": "Använd en dynamisk källa för att lyfta fram ett unikt attribut genom att skapa ett metafält för en produkt. [Läs mer](https:\/\/shopify-support.krownthemes.com\/article\/641-collection-page-product-grids#dynamic-text)",
               "settings": {
                 "text": {
                   "label": "Metafält med etikett"
@@ -1178,7 +1178,7 @@
               }
             },
             "icons": {
-              "info": "Använd dynamiska källor för att framhäva unika attribut genom att skapa metafält för produkten i ikonlistan. [Läs mer](https://shopify-support.krownthemes.com/article/639-theme-settings#dynamic-icons)",
+              "info": "Använd dynamiska källor för att framhäva unika attribut genom att skapa metafält för produkten i ikonlistan. [Läs mer](https:\/\/shopify-support.krownthemes.com\/article\/639-theme-settings#dynamic-icons)",
               "settings": {
                 "icon": "Metafält med ikon",
                 "label": "Metafält med etikett"
@@ -1201,7 +1201,7 @@
       "name": "Kompletterande produkter",
       "settings": {
         "paragraph": {
-          "content": "Lägg till appen Search & Discovery för att välja tilläggsprodukter. [Mer information](https://help.shopify.com/manual/online-store/search-and-discovery/product-recommendations)"
+          "content": "Lägg till appen Search & Discovery för att välja tilläggsprodukter. [Mer information](https:\/\/help.shopify.com\/manual\/online-store\/search-and-discovery\/product-recommendations)"
         }
       }
     },
@@ -1380,7 +1380,7 @@
             },
             "color_swatches": {
               "label": "Visa färgprover (endast för blockstil)",
-              "info": "Detta tema kan visa anpassade bilder för färgprover. [Learn more](https://shopify-support.krownthemes.com/article/554-using-color-swatches)"
+              "info": "Detta tema kan visa anpassade bilder för färgprover. [Learn more](https:\/\/shopify-support.krownthemes.com\/article\/554-using-color-swatches)"
             }
           }
         },
@@ -1523,7 +1523,7 @@
         },
         "icons": {
           "label": "Ikoner",
-          "info": "För att se alla ikoner som ingår i temat, besök [this link](https://krownthemes.com/krown-icons/)"
+          "info": "För att se alla ikoner som ingår i temat, besök [this link](https:\/\/krownthemes.com\/krown-icons\/)"
         }
       },
       "blocks": {
@@ -1551,17 +1551,17 @@
         },
         "language_selector": {
           "content": "Språkväljare",
-          "info": "För att lägga till ett språk, gå till din [language settings.](/admin/settings/languages)"
+          "info": "För att lägga till ett språk, gå till din [language settings.](\/admin\/settings\/languages)"
         },
         "language_selector_show": {
           "label": "Visa språkväljare"
         },
         "country_selector": {
-          "content": "Land/region-väljare",
-          "info": "Om du vill lägga till land/region går du till dina [betalningsinställningar.](/admin/settings/payments)"
+          "content": "Land\/region-väljare",
+          "info": "Om du vill lägga till land\/region går du till dina [betalningsinställningar.](\/admin\/settings\/payments)"
         },
         "country_selector_show": {
-          "label": "Visa land/region-väljare"
+          "label": "Visa land\/region-väljare"
         }
       },
       "blocks": {
@@ -2385,7 +2385,7 @@
         },
         "header__1": {
           "content": "Produktrekommendationer",
-          "info": "Dynamiska rekommendationer använder order- och produktinformation för att ändras sig och bli bättre över tid. [Learn more](https://help.shopify.com/en/themes/development/recommended-products)"
+          "info": "Dynamiska rekommendationer använder order- och produktinformation för att ändras sig och bli bättre över tid. [Learn more](https:\/\/help.shopify.com\/en\/themes\/development\/recommended-products)"
         }
       }
     },
@@ -2492,7 +2492,7 @@
         },
         "enable_filtering": {
           "label": "Tillämpa filtrering",
-          "info": "[Customize filters](/administratör/menyer)"
+          "info": "[Customize filters](\/administratör\/menyer)"
         },
         "enable_sorting": {
           "label": "Tillämpa sortering"
@@ -2506,7 +2506,7 @@
       "name": "Samlingsbanner",
       "settings": {
         "paragraph": {
-          "content": "För att ändra beskrivningar av eller bilder på kollektioner, [edit your collections.](/administratör/kollektioner)"
+          "content": "För att ändra beskrivningar av eller bilder på kollektioner, [edit your collections.](\/administratör\/kollektioner)"
         },
         "show_collection_description": {
           "label": "Visa beskrivning av kollektion"
@@ -2550,7 +2550,7 @@
           "name": "Visa skatteinformation"
         },
         "sku_barcode": {
-          "name": "ARTIKELNUMMER/STRECKKOD"
+          "name": "ARTIKELNUMMER\/STRECKKOD"
         },
         "quantity_selector": {
           "name": "Antalsväljare"
@@ -2566,7 +2566,7 @@
             },
             "low_inventory_notification": {
               "label": "Lagernotifikation",
-              "info": "Varianterna behöver ha aktiv bevakning på lagret för att detta ska fungera. [Learn more](https://help.shopify.com/en/manual/products/inventory/track_inventory)",
+              "info": "Varianterna behöver ha aktiv bevakning på lagret för att detta ska fungera. [Learn more](https:\/\/help.shopify.com\/en\/manual\/products\/inventory\/track_inventory)",
               "options__1": {
                 "label": "Visa inte information om lager"
               },
@@ -2584,7 +2584,7 @@
           "settings": {
             "show_dynamic_checkout": {
               "label": "Visa dynamiska köpknappar",
-              "info": "Utifrån betalsätten som du erbjuder i din butik ser kunden sitt förstahandsval, till exempel PayPal eller Apple Pay. [Learn more](https://help.shopify.com/manual/using-themes/change-the-layout/dynamic-checkout)"
+              "info": "Utifrån betalsätten som du erbjuder i din butik ser kunden sitt förstahandsval, till exempel PayPal eller Apple Pay. [Learn more](https:\/\/help.shopify.com\/manual\/using-themes\/change-the-layout\/dynamic-checkout)"
             },
             "show_quantity_selector": {
               "label": "Visa antalsväljaren"
@@ -2619,10 +2619,10 @@
           "name": "Dela",
           "settings": {
             "featured_image_info": {
-              "content": "Förser du inlägg i sociala medier med en länk kommer sidans utvalda bild att visas som miniatyr. [Learn more](https://help.shopify.com/en/manual/online-store/images/showing-social-media-thumbnail-images)."
+              "content": "Förser du inlägg i sociala medier med en länk kommer sidans utvalda bild att visas som miniatyr. [Learn more](https:\/\/help.shopify.com\/en\/manual\/online-store\/images\/showing-social-media-thumbnail-images)."
             },
             "title_info": {
-              "content": "Butikens namn och en beskrivning följer med miniatyren. [Learn more](https://help.shopify.com/en/manual/promoting-marketing/seo/adding-keywords#set-a-title-and-description-for-your-online-store)."
+              "content": "Butikens namn och en beskrivning följer med miniatyren. [Learn more](https:\/\/help.shopify.com\/en\/manual\/promoting-marketing\/seo\/adding-keywords#set-a-title-and-description-for-your-online-store)."
             }
           }
         },
@@ -2648,7 +2648,7 @@
       "settings": {
         "header": {
           "content": "Media",
-          "info": "Läs mer om [media types](https://help.shopify.com/manual/products/product-media)"
+          "info": "Läs mer om [media types](https:\/\/help.shopify.com\/manual\/products\/product-media)"
         },
         "enable_sticky_info": {
           "label": "Välj att ha klistrad produktinformation på stora skärmar"

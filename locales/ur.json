@@ -37,7 +37,7 @@
       "signup_form_email_placeholder": "آپ کی ای میل",
       "signup_form_submit": "جمع کرائیں",
       "signup_form_success": "اسٹور کھلنے سے ٹھیک پہلے ہم آپ کو ای میل بھیجیں گے!",
-      "admin_link_html": "کیا آپ اسٹور کے مالک ہیں؟ <a href=\"/admin\">یہاں لاگ ان کریں</a>",
+      "admin_link_html": "کیا آپ اسٹور کے مالک ہیں؟ <a href=\"\/admin\">یہاں لاگ ان کریں<\/a>",
       "password_link": "پاس ورڈ کا استعمال کرتے ہوئے درج کریں",
       "powered_by_shopify_html": "یہ دکان {{ shopify }} کے ذریعے تقویت یافتہ ہوگی"
     },
@@ -73,7 +73,7 @@
       "back": "پیچھے",
       "play_video": "ویڈیو چلائیں",
       "language_dropdown_label": "زبان",
-      "country_dropdown_label": "ملک/علاقہ",
+      "country_dropdown_label": "ملک\/علاقہ",
       "quantity": "مقدار",
       "price": {
         "regular": "باقاعدہ قیمت",
@@ -122,7 +122,7 @@
     "sort_button": "ترتیب دیں",
     "sort_by_label": "ترتیب دیں بہ لحاظ:",
     "to": "پیش خدمت",
-    "use_fewer_filters_html": "کم فلٹرز استعمال کریں یا <a class=\"{{ class }}\" href=\"{{ link }}\">سبھی صاف کریں</a>",
+    "use_fewer_filters_html": "کم فلٹرز استعمال کریں یا <a class=\"{{ class }}\" href=\"{{ link }}\">سبھی صاف کریں<\/a>",
     "view_all_products": "تمام پروڈکٹس دیکھیں",
     "no_collections": "ہمیں افسوس ہے، اس اسٹور پر فی الحال کوئی مجموعہ نہیں ہے۔"
   },
@@ -158,7 +158,7 @@
       },
       "loading_reviews": "مزید تجزیے لوڈ ہو رہے ہیں",
       "include_taxes": "ٹیکس شامل ہے۔",
-      "shipping_policy_html": "<a href=\"{{ link }}\">شپنگ</a> کا حساب چیک آؤٹ کے وقت کیا جاتا ہے۔",
+      "shipping_policy_html": "<a href=\"{{ link }}\">شپنگ<\/a> کا حساب چیک آؤٹ کے وقت کیا جاتا ہے۔",
       "view_in_space": "اپنی جگہ پر دیکھیں",
       "view_in_space_label": "اپنی جگہ پر دیکھیں، آگمینٹڈ رئیلٹی ونڈو میں آئٹم لوڈ کریں"
     },
@@ -177,9 +177,9 @@
     "update": "کارٹ کو اپ ڈیٹ کریں",
     "note": "فروخت کنندہ کے لیے خصوصی ہدایات",
     "policies": {
-      "taxes_and_shipping_policy_at_checkout_html": "ٹیکسز اور <a href=\"{{ link }}\">شپنگ</a> کا حساب چیک آؤٹ کے وقت کیا جاتا ہے",
+      "taxes_and_shipping_policy_at_checkout_html": "ٹیکسز اور <a href=\"{{ link }}\">شپنگ<\/a> کا حساب چیک آؤٹ کے وقت کیا جاتا ہے",
       "taxes_included_but_shipping_at_checkout": "ٹیکس شامل ہے اور شپنگ کا حساب چیک آؤٹ کے وقت کیا جاتا ہے",
-      "taxes_included_and_shipping_policy_html": "ٹیکس شامل ہے۔ <a href=\"{{ link }}\">شپنگ</a> کا حساب چیک آؤٹ کے وقت کیا جاتا ہے۔",
+      "taxes_included_and_shipping_policy_html": "ٹیکس شامل ہے۔ <a href=\"{{ link }}\">شپنگ<\/a> کا حساب چیک آؤٹ کے وقت کیا جاتا ہے۔",
       "taxes_and_shipping_at_checkout": "ٹیکسز اور شپنگ کا حساب چیک آؤٹ کے وقت کیا جاتا ہے"
     },
     "empty": "آپ کی کارٹ فی الحال خالی ہے۔",
@@ -347,7 +347,7 @@
         "city_label": "شہر",
         "country_label": "ملک",
         "province_label": "صوبہ",
-        "zip_label": "پوسٹل/زپ کوڈ",
+        "zip_label": "پوسٹل\/زپ کوڈ",
         "phone_label": "فون",
         "add_button": "پتہ شامل کریں",
         "update_button": "پتہ اپ ڈیٹ کریں",
@@ -395,8 +395,8 @@
     "check_other_stores": "دیگر اسٹورز پر دستیابی چیک کریں",
     "pick_up_available": "پِک اپ دستیاب ہے",
     "pick_up_currently_unavailable": "فی الحال پِک اپ دستیاب نہیں ہے",
-    "pick_up_available_at_html": "<strong>{{ location_name }}</strong> پر پِک اپ دستیاب ہے",
-    "pick_up_unavailable_at_html": "<strong>{{ location_name }}</strong> پر فی الحال پِک اپ دستیاب نہیں ہے",
+    "pick_up_available_at_html": "<strong>{{ location_name }}<\/strong> پر پِک اپ دستیاب ہے",
+    "pick_up_unavailable_at_html": "<strong>{{ location_name }}<\/strong> پر فی الحال پِک اپ دستیاب نہیں ہے",
     "invalid_location_address": "پتے کی تصدیق کرنے کے لیے اسٹور سے رابطہ کریں",
     "refresh": "ریفریش کریں"
   }

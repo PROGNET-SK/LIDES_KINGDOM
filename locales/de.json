@@ -37,7 +37,7 @@
       "signup_form_email_placeholder": "Deine E-mail",
       "signup_form_submit": "Absenden",
       "signup_form_success": "Wir senden Ihnen eine E-Mail, kurz bevor wir eröffnen!!",
-      "admin_link_html": "Sind Sie der Geschäftsinhaber? <a href=\"/admin\" class=\"text-link\">Melden Sie sich hier an</a>",
+      "admin_link_html": "Sind Sie der Geschäftsinhaber? <a href=\"\/admin\" class=\"text-link\">Melden Sie sich hier an<\/a>",
       "password_link": "Mit Passwort betreten",
       "powered_by_shopify_html": "Dieser Shop wird mit Hilfe von {{ shopify }} betrieben werden."
     },
@@ -87,7 +87,7 @@
       "back": "Zurück",
       "play_video": "Video abspielen",
       "language_dropdown_label": "Sprache",
-      "country_dropdown_label": "Land/Region",
+      "country_dropdown_label": "Land\/Region",
       "price": {
         "regular": "Regulärer Preis",
         "sale": "Sale-Preis",
@@ -139,7 +139,7 @@
     "max_price": "Der höchste Preis ist {{ price }}",
     "reset": "Zurücksetzen",
     "to": "Nach",
-    "use_fewer_filters_html": "Verwende weniger Filter oder <a class=\"{{ class }}\" href=\"{{ link }}\">lösche alle</a>",
+    "use_fewer_filters_html": "Verwende weniger Filter oder <a class=\"{{ class }}\" href=\"{{ link }}\">lösche alle<\/a>",
     "filters_selected": {
       "one": "{{ count }} ausgewählt",
       "other": "{{ count }} ausgewählt"
@@ -184,7 +184,7 @@
       },
       "loading_reviews": "Laden Sie weitere Bewertungen",
       "include_taxes": "inkl. MwSt.",
-      "shipping_policy_html": "zzgl. <a href=\"{{ link }}\">Versandkosten</a>",
+      "shipping_policy_html": "zzgl. <a href=\"{{ link }}\">Versandkosten<\/a>",
       "view_in_space": "In Ihrem Bereich ansehen",
       "view_in_space_label": "Ansicht in Ihrem Raum“ lädt den Artikel im Augmented-Reality-Fenster"
     },
@@ -203,9 +203,9 @@
     "update": "Aktualisieren",
     "note": "Besondere Anweisungen für den Verkäufer",
     "policies": {
-      "taxes_and_shipping_policy_at_checkout_html": "Steuern und <a href=\"{{ link }}\">Versand</a> werden beim Checkout berechnet",
+      "taxes_and_shipping_policy_at_checkout_html": "Steuern und <a href=\"{{ link }}\">Versand<\/a> werden beim Checkout berechnet",
       "taxes_included_but_shipping_at_checkout": "Inklusive Steuern, Versand wird beim Checkout berechnet",
-      "taxes_included_and_shipping_policy_html": "Inklusive Steuern. <a href=\"{{ link }}\">Versand </a> wird beim Checkout berechnet",
+      "taxes_included_and_shipping_policy_html": "Inklusive Steuern. <a href=\"{{ link }}\">Versand <\/a> wird beim Checkout berechnet",
       "taxes_and_shipping_at_checkout": "Steuern und Versand werden beim Checkout berechnet"
     },
     "empty": "Der Warenkorb ist leer.",
@@ -286,7 +286,7 @@
       "results_count": {
         "zero": "Ihre Suche hat keine Ergebnisse hervorgebracht.",
         "one": "{{ count }} Ergebnis",
-        "other": "{{ offset }} - {{ page_size }} / {{ count }} Ergebnisse"
+        "other": "{{ offset }} - {{ page_size }} \/ {{ count }} Ergebnisse"
       },
       "form_placeholder": "Stichwort hier eingeben",
       "search_button_label": "Suchen",
@@ -421,8 +421,8 @@
     "check_other_stores": "Verfügbarkeit in anderen Shops überprüfen",
     "pick_up_available": "Abholung verfügbar",
     "pick_up_currently_unavailable": "Abholung derzeit nicht verfügbar",
-    "pick_up_available_at_html": "Abholung bei <strong>{{ location_name }}</strong> verfügbar",
-    "pick_up_unavailable_at_html": "Abholung bei <strong>{{ location_name }}</strong> derzeit nicht verfügbar",
+    "pick_up_available_at_html": "Abholung bei <strong>{{ location_name }}<\/strong> verfügbar",
+    "pick_up_unavailable_at_html": "Abholung bei <strong>{{ location_name }}<\/strong> derzeit nicht verfügbar",
     "invalid_location_address": "Wenden Sie sich an das Geschäft, um die Adresse zu bestätigen",
     "refresh": "Aktualisieren"
   }

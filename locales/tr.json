@@ -37,7 +37,7 @@
       "signup_form_email_placeholder": "E-postan",
       "signup_form_submit": "Gönder",
       "signup_form_success": "Açılmadan hemen önce size bir e-posta göndereceğiz!",
-      "admin_link_html": "Mağaza sahibi siz misiniz? <a href=\"/admin\">Buradan giriş yapın</a>",
+      "admin_link_html": "Mağaza sahibi siz misiniz? <a href=\"\/admin\">Buradan giriş yapın<\/a>",
       "password_link": "Şifre kullanarak gir",
       "powered_by_shopify_html": "Bu mağaza {{ shopify }} tarafından desteklenecektir"
     },
@@ -87,7 +87,7 @@
       "back": "Geri",
       "play_video": "Video oynat",
       "language_dropdown_label": "Dil",
-      "country_dropdown_label": "Ülke/bölge",
+      "country_dropdown_label": "Ülke\/bölge",
       "quantity": "Miktar",
       "price": {
         "regular": "Normal fiyat",
@@ -145,7 +145,7 @@
     "sort_button": "Sırala",
     "sort_by_label": "Şuna göre sırala:",
     "to": "Şuraya",
-    "use_fewer_filters_html": "Daha az filtre kullan veya <a class=\"{{ class }}\" href=\"{{ link }}\">clear all</a>",
+    "use_fewer_filters_html": "Daha az filtre kullan veya <a class=\"{{ class }}\" href=\"{{ link }}\">clear all<\/a>",
     "view_all_products": "Tüm ürünleri göster",
     "no_collections": "Üzgünüz, şu anda bu mağazada koleksiyon bulunmamaktadır."
   },
@@ -184,7 +184,7 @@
       },
       "loading_reviews": "Daha fazla yorum yükleniyor",
       "include_taxes": "Vergi dahil.",
-      "shipping_policy_html": "<a href=\"{{ link }}\">Shipping</a> ödeme içinde hesaplandı.",
+      "shipping_policy_html": "<a href=\"{{ link }}\">Shipping<\/a> ödeme içinde hesaplandı.",
       "view_in_space": "Alanında görüntüle",
       "view_in_space_label": "Alanında görüntüle, ögeyi artırılmış gerçeklik penceresinde yükler"
     },
@@ -203,9 +203,9 @@
     "update": "Sepeti güncelle",
     "note": "Satıcı için özel talimatlar:",
     "policies": {
-      "taxes_and_shipping_policy_at_checkout_html": "Vergiler ve <a href=\"{{ link }}\">kargo</a>, ödeme sayfasında hesaplanır",
+      "taxes_and_shipping_policy_at_checkout_html": "Vergiler ve <a href=\"{{ link }}\">kargo<\/a>, ödeme sayfasında hesaplanır",
       "taxes_included_but_shipping_at_checkout": "Vergi dahildir ve kargo, ödeme sayfasında hesaplanır",
-      "taxes_included_and_shipping_policy_html": "Vergi dahildir. <a href=\"{{ link }}\">Kargo</a>, ödeme sayfasında hesaplanır.",
+      "taxes_included_and_shipping_policy_html": "Vergi dahildir. <a href=\"{{ link }}\">Kargo<\/a>, ödeme sayfasında hesaplanır.",
       "taxes_and_shipping_at_checkout": "Vergiler ve kargo, ödeme sayfasında hesaplanır"
     },
     "empty": "Sepetiniz şu anda boş.",
@@ -421,8 +421,8 @@
     "check_other_stores": "Diğer mağazaların uygunluğunu kontrol et",
     "pick_up_available": "Teslim alma mevcut",
     "pick_up_currently_unavailable": "Teslim alma şu anda mevcut değil",
-    "pick_up_available_at_html": "Teslim alma <strong>{{ location_name }}</strong>'da mevcut",
-    "pick_up_unavailable_at_html": "Teslim alma şu anda <strong>{{ location_name }}</strong>'da mevcut değil",
+    "pick_up_available_at_html": "Teslim alma <strong>{{ location_name }}<\/strong>'da mevcut",
+    "pick_up_unavailable_at_html": "Teslim alma şu anda <strong>{{ location_name }}<\/strong>'da mevcut değil",
     "invalid_location_address": "Adresi doğrulamak için mağaza ile iletişime geçin",
     "refresh": "Yenile"
   }

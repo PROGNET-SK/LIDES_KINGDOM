@@ -55,7 +55,7 @@
         },
         "enhance_featured_products": {
           "label": "Öne çıkan ürünleri vurgula",
-          "info": "[Learn more](https://shopify-support.krownthemes.com/article/471-general-settings#featured-products)"
+          "info": "[Learn more](https:\/\/shopify-support.krownthemes.com\/article\/471-general-settings#featured-products)"
         },
         "show_discount": {
           "label": "İndirimi şöyle göster:",
@@ -85,7 +85,7 @@
         },
         "header__1": {
           "content": "Ürün değerlendirmesi",
-          "info": "Değerlendirmeleri göstermek için bir ürün değerlendirme uygulaması ekleyin. [Learn more](https://help.shopify.com/en/manual/products/product-reviews/installation)"
+          "info": "Değerlendirmeleri göstermek için bir ürün değerlendirme uygulaması ekleyin. [Learn more](https:\/\/help.shopify.com\/en\/manual\/products\/product-reviews\/installation)"
         },
         "header__2": {
           "content": "Ürün incelemeleri"
@@ -224,7 +224,7 @@
         "embellishments": "Süslemeler"
       },
       "text": {
-        "icons_info": "Daha fazla simgeyi görselleştirmek ve indirmek için lütfen [bu bağlantıyı](https://resources.krownthemes.com/icons/) ziyaret edin."
+        "icons_info": "Daha fazla simgeyi görselleştirmek ve indirmek için lütfen [bu bağlantıyı](https:\/\/resources.krownthemes.com\/icons\/) ziyaret edin."
       },
       "borders": {
         "top_border": "Üst kenarlık",
@@ -346,18 +346,18 @@
       "cart_upsell": {
         "name": "Tek ürün önerisi",
         "product": "Ürün",
-        "info": "Dinamik öneriler, sepetinizdeki ürünlere göredir. Zamanla değişir ve iyileşirler. [Daha fazla bilgi edinin](https://help.shopify.com/en/themes/development/recommended-products)"
+        "info": "Dinamik öneriler, sepetinizdeki ürünlere göredir. Zamanla değişir ve iyileşirler. [Daha fazla bilgi edinin](https:\/\/help.shopify.com\/en\/themes\/development\/recommended-products)"
       },
       "gift_wrapping": {
         "name": "Hediye paketi",
-        "info": "Hediye paketi, bir ürün olarak ayarlanmalıdır. [Daha fazla bilgi edinin](https://shopify-support.krownthemes.com/article/696-cart-features#gift-wrap)",
+        "info": "Hediye paketi, bir ürün olarak ayarlanmalıdır. [Daha fazla bilgi edinin](https:\/\/shopify-support.krownthemes.com\/article\/696-cart-features#gift-wrap)",
         "settings": {
           "label": "Metin",
           "button": "Düğme etiketi"
         }
       },
       "custom_code": {
-        "name": "Özel HTML / Liquid"
+        "name": "Özel HTML \/ Liquid"
       },
       "rating": {
         "name": "Yorum uygulaması",
@@ -427,7 +427,7 @@
             "amount_saved": "Kaydedilen miktar"
           },
           "regular_badges": {
-            "info": "Ürün rozetleri hakkında [buradan](https://shopify-support.krownthemes.com/article/377-collection-pages#product-badges) daha fazla bilgi edinin."
+            "info": "Ürün rozetleri hakkında [buradan](https:\/\/shopify-support.krownthemes.com\/article\/377-collection-pages#product-badges) daha fazla bilgi edinin."
           },
           "sold_out": {
             "name": "Tükendi rozeti",
@@ -436,8 +436,8 @@
           },
           "custom_badges": {
             "name": "Özel ürün rozetleri",
-            "info": "Bu tema, burada tanımlayabileceğiniz özel ürün rozetlerini kullanır. [Daha fazla bilgi edinin](https://shopify-support.krownthemes.com/article/564-product-pages#product-badges)",
-            "split_info": "Bu tema, burada tanımlayabileceğiniz özel ürün rozetlerini kullanır. [Daha fazla bilgi edinin](https://shopify-support.krownthemes.com/article/377-collection-pages#product-badges)",
+            "info": "Bu tema, burada tanımlayabileceğiniz özel ürün rozetlerini kullanır. [Daha fazla bilgi edinin](https:\/\/shopify-support.krownthemes.com\/article\/564-product-pages#product-badges)",
+            "split_info": "Bu tema, burada tanımlayabileceğiniz özel ürün rozetlerini kullanır. [Daha fazla bilgi edinin](https:\/\/shopify-support.krownthemes.com\/article\/377-collection-pages#product-badges)",
             "name__1": "Özel rozet 1",
             "name__2": "Özel rozet 2",
             "name__3": "Özel rozet 3",
@@ -512,7 +512,7 @@
             "name": "Kargo",
             "show": {
               "label": "Ücretsiz kargo için en düşük tutarı göster",
-              "info": "Kargo ücretlerini yapılandırmak için [shipping settings](/admin/settings/shipping) bölümünüze gidin."
+              "info": "Kargo ücretlerini yapılandırmak için [shipping settings](\/admin\/settings\/shipping) bölümünüze gidin."
             },
             "amount": {
               "label": "Ücretsiz kargo için en düşük tutar",
@@ -543,7 +543,7 @@
           },
           "local-pickup": {
             "name": "Yerel stok",
-            "info": "Bu tema, ürünler için yerel stoğu gösterir. [Daha fazla bilgi edinin](https://shopify-support.krownthemes.com/article/641-collection-page-product-grids#dynamic-text)"
+            "info": "Bu tema, ürünler için yerel stoğu gösterir. [Daha fazla bilgi edinin](https:\/\/shopify-support.krownthemes.com\/article\/641-collection-page-product-grids#dynamic-text)"
           },
           "badges": {
             "name": "Varsayılan ürün rozetleri",
@@ -559,7 +559,7 @@
             },
             "custom_badges": {
               "name": "Özel ürün rozetleri",
-              "info": "Bu tema, burada tanımlayabileceğiniz özel ürün rozetlerini kullanır. [Daha fazla bilgi edinin](https://shopify-support.krownthemes.com/article/639-theme-settings#product-badges)",
+              "info": "Bu tema, burada tanımlayabileceğiniz özel ürün rozetlerini kullanır. [Daha fazla bilgi edinin](https:\/\/shopify-support.krownthemes.com\/article\/639-theme-settings#product-badges)",
               "name__1": "Özel rozet 1",
               "name__2": "Özel rozet 2",
               "name__3": "Özel rozet 3",
@@ -612,7 +612,7 @@
               "info": "256 x 256 piksel"
             },
             "select_icon": {
-              "info": "Daha fazla simgeyi görselleştirmek ve indirmek için lütfen [bu bağlantıyı](https://resources.krownthemes.com/icons/) ziyaret edin\n"
+              "info": "Daha fazla simgeyi görselleştirmek ve indirmek için lütfen [bu bağlantıyı](https:\/\/resources.krownthemes.com\/icons\/) ziyaret edin\n"
             },
             "icon_color": {
               "label": "Simge",
@@ -734,7 +734,7 @@
               "settings": {
                 "name": {
                   "label": "Ad",
-                  "info": "Mağaza adının [konum ayarlarınızda](/admin/settings/locations) tanımlanan mağaza adınızla aynı olması gerekmektedir. "
+                  "info": "Mağaza adının [konum ayarlarınızda](\/admin\/settings\/locations) tanımlanan mağaza adınızla aynı olması gerekmektedir. "
                 },
                 "pickup_price": {
                   "label": "Teslim alma fiyatı"
@@ -758,7 +758,7 @@
                 },
                 "map": {
                   "name": "Harita sabitlemesi",
-                  "info": "Harita etkinse bu adres için özel bir sabitleme tanımlamanız gerekir. [Adres koordinatlarınızı nasıl elde edeceğinizi öğrenin](https://support.google.com/maps/answer/18539?hl=en)"
+                  "info": "Harita etkinse bu adres için özel bir sabitleme tanımlamanız gerekir. [Adres koordinatlarınızı nasıl elde edeceğinizi öğrenin](https:\/\/support.google.com\/maps\/answer\/18539?hl=en)"
                 },
                 "map_latitude": {
                   "label": "Enlem",
@@ -819,15 +819,15 @@
             },
             "store-selector": {
               "name": "Mağaza seçici",
-              "content": "Mağaza seçici, Mağaza Seçici bölümünde yapılandırılabilir. [Daha fazla bilgi edinin](https://shopify-support.krownthemes.com/article/640-header-the-store-selector#store-selector)",
-              "info": "Bu tema, gerçek mağaza konumlarınızı interaktif bir mağaza seçiciye bağlamanıza olanak tanır. [Daha fazla bilgi edinin](https://shopify-support.krownthemes.com/article/640-header-the-store-selector#store-selector)"
+              "content": "Mağaza seçici, Mağaza Seçici bölümünde yapılandırılabilir. [Daha fazla bilgi edinin](https:\/\/shopify-support.krownthemes.com\/article\/640-header-the-store-selector#store-selector)",
+              "info": "Bu tema, gerçek mağaza konumlarınızı interaktif bir mağaza seçiciye bağlamanıza olanak tanır. [Daha fazla bilgi edinin](https:\/\/shopify-support.krownthemes.com\/article\/640-header-the-store-selector#store-selector)"
             },
             "mega-menu": {
               "name": "Mega menü",
               "settings": {
                 "menu_handle": {
                   "label": "Menü işleci",
-                  "info": "Bu tema mega menüleri kullanır. [Daha fazla bilgi edin](https://shopify-support.krownthemes.com/article/640-header-the-store-selector#mega-menus)"
+                  "info": "Bu tema mega menüleri kullanır. [Daha fazla bilgi edin](https:\/\/shopify-support.krownthemes.com\/article\/640-header-the-store-selector#mega-menus)"
                 }
               }
             }
@@ -1020,8 +1020,8 @@
             },
             "icons": {
               "name": "Simge listesi",
-              "info": "Temada bulunan simgeleri görselleştirmek ve indirmek için lütfen [bu bağlantıyı](https://resources.krownthemes.com/icons/) ziyaret edin.",
-              "help": "Bu tema, dinamik içerik aracılığıyla özel ürün simgeleri eklemenize olanak tanır. [Daha fazla bilgi edinin](https://shopify-support.krownthemes.com/article/639-theme-settings#dynamic-icons)",
+              "info": "Temada bulunan simgeleri görselleştirmek ve indirmek için lütfen [bu bağlantıyı](https:\/\/resources.krownthemes.com\/icons\/) ziyaret edin.",
+              "help": "Bu tema, dinamik içerik aracılığıyla özel ürün simgeleri eklemenize olanak tanır. [Daha fazla bilgi edinin](https:\/\/shopify-support.krownthemes.com\/article\/639-theme-settings#dynamic-icons)",
               "headers": {
                 "icon_1": "Simge 1",
                 "icon_2": "Simge 2",
@@ -1053,7 +1053,7 @@
         },
         "main-article-comments": {
           "name": "Makale yorumları",
-          "info": "Yorumları etkinleştirmek için [blog ayarlarınıza](/admin/blogs) gidin."
+          "info": "Yorumları etkinleştirmek için [blog ayarlarınıza](\/admin\/blogs) gidin."
         },
         "main-article-navigation": {
           "name": "Makale gezintisi",
@@ -1079,7 +1079,7 @@
           "blocks": {
             "payment": {
               "name": "Ödeme simgeleri",
-              "info": "Gösterilen simgeler, mağazanızın [ödeme ayarlarına](/admin/settings/payments) ve müşterinin bulunduğu bölge ve para birimine göre belirlenir."
+              "info": "Gösterilen simgeler, mağazanızın [ödeme ayarlarına](\/admin\/settings\/payments) ve müşterinin bulunduğu bölge ve para birimine göre belirlenir."
             }
           }
         },
@@ -1156,7 +1156,7 @@
             "vendor": "Satıcı",
             "text": {
               "name": "Dinamik metin",
-              "info": "Bir ürün meta alanı oluşturarak eşsiz bir özelliği vurgulamak için dinamik bir kaynak kullanın. [Daha fazla bilgi edinin](https://shopify-support.krownthemes.com/article/641-collection-page-product-grids#dynamic-text)",
+              "info": "Bir ürün meta alanı oluşturarak eşsiz bir özelliği vurgulamak için dinamik bir kaynak kullanın. [Daha fazla bilgi edinin](https:\/\/shopify-support.krownthemes.com\/article\/641-collection-page-product-grids#dynamic-text)",
               "settings": {
                 "text": {
                   "label": "Etiket meta alanı"
@@ -1178,7 +1178,7 @@
               }
             },
             "icons": {
-              "info": "Simge listesi için ürün meta alanları oluşturarak eşsiz özellikleri vurgulamak için dinamik kaynakları kullanın. [Daha fazla bilgi edinin](https://shopify-support.krownthemes.com/article/639-theme-settings#dynamic-icons)",
+              "info": "Simge listesi için ürün meta alanları oluşturarak eşsiz özellikleri vurgulamak için dinamik kaynakları kullanın. [Daha fazla bilgi edinin](https:\/\/shopify-support.krownthemes.com\/article\/639-theme-settings#dynamic-icons)",
               "settings": {
                 "icon": "Simge meta alanı",
                 "label": "Etiket meta alanı"
@@ -1201,7 +1201,7 @@
       "name": "Tamamlayıcı ürünler",
       "settings": {
         "paragraph": {
-          "content": "Tamamlayıcı ürünleri seçmek için Search & Discovery uygulamasını ekleyin. [Daha fazla bilgi edinin](https://help.shopify.com/manual/online-store/search-and-discovery/product-recommendations)"
+          "content": "Tamamlayıcı ürünleri seçmek için Search & Discovery uygulamasını ekleyin. [Daha fazla bilgi edinin](https:\/\/help.shopify.com\/manual\/online-store\/search-and-discovery\/product-recommendations)"
         }
       }
     },
@@ -1380,7 +1380,7 @@
             },
             "color_swatches": {
               "label": "Renk örneklerini göster (yalnızca blok stili için)",
-              "info": "Bu tema renk örnekleri için özel görseller gösterebilir. [Learn more](https://shopify-support.krownthemes.com/article/554-using-color-swatches)"
+              "info": "Bu tema renk örnekleri için özel görseller gösterebilir. [Learn more](https:\/\/shopify-support.krownthemes.com\/article\/554-using-color-swatches)"
             }
           }
         },
@@ -1523,7 +1523,7 @@
         },
         "icons": {
           "label": "Simgeler",
-          "info": "Temadaki tüm simgeleri görselleştirmek için lütfen  [this link](https://krownthemes.com/krown-icons/) adresini ziyaret edin"
+          "info": "Temadaki tüm simgeleri görselleştirmek için lütfen  [this link](https:\/\/krownthemes.com\/krown-icons\/) adresini ziyaret edin"
         }
       },
       "blocks": {
@@ -1551,17 +1551,17 @@
         },
         "language_selector": {
           "content": "Dil seçici",
-          "info": "Dil eklemek için [language settings.](/yönetici/ayarlar/diller) bölümüne gidin"
+          "info": "Dil eklemek için [language settings.](\/yönetici\/ayarlar\/diller) bölümüne gidin"
         },
         "language_selector_show": {
           "label": "Dil seçiciyi göster"
         },
         "country_selector": {
-          "content": "Ülke/bölge seçici",
-          "info": "Ülke/bölge eklemek için [ödeme ayarlarınıza ](/admin/settings/payments) gidin."
+          "content": "Ülke\/bölge seçici",
+          "info": "Ülke\/bölge eklemek için [ödeme ayarlarınıza ](\/admin\/settings\/payments) gidin."
         },
         "country_selector_show": {
-          "label": "Ülke/bölge seçiciyi etkinleştir"
+          "label": "Ülke\/bölge seçiciyi etkinleştir"
         }
       },
       "blocks": {
@@ -2385,7 +2385,7 @@
         },
         "header__1": {
           "content": "Ürün önerileri",
-          "info": "Zamanla değişmek ve gelişmek için ürün bilgisi ve dinamik öneri kullanım sırası. [Learn more](https://help.shopify.com/en/themes/development/recommended-products)"
+          "info": "Zamanla değişmek ve gelişmek için ürün bilgisi ve dinamik öneri kullanım sırası. [Learn more](https:\/\/help.shopify.com\/en\/themes\/development\/recommended-products)"
         }
       }
     },
@@ -2492,7 +2492,7 @@
         },
         "enable_filtering": {
           "label": "Filtrelemeyi etkinleştir",
-          "info": "[Customize filters](/admin/menus)"
+          "info": "[Customize filters](\/admin\/menus)"
         },
         "enable_sorting": {
           "label": "Sıralamayı etkinleştir"
@@ -2506,7 +2506,7 @@
       "name": "Koleksiyon şeridi",
       "settings": {
         "paragraph": {
-          "content": "Koleksiyon açıklamalarını ve resimlerini değiştirmek için, [edit your collections.](/admin/collections)"
+          "content": "Koleksiyon açıklamalarını ve resimlerini değiştirmek için, [edit your collections.](\/admin\/collections)"
         },
         "show_collection_description": {
           "label": "Koleksiyon açıklamasını göster"
@@ -2550,7 +2550,7 @@
           "name": "Vergi bilgisini göster"
         },
         "sku_barcode": {
-          "name": "SKU / BARKOD"
+          "name": "SKU \/ BARKOD"
         },
         "quantity_selector": {
           "name": "Miktar seçici"
@@ -2566,7 +2566,7 @@
             },
             "low_inventory_notification": {
               "label": "Envanter bildirimi",
-              "info": "Bu özelliğin çalışması için envanter takibinin çeşitlerde etkinleştirilmesi gereklidir. [Learn more](https://help.shopify.com/en/manual/products/inventory/track_inventory)",
+              "info": "Bu özelliğin çalışması için envanter takibinin çeşitlerde etkinleştirilmesi gereklidir. [Learn more](https:\/\/help.shopify.com\/en\/manual\/products\/inventory\/track_inventory)",
               "options__1": {
                 "label": "Envanter bilgisini gösterme"
               },
@@ -2584,7 +2584,7 @@
           "settings": {
             "show_dynamic_checkout": {
               "label": "Dinamik ödeme butonlarını göster",
-              "info": "Müşteriler, mağazandaki mevcut ödeme yöntemlerini kullanarak PayPal veya Apple Pay gibi tercih ettiği seçenekleri görür. [Learn more](https://help.shopify.com/manual/using-themes/change-the-layout/dynamic-checkout)"
+              "info": "Müşteriler, mağazandaki mevcut ödeme yöntemlerini kullanarak PayPal veya Apple Pay gibi tercih ettiği seçenekleri görür. [Learn more](https:\/\/help.shopify.com\/manual\/using-themes\/change-the-layout\/dynamic-checkout)"
             },
             "show_quantity_selector": {
               "label": "Miktar seçiciyi göster"
@@ -2619,10 +2619,10 @@
           "name": "Paylaş",
           "settings": {
             "featured_image_info": {
-              "content": "Sosyal medya gönderilerine bir bağlantı eklersen sayfanın öne çıkan görüntüsü ön izleme görüntüsü olarak gösterilecektir. [Learn more](https://help.shopify.com/en/manual/online-store/images/showing-social-media-thumbnail-images)."
+              "content": "Sosyal medya gönderilerine bir bağlantı eklersen sayfanın öne çıkan görüntüsü ön izleme görüntüsü olarak gösterilecektir. [Learn more](https:\/\/help.shopify.com\/en\/manual\/online-store\/images\/showing-social-media-thumbnail-images)."
             },
             "title_info": {
-              "content": "Mağaza başlığı ve açıklama önizleme görüntüsü ile birliktedir. [Learn more](https://help.shopify.com/en/manual/promoting-marketing/seo/adding-keywords#set-a-title-and-description-for-your-online-store)."
+              "content": "Mağaza başlığı ve açıklama önizleme görüntüsü ile birliktedir. [Learn more](https:\/\/help.shopify.com\/en\/manual\/promoting-marketing\/seo\/adding-keywords#set-a-title-and-description-for-your-online-store)."
             }
           }
         },
@@ -2648,7 +2648,7 @@
       "settings": {
         "header": {
           "content": "Medya",
-          "info": "Hakkında daha fazla bilgi edin [media types](https://help.shopify.com/manual/products/product-media)"
+          "info": "Hakkında daha fazla bilgi edin [media types](https:\/\/help.shopify.com\/manual\/products\/product-media)"
         },
         "enable_sticky_info": {
           "label": "Geniş ekranlardaki yapışkan ürün bilgisini etkinleştir"

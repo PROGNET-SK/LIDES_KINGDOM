@@ -37,7 +37,7 @@
       "signup_form_email_placeholder": "Jouw e-mailadres",
       "signup_form_submit": "Verzenden",
       "signup_form_success": "We sturen je een e-mail vlak voordat we opengaan!",
-      "admin_link_html": "Ben jij de winkeleigenaar? <a href=\"/admin\">Log hier in</a>",
+      "admin_link_html": "Ben jij de winkeleigenaar? <a href=\"\/admin\">Log hier in<\/a>",
       "password_link": "Ga binnen met een wachtwoord",
       "powered_by_shopify_html": "Deze winkel wordt gesponsord door {{ shopify }}"
     },
@@ -87,7 +87,7 @@
       "back": "Terug",
       "play_video": "Speel video af",
       "language_dropdown_label": "Taal",
-      "country_dropdown_label": "Land/region",
+      "country_dropdown_label": "Land\/region",
       "quantity": "Aantal",
       "price": {
         "regular": "Normale prijs",
@@ -145,7 +145,7 @@
     "sort_button": "Sorteer",
     "sort_by_label": "Sorteer op:",
     "to": "Naar",
-    "use_fewer_filters_html": "Gebruik minder filters <a class=\"{{ class }}\" href=\"{{ link }}\">wis alles</a>",
+    "use_fewer_filters_html": "Gebruik minder filters <a class=\"{{ class }}\" href=\"{{ link }}\">wis alles<\/a>",
     "view_all_products": "Bekijk alle producten",
     "no_collections": "Het spijt ons, maar er zijn op dit moment geen collecties in deze winkel."
   },
@@ -184,7 +184,7 @@
       },
       "loading_reviews": "Meer reviews aan het laden",
       "include_taxes": "Inclusief BTW.",
-      "shipping_policy_html": "<a href=\"{{ link }}\">Verzending</a> wordt berekend bij het afrekenen.",
+      "shipping_policy_html": "<a href=\"{{ link }}\">Verzending<\/a> wordt berekend bij het afrekenen.",
       "view_in_space": "Bekijk in jouw ruimte",
       "view_in_space_label": "Bekijk in jouw ruimte, laadt artikel in augmented reality venster"
     },
@@ -203,9 +203,9 @@
     "update": "Update winkelmand",
     "note": "Speciale instructies voor verkoper",
     "policies": {
-      "taxes_and_shipping_policy_at_checkout_html": "Belastingen en <a href=\"{{ link }}\">verzendkosten</a> worden berekend bij de checkout",
+      "taxes_and_shipping_policy_at_checkout_html": "Belastingen en <a href=\"{{ link }}\">verzendkosten<\/a> worden berekend bij de checkout",
       "taxes_included_but_shipping_at_checkout": "Belasting inbegrepen en verzendkosten worden berekend bij de checkout",
-      "taxes_included_and_shipping_policy_html": "Inclusief btw. <a href=\"{{ link }}\">Verzendkosten</a> worden berekend bij de checkout.",
+      "taxes_included_and_shipping_policy_html": "Inclusief btw. <a href=\"{{ link }}\">Verzendkosten<\/a> worden berekend bij de checkout.",
       "taxes_and_shipping_at_checkout": "Belastingen en verzendkosten worden berekend bij de checkout"
     },
     "empty": "Je winkelmand is leeg.",
@@ -421,8 +421,8 @@
     "check_other_stores": "Bekijk beschikbaarheid bij andere winkels",
     "pick_up_available": "Afhalen mogelijk",
     "pick_up_currently_unavailable": "Afhalen is op het moment niet beschikbaar",
-    "pick_up_available_at_html": "Afhalen beschikbaar bij <strong>{{ location_name }}</strong>",
-    "pick_up_unavailable_at_html": "Afhalen is op het moment niet beschikbaar bij <strong>{{ location_name }}</strong>",
+    "pick_up_available_at_html": "Afhalen beschikbaar bij <strong>{{ location_name }}<\/strong>",
+    "pick_up_unavailable_at_html": "Afhalen is op het moment niet beschikbaar bij <strong>{{ location_name }}<\/strong>",
     "invalid_location_address": "Neem contact op met de winkel om het adres te bevestigen",
     "refresh": "Verversen"
   }

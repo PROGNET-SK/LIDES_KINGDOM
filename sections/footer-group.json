@@ -1,1 +1,84 @@
-{"type":"footer","name":"t:sections.refactor_words.labels.footer_group","sections":{"text-columns-with-icons":{"type":"text-columns-with-icons","blocks":{"dc0e2351-9175-4503-9568-f4f102cbc798":{"type":"text-icon","settings":{"title":"Shipping","body":"<p>Write some useful information about your shipping details<\/p><p>Link to your <a href='#'>shipping policy<\/a>.<\/p>"}},"00665f2b-5814-4213-853b-3b6c73955a4a":{"type":"text-icon","settings":{"title":"Delivery","body":"<p>Let your customers know if you offer free delivery for certain types of orders<\/p><p>Link to your <a href='#'>offers page<\/a>.<\/p>"}},"913a05c0-114a-4fb7-ba39-047df22f46cf":{"type":"text-icon","settings":{"title":"Returns","body":"<p>Show customers how much time they have for testing your products<\/p><p>Link to your <a href='#'>returns policy<\/a>.<\/p>"}}},"block_order":["dc0e2351-9175-4503-9568-f4f102cbc798","00665f2b-5814-4213-853b-3b6c73955a4a","913a05c0-114a-4fb7-ba39-047df22f46cf"],"settings":{"text_alignment":"left","color_text":"#262626","color_bg":"#f2f2f2"}},"footer":{"type":"footer","blocks":{"1568899676297":{"type":"text","settings":{"title":"About","content":"<p>Write a short statement about your brand.<\/p>","size":"footer-text--large"}},"1568899717495":{"type":"menus","settings":{"title_1":"First menu","menu_1":"footer","title_2":"Second menu","menu_2":""}},"1568899707223":{"type":"newsletter","settings":{"title":"Newsletter"}}},"block_order":["1568899676297","1568899717495","1568899707223"],"settings":{"show_payment_icons":true,"show_locale_selector":true,"show_country_selector":true}}},"order":["text-columns-with-icons","footer"]}
+{
+  "type": "footer",
+  "name": "t:sections.refactor_words.labels.footer_group",
+  "sections": {
+    "text-columns-with-icons": {
+      "type": "text-columns-with-icons",
+      "blocks": {
+        "dc0e2351-9175-4503-9568-f4f102cbc798": {
+          "type": "text-icon",
+          "settings": {
+            "title": "Shipping",
+            "body": "<p>Write some useful information about your shipping details<\/p><p>Link to your <a href='#'>shipping policy<\/a>.<\/p>"
+          }
+        },
+        "00665f2b-5814-4213-853b-3b6c73955a4a": {
+          "type": "text-icon",
+          "settings": {
+            "title": "Delivery",
+            "body": "<p>Let your customers know if you offer free delivery for certain types of orders<\/p><p>Link to your <a href='#'>offers page<\/a>.<\/p>"
+          }
+        },
+        "913a05c0-114a-4fb7-ba39-047df22f46cf": {
+          "type": "text-icon",
+          "settings": {
+            "title": "Returns",
+            "body": "<p>Show customers how much time they have for testing your products<\/p><p>Link to your <a href='#'>returns policy<\/a>.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "dc0e2351-9175-4503-9568-f4f102cbc798",
+        "00665f2b-5814-4213-853b-3b6c73955a4a",
+        "913a05c0-114a-4fb7-ba39-047df22f46cf"
+      ],
+      "settings": {
+        "text_alignment": "left",
+        "color_text": "#262626",
+        "color_bg": "#f2f2f2"
+      }
+    },
+    "footer": {
+      "type": "footer",
+      "blocks": {
+        "1568899676297": {
+          "type": "text",
+          "settings": {
+            "title": "About",
+            "content": "<p>Write a short statement about your brand.<\/p>",
+            "size": "footer-text--large"
+          }
+        },
+        "1568899717495": {
+          "type": "menus",
+          "settings": {
+            "title_1": "First menu",
+            "menu_1": "footer",
+            "title_2": "Second menu",
+            "menu_2": ""
+          }
+        },
+        "1568899707223": {
+          "type": "newsletter",
+          "settings": {
+            "title": "Newsletter"
+          }
+        }
+      },
+      "block_order": [
+        "1568899676297",
+        "1568899717495",
+        "1568899707223"
+      ],
+      "settings": {
+        "show_payment_icons": true,
+        "show_locale_selector": true,
+        "show_country_selector": true
+      }
+    }
+  },
+  "order": [
+    "text-columns-with-icons",
+    "footer"
+  ]
+}

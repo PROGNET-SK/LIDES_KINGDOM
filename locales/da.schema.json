@@ -55,7 +55,7 @@
         },
         "enhance_featured_products": {
           "label": "Understreg fremhævede produkter",
-          "info": "[Få flere oplysninger](https://shopify-support.krownthemes.com/article/471-general-settings#featured-products)"
+          "info": "[Få flere oplysninger](https:\/\/shopify-support.krownthemes.com\/article\/471-general-settings#featured-products)"
         },
         "show_discount": {
           "label": "Vis rabat som...",
@@ -85,7 +85,7 @@
         },
         "header__1": {
           "content": "Produktvurdering",
-          "info": "Tilføj en produktvurderingsapp for at vise vurderinger. [Få flere oplysninger](https://help.shopify.com/da/manual/products/product-reviews/installation)"
+          "info": "Tilføj en produktvurderingsapp for at vise vurderinger. [Få flere oplysninger](https:\/\/help.shopify.com\/da\/manual\/products\/product-reviews\/installation)"
         },
         "header__2": {
           "content": "Produktanmeldelser"
@@ -224,7 +224,7 @@
         "embellishments": "Udsmykninger"
       },
       "text": {
-        "icons_info": "For at visualisere og downloade flere ikoner, besøg venligst [dette link](https://resources.krownthemes.com/icons/)."
+        "icons_info": "For at visualisere og downloade flere ikoner, besøg venligst [dette link](https:\/\/resources.krownthemes.com\/icons\/)."
       },
       "borders": {
         "top_border": "Øverste kant",
@@ -346,18 +346,18 @@
       "cart_upsell": {
         "name": "Individuel produktanbefaling",
         "product": "Produkt",
-        "info": "Dynamiske anbefalinger er baseret på varerne i din indkøbskurv. De ændrer sig og forbedres med tiden. [Få flere oplysninger](https://help.shopify.com/da/themes/development/recommended-products)"
+        "info": "Dynamiske anbefalinger er baseret på varerne i din indkøbskurv. De ændrer sig og forbedres med tiden. [Få flere oplysninger](https:\/\/help.shopify.com\/da\/themes\/development\/recommended-products)"
       },
       "gift_wrapping": {
         "name": "Gaveindpakning",
-        "info": "Gaveindpakning skal opsættes som et produkt. [Få flere oplysninger](https://shopify-support.krownthemes.com/article/696-cart-features#gift-wrap)",
+        "info": "Gaveindpakning skal opsættes som et produkt. [Få flere oplysninger](https:\/\/shopify-support.krownthemes.com\/article\/696-cart-features#gift-wrap)",
         "settings": {
           "label": "Tekst",
           "button": "Knapetiket"
         }
       },
       "custom_code": {
-        "name": "Brugerdefineret HTML / Flydende"
+        "name": "Brugerdefineret HTML \/ Flydende"
       },
       "rating": {
         "name": "Anmeldelsesapp",
@@ -427,7 +427,7 @@
             "amount_saved": "Beløb gemt"
           },
           "regular_badges": {
-            "info": "Få flere oplysninger om produktbadges [her](https://shopify-support.krownthemes.com/article/377-collection-pages#product-badges)."
+            "info": "Få flere oplysninger om produktbadges [her](https:\/\/shopify-support.krownthemes.com\/article\/377-collection-pages#product-badges)."
           },
           "sold_out": {
             "name": "Udsolgt badge",
@@ -436,8 +436,8 @@
           },
           "custom_badges": {
             "name": "Brugerdefinerede produktbadges",
-            "info": "Dette tema bruger brugerdefinerede produktbadges, som du kan definere her. [Få flere oplysninger](https://shopify-support.krownthemes.com/article/564-product-pages#product-badges)",
-            "split_info": "Dette tema bruger brugerdefinerede produktbadges, som du kan definere her. [Få flere oplysninger](https://shopify-support.krownthemes.com/article/377-collection-pages#product-badges)",
+            "info": "Dette tema bruger brugerdefinerede produktbadges, som du kan definere her. [Få flere oplysninger](https:\/\/shopify-support.krownthemes.com\/article\/564-product-pages#product-badges)",
+            "split_info": "Dette tema bruger brugerdefinerede produktbadges, som du kan definere her. [Få flere oplysninger](https:\/\/shopify-support.krownthemes.com\/article\/377-collection-pages#product-badges)",
             "name__1": "Brugerdefineret badge 1",
             "name__2": "Brugerdefineret badge 2",
             "name__3": "Brugerdefineret badge 3",
@@ -528,7 +528,7 @@
             "info": "Denne funktion fungerer kun med en enkelt valuta og forsendelsesmetode. Hvis du bruger flere forsendelsesmetoder eller valutaer, kan det vise falske værdier for kunden.",
             "show": {
               "label": "Vis minimumsbeløb for gratis forsendelse",
-              "info": "For at konfigurere forsendelsespriser skal du gå til dine [forsendelsesindstillinger](/admin/indstillinger/forsendelse)."
+              "info": "For at konfigurere forsendelsespriser skal du gå til dine [forsendelsesindstillinger](\/admin\/indstillinger\/forsendelse)."
             },
             "amount": {
               "label": "Minimumbeløb for gratis forsendelse",
@@ -559,7 +559,7 @@
           },
           "local-pickup": {
             "name": "Lokal tilgængelighed",
-            "info": "Dette tema viser lokal tilgængelighed for produkter. [Få flere oplysninger](https://shopify-support.krownthemes.com/article/641-collection-page-product-grids#dynamic-text)"
+            "info": "Dette tema viser lokal tilgængelighed for produkter. [Få flere oplysninger](https:\/\/shopify-support.krownthemes.com\/article\/641-collection-page-product-grids#dynamic-text)"
           },
           "badges": {
             "name": "Standard produktbadges",
@@ -575,7 +575,7 @@
             },
             "custom_badges": {
               "name": "Brugerdefinerede produktbadges",
-              "info": "Dette tema bruger brugerdefinerede produktbadges, som du kan definere her. [Få flere oplysninger](https://shopify-support.krownthemes.com/article/639-theme-settings#product-badges)",
+              "info": "Dette tema bruger brugerdefinerede produktbadges, som du kan definere her. [Få flere oplysninger](https:\/\/shopify-support.krownthemes.com\/article\/639-theme-settings#product-badges)",
               "name__1": "Brugerdefineret badge 1",
               "name__2": "Brugerdefineret badge 2",
               "name__3": "Brugerdefineret badge 3",
@@ -629,7 +629,7 @@
               "info": "256 x 256 px"
             },
             "select_icon": {
-              "info": "For at visualisere og downloade flere ikoner, besøg venligst [dette link](https://resources.krownthemes.com/icons/)"
+              "info": "For at visualisere og downloade flere ikoner, besøg venligst [dette link](https:\/\/resources.krownthemes.com\/icons\/)"
             },
             "icon_color": {
               "label": "Ikon",
@@ -751,7 +751,7 @@
               "settings": {
                 "name": {
                   "label": "Navn",
-                  "info": "Butiksnavnet skal stemme overens med navnet på din butik, som er defineret i dine [lokationsindstillinger](/admin/indstillinger/lokationer)"
+                  "info": "Butiksnavnet skal stemme overens med navnet på din butik, som er defineret i dine [lokationsindstillinger](\/admin\/indstillinger\/lokationer)"
                 },
                 "pickup_price": {
                   "label": "Afhentningspris"
@@ -775,7 +775,7 @@
                 },
                 "map": {
                   "name": "Kortstift",
-                  "info": "Hvis kortet er aktiveret, skal du definere en tilpasset stift til denne adresse. [Lær mere om hvordan du får dine adressekoordinater](https://support.google.com/maps/answer/18539?hl=da)"
+                  "info": "Hvis kortet er aktiveret, skal du definere en tilpasset stift til denne adresse. [Lær mere om hvordan du får dine adressekoordinater](https:\/\/support.google.com\/maps\/answer\/18539?hl=da)"
                 },
                 "map_latitude": {
                   "label": "Breddegrad",
@@ -836,15 +836,15 @@
             },
             "store-selector": {
               "name": "Butiksvælger",
-              "content": "Butiksvælgeren kan konfigureres i sektionen Butiksvælger. [Få flere oplysninger](https://shopify-support.krownthemes.com/article/640-header-the-store-selector#store-selector)",
-              "info": "Dette tema giver dig mulighed for at forbinde dine rigtige butikslokationer til en interaktiv butiksvælger. [Få flere oplysninger](https://shopify-support.krownthemes.com/article/640-header-the-store-selector#store-selector)"
+              "content": "Butiksvælgeren kan konfigureres i sektionen Butiksvælger. [Få flere oplysninger](https:\/\/shopify-support.krownthemes.com\/article\/640-header-the-store-selector#store-selector)",
+              "info": "Dette tema giver dig mulighed for at forbinde dine rigtige butikslokationer til en interaktiv butiksvælger. [Få flere oplysninger](https:\/\/shopify-support.krownthemes.com\/article\/640-header-the-store-selector#store-selector)"
             },
             "mega-menu": {
               "name": "Megamenu",
               "settings": {
                 "menu_handle": {
                   "label": "Menuhåndtag",
-                  "info": "Dette tema bruger mega menuer. [Få flere oplysninger](https://shopify-support.krownthemes.com/article/640-header-the-store-selector#mega-menus)"
+                  "info": "Dette tema bruger mega menuer. [Få flere oplysninger](https:\/\/shopify-support.krownthemes.com\/article\/640-header-the-store-selector#mega-menus)"
                 }
               }
             }
@@ -1040,8 +1040,8 @@
             },
             "icons": {
               "name": "Ikonliste",
-              "info": "For at visualisere og downloade ikoner inkluderet i temaet, besøg venligst [dette link](https://www.krownthemes.com/krown-icons/).",
-              "help": "Dette tema giver dig mulighed for at tilføje brugerdefinerede produktikoner gennem dynamisk indhold. [Få flere oplysninger](https://shopify-support.krownthemes.com/article/639-theme-settings#dynamic-icons)",
+              "info": "For at visualisere og downloade ikoner inkluderet i temaet, besøg venligst [dette link](https:\/\/www.krownthemes.com\/krown-icons\/).",
+              "help": "Dette tema giver dig mulighed for at tilføje brugerdefinerede produktikoner gennem dynamisk indhold. [Få flere oplysninger](https:\/\/shopify-support.krownthemes.com\/article\/639-theme-settings#dynamic-icons)",
               "headers": {
                 "icon_1": "Ikon 1",
                 "icon_2": "Ikon 2",
@@ -1073,7 +1073,7 @@
         },
         "main-article-comments": {
           "name": "Artikelkommentarer",
-          "info": "For at aktivere kommentarer skal du gå til dine [blogindstillinger].(/admin/blogs)"
+          "info": "For at aktivere kommentarer skal du gå til dine [blogindstillinger].(\/admin\/blogs)"
         },
         "main-article-navigation": {
           "name": "Artikelnavigation",
@@ -1099,7 +1099,7 @@
           "blocks": {
             "payment": {
               "name": "Betalingsikoner",
-              "info": "De ikoner, der vises, bestemmes af din butiks [betalingsindstillinger](/admin/indstillinger/betalinger) og kundens region og valuta."
+              "info": "De ikoner, der vises, bestemmes af din butiks [betalingsindstillinger](\/admin\/indstillinger\/betalinger) og kundens region og valuta."
             },
             "text": {
               "name": "Tekst og sociale ikoner"
@@ -1179,7 +1179,7 @@
             "vendor": "Sælger",
             "text": {
               "name": "Dynamisk tekst",
-              "info": "Brug en dynamisk kilde til at fremhæve en unik egenskab ved at oprette et produktmetafelt. [Få flere oplysninger](https://shopify-support.krownthemes.com/article/641-collection-page-product-grids#dynamic-text)",
+              "info": "Brug en dynamisk kilde til at fremhæve en unik egenskab ved at oprette et produktmetafelt. [Få flere oplysninger](https:\/\/shopify-support.krownthemes.com\/article\/641-collection-page-product-grids#dynamic-text)",
               "settings": {
                 "text": {
                   "label": "Etiketmetafelt"
@@ -1201,7 +1201,7 @@
               }
             },
             "icons": {
-              "info": "Brug dynamiske kilder til at fremhæve unikke attributter ved at oprette produktmetafelter til ikonlisten. [Få flere oplysninger](https://shopify-support.krownthemes.com/article/639-theme-settings#dynamic-icons)",
+              "info": "Brug dynamiske kilder til at fremhæve unikke attributter ved at oprette produktmetafelter til ikonlisten. [Få flere oplysninger](https:\/\/shopify-support.krownthemes.com\/article\/639-theme-settings#dynamic-icons)",
               "settings": {
                 "icon": "Ikonmetafelt",
                 "label": "Etiketmetafelt"
@@ -1224,7 +1224,7 @@
       "name": "Supplerende produkter",
       "settings": {
         "paragraph": {
-          "content": "Tilføj Search & Discovery-appen for at vælge supplerende produkter. [Få mere at vide](https://help.shopify.com/manual/online-store/search-and-discovery/product-recommendations)"
+          "content": "Tilføj Search & Discovery-appen for at vælge supplerende produkter. [Få mere at vide](https:\/\/help.shopify.com\/manual\/online-store\/search-and-discovery\/product-recommendations)"
         }
       }
     },
@@ -1403,7 +1403,7 @@
             },
             "color_swatches": {
               "label": "Vis farveprøver (kun for blokstil)",
-              "info": "Dette tema kan vise brugerdefinerede billeder som farveprøver. [Få flere oplysninger](https://shopify-support.krownthemes.com/article/554-using-color-swatches)"
+              "info": "Dette tema kan vise brugerdefinerede billeder som farveprøver. [Få flere oplysninger](https:\/\/shopify-support.krownthemes.com\/article\/554-using-color-swatches)"
             }
           }
         },
@@ -1546,7 +1546,7 @@
         },
         "icons": {
           "label": "Ikoner",
-          "info": "For at visualisere alle de ikoner, der er inkluderet i temaet, skal du besøge [dette link](https://krownthemes.com/krown-icons/)"
+          "info": "For at visualisere alle de ikoner, der er inkluderet i temaet, skal du besøge [dette link](https:\/\/krownthemes.com\/krown-icons\/)"
         }
       },
       "blocks": {
@@ -1574,17 +1574,17 @@
         },
         "language_selector": {
           "content": "Sprogvælger",
-          "info": "For at tilføje et sprog skal du gå til dine [sprogindstillinger.](/admin/indstillinger/sprog)"
+          "info": "For at tilføje et sprog skal du gå til dine [sprogindstillinger.](\/admin\/indstillinger\/sprog)"
         },
         "language_selector_show": {
           "label": "Vis sprogvælger"
         },
         "country_selector": {
-          "content": "Lande-/områdevælger",
-          "info": "For at tilføje et land/område skal du gå til dine [betalingsindstillinger.](/admin/indstillinger/betalinger)"
+          "content": "Lande-\/områdevælger",
+          "info": "For at tilføje et land\/område skal du gå til dine [betalingsindstillinger.](\/admin\/indstillinger\/betalinger)"
         },
         "country_selector_show": {
-          "label": "Vis lande-/områdevælger"
+          "label": "Vis lande-\/områdevælger"
         }
       },
       "blocks": {
@@ -2408,7 +2408,7 @@
         },
         "header__1": {
           "content": "Produktanbefalinger",
-          "info": "Dynamiske anbefalinger bruger ordre- og produktinformation til at ændre og forbedre over tid. [Få flere oplysninger](https://help.shopify.com/da/themes/development/recommended-products)"
+          "info": "Dynamiske anbefalinger bruger ordre- og produktinformation til at ændre og forbedre over tid. [Få flere oplysninger](https:\/\/help.shopify.com\/da\/themes\/development\/recommended-products)"
         }
       }
     },
@@ -2515,7 +2515,7 @@
         },
         "enable_filtering": {
           "label": "Aktiver filtrering",
-          "info": "[Tilpas filtre](/admin/menuer)"
+          "info": "[Tilpas filtre](\/admin\/menuer)"
         },
         "enable_sorting": {
           "label": "Aktiver sortering"
@@ -2529,7 +2529,7 @@
       "name": "Kollektionsbanner",
       "settings": {
         "paragraph": {
-          "content": "For at ændre kollektionsbeskrivelser eller kollektionsbilleder, [rediger dine kollektioner.](/admin/kollektioner)"
+          "content": "For at ændre kollektionsbeskrivelser eller kollektionsbilleder, [rediger dine kollektioner.](\/admin\/kollektioner)"
         },
         "show_collection_description": {
           "label": "Vis kollektionsbeskrivelse"
@@ -2573,7 +2573,7 @@
           "name": "Vis skatteoplysninger"
         },
         "sku_barcode": {
-          "name": "SKU / STREGKODE"
+          "name": "SKU \/ STREGKODE"
         },
         "quantity_selector": {
           "name": "Mængdevælger"
@@ -2589,7 +2589,7 @@
             },
             "low_inventory_notification": {
               "label": "Lagernotifikation",
-              "info": "Varianter skal have lagersporing aktiveret, for at denne funktion kan fungere. [Få flere oplysninger](https://help.shopify.com/da/manual/products/inventory/track_inventory)",
+              "info": "Varianter skal have lagersporing aktiveret, for at denne funktion kan fungere. [Få flere oplysninger](https:\/\/help.shopify.com\/da\/manual\/products\/inventory\/track_inventory)",
               "options__1": {
                 "label": "Vis ikke lageroplysninger"
               },
@@ -2607,7 +2607,7 @@
           "settings": {
             "show_dynamic_checkout": {
               "label": "Vis dynamiske betalingsknapper",
-              "info": "Ved at bruge de tilgængelige betalingsmetoder i din butik ser kunderne deres foretrukne muligheder, såsom PayPal eller Apple Pay. [Få flere oplysninger](https://help.shopify.com/manual/using-themes/change-the-layout/dynamic-checkout)"
+              "info": "Ved at bruge de tilgængelige betalingsmetoder i din butik ser kunderne deres foretrukne muligheder, såsom PayPal eller Apple Pay. [Få flere oplysninger](https:\/\/help.shopify.com\/manual\/using-themes\/change-the-layout\/dynamic-checkout)"
             },
             "show_quantity_selector": {
               "label": "Vis mængdevælger"
@@ -2642,10 +2642,10 @@
           "name": "Del",
           "settings": {
             "featured_image_info": {
-              "content": "Hvis du inkluderer et link i opslag på sociale medier, vil sidens fremhævede billede blive vist som forhåndsvisningsbilledet. [Få flere oplysninger](https://help.shopify.com/en/manual/online-store/images/showing-social-media-thumbnail-images)."
+              "content": "Hvis du inkluderer et link i opslag på sociale medier, vil sidens fremhævede billede blive vist som forhåndsvisningsbilledet. [Få flere oplysninger](https:\/\/help.shopify.com\/en\/manual\/online-store\/images\/showing-social-media-thumbnail-images)."
             },
             "title_info": {
-              "content": "En butikstitel og beskrivelse er inkluderet i forhåndsvisningsbilledet. [Få flere oplysninger](https://help.shopify.com/en/manual/promoting-marketing/seo/adding-keywords#set-a-title-and-description-for-your-online-store)."
+              "content": "En butikstitel og beskrivelse er inkluderet i forhåndsvisningsbilledet. [Få flere oplysninger](https:\/\/help.shopify.com\/en\/manual\/promoting-marketing\/seo\/adding-keywords#set-a-title-and-description-for-your-online-store)."
             }
           }
         },
@@ -2671,7 +2671,7 @@
       "settings": {
         "header": {
           "content": "Medier",
-          "info": "Få flere oplysninger om [medietyper](https://help.shopify.com/manual/products/product-media)"
+          "info": "Få flere oplysninger om [medietyper](https:\/\/help.shopify.com\/manual\/products\/product-media)"
         },
         "enable_sticky_info": {
           "label": "Aktiver sticky produktinformation på store skærme"
