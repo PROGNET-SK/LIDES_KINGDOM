@@ -115,11 +115,12 @@
 
     {%- section 'announcement-bar' -%}
 
-    {%- section 'header-content' -%}
     {%- section 'sidebar' -%}
 
     <div id="content-holder">
       <main id="content" role="main">
+        {%- section 'header-content' -%}
+
         {%- liquid
           echo 'component-product-item.css' | asset_url | stylesheet_tag
           if template contains 'collection' or template contains 'search'
