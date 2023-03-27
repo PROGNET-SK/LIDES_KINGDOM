@@ -200,15 +200,19 @@
           "newsletter_frequent": "week"
         }
       },
-      "header-content": {
-        "type": "header-content",
+      "header": {
+        "type": "header",
         "settings": {
-          "logo_width": 50,
-          "menu_primary": "collections",
-          "menu_secondary": "main-menu",
-          "show_locale_selector": false,
-          "show_country_selector": false,
-          "show_search": true
+          "header_sticky": false,
+          "header_style": "logo_above",
+          "logo": "shopify:\/\/shop_images\/LIDES_300x_fb21fd69-0e93-4632-8f59-88bc00b81bac.png",
+          "logo_max_limit": 200,
+          "main_menu_linklist": "",
+          "enable_search": true,
+          "transparent_home": false,
+          "transparent_collection": true,
+          "transparent_article": true,
+          "secondary_menu_linklist": "main-menu"
         }
       }
     },
