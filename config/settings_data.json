@@ -104,6 +104,18 @@
           "bar_txtcolor": "#ffffff"
         }
       },
+      "announcement-bar2": {
+        "type": "announcement-bar",
+        "settings": {
+          "bar_show": true,
+          "bar_show_on_homepage": false,
+          "bar_show_dismiss": true,
+          "bar_message": "AAAAAAAAAAAAA Oznámenia 2 ",
+          "bar_link": "",
+          "bar_bgcolor": "#beaeae",
+          "bar_txtcolor": "#ffffff"
+        }
+      },
       "sidebar": {
         "type": "sidebar",
         "settings": {
@@ -201,13 +213,9 @@
         }
       }
     },
-    "content_for_index": [
-
-    ]
+    "content_for_index": []
   },
   "platform_customizations": {
-    "custom_css": [
-
-    ]
+    "custom_css": []
   }
 }
