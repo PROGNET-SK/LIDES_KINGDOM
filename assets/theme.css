@@ -1204,6 +1204,7 @@ html[dir=ltr] .aligned-text-content.horizontal-right {
 */
 #content-holder {
   display: flex;
+  border: 25ps solid red;
 }
 #content-holder:before {
   content: "";
