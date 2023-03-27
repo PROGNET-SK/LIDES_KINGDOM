@@ -92,21 +92,6 @@
     "show_breadcrumb": true,
     "show_preloader": true,
     "sections": {
-      "header": {
-        "type": "header",
-        "settings": {
-          "header_sticky": false,
-          "header_style": "logo_above",
-          "logo": "shopify:\/\/shop_images\/LIDES_300x_fb21fd69-0e93-4632-8f59-88bc00b81bac.png",
-          "logo_max_limit": 200,
-          "main_menu_linklist": "",
-          "enable_search": true,
-          "transparent_home": false,
-          "transparent_collection": true,
-          "transparent_article": true,
-          "secondary_menu_linklist": "main-menu"
-        }
-      },
       "announcement-bar": {
         "type": "announcement-bar",
         "settings": {
@@ -216,9 +201,13 @@
         }
       }
     },
-    "content_for_index": []
+    "content_for_index": [
+
+    ]
   },
   "platform_customizations": {
-    "custom_css": []
+    "custom_css": [
+
+    ]
   }
 }
