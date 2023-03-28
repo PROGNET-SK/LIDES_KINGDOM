@@ -410,14 +410,14 @@
     }
   },
   "gift_card": {
-    "title": "Here's your gift card!",
-    "disabled": "This is not a valid gift card",
-    "expired": "Expired on {{ expiry }}",
-    "active": "Expires on {{ expiry }}",
-    "balance_left": "left",
-    "redeem": "Use this code at checkout to redeem your gift card",
-    "shop_link": "Start shopping",
-    "print": "Print"
+    "title": "Tu je vaša darčekový poukaz!",
+    "disabled": "Toto nie je platný darčekový poukaz",
+    "expired": "Platnosť vypršala dňa {{ expiry }}",
+    "active": "Platnosť vyprší {{ expiry }}",
+    "balance_left": "vľavo",
+    "redeem": "Na uplatnenie darčekového poukazu použite tento kód pri pokladni.",
+    "shop_link": "Začať nakupovať",
+    "print": "Tlač"
   },
   "store_availability": {
     "view_store_info": "View store information",
