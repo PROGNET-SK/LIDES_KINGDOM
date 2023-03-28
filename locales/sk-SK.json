@@ -32,27 +32,27 @@
       "signup_form_submit": "Potvrdiť",
       "signup_form_success": "Ozveme sa Vám čo najskôr",
       "admin_link_html": "Ste majiteľ? <a href=\"\/admin\">Prihláste sa tu<\/a>",
-      "password_link": "Vložte heslo",
+      "password_link": "Vložiť heslo",
       "powered_by_shopify_html": "Tento obchod bude riadený prostredníctvom {{ shopify }}"
     },
     "prefixes": {
-      "by": "by"
+      "by": "prostredníctvom"
     },
     "account_link": {
-      "logged_in": "My Account",
-      "logged_out": "Login"
+      "logged_in": "Môj účet",
+      "logged_out": "Prihlásiť"
     },
     "breadcrumb": {
-      "homepage": "Home",
-      "collections": "Collections",
-      "search": "Search results for \"{{ terms }}\"",
+      "homepage": "Domov",
+      "collections": "Kolekcie",
+      "search": "Výsledky vyhľadávania pre \"{{ terms }}\"",
       "blog": "Blog",
       "account": {
         "title": "",
         "addresses": "",
         "orders": ""
       },
-      "cart": "Cart",
+      "cart": "Košík",
       "search_results": ""
     },
     "date_format": {
