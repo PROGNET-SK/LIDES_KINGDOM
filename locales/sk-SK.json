@@ -245,12 +245,12 @@
         "one": "{{ count }} komentár",
         "other": "{{ count }} komentáre"
       },
-      "read_more_label": "Keep reading",
-      "no_articles_text": "There are currently no articles in this blog.",
+      "read_more_label": "Čítajte ďalej",
+      "no_articles_text": "V tomto blogu sa momentálne nenachádzajú žiadne články",
       "tags_dropdown": {
         "all": "All"
       },
-      "tags_label": ""
+      "tags_label": "Značky"
     },
     "article": {
       "comments_list_title": "Comments",
