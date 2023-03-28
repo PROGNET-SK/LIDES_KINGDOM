@@ -114,9 +114,9 @@
       "pinterest": "Pinterest"
     },
     "cookies_popup": {
-      "title": "",
-      "content": "",
-      "button_label": ""
+      "title": "Cookies",
+      "content": "Táto stránka používa súbory cookies, ktoré nám pomáhajú zabezpečiť lepšie služby.",
+      "button_label": "Akceptovať všetky cookies"
     }
   },
   "collections": {
