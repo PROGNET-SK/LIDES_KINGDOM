@@ -271,7 +271,7 @@
   "search": {
     "form": {
       "placeholder": "Vyhľadávanie",
-      "responsive_placeholder": "Zadajte kľúčové slovo a stlačte kláves Enter",
+      "responsive_placeholder": "Zadajte kľúčové slovo a stlačte Enter",
       "submit": "Potvrdiť",
       "collection_results_title": "Kolekcie",
       "page_results_title": "Strany",
