@@ -386,27 +386,27 @@
       "return": "Návrat do účtu"
     },
     "orders_page": {
-      "title": "My Account",
-      "subtitle": "Order",
-      "placed_order": "Placed on",
-      "cancelled": "Order Cancelled on {{ date }}",
-      "cancelled_reason": "Reason: {{ reason }}",
+      "title": "Môj účet",
+      "subtitle": "Objednávka",
+      "placed_order": "Vytvorená objednávka",
+      "cancelled": "Objednávka zrušená dňa {{ date }}",
+      "cancelled_reason": "Príčina: {{ reason }}",
       "orders_table": {
-        "product": "Product",
+        "product": "Produkt",
         "sku": "SKU",
-        "price": "Price",
-        "qty": "Quantity",
-        "total": "Total",
-        "fulfilled_at": "Fulfilled at",
-        "subtotal": "Subtotal",
-        "discount": "Discount",
-        "shipping": "Shipping",
-        "tax": "Tax"
+        "price": "Cena",
+        "qty": "Množstvo",
+        "total": "Súčet",
+        "fulfilled_at": "Splnené",
+        "subtotal": "Medzisúčet",
+        "discount": "Zľava",
+        "shipping": "Doprava",
+        "tax": "DPH"
       },
-      "billing_title": "Billing Information",
-      "billing_status": "Payment Status:",
-      "shipping_title": "Shipping Information",
-      "shipping_status": "Fulfillment Status:"
+      "billing_title": "Fakturačné údaje",
+      "billing_status": "Stav platby:",
+      "shipping_title": "Informácie o doručení",
+      "shipping_status": "Stav objednávky:"
     }
   },
   "gift_card": {
