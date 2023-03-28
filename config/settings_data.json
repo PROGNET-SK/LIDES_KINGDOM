@@ -107,7 +107,7 @@
       "sidebar": {
         "type": "sidebar",
         "custom_css": [
-          ".sidebar{display:none;}"
+
         ],
         "settings": {
           "logo_width": 60,
@@ -207,12 +207,13 @@
         "type": "header",
         "settings": {
           "header_sticky": false,
-          "header_style": "logo_beside",
+          "header_style": "logo_above",
           "show_icons": true,
-          "icon_as_circle": false,
+          "icon_as_circle": true,
           "cart_icon_family": "bag",
+          "logo": "shopify:\/\/shop_images\/LIDES_300x_fb21fd69-0e93-4632-8f59-88bc00b81bac.png",
           "logo_max_limit": 120,
-          "main_menu_linklist": "",
+          "main_menu_linklist": "header-top-nav",
           "enable_search": true,
           "show_social_icons": true,
           "show_locale_selector": true,
@@ -230,7 +231,15 @@
     },
     "content_for_index": [
 
-    ]
+    ],
+    "blocks": {
+      "3847134708050210359": {
+        "type": "shopify:\/\/apps\/transcy-ai-language-translate\/blocks\/switcher_embed_block\/bce4f1c0-c18c-43b0-b0b2-a1aefaa44573",
+        "disabled": false,
+        "settings": {
+        }
+      }
+    }
   },
   "platform_customizations": {
     "custom_css": [
