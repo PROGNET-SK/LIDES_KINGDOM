@@ -242,8 +242,8 @@
   "blog": {
     "grid": {
       "comments_count": {
-        "one": "",
-        "other": ""
+        "one": "{{ count }} komentár",
+        "other": "{{ count }} komentáre"
       },
       "read_more_label": "Keep reading",
       "no_articles_text": "There are currently no articles in this blog.",
