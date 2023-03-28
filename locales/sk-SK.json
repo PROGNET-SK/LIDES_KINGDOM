@@ -270,31 +270,31 @@
   },
   "search": {
     "form": {
-      "placeholder": "Search...",
-      "responsive_placeholder": "Type a keyword and press enter...",
-      "submit": "Submit",
-      "collection_results_title": "Collections",
-      "page_results_title": "Pages",
-      "article_results_title": "Blog Posts",
-      "search_for_html": "Search for \"{{ terms }}\"",
-      "product_results_title": ""
+      "placeholder": "Vyhľadávanie",
+      "responsive_placeholder": "Zadajte kľúčové slovo a stlačte kláves Enter",
+      "submit": "Potvrdiť",
+      "collection_results_title": "Kolekcie",
+      "page_results_title": "Strany",
+      "article_results_title": "Blogové príspevky",
+      "search_for_html": "Hľadať \"{{ terms }}\"",
+      "product_results_title": "Produkty"
     },
     "page": {
-      "title": "Search",
-      "subtitle": "Use the search bar below to find products:",
-      "no_results": "No results could be found for \"{{ terms }}\"",
-      "results": "Search results for \"{{ terms }}\"",
-      "products_found": "Products for \"{{ terms }}\"",
-      "pages_and_articles_found": "Pages and articles for \"{{ terms }}\"",
+      "title": "Hľadať",
+      "subtitle": "Na vyhľadanie produktov použite panel vyhľadávania nižšie:",
+      "no_results": "Nenašli sa žiadne výsledky pre výraz \"{{ terms }}\"",
+      "results": "Výsledky vyhľadávania pre \"{{ terms }}\"",
+      "products_found": "Produkty pre \"{{ terms }}\"",
+      "pages_and_articles_found": "Stránky a články pre \"{{ terms }}\"",
       "results_count": {
-        "zero": "No results",
-        "one": "Showing {{count}} result",
-        "other": "Showing {{offset}} - {{page_size}} of {{count}} results"
+        "zero": "Žiadne výsledky",
+        "one": " Zobrazuje sa {{count}} výsledok",
+        "other": "Zobrazuje sa {{offset}} - {{page_size}} z {{count}} results"
       },
-      "form_placeholder": "Enter keyword here",
-      "search_button_label": "Search",
-      "search_again_button_label": "Search again",
-      "continue_browsing": "Continue browsing"
+      "form_placeholder": "Tu zadajte kľúčové slovo",
+      "search_button_label": "Hľadať",
+      "search_again_button_label": "Hľadajte znova",
+      "continue_browsing": "Pokračovať v prehliadaní"
     }
   },
   "customers": {
