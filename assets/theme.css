@@ -4362,3 +4362,158 @@ html:not(.js) .announcement__scale.ticker--unloaded {
   display: flex;
   flex-direction: column;
 }
+
+
+.header__wrapper--borders .sliderule-grid .menu__block {
+  border-bottom: 1px solid var(--border);
+}
+
+.header__wrapper:not(.header__wrapper--borders) .sliderule-grid .menu__block:not(:first-child) {
+  padding-top: 0;
+}
+
+.header__mobile__hamburger {
+  position: relative;
+  width: 30px;
+  height: 100%;
+  left: 0;
+  padding: 0;
+  margin-left: -5px;
+  margin-right: 16px;
+  cursor: pointer;
+}
+@media only screen and (min-width: 750px) {
+  .header__mobile__hamburger {
+    margin-right: 22px;
+  }
+}
+
+@media only screen and (min-width: 750px) {
+  .header__mobile__hamburger.navlink {
+    width: auto;
+  }
+}
+@media only screen and (max-width: 749px) {
+  .header__mobile__hamburger.navlink {
+    display: block;
+    margin-right: 16px;
+  }
+}
+
+.header__mobile__hamburger .icon {
+  --icon-size: 24px;
+  stroke: var(--text);
+  transition: 0.25s ease-in-out;
+}
+
+.header__mobile__hamburger .icon-cancel {
+  visibility: hidden;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  transform: translate(-50%, -50%);
+}
+
+.header__mobile__hamburger:hover .icon {
+  stroke: var(--link-hover);
+}
+
+@media only screen and (max-width: 749px) {
+  .header__mobile__button .navlink__cart__content > .navtext {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 750px) {
+  .header__desktop__button .navlink--toplevel .icon,
+.header__mobile__button .navlink--toplevel .icon {
+    display: none;
+  }
+}
+
+.drawer--visible .icon-menu {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.drawer--visible .icon-cancel {
+  visibility: visible;
+  opacity: 1;
+}
+
+.breadcrumbs {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 var(--outer);
+  margin: 30px 0;
+  font-family: var(--FONT-STACK-BODY);
+  font-weight: var(--FONT-WEIGHT-BODY);
+  font-size: calc(var(--font-2) * var(--FONT-ADJUST-BODY));
+  color: var(--link);
+}
+@media only screen and (max-width: 749px) {
+  .breadcrumbs {
+    padding: 0 15px;
+  }
+}
+.breadcrumbs a {
+  display: inline-block;
+  vertical-align: middle;
+  color: inherit;
+  transition: color 0.3s linear;
+}
+.breadcrumbs a:hover {
+  color: var(--link-hover);
+}
+
+.breadcrumbs--no-padding {
+  padding: 0;
+}
+
+.breadcrumbs__arrow {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  margin: 0 10px;
+  background-color: var(--COLOR-TEXT);
+  opacity: 0.4;
+}
+.breadcrumbs__arrow svg {
+  width: 5px;
+  height: 10px;
+}
+
+/**
+ * Home page spacing
+ */
+/*=============== Backgrounds ===============*/
+.homepage-columns,
+.index-collections-list,
+.index-product,
+.index-products,
+.index-tab-collections,
+.index-newsletter,
+.index-page,
+.index-contact,
+.index-rte,
+.index-blog,
+.custom-liquid,
+.custom-html-section {
+  background-color: var(--bg);
+}
+
+/*=============== Text Colors ===============*/
+.index-product,
+.index-products,
+.index-collections-list,
+.index-rte,
+.index-newsletter,
+.index-hero,
+.index-contact,
+.custom-liquid,
+.custom-html-section {
+  color: var(--text);
+}
