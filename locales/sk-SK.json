@@ -146,9 +146,9 @@
     "sort_button": "Triediť",
     "sort_by_label": "Triediť podľa:",
     "to": "Do",
-    "use_fewer_filters_html": "Use fewer filters or <a class=\"{{ class }}\" href=\"{{ link }}\">clear all<\/a>",
-    "view_all_products": "View all products",
-    "no_collections": "We are sorry, there are currently no collections on this store."
+    "use_fewer_filters_html": "Použite menej filtrov alebo <a class=\"{{ class }}\" href=\"{{ link }}\">vymažte všetko<\/a>",
+    "view_all_products": "Zobraziť všetky produkty",
+    "no_collections": "Ľutujeme, v tomto obchode momentálne nie sú žiadne produkty."
   },
   "products": {
     "grid": {
