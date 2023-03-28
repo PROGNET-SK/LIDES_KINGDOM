@@ -48,33 +48,33 @@
       "search": "Výsledky vyhľadávania pre \"{{ terms }}\"",
       "blog": "Blog",
       "account": {
-        "title": "",
-        "addresses": "",
-        "orders": ""
+        "title": "Účet",
+        "addresses": "Adresy",
+        "orders": "Objednávky"
       },
       "cart": "Košík",
-      "search_results": ""
+      "search_results": "Výsledky vyhľadávania pre \"{{ terms }}\""
     },
     "date_format": {
       "month_day_year": "%b %d, %Y"
     },
-    "copyright": "Copyright",
+    "copyright": "Autorské práva",
     "meta": {
-      "tags": "Tagged \"{{ tags }}\"",
-      "page": "Page {{ page }}"
+      "tags": "Označené \"{{ tags }}\"",
+      "page": "Stránka {{ page }}"
     },
-    "share_on": "Share on",
+    "share_on": "Zdieľať",
     "accessibility_labels": {
       "home": "Home",
-      "skip_to_content": "Skip to content",
-      "next": "Next",
-      "previous": "Previous",
-      "close": "Close",
-      "back": "Back",
-      "play_video": "Play video",
-      "language_dropdown_label": "Language",
-      "country_dropdown_label": "Country\/region",
-      "quantity": "Quantity",
+      "skip_to_content": "Preskočiť na obsah",
+      "next": "Ďalšie",
+      "previous": "Predchádzajúce",
+      "close": "Zavrieť",
+      "back": "Späť",
+      "play_video": "Prehrať video",
+      "language_dropdown_label": "Jazyk",
+      "country_dropdown_label": "Krajina\/región",
+      "quantity": "Množstvo",
       "price": {
         "regular": "Regular price",
         "sale": "Sale price",
@@ -85,20 +85,20 @@
         "twitter": "Share on twitter",
         "pinterest": "Share on pinterest"
       },
-      "rating": "rating",
-      "rating_info": "Rating: {{ rating_value }} out of {{ rating_max }}",
-      "form_error": "Error",
-      "menu": "",
-      "increase_quantity": "",
-      "decrease_quantity": "",
-      "open_menu": "",
-      "open_filters": "",
-      "open_search": "",
-      "open_cart": "",
-      "close_sidebar": "",
-      "close_popup": "",
-      "go_to_top": "",
-      "top": ""
+      "rating": "hodnotenie",
+      "rating_info": "hodnotenie: {{ rating_value }} z {{ rating_max }}",
+      "form_error": "Chyba",
+      "menu": "Ponuka",
+      "increase_quantity": "Zvýšiť množstvo",
+      "decrease_quantity": "Znížiť množstvo",
+      "open_menu": "Otvoriť ponuku",
+      "open_filters": "Otvoriť kategórie",
+      "open_search": "Začať vyhľadávanie",
+      "open_cart": "Otvoriť košík",
+      "close_sidebar": "Zavrieť bočný panel",
+      "close_popup": "Zavrieť vyskakovacie okno",
+      "go_to_top": "Ísť nahor",
+      "top": "Hore"
     },
     "onboarding": {
       "product_title": "Your product's name",
