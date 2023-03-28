@@ -322,22 +322,22 @@
       "form_decline_button": "Odmietnuť pozvanie"
     },
     "login_page": {
-      "title": "Customer Login",
+      "title": "Prihlásenie zákazníka",
       "form_email_label": "Email",
-      "form_password_label": "Password",
-      "form_login_button": "Login",
-      "form_logout_button": "Logout",
-      "forgot_password_check": "Forgot your password?",
-      "new_customer_button": "New Customer? Sign Up!",
-      "guest_check": "Continue as guest",
-      "guest_button": "Let's go",
+      "form_password_label": "Heslo",
+      "form_login_button": "Prihlásiť sa",
+      "form_logout_button": "Odhlásiť sa",
+      "forgot_password_check": "Zabudli ste svoje heslo?",
+      "new_customer_button": "Nový zákazník? Prihlásiť sa!",
+      "guest_check": "Pokračovať bez prihlásenia",
+      "guest_button": "Poďme",
       "password_reset": {
-        "title": "Reset your password",
-        "subtitle": "We will send you an email to reset your password.",
+        "title": "Obnoviť heslo",
+        "subtitle": "Pošleme vám e-mail na obnovenie hesla.",
         "email_label": "Email",
-        "submit_button": "Submit",
-        "cancel_button": "Cancel",
-        "success_message": "We've sent you an email with a link to update your password."
+        "submit_button": "Potvrdiť",
+        "cancel_button": "Zrušiť",
+        "success_message": "Poslali sme vám e-mail s odkazom na obnovenie hesla."
       }
     },
     "password_reset_page": {
