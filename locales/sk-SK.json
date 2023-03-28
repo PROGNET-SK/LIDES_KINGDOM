@@ -81,9 +81,9 @@
         "unit": "Cena za kus"
       },
       "share": {
-        "facebook": "Share on facebook",
-        "twitter": "Share on twitter",
-        "pinterest": "Share on pinterest"
+        "facebook": "Zdieľať cez Facebook",
+        "twitter": "Zdieľať cez Twitter",
+        "pinterest": "Zdieľať cez Pinterest"
       },
       "rating": "hodnotenie",
       "rating_info": "hodnotenie: {{ rating_value }} z {{ rating_max }}",
