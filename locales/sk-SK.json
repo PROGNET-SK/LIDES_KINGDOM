@@ -152,22 +152,22 @@
   },
   "products": {
     "grid": {
-      "on_sale_from_html": "On Sale from {{ price }}",
-      "from_text_html": "From {{ price }}",
-      "sold_out_product": "Sold Out",
-      "on_sale_product": "On Sale",
-      "new_product": "New",
-      "preorder_product": "Pre Order",
-      "no_products_text": "There are currently no products in this collection.",
-      "save_amount_html": "",
-      "quick_view": "",
-      "quick_buy": ""
+      "on_sale_from_html": "V predaji od {{ price }}",
+      "from_text_html": "Od {{ price }}",
+      "sold_out_product": "Vypredané",
+      "on_sale_product": "Na predaj",
+      "new_product": "Nové",
+      "preorder_product": "Na objednávku",
+      "no_products_text": "V tejto kolekcii sa momentálne nenachádzajú žiadne produkty.",
+      "save_amount_html": "Uložiť {{ amount }}",
+      "quick_view": "Vybrať možnosti",
+      "quick_buy": "Pridať do košíka"
     },
     "page": {
       "sku": "SKU: ",
       "barcode": "ISBN: ",
-      "more_description_label": "Show more",
-      "less_description_label": "Show less",
+      "more_description_label": "Zobraziť viac",
+      "less_description_label": "Zobraziť menej",
       "inventory": {
         "sold_out_variant": "Sold out",
         "unavailable_variant": "Unavailable",
