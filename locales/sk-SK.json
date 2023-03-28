@@ -7,9 +7,9 @@
       "continue_browsing": "Pokračujte v prehliadaní"
     },
     "newsletter": {
-      "email_label": "Enter your email",
-      "submit_label": "Submit",
-      "confirmation": "Thanks for subscribing!"
+      "email_label": "Zadajte svoj email",
+      "submit_label": "Potvrdiť",
+      "confirmation": "Ďakujeme za prihlásenie k odberu"
     },
     "contact_form": {
       "title": "Drop us a line",
@@ -108,7 +108,7 @@
       "seven_comments": ""
     },
     "sharing": {
-      "title": "Zdieľaj",
+      "title": "Zdieľať",
       "facebook": "Facebook",
       "twitter": "Twitter",
       "pinterest": "Pinterest"
