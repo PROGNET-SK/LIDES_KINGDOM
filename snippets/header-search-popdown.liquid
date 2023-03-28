@@ -1,0 +1,188 @@
+{%- liquid
+  assign search_type = 'product'
+  if settings.search_articles
+    assign search_type = search_type | append: ',article'
+  endif
+
+  if settings.search_pages
+    assign search_type = search_type | append: ',page'
+  endif
+
+  if settings.search_collections
+    assign search_type = search_type | append: ',collection'
+  endif
+
+  assign animation_anchor = '.search-popdown.is-visible'
+  assign animation_delay = 100
+  assign animation_duration = 800
+
+  comment
+    Product grid items product_item_classes
+  endcomment
+  assign product_item_classes = ''
+  if settings.product_grid_outline == false
+    assign product_item_classes = product_item_classes | append: ' product-item--borderless'
+  endif
+
+  if settings.product_grid_center
+    assign product_item_classes = product_item_classes | append: ' product-item--centered'
+  else
+    assign product_item_classes = product_item_classes | append: ' product-item--left'
+  endif
+
+  if settings.overlay_text
+    assign product_item_classes = product_item_classes | append: ' product-item--overlay-text'
+  else
+    assign product_item_classes = product_item_classes | append: ' product-item--outer-text'
+  endif
+
+  assign empty_search_menu = settings.empty_search_menu
+  assign empty_search_product_list = settings.empty_search_product_list
+  assign empty_search_product_list_size = empty_search_product_list | map: 'handle' | join: ',' | split: ',' | uniq | size | at_most: 5 | at_least: 3
+  assign empty_search_class = ' search__results__layout--mixed'
+  assign show_empty_search = false
+  assign show_empty_search_menu = false
+  assign show_empty_search_product_list = false
+
+  if empty_search_menu != blank
+    assign show_empty_search_menu = true
+    assign show_empty_search = true
+    assign empty_search_product_list_size = empty_search_product_list_size | at_most: 4
+  endif
+
+  if empty_search_product_list != blank
+    assign show_empty_search_product_list = true
+    assign show_empty_search = true
+  endif
+
+  if show_empty_search_product_list == true and show_empty_search_menu == false
+    assign empty_search_class = ''
+  endif
+-%}
+
+<predictive-search>
+  <div id="search-popdown" class="search-popdown" data-search-popdown>
+    <div class="wrapper">
+      <div class="search-popdown__header">
+        <div class="search-popdown__main">
+          <form
+            class="search-popdown__form"
+            action="{{ routes.search_url }}"
+            method="get"
+            role="search"
+          >
+            <input type="hidden" name="type" value="{{ search_type }}">
+            <input name="options[prefix]" type="hidden" value="last">
+
+            <button class="search-popdown__form__button" type="submit">
+              <span class="visually-hidden">{{ 'layout.header.search' | t }}</span>
+
+              {%- render 'icon-search' -%}
+            </button>
+
+            <label for="SearchInput" class="visually-hidden">{{ 'general.search.submit' | t }}</label>
+            <input
+              type="search"
+              id="SearchInput"
+              data-predictive-search-input="search-popdown-results"
+              name="q"
+              value="{{ search.terms | escape }}"
+              placeholder="{{ 'general.search.submit' | t }}"
+              aria-label="{{ 'general.search.placeholder' | t }}"
+              role="combobox"
+              aria-expanded="false"
+              aria-owns="predictive-search-results-list"
+              aria-controls="predictive-search-results-list"
+              aria-haspopup="listbox"
+              aria-autocomplete="list"
+              autocorrect="off"
+              autocomplete="off"
+              autocapitalize="off"
+              spellcheck="false"
+            >
+          </form>
+
+          <div class="search-popdown__close">
+            <button
+              type="button"
+              class="search-popdown__close__button"
+              data-popdown-close
+              title="{{ 'general.accessibility.close' | t }}"
+            >
+              {%- render 'icon-cancel' -%}
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="search-popdown__results" id="search-popdown-results">
+        <div
+          class="search__results__outer{% if show_empty_search %} search__results__outer--empty{% endif %}"
+          data-search-results-outer
+        >
+          <div class="loader search__loader"><div class="loader-indeterminate"></div></div>
+
+          <div class="search__results" data-search-results>
+            {% comment %} Search results append here {% endcomment %}
+          </div>
+
+          {%- if show_empty_search -%}
+            {%- liquid
+              assign animation_delay = 100
+              assign animation_duration = 800
+            -%}
+            <div class="search__results search__results--empty" data-search-empty>
+              <div class="search__results__layout{{ empty_search_class }}">
+                {%- if show_empty_search_product_list -%}
+                  <div
+                    class="search__results__column"
+                    {%- assign animation_delay = animation_delay | plus: 100 -%}
+                    style="--grid: repeat({{ empty_search_product_list_size }}, minmax(0, 1fr)); --transition-delay: {{ animation_delay }}ms; --transition-duration: {{ animation_duration }}ms;"
+                  >
+                    <p class="search__results__heading">{{ 'general.search.popular_products' | t }}</p>
+
+                    <div
+                      class="search__results__products__list product-grid{% unless settings.product_grid_outline %} product-grid--borderless{% endunless %}"
+                      id="SearchLoop"
+                    >
+                      {%- assign use_aos_animation = false -%}
+                      {%- for product in empty_search_product_list limit: empty_search_product_list_size -%}
+                        {%- render 'search-empty-product-item',
+                          product: product,
+                          use_aos_animation: use_aos_animation,
+                          animation_delay: animation_delay,
+                          animation_duration: animation_duration,
+                          animation_anchor: animation_anchor,
+                          product_item_classes: product_item_classes
+                        -%}
+                        {%- assign animation_delay = animation_delay | plus: 150 -%}
+                      {%- endfor -%}
+                    </div>
+                  </div>
+                {%- endif -%}
+
+                {%- if show_empty_search_menu -%}
+                  <div
+                    class="search__results__column"
+                    style="--transition-delay: {{ animation_delay }}ms; --transition-duration: {{ animation_duration }}ms;"
+                    {%- assign animation_delay = animation_delay | plus: 100 -%}
+                  >
+                    <p class="search__results__heading">{{ 'general.search.popular_searches' | t }}</p>
+
+                    <div class="search__results__menu">
+                      {%- for link in empty_search_menu.links -%}
+                        <div class="search__results__item">
+                          <a class="search__results__link" href="{{ link.url }}">{{ link.title }}</a>
+                        </div>
+                      {%- endfor -%}
+                    </div>
+                  </div>
+                {%- endif -%}
+              </div>
+            </div>
+          {%- endif -%}
+        </div>
+      </div>
+    </div>
+  </div>
+</predictive-search>
