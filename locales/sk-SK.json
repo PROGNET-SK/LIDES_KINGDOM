@@ -76,9 +76,9 @@
       "country_dropdown_label": "Krajina\/región",
       "quantity": "Množstvo",
       "price": {
-        "regular": "Regular price",
-        "sale": "Sale price",
-        "unit": "Unit price"
+        "regular": "Bežná cena",
+        "sale": "Predajná cena",
+        "unit": "Cena za kus"
       },
       "share": {
         "facebook": "Share on facebook",
