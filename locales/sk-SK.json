@@ -208,9 +208,9 @@
     "empty": "Váš košík je momentálne prázdny",
     "continue_browsing": "Pokračovať v nákupe",
     "remove_item": "Odstrániť položku z košíka",
-    "add_error": "All {{ title }} are in your cart.",
-    "general_error": "There was an error. Please refresh the page and try again.",
-    "view_cart": "View Cart",
+    "add_error": "Všetky {{ title }} sú vo Vašom košíku",
+    "general_error": "Vyskytla sa chyba. Obnovte stránku a skúste to znova.",
+    "view_cart": "Prezrieť košík",
     "items_count": {
       "one": "{{ count }} product in your cart",
       "other": "{{ count }} products in your cart"
@@ -225,8 +225,8 @@
       "taxes_included_and_shipping_policy_html": "",
       "taxes_and_shipping_at_checkout": ""
     },
-    "free_shipping_remaining_html": "",
-    "free_shipping_eligible": "",
+    "free_shipping_remaining_html": "Od bezplatnej dopravy Vás delí {{  remaining_amount }} ",
+    "free_shipping_eligible": "Máte nárok na bezplatnú dopravu!",
     "shipping_calculator": {
       "title": "",
       "form_button_label": "",
