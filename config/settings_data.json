@@ -107,7 +107,7 @@
       "sidebar": {
         "type": "sidebar",
         "custom_css": [
-          ".sidebar {display: none;}"
+
         ],
         "settings": {
           "logo_width": 60,
