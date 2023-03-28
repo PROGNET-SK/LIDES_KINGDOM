@@ -341,49 +341,49 @@
       }
     },
     "password_reset_page": {
-      "title": "Reset your password",
-      "subtitle": "Enter a new password for {{ email }}",
-      "password_label": "Password",
-      "password_confirm_label": "Confirm Password",
-      "submit": "Reset Password"
+      "title": "Obnoviť heslo",
+      "subtitle": "Zadajte nové heslo pre {{ email }}",
+      "password_label": "Heslo",
+      "password_confirm_label": "Potvrdiť heslo",
+      "submit": "Obnoviť heslo"
     },
     "register_page": {
-      "title": "Create an account",
+      "title": "Vytvoriť účet",
       "form": {
-        "first_name_label": "First Name",
-        "last_name_label": "Last Name",
+        "first_name_label": "Krstné meno",
+        "last_name_label": "Priezvisko",
         "email_label": "Email",
-        "password_label": "Password",
-        "submit_button": "Create"
+        "password_label": "Heslo",
+        "submit_button": "Vytvoriť"
       },
-      "login_text": ""
+      "login_text": "Už máte vytvorený účet?"
     },
     "addresses_page": {
-      "title": "My Account",
-      "subtitle": "Address Book",
-      "add_address_link": "Add New Address",
-      "edit_address_link": "Edit",
-      "delete_address_link": "Delete",
-      "add_address_title": "Add New Address",
-      "edit_address_title": "Edit Address",
-      "default_address": "(Default)",
+      "title": "Môj účet",
+      "subtitle": "Zoznam adries",
+      "add_address_link": "Pridať novú adresu",
+      "edit_address_link": "Upraviť",
+      "delete_address_link": "Zmazať",
+      "add_address_title": "Pridať novú adresu",
+      "edit_address_title": "Upraviť adresu",
+      "default_address": "(Predvolená)",
       "form": {
-        "first_name_label": "First Name",
-        "last_name_label": "Last Name",
-        "company_label": "Company",
-        "address_1_label": "Address 1",
-        "address_2_label": "Address 2",
-        "city_label": "City",
-        "country_label": "Country",
-        "province_label": "Province",
-        "zip_label": "Postal\/Zip Code",
-        "phone_label": "Phone",
-        "add_button": "Add Address",
-        "update_button": "Update Address",
-        "set_as_default_check": "Set as Default Address?",
-        "delete_check": "Are you sure you wish to delete this address?"
+        "first_name_label": "Krstné meno",
+        "last_name_label": "Priezvisko",
+        "company_label": "Firma",
+        "address_1_label": "Adresa",
+        "address_2_label": "Detail adresy",
+        "city_label": "Mesto",
+        "country_label": "Krajina",
+        "province_label": "Kraj",
+        "zip_label": "PSČ",
+        "phone_label": "Telefónne číslo",
+        "add_button": "Pridať adresu",
+        "update_button": "Aktualizovať adresu",
+        "set_as_default_check": "Nastaviť ako predvolenú adresu?",
+        "delete_check": "Naozaj chcete odstrániť túto adresu?"
       },
-      "return": ""
+      "return": "Návrat do účtu"
     },
     "orders_page": {
       "title": "My Account",
