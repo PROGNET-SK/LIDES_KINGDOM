@@ -22,18 +22,18 @@
       "subject_label": "Predmet"
     },
     "password_page": {
-      "login_form_heading": "Enter store using password",
-      "login_form_password_label": "Password",
-      "login_form_password_placeholder": "Your password",
-      "login_form_submit": "Enter",
-      "signup_form_heading": "Find out when we open",
+      "login_form_heading": "Prihlásenie",
+      "login_form_password_label": "Heslo",
+      "login_form_password_placeholder": "Heslo",
+      "login_form_submit": "Prihlásiť",
+      "signup_form_heading": "Zistite, kedy otvárame",
       "signup_form_email_label": "Email",
-      "signup_form_email_placeholder": "Your email",
-      "signup_form_submit": "Submit",
-      "signup_form_success": "We will send you an email right before we open!",
-      "admin_link_html": "Are you the store owner? <a href=\"\/admin\">Log in here<\/a>",
-      "password_link": "Enter using password",
-      "powered_by_shopify_html": "This shop will be powered by {{ shopify }}"
+      "signup_form_email_placeholder": "Email",
+      "signup_form_submit": "Potvrdiť",
+      "signup_form_success": "Ozveme sa Vám čo najskôr",
+      "admin_link_html": "Ste majiteľ? <a href=\"\/admin\">Prihláste sa tu<\/a>",
+      "password_link": "Vložte heslo",
+      "powered_by_shopify_html": "Tento obchod bude riadený prostredníctvom {{ shopify }}"
     },
     "prefixes": {
       "by": "by"
