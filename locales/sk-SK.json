@@ -181,8 +181,8 @@
       "preorder_button": "Predobjednať",
       "share_link": "Zdieľať",
       "reviews_count": {
-        "one": "{{ count }} review",
-        "other": "{{ count }} reviews"
+        "one": "{{ count }} recenzia",
+        "other": "{{ count }} recenzie"
       },
       "loading_reviews": "Načítavajú sa ďalšie recenzie",
       "include_taxes": "s DPH",
