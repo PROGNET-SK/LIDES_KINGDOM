@@ -120,20 +120,20 @@
     }
   },
   "collections": {
-    "title": "Collections",
-    "apply": "Apply",
-    "clear": "Clear",
-    "clear_all": "Clear all",
-    "empty": "No products found",
-    "from": "From",
-    "filter_and_sort": "Filter and sort",
+    "title": "Kolekcie",
+    "apply": "Použiť",
+    "clear": "Vymazať",
+    "clear_all": "Vymazať všetko",
+    "empty": "Nenašli sa žiadne produkty",
+    "from": "z",
+    "filter_and_sort": "Filtrovať a triediť",
     "filter_by_label": "Filter:",
     "filter_button": "Filter",
     "filters_selected": {
       "one": "{{ count }} selected",
       "other": "{{ count }} selected"
     },
-    "max_price": "The highest price is {{ price }}",
+    "max_price": "Najvyššia cena je {{ price }}",
     "product_count": {
       "one": "{{ product_count }} of {{ count }} product",
       "other": "{{ product_count }} of {{ count }} products"
@@ -142,10 +142,10 @@
       "one": "{{ count }} product",
       "other": "{{ count }} products"
     },
-    "reset": "Reset",
-    "sort_button": "Sort",
-    "sort_by_label": "Sort by:",
-    "to": "To",
+    "reset": "Resetovať",
+    "sort_button": "Triediť",
+    "sort_by_label": "Triediť podľa:",
+    "to": "Do",
     "use_fewer_filters_html": "Use fewer filters or <a class=\"{{ class }}\" href=\"{{ link }}\">clear all<\/a>",
     "view_all_products": "View all products",
     "no_collections": "We are sorry, there are currently no collections on this store."
