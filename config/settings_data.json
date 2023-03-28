@@ -107,7 +107,7 @@
       "sidebar": {
         "type": "sidebar",
         "custom_css": [
-          ".sidebar__container-holder{display:none;}"
+          ".sidebar{display:none;}"
         ],
         "settings": {
           "logo_width": 60,
@@ -219,7 +219,7 @@
           "show_currency_selector": true,
           "type": "currency",
           "highlight_item": "Sale",
-          "highlight_item_color": "#D02E2E",
+          "highlight_item_color": "#d02e2e",
           "transparent_home": false,
           "transparent_collection": false,
           "transparent_article": false,
