@@ -2,9 +2,9 @@
   "general": {
     "404": {
       "title": "Svietidlá - test2",
-      "subtitle": "The page you are looking for cannot be found",
-      "search_placeholder": "Search for products...",
-      "continue_browsing": "Continue browsing"
+      "subtitle": "Stránka nenájdená",
+      "search_placeholder": "Hľadať produkty",
+      "continue_browsing": "Pokračujte v prehliadaní"
     },
     "newsletter": {
       "email_label": "Enter your email",
