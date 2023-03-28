@@ -207,7 +207,7 @@
         "type": "header",
         "settings": {
           "header_sticky": false,
-          "header_style": "logo_beside",
+          "header_style": "logo_above",
           "show_icons": true,
           "icon_as_circle": true,
           "cart_icon_family": "bag",
