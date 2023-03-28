@@ -228,15 +228,15 @@
     "free_shipping_remaining_html": "Od bezplatnej dopravy Vás delí {{  remaining_amount }} ",
     "free_shipping_eligible": "Máte nárok na bezplatnú dopravu!",
     "shipping_calculator": {
-      "title": "",
-      "form_button_label": "",
-      "results_heading_one": "",
-      "results_heading_multiple": ""
+      "title": "Odhadovaný čas doručenia",
+      "form_button_label": "odhadovaný",
+      "results_heading_one": "Pre vašu adresu platí jedna sadzba za dopravu",
+      "results_heading_multiple": "Sadzby za dopravu pre vašu adresu"
     },
     "table": {
-      "product": "",
-      "quantity": "",
-      "total": ""
+      "product": "Produkt",
+      "quantity": "Množstvo",
+      "total": "Súčet"
     }
   },
   "blog": {
