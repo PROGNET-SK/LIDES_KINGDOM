@@ -4005,3 +4005,360 @@ html:not(.js) .announcement__scale.ticker--unloaded {
 .drawer__bottom .social__links a {
   transition: color 0.25s cubic-bezier(0.215, 0.61, 0.355, 1);
 }
+
+
+/* ============================================================================
+  #Search popdown
+============================================================================== */
+.search-popdown {
+  font-family: var(--FONT-STACK-NAV);
+  font-style: var(--FONT-STYLE-NAV);
+  font-weight: var(--FONT-WEIGHT-NAV);
+  --bg: var(--COLOR-MENU-BG);
+  --border: var(--COLOR-BORDER);
+  --text: var(--COLOR-MENU-LINK);
+  --link-hover: var(--COLOR-PRIMARY);
+  --text-dark: var(--COLOR-MENU-LINK);
+  --text-light: var(--COLOR-MENU-LINK);
+  --text-transparent: var(--COLOR-MENU-TRANSPARENT);
+  --icon-size: 24px;
+  position: absolute;
+  z-index: 4000;
+  top: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  visibility: hidden;
+  max-height: 100%;
+  transition: opacity 0.5s ease, transform 0.5s ease, visibility 0s linear 0.5s, max-height 0.5s ease;
+  transform: translate3d(0, -100%, 0);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  background: var(--bg);
+  overflow: hidden;
+  overflow-y: auto;
+}
+@media only screen and (max-width: 749px) {
+  .search-popdown {
+    --inner: 30px;
+  }
+}
+
+.search-popdown.has-errors {
+  position: static;
+  width: 100%;
+  padding: 10px 0 0 0;
+  border-bottom: none;
+}
+
+.search-popdown.is-visible {
+  opacity: 1;
+  visibility: visible;
+  transition-delay: 0s;
+  transform: translate3d(0, 0, 0);
+  width: 100vw;
+  padding-right: var(--scrollbar-width);
+  max-height: calc(100vh - var(--announcement-height));
+}
+
+.search-popdown__upper {
+  transition: background-color 0.5s ease;
+  color: inherit;
+  height: var(--announcement-height);
+  display: flex;
+  position: absolute;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 30px;
+  pointer-events: none;
+}
+
+.search-popdown__header {
+  width: 100%;
+  height: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 2000;
+  color: var(--text);
+  background: var(--bg);
+}
+
+.search-popdown__main {
+  width: 100%;
+  min-height: 78px;
+  height: var(--menu-height);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: transform 0.5s ease;
+}
+
+.search-popdown__close {
+  position: relative;
+  width: 80px;
+  height: 100%;
+  display: flex;
+}
+
+.search-popdown__close__button {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  width: 30px;
+  height: 30px;
+  padding: 5px;
+  color: inherit;
+  font-size: 0;
+  text-decoration: none;
+  transform: translate3d(0, -50%, 0);
+  transition: color 0.3s ease;
+  --icon-size: 24px;
+  font-size: calc(1rem * var(--FONT-ADJUST-NAV));
+  cursor: pointer;
+  width: 34px;
+  padding: 20px 5px;
+  height: 100%;
+  right: -11px;
+}
+.search-popdown__close__button .icon {
+  display: block;
+  fill: currentColor;
+  transition: transform 0.3s;
+  pointer-events: none;
+}
+@media (hover: hover) {
+  .search-popdown__close__button:hover {
+    color: var(--link-hover);
+  }
+  .search-popdown__close__button:hover .icon {
+    transform: rotate(90deg);
+  }
+}
+
+.popdown__close__inner {
+  font-size: calc(1rem * var(--FONT-ADJUST-NAV));
+  cursor: pointer;
+  padding: 20px 0;
+}
+
+.search-popdown__form {
+  display: flex;
+  justify-content: flex-end;
+  height: 100%;
+  width: 100%;
+  text-align: left;
+  margin: 0;
+}
+
+.search-popdown__form input {
+  font-family: var(--FONT-STACK-NAV);
+  font-style: var(--FONT-STYLE-NAV);
+  font-weight: var(--FONT-WEIGHT-NAV);
+  font-weight: var(--FONT-WEIGHT-NAV-BOLD);
+  width: 100%;
+  border: none;
+  margin: 0;
+  text-align: left;
+  color: var(--text);
+  font-size: calc(var(--font-2) * var(--FONT-ADJUST-NAV));
+}
+.search-popdown__form input::placeholder {
+  color: var(--text);
+}
+.search-popdown__form input:focus, .search-popdown__form input:active {
+  box-shadow: none;
+}
+
+@supports (-webkit-touch-callout: none) {
+  .search-popdown__form input {
+    font-size: max(calc(var(--font-2) * var(--FONT-ADJUST-NAV)), 16px);
+  }
+}
+.search-popdown__form__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  margin-left: -8px;
+  padding: 0;
+}
+
+.search-popdown__form__button .icon {
+  fill: none;
+}
+
+/* Results */
+.search-popdown__results {
+  background: var(--bg);
+}
+
+.search__results__outer {
+  position: relative;
+  padding: 0;
+  overflow: hidden;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: padding 0.3s ease, opacity 0.3s ease, visibility 0.3s;
+}
+
+.search__results .product-item {
+  background-color: var(--bg);
+}
+
+.search__results__outer--empty,
+.is-searched .search__results__outer {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  padding: var(--outer) 0;
+}
+
+@media only screen and (min-width: 750px) {
+  .search__results__layout {
+    display: grid;
+    grid-template-columns: 100%;
+    gap: var(--gutter);
+  }
+}
+
+@media only screen and (min-width: 990px) {
+  .search__results__layout--mixed {
+    --grid: repeat(3, minmax(0, 1fr));
+  }
+}
+@media only screen and (min-width: 750px) {
+  .search__results__layout--mixed {
+    grid-template-columns: minmax(0, 3fr) minmax(0, 1fr);
+  }
+}
+
+@media only screen and (min-width: 750px) and (max-width: 989px) {
+  .search__results__layout--mixed .product-grid {
+    grid-template-columns: var(--grid-small);
+  }
+}
+
+@media only screen and (max-width: 749px) {
+  .search__results__column {
+    margin-bottom: var(--inner);
+  }
+}
+
+.search__results__actions {
+  margin: 24px 0 0;
+}
+
+@media only screen and (min-width: 750px) {
+  .search__results__group {
+    padding-bottom: var(--inner);
+  }
+}
+
+.search__results__heading {
+  font-family: var(--FONT-STACK-HEADING);
+  font-style: var(--FONT-STYLE-HEADING);
+  line-height: 1.2;
+  font-weight: var(--FONT-WEIGHT-HEADING);
+  margin: 0 0 0.5em 0;
+  margin-bottom: var(--inner);
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--border);
+}
+
+.search__results__item {
+  margin-bottom: var(--inner);
+  font-size: calc(var(--font-2) * var(--FONT-ADJUST-NAV));
+}
+
+.search__results__link {
+  color: currentColor;
+  transition: color 0.3s ease;
+}
+
+@media only screen and (max-width: 749px) {
+  .search__results__products__list .product-link {
+    display: grid;
+    grid-template-columns: 50px auto;
+    gap: 16px;
+  }
+
+  .search__results__products__list .product-item__info {
+    text-align: left;
+    padding: 0;
+  }
+}
+.search__results__empty p {
+  margin: 0;
+}
+
+.search__loader {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  margin: 5px auto;
+  opacity: 0;
+  transition: opacity 0.3s ease, visibility 0.3s;
+}
+@media only screen and (min-width: 750px) {
+  .search__loader {
+    margin: 20px auto;
+  }
+}
+
+.is-loading .search__loader {
+  opacity: 1;
+  visibility: visible;
+}
+
+.is-searched .search__results--empty,
+.search__results--empty {
+  position: absolute !important;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}
+.is-searched .search__results--empty .search__results__column,
+.is-searched .search__results--empty .product-item,
+.search__results--empty .search__results__column,
+.search__results--empty .product-item {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity var(--transition-duration) 0s, visibility var(--transition-duration);
+}
+
+.is-visible .search__results__column,
+.is-visible .product-item {
+  transition: opacity var(--transition-duration) var(--transition-delay), visibility var(--transition-duration) var(--transition-delay);
+}
+
+.is-visible:not(.is-searched) .search__results--empty {
+  position: inherit !important;
+  overflow: auto;
+  clip: auto;
+  width: auto;
+  height: auto;
+  margin: 0;
+}
+.is-visible:not(.is-searched) .search__results--empty .search__results__column,
+.is-visible:not(.is-searched) .search__results--empty .product-item {
+  opacity: 1;
+  visibility: visible;
+}
+
+.drawer__menu {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  flex: 0 1 100%;
+  display: flex;
+  flex-direction: column;
+}
