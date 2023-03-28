@@ -211,7 +211,7 @@
           "show_icons": true,
           "icon_as_circle": true,
           "cart_icon_family": "bag",
-          "logo": "shopify:\/\/shop_images\/LIDES_300x_fb21fd69-0e93-4632-8f59-88bc00b81bac.png",
+          "logo": "shopify:\/\/shop_images\/LIDES_logo.png",
           "logo_max_limit": 120,
           "main_menu_linklist": "header-top-nav",
           "enable_search": true,
@@ -224,7 +224,8 @@
           "transparent_home": false,
           "transparent_collection": false,
           "transparent_article": false,
-          "secondary_menu_linklist": "",
+          "transparent_logo": "shopify:\/\/shop_images\/LIDES_300x_fb21fd69-0e93-4632-8f59-88bc00b81bac.png",
+          "secondary_menu_linklist": "header-top-nav",
           "tertiary_menu_linklist": ""
         }
       }
