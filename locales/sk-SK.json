@@ -101,11 +101,11 @@
       "top": "Hore"
     },
     "onboarding": {
-      "product_title": "Your product's name",
-      "collection_title": "Your collection's name",
-      "article_title": "Your article's title",
-      "author_name": "",
-      "seven_comments": ""
+      "product_title": "Názov produktu",
+      "collection_title": "Názov kolekcie",
+      "article_title": "Názov článku",
+      "author_name": "Meno autora",
+      "seven_comments": "7 komentov"
     },
     "sharing": {
       "title": "Zdieľať",
