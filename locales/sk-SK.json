@@ -212,18 +212,18 @@
     "general_error": "Vyskytla sa chyba. Obnovte stránku a skúste to znova.",
     "view_cart": "Prezrieť košík",
     "items_count": {
-      "one": "{{ count }} product in your cart",
-      "other": "{{ count }} products in your cart"
+      "one": "{{ count }} produkt vo Vašom košíku",
+      "other": "{{ count }} produkty vo Vašom košíku"
     },
     "added_items_count": {
       "one": "{{ count }} product was added to your cart",
       "other": "{{ count }} products were added to your cart"
     },
     "policies": {
-      "taxes_and_shipping_policy_at_checkout_html": "",
-      "taxes_included_but_shipping_at_checkout": "",
-      "taxes_included_and_shipping_policy_html": "",
-      "taxes_and_shipping_at_checkout": ""
+      "taxes_and_shipping_policy_at_checkout_html": "DPH a <a href=\"{{ link }}\">doprava<a\/> budú vypočítané v pokladni",
+      "taxes_included_but_shipping_at_checkout": "DPH a poštovné sa vypočíta v pokladni",
+      "taxes_included_and_shipping_policy_html": "S DPH. <a href=\"{{ link }}\">Doprava<a\/> vypočítaná v pokladni",
+      "taxes_and_shipping_at_checkout": "DPH a poštovné vypočítané v pokladni"
     },
     "free_shipping_remaining_html": "Od bezplatnej dopravy Vás delí {{  remaining_amount }} ",
     "free_shipping_eligible": "Máte nárok na bezplatnú dopravu!",
