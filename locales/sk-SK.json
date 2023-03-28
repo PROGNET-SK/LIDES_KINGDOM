@@ -420,13 +420,13 @@
     "print": "Tlač"
   },
   "store_availability": {
-    "view_store_info": "View store information",
-    "check_other_stores": "Check availability at other stores",
-    "pick_up_available": "Pickup available",
-    "pick_up_currently_unavailable": "Pickup currently unavailable",
-    "pick_up_available_at_html": "Pickup available at <strong>{{ location_name }}<\/strong>",
-    "pick_up_unavailable_at_html": "Pickup currently unavailable at <strong>{{ location_name }}<\/strong>",
-    "invalid_location_address": "Contact store to confirm address",
-    "refresh": "Refresh"
+    "view_store_info": "Zobraziť informácie o obchodníkovi",
+    "check_other_stores": "Overiť dostupnosť v iných predajniach",
+    "pick_up_available": "Odber možný",
+    "pick_up_currently_unavailable": "Vyzdvihnutie momentálne nedostupné",
+    "pick_up_available_at_html": "Možnosť vyzdvihnutia na <strong>{{ location_name }}<\/strong>",
+    "pick_up_unavailable_at_html": "Vyzdvihnutie momentálne nie je k dispozícii na adrese <strong>{{ location_name }}<\/strong>",
+    "invalid_location_address": "Pre potvrdenie adresy kontaktujte obchodníka",
+    "refresh": "Obnoviť"
   }
 }
