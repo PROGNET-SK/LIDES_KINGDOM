@@ -12,14 +12,14 @@
       "confirmation": "Ďakujeme za prihlásenie k odberu"
     },
     "contact_form": {
-      "title": "Drop us a line",
-      "name_label": "Name",
+      "title": "Zanechajte nám odkaz",
+      "name_label": "Meno a priezvisko",
       "email_label": "Email",
-      "phone_label": "Phone Number",
-      "message_label": "Message",
-      "submit_label": "Submit",
-      "success_message": "Thanks for contacting us! We'll get back to you as soon as possible.",
-      "subject_label": ""
+      "phone_label": "Telefónne číslo",
+      "message_label": "Správa",
+      "submit_label": "Potvrdiť",
+      "success_message": "Ďakujeme, že ste nás kontaktovali! Ozveme sa Vám čo najskôr.",
+      "subject_label": "Predmet"
     },
     "password_page": {
       "login_form_heading": "Enter store using password",
