@@ -222,8 +222,8 @@
           "highlight_item": "Sale",
           "highlight_item_color": "#d02e2e",
           "transparent_home": false,
-          "transparent_collection": false,
-          "transparent_article": false,
+          "transparent_collection": true,
+          "transparent_article": true,
           "transparent_logo": "shopify:\/\/shop_images\/LIDES_300x_fb21fd69-0e93-4632-8f59-88bc00b81bac.png",
           "secondary_menu_linklist": "header-top-nav",
           "tertiary_menu_linklist": ""
