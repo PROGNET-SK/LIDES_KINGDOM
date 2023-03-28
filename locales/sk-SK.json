@@ -169,13 +169,13 @@
       "more_description_label": "Zobraziť viac",
       "less_description_label": "Zobraziť menej",
       "inventory": {
-        "sold_out_variant": "Sold out",
-        "unavailable_variant": "Unavailable",
-        "one_product": "There is only one product left!",
-        "few_products": "There are {{ count }} products left",
-        "no_products": "There are no products left",
+        "sold_out_variant": "Vypredané",
+        "unavailable_variant": "Nedostupné",
+        "one_product": "Zostáva už len jeden produkt!",
+        "few_products": "Zostáva {{ count }} produktov",
+        "no_products": "Nezostali žiadne produkty",
         "preoder": "This product is out of stock, but you can still order it.",
-        "preorder": ""
+        "preorder": "Tento produkt je vypredaný, ale stále si ho môžete objednať"
       },
       "add_to_cart_button": "Pridať do košíka",
       "preorder_button": "Predobjednať",
