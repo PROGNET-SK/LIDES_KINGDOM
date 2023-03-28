@@ -177,18 +177,18 @@
         "preoder": "This product is out of stock, but you can still order it.",
         "preorder": ""
       },
-      "add_to_cart_button": "Add to cart",
-      "preorder_button": "Pre-Order",
-      "share_link": "Share",
+      "add_to_cart_button": "Pridať do košíka",
+      "preorder_button": "Predobjednať",
+      "share_link": "Zdieľať",
       "reviews_count": {
         "one": "{{ count }} review",
         "other": "{{ count }} reviews"
       },
-      "loading_reviews": "Loading more reviews",
-      "include_taxes": "Tax included.",
-      "shipping_policy_html": "<a href=\"{{ link }}\">Shipping<\/a> calculated at checkout.",
-      "view_in_space": "View in your space",
-      "view_in_space_label": "View in your space, loads item in augmented reality window"
+      "loading_reviews": "Načítavajú sa ďalšie recenzie",
+      "include_taxes": "s DPH",
+      "shipping_policy_html": "<a href=\"{{ link }}\">Doprava<\/a> vypočítaná pri pokadni",
+      "view_in_space": "Zobraziť ",
+      "view_in_space_label": "Zobraziť, načítať položku v rozšírenom okne"
     },
     "featured_product": {
       "mobile_title": "Featured product",
