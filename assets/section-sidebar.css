@@ -9,8 +9,8 @@ sidebar-drawer {
 
 .sidebar {
   position: fixed;
-  top: 0;
-  /*top: 116px;*/
+  /*top: 0;*/
+  top: 116px;
   width: 20%;
   min-width: 240px;
   max-width: 360px;
