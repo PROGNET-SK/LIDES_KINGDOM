@@ -265,7 +265,7 @@ summary::-webkit-details-marker {
   transition: opacity 150ms linear;
   vertical-align: bottom;
   transform: translate3d(0, 0, 0);
-  opacity: 0;
+  /*opacity: 0;*/
 }
 
 .lazy-image img.lazyloaded {
