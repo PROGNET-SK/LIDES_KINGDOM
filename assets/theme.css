@@ -1031,12 +1031,6 @@ ol ul {
 }
 
 
-ul.unstyled,
-ol.unstyled {
-  list-style-type: none;
-  margin-left: 0;
-}
-
 ul.inline-list li,
 ol.inline-list li {
   display: inline-block;
