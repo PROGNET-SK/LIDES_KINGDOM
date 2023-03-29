@@ -217,7 +217,7 @@
           "message_text": "Announce something here",
           "message_detail": "And then add some details here",
           "message_link": "",
-          "color_bg": "#ffffff",
+          "color_bg": "#efeeec",
           "color_text": "#3d3146",
           "menu_primary": "header-top-nav"
         }
