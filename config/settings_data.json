@@ -220,7 +220,7 @@
           "message_link": "",
           "color_bg": "#fff",
           "color_text": "#3D3146",
-          "menu_primary": "main-menu"
+          "menu_primary": "header-top-nav"
         }
       }
     },
