@@ -1022,11 +1022,25 @@ ol {
   list-style: inside decimal;
 }
 
+
 ul ul,
 ul ol,
 ol ol,
 ol ul {
   margin-inline-start: 20px;
+}
+
+
+ul.unstyled,
+ol.unstyled {
+  list-style-type: none;
+  margin-left: 0;
+}
+
+ul.inline-list li,
+ol.inline-list li {
+  display: inline-block;
+  margin-bottom: 0;
 }
 
 table {
