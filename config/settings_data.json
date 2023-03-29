@@ -218,7 +218,7 @@
           "message_detail": "And then add some details here",
           "message_link": "",
           "color_bg": "#efeeec",
-          "color_text": "#3d3146",
+          "color_text": "#545454",
           "menu_primary": "header-top-nav"
         }
       }
