@@ -428,5 +428,35 @@
     "pick_up_unavailable_at_html": "Vyzdvihnutie momentálne nie je k dispozícii na adrese <strong>{{ location_name }}<\/strong>",
     "invalid_location_address": "Pre potvrdenie adresy kontaktujte obchodníka",
     "refresh": "Obnoviť"
+  },
+  "layout": {
+    "cart": {
+      "items": {
+        "one": "Položka",
+        "other": "Položky"
+      },
+      "title": "Nadpis"
+    },
+    "customer": {
+      "logged_in_as": "Prihlásený ako",
+      "log_out": "Odhlásiť sa",
+      "log_in": "Prihlásiť sa",
+      "create_account": "Vytvoriť účet"
+    },
+    "header": {
+      "menu": "Meno",
+      "currency": "mena"
+    },
+    "footer": {
+      "social_platform": "{{name}} na {{platform}}",
+      "linklist_title": "Rýchle odkazy",
+      "social_title": "Spojiť sa",
+      "newsletter_title": "Newsletter",
+      "accepted_payments": "Prijaté platby"
+    },
+    "search_page": {
+      "singular_article": "Príspevok",
+      "singular_page": "Stránka"
+    }
   }
 }
