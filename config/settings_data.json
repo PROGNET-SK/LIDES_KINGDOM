@@ -230,11 +230,11 @@
         ],
         "settings": {
           "logo_image": "shopify:\/\/shop_images\/LIDES_logo_2.jpg",
-          "logo_image_width": 210,
+          "logo_image_width": 200,
           "header_style": "normal",
           "header_transparent_home": false,
           "header_transparent_collection": false,
-          "show_header_social": false,
+          "show_header_social": true,
           "show_header_search": false,
           "show_account": false,
           "message": false,
