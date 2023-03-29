@@ -206,8 +206,21 @@
       "header": {
         "type": "header",
         "settings": {
+          "logo_image_width": 200,
           "header_style": "logo_above",
-          "transparent_logo": "shopify:\/\/shop_images\/LIDES_300x_fb21fd69-0e93-4632-8f59-88bc00b81bac.png"
+          "header_transparent_home": false,
+          "header_transparent_collection": false,
+          "transparent_logo": "shopify:\/\/shop_images\/LIDES_300x_fb21fd69-0e93-4632-8f59-88bc00b81bac.png",
+          "show_header_social": true,
+          "show_header_search": true,
+          "show_account": true,
+          "message": false,
+          "message_text": "Announce something here",
+          "message_detail": "And then add some details here",
+          "message_link": "",
+          "color_bg": "#fff",
+          "color_text": "#3D3146",
+          "menu_primary": "main-menu"
         }
       }
     },
