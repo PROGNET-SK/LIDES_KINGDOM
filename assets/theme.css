@@ -964,11 +964,6 @@ input[type=radio]:checked {
   background: rgba(var(--color-sidebar-txt), 1);
 }
 
-/* custom position  */
-.sidebar{
-  top: 118px;
-}
-
 select.to-style {
   transition: all 100ms linear;
 }
