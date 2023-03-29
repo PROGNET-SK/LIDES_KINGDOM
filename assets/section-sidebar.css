@@ -9,14 +9,14 @@ sidebar-drawer {
 
 .sidebar {
   position: fixed;
-  /* top: 0;*/
-  top: 116px;
+  top: 0;
+  /*top: 116px;*/
   width: 20%;
   min-width: 240px;
   max-width: 360px;
   z-index: 999;
   transform: translate3d(0px, 0px, 0px);
-  height: 90%;
+  height: 100%;
 }
 
 html[dir=rtl] .sidebar {
