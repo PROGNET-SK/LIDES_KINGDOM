@@ -94,3 +94,37 @@ if ( ! window.refreshCart ) {
 	}
 
 }
+
+function stickyElements( $container ) {
+    var isMobile = $(window).width() < 750;
+    var hasSidebar = $( '.sidebar' ).length;
+    var hasSocial = $( '.article__social' ).length;
+
+    if ( hasSidebar ) {
+      if ( !isMobile ) {
+        var bottomSpacingSidebar = $('.site-footer').outerHeight();
+
+        $container.find( '.sidebar__contents' ).stick_in_parent({
+          parent: '.article__wrapper',
+          bottomSpacing: 30
+        });
+
+      } else {
+        // Destroy sticky on mobile
+        $container.find('.sidebar__contents').trigger("sticky_kit:detach");
+      }
+    }
+
+    if (hasSocial) {
+      var bottomSpacingSocial = parseInt($(document).height() - $('.article__content').offset().top - $('.article__content').outerHeight());
+
+      if (!isMobile) {
+        $container.find('.article__social').stick_in_parent({
+          parent: '.article__content__wrapper'
+        });
+      } else {
+        // Destroy sticky on mobile
+        $container.find('.article__social').trigger("sticky_kit:detach");
+      }
+    }
+  }
