@@ -302,7 +302,7 @@ html[dir=ltr] .sidebar-parent-element .sidebar-element:after {
 }
 .sidebar__menu.sidebar--secondary,
 .sidebar__submenu.sidebar--secondary {
-  margin-top: 40px;
+ /* margin-top: 40px; old setting*/
 }
 @media screen and (min-width: 1920px) {
   .sidebar__menu.sidebar--secondary,
