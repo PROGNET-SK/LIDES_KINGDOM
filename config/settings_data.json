@@ -205,6 +205,29 @@
       },
       "header": {
         "type": "header",
+        "blocks": {
+          "ddfa57df-cba5-4258-8e47-57bf23c2e793": {
+            "type": "megamenu",
+            "settings": {
+              "title": "",
+              "title_1": "",
+              "button_1": "",
+              "link_1": "",
+              "title_2": "",
+              "button_2": "",
+              "link_2": "",
+              "title_3": "",
+              "button_3": "",
+              "link_3": "",
+              "title_4": "",
+              "button_4": "",
+              "link_4": ""
+            }
+          }
+        },
+        "block_order": [
+          "ddfa57df-cba5-4258-8e47-57bf23c2e793"
+        ],
         "settings": {
           "logo_image_width": 200,
           "header_style": "normal",
@@ -219,7 +242,7 @@
           "message_link": "",
           "color_bg": "#efeeec",
           "color_text": "#545454",
-          "menu_primary": "main-menu"
+          "menu_primary": "header-top-nav"
         }
       }
     },
