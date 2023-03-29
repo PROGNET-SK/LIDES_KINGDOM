@@ -205,29 +205,6 @@
       },
       "header": {
         "type": "header",
-        "blocks": {
-          "8421bb4c-c9a0-44ac-a069-92d09015af8d": {
-            "type": "megamenu",
-            "settings": {
-              "title": "",
-              "title_1": "",
-              "button_1": "",
-              "link_1": "",
-              "title_2": "",
-              "button_2": "",
-              "link_2": "",
-              "title_3": "",
-              "button_3": "",
-              "link_3": "",
-              "title_4": "",
-              "button_4": "",
-              "link_4": ""
-            }
-          }
-        },
-        "block_order": [
-          "8421bb4c-c9a0-44ac-a069-92d09015af8d"
-        ],
         "settings": {
           "logo_image_width": 200,
           "header_style": "normal",
