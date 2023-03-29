@@ -205,26 +205,6 @@
       },
       "header": {
         "type": "header",
-        "blocks": {
-          "188d45be-6bcd-4c55-afcd-93320dbb1fca": {
-            "type": "image",
-            "settings": {
-              "position": "1",
-              "image": "shopify:\/\/shop_images\/LIDES_logo2_c9019239-4f36-4143-97cf-220b8cc81651.png",
-              "aspect_ratio": 0.5,
-              "wide_image": true,
-              "overlay_opacity": 0,
-              "overlay_color": "#000",
-              "title": "",
-              "link_text": "",
-              "link": "",
-              "text_color": ""
-            }
-          }
-        },
-        "block_order": [
-          "188d45be-6bcd-4c55-afcd-93320dbb1fca"
-        ],
         "settings": {
           "header_sticky": false,
           "header_style": "logo_above",
