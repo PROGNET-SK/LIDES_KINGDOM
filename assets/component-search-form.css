@@ -133,7 +133,7 @@ html[dir=ltr] .sidebar__search {
 .sidebar__search .search-form {
   position: fixed;
   /*bottom: 40px;*/
-  bottom: 140px;
+  bottom: 270px;
   width: 72%;
   margin-inline-start: 14%;
   pointer-events: all;
