@@ -3,42 +3,59 @@
 <main-sidebar class="sidebar">
   <div class="sidebar__container sidebar__responsive-container sidebar-element sidebar-menus-holder">
     <div class="sidebar__container-holder" style="flex: 1 0 auto;">
-      <!--
-        <header class="logo">
-        	<div>
-        		{%- if section.settings.logo_src -%}
-        			<a class="logo__image" href="{{ routes.root_url }}" style="display:block;height:{{ section.settings.logo_width | divided_by: section.settings.logo_src.aspect_ratio }}px">
-        				<img src="{{ section.settings.logo_src | image_url }}" alt="{{ shop.name | escape }}" style="width: {{ section.settings.logo_width | escape }}px;" width="{{ section.settings.logo_src.width }}" height="{{ section.settings.logo_src.height }}" {% if section.settings.logo_mobile_src != blank %} class="hide-on-big-palm" {% endif %} />
-        				{%- if section.settings.logo_mobile_src != blank -%}
-        					<img src="{{ section.settings.logo_mobile_src | image_url }}" alt="{{ shop.name | escape }}"  width="{{ section.settings.logo_mobile_src.width }}" height="{{ section.settings.logo_mobile_src.height }}" class="show-on-big-palm" />
-        				{%- endif -%}
-        			</a>
-        		{%- else -%}
-        			<a class="logo__text" href="{{ routes.root_url }}">{{ shop.name | escape }}</a>
-        		{%- endif -%}
-        	</div>
-          </header>
-
-          <div class="sidebar__responsive-handles">
-
-        	{%- if section.settings.show_search -%}
-        		<span class="sidebar__search-handle" tabindex="0">
-        			<span class="icon icon-search" aria-hidden="true">{%- render 'theme-symbols', icon: 'search' -%}</span>
-        		</span>
-        	{%- endif -%}
-
-        	<a href="{{ routes.cart_url }}" class="sidebar__cart-handle" title="{{ 'cart.title' | t }}">
-        		<span class="visually-hidden">{{ 'cart.title' | t }}</span>
-        		<span class="icon icon-cart" aria-hidden="true" style="height: 28px;">{%- render 'theme-symbols', icon: 'cart' -%}</span>
-        		<span class="count" aria-hidden="true" data-header-cart-count>{{ cart.item_count }}</span>
-        	</a>
-
-        	<span class="sidebar__menu-handle" tabindex="0">
-        		<span class="icon icon-menu" aria-hidden="true">{% render 'theme-symbols', icon: 'burger' %}</span>
-        	</span>
-
+      <header class="logo">
+        <div>
+          {%- if section.settings.logo_src -%}
+            <a
+              class="logo__image"
+              href="{{ routes.root_url }}"
+              style="display:block;height:{{ section.settings.logo_width | divided_by: section.settings.logo_src.aspect_ratio }}px"
+            >
+              <img
+                src="{{ section.settings.logo_src | image_url }}"
+                alt="{{ shop.name | escape }}"
+                style="width: {{ section.settings.logo_width | escape }}px;"
+                width="{{ section.settings.logo_src.width }}"
+                height="{{ section.settings.logo_src.height }}"
+                {% if section.settings.logo_mobile_src != blank %}
+                  class="hide-on-big-palm"
+                {% endif %}
+              >
+              {%- if section.settings.logo_mobile_src != blank -%}
+                <img
+                  src="{{ section.settings.logo_mobile_src | image_url }}"
+                  alt="{{ shop.name | escape }}"
+                  width="{{ section.settings.logo_mobile_src.width }}"
+                  height="{{ section.settings.logo_mobile_src.height }}"
+                  class="show-on-big-palm"
+                >
+              {%- endif -%}
+            </a>
+          {%- else -%}
+            <a class="logo__text" href="{{ routes.root_url }}">{{ shop.name | escape }}</a>
+          {%- endif -%}
         </div>
-      -->
+      </header>
+
+      <div class="sidebar__responsive-handles">
+        {%- if section.settings.show_search -%}
+          <span class="sidebar__search-handle" tabindex="0">
+            <span class="icon icon-search" aria-hidden="true">{%- render 'theme-symbols', icon: 'search' -%}</span>
+          </span>
+        {%- endif -%}
+
+        <a href="{{ routes.cart_url }}" class="sidebar__cart-handle" title="{{ 'cart.title' | t }}">
+          <span class="visually-hidden">{{ 'cart.title' | t }}</span>
+          <span class="icon icon-cart" aria-hidden="true" style="height: 28px;">
+            {%- render 'theme-symbols', icon: 'cart' -%}
+          </span>
+          <span class="count" aria-hidden="true" data-header-cart-count>{{ cart.item_count }}</span>
+        </a>
+
+        <span class="sidebar__menu-handle" tabindex="0">
+          <span class="icon icon-menu" aria-hidden="true">{% render 'theme-symbols', icon: 'burger' %}</span>
+        </span>
+      </div>
 
       <sidebar-drawer
         style="display:block"
