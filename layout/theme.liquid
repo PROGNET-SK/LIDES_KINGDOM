@@ -119,7 +119,7 @@
     {%- section 'sidebar' -%}
 
     <div id="content-holder">
-      <main id="content" role="main" style="margin-top:128px;">
+      <main id="content" role="main">
         {%- liquid
           echo 'component-product-item.css' | asset_url | stylesheet_tag
           if template contains 'collection' or template contains 'search'
