@@ -238,10 +238,6 @@ summary::-webkit-details-marker {
     --grid-gutter: calc(var(--grid-gutter-base) * 0.4);
   }
 
-  #content {
-    margin-top: 0;
-  }
-
 }
 
 @media screen and (max-width: 648px) {
@@ -1575,10 +1571,6 @@ html[dir=ltr] .aligned-text-content.horizontal-right {
     width: calc(100% - 240px);
   }
 
-  #content {
-    margin-top: 0;
-  }
-
 }
 
 @media screen and (max-width: 948px) {
@@ -1588,10 +1580,6 @@ html[dir=ltr] .aligned-text-content.horizontal-right {
 
   #content-holder #content {
     min-height: calc(100vh - 66px);
-  }
-
-  #content {
-    margin-top: 0;
   }
 
 }
@@ -2090,10 +2078,6 @@ html[dir=ltr] .css-slider-button .arrow-icon {
   .breadcrumb {
     margin-bottom: 1.5em;
     padding-top: 0;
-  }
-
-  #content {
-    margin-top: 0;
   }
 
 }
@@ -2776,10 +2760,6 @@ html[dir=ltr] .share-popup .basicLightboxClose {
     margin-bottom: 35px;
   }
 
-  #content {
-    margin-top: 0;
-  }
-
 }
 
 @media screen and (max-width: 480px) {
@@ -3093,10 +3073,6 @@ html[dir=ltr] .shopify-policy__title {
     background: white;
   }
 
-  #content {
-    margin-top: 0;
-  }
-
 }
 
 .meganav--visible .header__content::before {
@@ -3142,10 +3118,6 @@ html[dir=ltr] .shopify-policy__title {
 @media only screen and (max-width: 749px) {
   .logo {
     max-height: 100px;
-  }
-
-  #content {
-    margin-top: 0;
   }
 
 }
@@ -3242,9 +3214,6 @@ html[dir=ltr] .shopify-policy__title {
     display: none;
   }
 
-  #content {
-    margin-top: 0;
-  }
 }
 
 .header__social--mobile {
@@ -3278,10 +3247,6 @@ html[dir=ltr] .shopify-policy__title {
     fill: #ff0909;
   }
 
-  #content {
-    margin-top: 0;
-  }
-
 }
 
 
@@ -3306,10 +3271,6 @@ html[dir=ltr] .shopify-policy__title {
     visibility: hidden;
     padding: 0 14px;
     min-height: 46px;
-  }
-
-  #content {
-    margin-top: 0;
   }
 
 }
@@ -3474,12 +3435,6 @@ html[dir=ltr] .shopify-policy__title {
     line-height: normal;
     white-space: nowrap;
   }
-
-  #content {
-    margin-top: 0;
-  }
-
-
 }
 
 .search .remove-search {
@@ -3535,9 +3490,6 @@ html[dir=ltr] .shopify-policy__title {
     height: 60px;
   }
 
-  #content {
-    margin-top: 0;
-  }
 
 }
 
@@ -3610,10 +3562,6 @@ html[dir=ltr] .shopify-policy__title {
 @media only screen and (max-width: 749px) {
   .product-grid--results .product-item {
     width: 50%;
-  }
-
-  #content {
-    margin-top: 0;
   }
 
 }
