@@ -9,14 +9,19 @@ sidebar-drawer {
 
 
 @media screen and (max-width: 749px) {
+
+  #content,
   .sidebar {
     top: 0;
   }
+
 
 }
 
 
 @media screen and (min-width: 750px) {
+
+  content,
   .sidebar {
     top: 128px;
   }
