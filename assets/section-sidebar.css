@@ -7,10 +7,25 @@ sidebar-drawer {
   display: block;
 }
 
+
+@media screen and (max-width: 749px) {
+  .sidebar {
+    top: 0;
+  }
+
+}
+
+
+@media screen and (min-width: 750px) {
+  .sidebar {
+    top: 128px;
+  }
+}
+
+
+
 .sidebar {
   position: fixed;
-  /*top: 0;*/
-  top: 128px;
   width: 20%;
   min-width: 240px;
   max-width: 360px;
