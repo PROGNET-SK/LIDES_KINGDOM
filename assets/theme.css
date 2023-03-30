@@ -3092,6 +3092,11 @@ html[dir=ltr] .shopify-policy__title {
     top: 0;
     background: white;
   }
+
+  #content {
+    margin-top: 0;
+  }
+
 }
 
 .meganav--visible .header__content::before {
