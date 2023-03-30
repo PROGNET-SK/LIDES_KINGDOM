@@ -19,7 +19,7 @@ sidebar-drawer {
 }
 
 
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 984px) {
 
   content,
   .sidebar {
