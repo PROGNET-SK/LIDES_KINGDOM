@@ -1553,10 +1553,6 @@ html[dir=ltr] .aligned-text-content.horizontal-right {
   flex-shrink: 0;
 }
 
-#content {
-  margin-top: 128px;
-}
-
 
 #content-holder #content {
   width: 0;
