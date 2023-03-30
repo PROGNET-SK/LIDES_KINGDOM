@@ -2991,7 +2991,8 @@ html[dir=ltr] .shopify-policy__title {
 }
 
 .header__content {
-  position: absolute;
+  /*position: absolute;*/
+  position: fixed;
   top: auto;
   width: 100%;
   color: inherit;
