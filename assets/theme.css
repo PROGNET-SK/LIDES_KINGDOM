@@ -2954,12 +2954,22 @@ html[dir=ltr] .shopify-policy__title {
     margin-top: 65px;
   }
 
+  .sidebar__responsive-handles {
+    visibility: visible;
+    display: flex;
+  }
+
 }
 
 @media screen and (min-width: 948px) {
   .lide-main-content {
     margin-top: 128px;
     ;
+  }
+
+  .sidebar__responsive-handles {
+    visibility: hidden;
+    display: none;
   }
 
 }
