@@ -2946,7 +2946,7 @@ html[dir=ltr] .shopify-policy__title {
 
 /*-PROGNET -----------------*/
 
-.site-header>.sidebar__search-handle {
+#header .sidebar__search-handle {
 
   display: flex;
   border: 1px solid lime;
