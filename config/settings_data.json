@@ -112,7 +112,7 @@
         "settings": {
           "logo_width": 60,
           "menu_primary": "",
-          "menu_secondary": "main-menu",
+          "menu_secondary": "left-side-eshop",
           "show_locale_selector": false,
           "show_country_selector": false,
           "show_search": true
