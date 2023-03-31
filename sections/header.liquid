@@ -88,33 +88,10 @@
       <nav class="site-nav nav__links">
         <ul class="main-menu unstyled" role="navigation" aria-label="primary">
           <li class="transcy-switcher-manual hidden transcy-mobile mobile-nav__item"></li>
-        </ul>
-        <ul class="menu">
-          {% for link in section.settings.menu.links %}
-            <li class="menu-link">
-              <a href="{{ link.url }}">{{ link.title }}</a>
-
-              {% if link.links.size > 0 %}
-                <ul class="menu dropdown-child">
-                  {% for child_link in link.links %}
-                    <li class="menu-link">
-                      <a href="{{ child_link.url }}">{{ child_link.title }}</a>
-
-                      {% if child_link.links.size > 0 %}
-                        <ul class="menu dropdown-grandchild">
-                          {% for grandchild_link in child_link.links %}
-                            <li class="menu-link">
-                              <a href="{{ grandchild_link.url }}">{{ grandchild_link.title }}</a>
-                            </li>
-                          {% endfor %}
-                        </ul>
-                      {% endif %}
-                    </li>
-                  {% endfor %}
-                </ul>
-              {% endif %}
-            </li>
-          {% endfor %}
+          {%- for link in linklists[main_menu_linklist].links -%}
+            {%- assign toplevel = true -%}
+            {% include 'nav-item', version: 'desktop', seed: forloop.index %}
+          {%- endfor -%}
         </ul>
       </nav>
     </section>
