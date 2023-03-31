@@ -2946,9 +2946,9 @@ html[dir=ltr] .shopify-policy__title {
 
 /*-PROGNET -----------------*/
 
-#header .sidebar__responsive-handles .sidebar__cart-handle,
+header#header .sidebar__responsive-handles,
+.sidebar__cart-handle,
 .sidebar__search-handle {
-
   display: flex;
   border: 1px solid lime;
 }
