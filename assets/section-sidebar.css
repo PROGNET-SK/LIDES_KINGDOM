@@ -956,7 +956,7 @@ sidebar-drawer.opened .sidebar-close-element {
 
 @media screen and (min-width: 949px) {
   body:not(.overflow-hidden).show-announcement-bar .sidebar__container-holder {
-    /*padding-top: 120px;*/
+    padding-top: 120px;
   }
 
   body.show-announcement-bar .sidebar__submenu .sidebar__container {
@@ -969,6 +969,7 @@ sidebar-drawer.opened .sidebar-close-element {
 */
 @media screen and (max-width: 948px) {
   .sidebar {
+    top: 0px;
     width: 100%;
     max-width: none;
     height: 66px;
