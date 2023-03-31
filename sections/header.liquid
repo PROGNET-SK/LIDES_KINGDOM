@@ -126,7 +126,6 @@
         </a>
       </div>
     </div>
-
     <!-- top header menu -->
     <section id="" class="navigation__wrapper" role="navigation">
       <nav class="site-nav nav__links">
@@ -143,43 +142,8 @@
   </div>
 </header>
 
-<script type="application/ld+json">
-  {
-    "@context": "http://schema.org",
-    "@type": "Organization",
-    "name": {{ shop.name | json }},
-    {% if section.settings.logo_image %}
-      {% assign image_size = section.settings.logo_image.width | append:'x' %}
-      "logo": {{ section.settings.logo_image | img_url: image_size | prepend: "https:" | json }},
-    {% endif %}
-    "sameAs": [
-      {{ settings.instagram_link | json }},
-      {{ settings.facebook_link | json }},
-      {{ settings.twitter_link | json }},
-      {{ settings.youtube_link | json }},
-      {{ settings.vimeo_link | json }},
-      {{ settings.pinterest_link | json }},
-      {{ settings.tumblr_link | json }}
-    ],
-    "url": {{ shop.url | append: page.url | json }}
-  }
-</script>
-
 {% if template.name == 'index' %}
   {% assign potential_action_target = shop.url | append: '/search?q={search_term_string}' %}
-  <script type="application/ld+json">
-    {
-      "@context": "http://schema.org",
-      "@type": "WebSite",
-      "name": {{ shop.name | json }},
-      "potentialAction": {
-        "@type": "SearchAction",
-        "target": {{ potential_action_target | json }},
-        "query-input": "required name=search_term_string"
-      },
-      "url": {{ shop.url | append: page.url | json }}
-    }
-  </script>
 {% endif %}
 
 {% schema %}
