@@ -3115,18 +3115,23 @@ html[dir=ltr] .shopify-policy__title {
     border: none;
   }
 
+  /*
   .header--transparent:not(.is-sticky) .header__content .logo__wrapper a,
   .header--transparent:not(.is-sticky) .header__content .main-menu>li>a,
   .header--transparent:not(.is-sticky) .header__content .header__currency select.currency-picker,
   .header--transparent:not(.is-sticky) .header__content .header-content a {
     color: white;
   }
+*/
+
+  /*
 
   .header--transparent:not(.is-sticky) .header__content .header-content a svg,
   .header--transparent:not(.is-sticky) .header__content .nav-carat-small svg,
   .header--transparent:not(.is-sticky) .header__content .header__currency .selectArrow {
     fill: white;
   }
+*/
 
   .header--transparent:not(.is-sticky) .header__content .header-content a svg:hover,
   .header--transparent:not(.is-sticky) .header__content .nav-carat-small svg:hover,
