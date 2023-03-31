@@ -1563,7 +1563,7 @@ html[dir=ltr] .aligned-text-content.horizontal-right {
 }
 
 @media screen and (max-width: 948px) {
-  #content-holder #content {
+  .site-header {
     display: none;
     visibility: hidden;
   }
