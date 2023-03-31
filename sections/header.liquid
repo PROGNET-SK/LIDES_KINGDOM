@@ -93,19 +93,21 @@
             {% include 'nav-item', version: 'desktop', seed: forloop.index %}
           {%- endfor -%}
 
-          {% if shop.customer_accounts_enabled and section.settings.show_account %}
-            {% if customer %}
-              <li class="nav__account medium-up--hide">
-                <a href="/account">{{ 'customer.account.title' | t }}</a>
-              </li>
-              <li class="nav__account medium-up--hide">{{ 'layout.customer.log_out' | t | customer_logout_link }}</li>
-            {% else %}
-              <li class="nav__account medium-up--hide">{{ 'layout.customer.log_in' | t | customer_login_link }}</li>
-              <li class="nav__account medium-up--hide">
-                {{ 'layout.customer.create_account' | t | customer_register_link }}
-              </li>
-            {% endif %}
-          {% endif %}
+          {% # if shop.customer_accounts_enabled and section.settings.show_account %}
+          {% # if customer %}
+          <li class="nav__account medium-up--hide">
+            <a href="/account">{{ 'customer.account.title' | t }}</a>
+          </li>
+          <li class="nav__account medium-up--hide">{{ 'layout.customer.log_out' | t | customer_logout_link }}</li>
+          {% # else %}
+          <!--
+            <li class="nav__account medium-up--hide">{{ 'layout.customer.log_in' | t | customer_login_link }}</li>
+            <li class="nav__account medium-up--hide">
+              {{ 'layout.customer.create_account' | t | customer_register_link }}
+            </li>
+          -->
+          {% # endif %}
+          {% # endif %}
         </ul>
       </nav>
     </section>
