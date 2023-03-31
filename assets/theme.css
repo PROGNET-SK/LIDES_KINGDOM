@@ -2975,11 +2975,12 @@ html[dir=ltr] .shopify-policy__title {
 .header__cart-handle,
 .header__menu-handle,
 .header__search-handle {
+  /*
   position: absolute;
   width: 36px;
   height: 36px;
   top: 30px;
-  padding: 5px;
+  padding: 5px;*/
   cursor: pointer;
 }
 
