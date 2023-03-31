@@ -1570,13 +1570,6 @@ html[dir=ltr] .aligned-text-content.horizontal-right {
 }
 
 @media screen and (max-width: 948px) {
-
-  #content-holder {
-    /*margin-top: 66px;*/
-    margin-top: 0px;
-  }
-
-
   #content-holder #content {
     min-height: calc(100vh - 66px);
   }
