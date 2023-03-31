@@ -939,13 +939,15 @@ sidebar-drawer.opened .sidebar-close-element {
     height: 0 !important;
   }
 
+  /*
   body:not(.overflow-hidden) .sidebar__container-holder {
-    /*padding-top: 80px;  old setting*/
+    padding-top: 80px;  old setting
   }
 
   body.show-announcement-bar body:not(.overflow-hidden) .sidebar__container-holder {
     padding-top: 120px;
   }
+  */
 
   body:not(.overflow-hidden) .sidebar__menus {
     height: auto !important;
