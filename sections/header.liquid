@@ -129,8 +129,11 @@
 
     <!-- MAIN NAV -->
     <section id="NavMenus" class="navigation__wrapper" role="navigation">
-      <nav role="navigation">
-        <ul>
+      <nav class="site-nav nav__links">
+        <ul class="main-menu unstyled" role="navigation" aria-label="primary">
+          <li class="transcy-switcher-manual hidden transcy-mobile mobile-nav__item"></li>
+          <li class="">menu LI 1</li>
+          {%- # for link in linklists[main_menu_linklist].links -%}
           {%- for link in linklists['main-menu'].links -%}
             <li>
               <a
@@ -141,82 +144,12 @@
               >
                 {{ link.title }}
               </a>
-
-              {%- if link.links != blank -%}
-                <ul>
-                  {%- for child_link in link.links -%}
-                    <li>
-                      <a
-                        href="{{ child_link.url }}"
-                        {% if child_link.active %}
-                          aria-current="page"
-                        {% endif %}
-                      >
-                        {{ child_link.title }}
-                      </a>
-
-                      {%- if child_link.links != blank -%}
-                        <ul>
-                          {%- for grandchild_link in child_link.links -%}
-                            <li>
-                              <a
-                                href="{{ grandchild_link.url }}"
-                                {% if grandchild_link.active %}
-                                  aria-current="page"
-                                {% endif %}
-                              >
-                                {{ grandchild_link.title }}
-                              </a>
-                            </li>
-                          {%- endfor -%}
-                        </ul>
-                      {%- endif -%}
-                    </li>
-                  {%- endfor -%}
-                </ul>
-              {%- endif -%}
             </li>
+
+            {% # include 'nav-item', version: 'desktop', seed: forloop.index %}
           {%- endfor -%}
         </ul>
       </nav>
-
-      <nav class="site-nav nav__links">
-        <ul class="main-menu unstyled" role="navigation" aria-label="primary">
-          <li class="transcy-switcher-manual hidden transcy-mobile mobile-nav__item"></li>
-          <li class="">menu LI 1</li>
-          <li class="">menu LI 2</li>
-          {%- for link in linklists[main_menu_linklist].links -%}
-            {%- assign toplevel = true -%}
-            {% include 'nav-item', version: 'desktop', seed: forloop.index %}
-          {%- endfor -%}
-
-          {% if shop.customer_accounts_enabled and section.settings.show_account %}
-            {% if customer %}
-              <li class="nav__account medium-up--hide">
-                <a href="/account">{{ 'customer.account.title' | t }}</a>
-              </li>
-              <li class="nav__account medium-up--hide">{{ 'layout.customer.log_out' | t | customer_logout_link }}</li>
-            {% else %}
-              <li class="nav__account medium-up--hide">{{ 'layout.customer.log_in' | t | customer_login_link }}</li>
-              <li class="nav__account medium-up--hide">
-                {{ 'layout.customer.create_account' | t | customer_register_link }}
-              </li>
-            {% endif %}
-          {% endif %}
-        </ul>
-      </nav>
-
-      {% if section.settings.show_header_social %}
-        <div class="header__social--mobile medium-up--hide">
-          {% include 'social' %}
-        </div>
-      {% endif %}
-
-      {%- if settings.show_multiple_currencies -%}
-        <div class="header__currency">
-          {%- include 'currency-picker' -%}
-        </div>
-      {%- endif -%}
     </section>
   </div>
 </header>
