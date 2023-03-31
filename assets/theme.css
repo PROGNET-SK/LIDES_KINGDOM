@@ -1562,14 +1562,6 @@ html[dir=ltr] .aligned-text-content.horizontal-right {
   flex-direction: column;
 }
 
-@media screen and (max-width: 948px) {
-  .site-header {
-    display: none;
-    visibility: hidden;
-  }
-
-}
-
 
 @media screen and (min-width: 948px) and (max-width: 1023px) {
   #content-holder #content {
@@ -2984,7 +2976,7 @@ html[dir=ltr] .shopify-policy__title {
 }
 
 
-@media only screen and (min-width: 749px) {
+@media only screen and (min-width: 948px) {
   .site-header {
     display: block;
     visibility: visible;
@@ -2992,7 +2984,7 @@ html[dir=ltr] .shopify-policy__title {
 }
 
 
-@media only screen and (max-width: 749px) {
+@media only screen and (max-width: 948px) {
   .site-header {
     display: none;
     visibility: hidden;
