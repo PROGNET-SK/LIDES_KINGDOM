@@ -129,6 +129,57 @@
 
     <!-- MAIN NAV -->
     <section id="NavMenus" class="navigation__wrapper" role="navigation">
+      <nav role="navigation">
+        <ul>
+          {%- for link in linklists['main-menu'].links -%}
+            <li>
+              <a
+                href="{{ link.url }}"
+                {% if link.active %}
+                  aria-current="page"
+                {% endif %}
+              >
+                {{ link.title }}
+              </a>
+
+              {%- if link.links != blank -%}
+                <ul>
+                  {%- for child_link in link.links -%}
+                    <li>
+                      <a
+                        href="{{ child_link.url }}"
+                        {% if child_link.active %}
+                          aria-current="page"
+                        {% endif %}
+                      >
+                        {{ child_link.title }}
+                      </a>
+
+                      {%- if child_link.links != blank -%}
+                        <ul>
+                          {%- for grandchild_link in child_link.links -%}
+                            <li>
+                              <a
+                                href="{{ grandchild_link.url }}"
+                                {% if grandchild_link.active %}
+                                  aria-current="page"
+                                {% endif %}
+                              >
+                                {{ grandchild_link.title }}
+                              </a>
+                            </li>
+                          {%- endfor -%}
+                        </ul>
+                      {%- endif -%}
+                    </li>
+                  {%- endfor -%}
+                </ul>
+              {%- endif -%}
+            </li>
+          {%- endfor -%}
+        </ul>
+      </nav>
+
       <nav class="site-nav nav__links">
         <ul class="main-menu unstyled" role="navigation" aria-label="primary">
           <li class="transcy-switcher-manual hidden transcy-mobile mobile-nav__item"></li>
