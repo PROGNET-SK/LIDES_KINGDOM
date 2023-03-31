@@ -2968,6 +2968,22 @@ html[dir=ltr] .shopify-policy__title {
 }
 
 
+.header__search-handle {
+  position: static;
+  top: 0;
+  padding-top: 8px;
+}
+
+.header__search-handle path {
+  stroke: transparent !important;
+  fill: rgba(var(--color-sidebar-txt), 1);
+}
+
+.no-touch .header__search-handle:hover path h {
+  fill: rgba(var(--color-sidebar-accent), 1);
+}
+
+
 @media only screen and (min-width: 749px) {
   .site-header {
     display: block;
