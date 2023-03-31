@@ -3257,15 +3257,6 @@ html[dir=ltr] .shopify-policy__title {
   transition: background 0.2s ease-in-out;
 }
 
-@media only screen and (max-width: 949px) {
-  .header-content {
-    display: none;
-    visibility: hidden;
-    padding: 0 14px;
-    min-height: 46px;
-  }
-}
-
 .header-content a {
   text-decoration: none;
   color: black;
