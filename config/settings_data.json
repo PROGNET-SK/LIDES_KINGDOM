@@ -196,7 +196,7 @@
         "type": "popup",
         "settings": {
           "title": "Popup",
-          "content": "<p>Stay up to date on the latest product releases, special offers & news by signing up for our newsletter.<\/p><p>Read our <a href='#'>privacy policy<\/a>.<\/p>",
+          "content": "<p>Stay up to date on the latest product releases, special offers & news by signing up for our newsletter.<\/p><p>Read our <a href=\"#\">privacy policy<\/a>.<\/p>",
           "newsletter_enable": true,
           "popup_enable": false,
           "newsletter_auto": 10,
@@ -205,29 +205,6 @@
       },
       "header": {
         "type": "header",
-        "blocks": {
-          "ddfa57df-cba5-4258-8e47-57bf23c2e793": {
-            "type": "megamenu",
-            "settings": {
-              "title": "",
-              "title_1": "",
-              "button_1": "",
-              "link_1": "",
-              "title_2": "",
-              "button_2": "",
-              "link_2": "",
-              "title_3": "",
-              "button_3": "",
-              "link_3": "",
-              "title_4": "",
-              "button_4": "",
-              "link_4": ""
-            }
-          }
-        },
-        "block_order": [
-          "ddfa57df-cba5-4258-8e47-57bf23c2e793"
-        ],
         "settings": {
           "logo_image": "shopify:\/\/shop_images\/LIDES_logo_2.jpg",
           "logo_image_width": 200,
