@@ -2946,6 +2946,17 @@ html[dir=ltr] .shopify-policy__title {
 
 /*-PROGNET -----------------*/
 
+.header__cart-handle,
+.header__search-handle {
+  position: absolute;
+  width: 36px;
+  height: 36px;
+  top: 30px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+
 @media only screen and (min-width: 749px) {
   .site-header {
     display: block;
