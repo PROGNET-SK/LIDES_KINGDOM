@@ -2,7 +2,7 @@
 
 {%- assign logoImageWidth = section.settings.logo_image_width -%}
 {%- if section.settings.menu_primary -%}
-  {%- assign main_menu_linklist = section.settings['menu_primary-'] %}
+  {%- assign main_menu_linklist = section.settings.menu_primary-%}
 {%- else -%}
   {%- assign main_menu_linklist = 'main-menu' -%}
 {%- endif -%}
@@ -14,17 +14,44 @@
   {%- assign header_overlay = true -%}
 {%- endif -%}
 
-<header
-  class="site-header header--{{ section.settings.header_style }} header__wrapper{% if header_overlay %} header--transparent{% endif %}"
-  id="header"
-  data-section-id="{{ section.id }}"
-  data-section-type="header"
-  data-overlay="{{ header_overlay }}"
->
+<header class="site-header header--{{ section.settings.header_style }} header__wrapper{% if header_overlay %} header--transparent{% endif %}" id="header" data-section-id="{{ section.id }}" data-section-type="header" data-overlay="{{ header_overlay }}">
   {% if logoImageWidth > 0 %}
     <style>
       #logo a img { width: {{ logoImageWidth }}px; }
     </style>
+  {% endif %}
+
+  <!-- PROMO -->
+  {% if section.settings.message %}
+      <style>
+      .promo {
+        background-color: {{ section.settings.color_bg }};
+      }
+      .promo strong, .promo span {
+        color: {{ section.settings.color_text }};
+      }
+    </style>
+    <aside class="promo">
+      {% if section.settings.message_link %}
+      <a class = "promo--link" href = "{{ section.settings.message_link }}">
+      {% endif %}
+
+      {% if section.settings.message_text  %}
+        <strong>{{ section.settings.message_text }}</strong>
+      {% endif %}
+
+      {% if section.settings.message_text != blank and section.settings.message_detail != blank %}
+        <span class="promo__break">|</span>
+      {% endif %}
+
+      {% if section.settings.message_detail != blank %}
+        <span>{{ section.settings.message_detail }}</span>
+      {% endif %}
+
+      {% if section.settings.message_link %}
+      </a>
+      {% endif %}
+    </aside>
   {% endif %}
 
   <div class="header__content">
@@ -46,13 +73,8 @@
             {% if section.settings.logo_image %}
               {%- assign image = section.settings.logo_image -%}
               {%- assign img_url = image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
-              {%- assign image_height = section.settings.logo_image_width
-                | divided_by: image.aspect_ratio
-                | round
-                | append: 'px'
-              -%}
-              <img
-                class="lazyload logo logo--default"
+              {%- assign image_height = section.settings.logo_image_width | divided_by: image.aspect_ratio | round | append: 'px' -%}
+              <img class="lazyload logo logo--default"
                 src="{{ image | img_url: '400x' }}"
                 data-src="{{ img_url }}"
                 data-widths="[180, 360, 540, 720, 900, 1080, 1296]"
@@ -60,22 +82,19 @@
                 data-sizes="auto"
                 data-parent-fit="contain"
                 style="height: {{ image_height }}"
-                alt="{{ shop.name | escape }}"
-              >
+                alt="{{ shop.name | escape }}"/>
 
-              <noscript>
-                <img class="no-js-image" src="{{ image | img_url: '400x' }}" alt="{{ shop.name | escape }}">
-              </noscript>
-              {% if header_overlay and section.settings.transparent_logo != blank %}
-                {% capture image_size %}{{ section.settings.logo_image_width }}x{% endcapture %}
-                <img
-                  src="{{ section.settings.transparent_logo | img_url: image_size }}"
-                  class="logo logo--transparent"
-                  srcset="{{ section.settings.transparent_logo | img_url: image_size }} 1x, {{ section.settings.transparent_logo | img_url: image_size, scale: 2 }} 2x"
-                  style="height: {{ image_height }}"
-                  alt="{{ section.settings.transparent_logo.alt | default: shop.name }}"
-                >
-              {% endif %}
+                <noscript>
+                  <img class="no-js-image" src="{{ image | img_url: '400x' }}" alt="{{ shop.name | escape }}"/>
+                </noscript>
+                {% if header_overlay and section.settings.transparent_logo != blank %}
+                  {% capture image_size %}{{ section.settings.logo_image_width }}x{% endcapture %}
+                  <img src="{{ section.settings.transparent_logo | img_url: image_size }}"
+                       class="logo logo--transparent"
+                       srcset="{{ section.settings.transparent_logo | img_url: image_size }} 1x, {{ section.settings.transparent_logo | img_url: image_size, scale: 2 }} 2x"
+                       style="height: {{ image_height }}"
+                       alt="{{ section.settings.transparent_logo.alt | default: shop.name }}">
+                {% endif %}
             {% else %}
               <span>{{ shop.name | escape }}</span>
             {% endif %}
@@ -105,8 +124,7 @@
                 class="cart-count-js header__cart__count"
                 {% if cart.item_count == 0 %}
                   style="display: none;"
-                {% endif %}
-              >
+                {% endif %}>
                 {{ cart.item_count }}
               </span>
             </span>
@@ -125,31 +143,29 @@
           <span class="visually-hidden">{{ 'layout.header.menu' | t }}</span>
         </a>
       </div>
+
     </div>
 
     <!-- MAIN NAV -->
     <section id="NavMenus" class="navigation__wrapper" role="navigation">
-      <nav class="site-nav nav__links">
-        <ul class="main-menu unstyled" role="navigation" aria-label="primary">
-          <li class="transcy-switcher-manual hidden transcy-mobile mobile-nav__item"></li>
-          {%- for link in linklists[main_menu_linklist].links -%}
-            {%- assign toplevel = true -%}
-            {% include 'nav-item', version: 'desktop', seed: forloop.index %}
-          {%- endfor -%}
 
-          {% if shop.customer_accounts_enabled and section.settings.show_account %}
-            {% if customer %}
-              <li class="nav__account medium-up--hide">
-                <a href="/account">{{ 'customer.account.title' | t }}</a>
-              </li>
-              <li class="nav__account medium-up--hide">{{ 'layout.customer.log_out' | t | customer_logout_link }}</li>
-            {% else %}
-              <li class="nav__account medium-up--hide">{{ 'layout.customer.log_in' | t | customer_login_link }}</li>
-              <li class="nav__account medium-up--hide">
-                {{ 'layout.customer.create_account' | t | customer_register_link }}
-              </li>
-            {% endif %}
+      <nav class="site-nav nav__links">
+        <ul class="main-menu unstyled" role="navigation" aria-label="primary"> 
+ <li class="transcy-switcher-manual hidden transcy-mobile mobile-nav__item"></li>
+        {%- for link in linklists[main_menu_linklist].links -%}
+          {%- assign toplevel = true -%}
+          {% include 'nav-item', version: 'desktop', seed: forloop.index %}
+        {%- endfor -%}
+
+        {% if shop.customer_accounts_enabled and section.settings.show_account %}
+          {% if customer %}
+            <li class="nav__account medium-up--hide"><a href="/account">{{ 'customer.account.title' | t }}</a></li>
+            <li class="nav__account medium-up--hide">{{ 'layout.customer.log_out' | t | customer_logout_link }}</li>
+          {% else %}
+            <li class="nav__account medium-up--hide">{{ 'layout.customer.log_in' | t | customer_login_link }}</li>
+            <li class="nav__account medium-up--hide">{{ 'layout.customer.create_account' | t | customer_register_link }}</li>
           {% endif %}
+        {% endif %}
         </ul>
       </nav>
 
@@ -164,34 +180,35 @@
           {%- include 'currency-picker' -%}
         </div>
       {%- endif -%}
+
     </section>
   </div>
 </header>
 
 <script type="application/ld+json">
-  {
-    "@context": "http://schema.org",
-    "@type": "Organization",
-    "name": {{ shop.name | json }},
-    {% if section.settings.logo_image %}
-      {% assign image_size = section.settings.logo_image.width | append:'x' %}
-      "logo": {{ section.settings.logo_image | img_url: image_size | prepend: "https:" | json }},
-    {% endif %}
-    "sameAs": [
-      {{ settings.instagram_link | json }},
-      {{ settings.facebook_link | json }},
-      {{ settings.twitter_link | json }},
-      {{ settings.youtube_link | json }},
-      {{ settings.vimeo_link | json }},
-      {{ settings.pinterest_link | json }},
-      {{ settings.tumblr_link | json }}
-    ],
-    "url": {{ shop.url | append: page.url | json }}
-  }
+{
+  "@context": "http://schema.org",
+  "@type": "Organization",
+  "name": {{ shop.name | json }},
+  {% if section.settings.logo_image %}
+    {% assign image_size = section.settings.logo_image.width | append:'x' %}
+    "logo": {{ section.settings.logo_image | img_url: image_size | prepend: "https:" | json }},
+  {% endif %}
+  "sameAs": [
+    {{ settings.instagram_link | json }},
+    {{ settings.facebook_link | json }},
+    {{ settings.twitter_link | json }},
+    {{ settings.youtube_link | json }},
+    {{ settings.vimeo_link | json }},
+    {{ settings.pinterest_link | json }},
+    {{ settings.tumblr_link | json }}
+  ],
+  "url": {{ shop.url | append: page.url | json }}
+}
 </script>
 
 {% if template.name == 'index' %}
-  {% assign potential_action_target = shop.url | append: '/search?q={search_term_string}' %}
+  {% assign potential_action_target = shop.url | append: "/search?q={search_term_string}" %}
   <script type="application/ld+json">
     {
       "@context": "http://schema.org",
@@ -310,13 +327,13 @@
       "type": "text",
       "id": "message_text",
       "label": "Text",
-      "default": "Announce something here"
+      "default":"Announce something here"
     },
     {
       "type": "text",
       "id": "message_detail",
       "label": "Details",
-      "default": "And then add some details here"
+      "default":"And then add some details here"
     },
     {
       "type": "url",
@@ -463,3 +480,4 @@
   ]
 }
 {% endschema %}
+
