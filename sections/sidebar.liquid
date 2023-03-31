@@ -36,26 +36,27 @@
           {%- endif -%}
         </div>
       </header>
+      <!--
+        <div class="sidebar__responsive-handles">
+          {%- if section.settings.show_search -%}
+            <span class="sidebar__search-handle" tabindex="0">
+              <span class="icon icon-search" aria-hidden="true">{%- render 'theme-symbols', icon: 'search' -%}</span>
+            </span>
+          {%- endif -%}
 
-      <div class="sidebar__responsive-handles">
-        {%- if section.settings.show_search -%}
-          <span class="sidebar__search-handle" tabindex="0">
-            <span class="icon icon-search" aria-hidden="true">{%- render 'theme-symbols', icon: 'search' -%}</span>
+          <a href="{{ routes.cart_url }}" class="sidebar__cart-handle" title="{{ 'cart.title' | t }}">
+            <span class="visually-hidden">{{ 'cart.title' | t }}</span>
+            <span class="icon icon-cart" aria-hidden="true" style="height: 28px;">
+              {%- render 'theme-symbols', icon: 'cart' -%}
+            </span>
+            <span class="count" aria-hidden="true" data-header-cart-count>{{ cart.item_count }}</span>
+          </a>
+
+          <span class="sidebar__menu-handle" tabindex="0">
+            <span class="icon icon-menu" aria-hidden="true">{% render 'theme-symbols', icon: 'burger' %}</span>
           </span>
-        {%- endif -%}
-
-        <a href="{{ routes.cart_url }}" class="sidebar__cart-handle" title="{{ 'cart.title' | t }}">
-          <span class="visually-hidden">{{ 'cart.title' | t }}</span>
-          <span class="icon icon-cart" aria-hidden="true" style="height: 28px;">
-            {%- render 'theme-symbols', icon: 'cart' -%}
-          </span>
-          <span class="count" aria-hidden="true" data-header-cart-count>{{ cart.item_count }}</span>
-        </a>
-
-        <span class="sidebar__menu-handle" tabindex="0">
-          <span class="icon icon-menu" aria-hidden="true">{% render 'theme-symbols', icon: 'burger' %}</span>
-        </span>
-      </div>
+        </div>
+      -->
 
       <sidebar-drawer
         style="display:block"
