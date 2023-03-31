@@ -155,11 +155,15 @@
     <div class="">
       {%- if section.settings.show_search -%}
         <span class="sidebar__search-handle" tabindex="0">
-          <span class="icon icon-search" aria-hidden="true">{%- render 'theme-symbols', icon: 'search' -%}</span>
+          <span class="icon icon-search" aria-hidden="true"
+            >111
+            {%- render 'theme-symbols', icon: 'search' -%}
+          </span>
         </span>
       {%- endif -%}
 
-      <a href="{{ routes.cart_url }}" class="sidebar__cart-handle" title="{{ 'cart.title' | t }}">
+      <a href="{{ routes.cart_url }}" class="sidebar__cart-handle" title="{{ 'cart.title' | t }}"
+        >2222
         <span class="visually-hidden">{{ 'cart.title' | t }}</span>
         <span class="icon icon-cart" aria-hidden="true" style="height: 28px;">
           {%- render 'theme-symbols', icon: 'cart' -%}
@@ -167,8 +171,9 @@
         <span class="count" aria-hidden="true" data-header-cart-count>{{ cart.item_count }}</span>
       </a>
 
-      <span class="sidebar__menu-handle" tabindex="0">
-        <span class="icon icon-menu" aria-hidden="true">000 {% render 'theme-symbols', icon: 'burger' %}</span>
+      <span class="sidebar__menu-handle" tabindex="0"
+        >333
+        <span class="icon icon-menu" aria-hidden="true">{% render 'theme-symbols', icon: 'burger' %}</span>
       </span>
     </div>
   </div>
