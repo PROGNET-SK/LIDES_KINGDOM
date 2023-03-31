@@ -134,7 +134,18 @@
           <li class="transcy-switcher-manual hidden transcy-mobile mobile-nav__item"></li>
           {% for link in linklists['header-top-nav'].links %}
             <li>
-              <a href="{{ link.url }}" title="{{ link.title }}">{{ link.title }}</a>
+              <a
+                href="{{ link.url }}"
+                title="{{ link.title }}"
+
+                data-type="primary"
+
+                {% if link.active %}
+                  class="selected"
+                {% endif %}
+              >
+                {{- link.title -}}
+              </a>
             </li>
           {% endfor %}
         </ul>
