@@ -2951,15 +2951,14 @@ html[dir=ltr] .shopify-policy__title {
 @media screen and (max-width: 948px) {
 
   .lide-main-content {
-    margin-top: 128px;
-
+    margin-top: 65px;
   }
 
 }
 
 @media screen and (min-width: 948px) {
   .lide-main-content {
-    margin-top: 45px;
+    margin-top: 128px;
     ;
   }
 
