@@ -91,6 +91,7 @@
 
           {% for link in linklists['main-menu'].links %}
             <!-- menu content -->
+            {% include 'nav-item', version: 'desktop', seed: forloop.index %}
           {% endfor %}
         </ul>
       </nav>
