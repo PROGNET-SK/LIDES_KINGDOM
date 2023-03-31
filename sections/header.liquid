@@ -152,11 +152,11 @@
   </div>
 
   <div class="sidebar__responsive-handles">
-    {%- if section.settings.show_search -%}
-      <span class="sidebar__search-handle" tabindex="0">
-        <span class="icon icon-search" aria-hidden="true">{%- render 'theme-symbols', icon: 'search' -%}</span>
-      </span>
-    {%- endif -%}
+    {%- # if section.settings.show_search -%}
+    <span class="sidebar__search-handle" tabindex="0">
+      <span class="icon icon-search" aria-hidden="true">{%- render 'theme-symbols', icon: 'search' -%}</span>
+    </span>
+    {%- # endif -%}
 
     <a href="{{ routes.cart_url }}" class="sidebar__cart-handle" title="{{ 'cart.title' | t }}">
       <span class="visually-hidden">{{ 'cart.title' | t }}</span>
