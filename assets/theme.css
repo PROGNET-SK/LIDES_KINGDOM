@@ -2952,7 +2952,7 @@ html[dir=ltr] .shopify-policy__title {
 .header__search-handle .count {
   color: rgba(var(--color-header-txt), 1);
   font-weight: var(--font-weight-body-semibold);
-
+  position: absolute;
   font-size: 11.5px;
   top: 18px;
   left: 5px;
@@ -2966,8 +2966,7 @@ html[dir=ltr] .shopify-policy__title {
 .header__cart-handle,
 .header__menu-handle,
 .header__search-handle {
-
-
+  position: absolute;
   width: 36px;
   height: 36px;
   top: 25px;
