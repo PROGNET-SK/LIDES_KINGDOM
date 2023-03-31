@@ -151,12 +151,12 @@
     </section>
   </div>
 
-  <div class="sidebar2__responsive-handles">
+  <div class="header__responsive-handles">
     <span class="header__search-handle" tabindex="0">
       <span class="icon icon-search" aria-hidden="true">{%- render 'theme-symbols', icon: 'search' -%}</span>
     </span>
 
-    <a href="{{ routes.cart_url }}" class="sidebar__cart-handle" title="{{ 'cart.title' | t }}">
+    <a href="{{ routes.cart_url }}" class="header__cart-handle" title="{{ 'cart.title' | t }}">
       <span class="visually-hidden">{{ 'cart.title' | t }}</span>
       <span class="icon icon-cart" aria-hidden="true" style="height: 28px;">
         {%- render 'theme-symbols', icon: 'cart' -%}
