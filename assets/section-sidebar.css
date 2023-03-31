@@ -1278,6 +1278,11 @@ sidebar-drawer.opened .sidebar-close-element {
 }
 
 .eshop-header {
-  padding: 15px;
+  padding: 0;
+  margin: 0;
   text-align: center;
+}
+
+.eshop-header h1 {
+  padding: 5px;
 }
