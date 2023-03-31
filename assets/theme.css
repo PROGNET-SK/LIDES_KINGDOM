@@ -2950,7 +2950,6 @@ html[dir=ltr] .shopify-policy__title {
 .header__cart-handle,
 .header__search-handle {
   display: flex;
-  border: 1px solid lime;
   position: relative;
   float: right;
   padding-right: 15px;
