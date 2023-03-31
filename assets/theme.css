@@ -2946,7 +2946,7 @@ html[dir=ltr] .shopify-policy__title {
 
 /*-PROGNET -----------------*/
 
-#header>.sidebar__responsive-handles {
+#header div.sidebar__responsive-handles {
 
   display: flex;
   border: 1px solid lime;
