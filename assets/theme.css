@@ -2954,7 +2954,8 @@ html[dir=ltr] .shopify-policy__title {
     margin-top: 65px;
   }
 
-  .sidebar__responsive-handles {
+  .sidebar__responsive-handles,
+  .sidebar-logo {
     visibility: visible;
     display: flex;
   }
@@ -2967,7 +2968,8 @@ html[dir=ltr] .shopify-policy__title {
     ;
   }
 
-  .sidebar__responsive-handles {
+  .sidebar__responsive-handles,
+  .sidebar-logo {
     visibility: hidden;
     display: none;
   }
