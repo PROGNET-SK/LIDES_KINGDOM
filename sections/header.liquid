@@ -1,11 +1,10 @@
-<!-- /sections/header.liquid -->
-
 {%- assign logoImageWidth = section.settings.logo_image_width -%}
-{%- if section.settings.menu_primary -%}
-  {%- assign main_menu_linklist = section.settings['menu_primary-'] %}
-{%- else -%}
-  {%- assign main_menu_linklist = 'main-menu' -%}
-{%- endif -%}
+
+{%- # if section.settings.menu_primary -%}
+{%- # assign main_menu_linklist = section.settings['menu_primary-'] %}
+{%- # else -%}
+{%- # assign main_menu_linklist = 'main-menu' -%}
+{%- # endif -%}
 
 {%- assign header_overlay = false -%}
 {%- if section.settings.header_transparent_home and template == 'index' -%}
