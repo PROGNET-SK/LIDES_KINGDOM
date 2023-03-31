@@ -2999,10 +2999,11 @@ html[dir=ltr] .shopify-policy__title {
 .site-header {
   margin: 0;
   padding: 0;
-  position: relative;
+  position: fixed;
   z-index: 1000;
   vertical-align: baseline;
   text-align: center;
+  width: 100%;
 }
 
 .site-header .wrap {
