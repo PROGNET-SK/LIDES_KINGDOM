@@ -2946,15 +2946,6 @@ html[dir=ltr] .shopify-policy__title {
 
 /*-PROGNET -----------------*/
 
-.header__responsive-handles,
-.header__cart-handle,
-.header__search-handle {
-  display: box;
-  position: absolute;
-  float: right;
-  padding-right: 15px;
-  margin-top: 12px;
-}
 
 .header__cart-handle .count,
 .header__menu-handle .count,
@@ -2974,12 +2965,13 @@ html[dir=ltr] .shopify-policy__title {
 .header__cart-handle,
 .header__menu-handle,
 .header__search-handle {
-  /*
+
   position: absolute;
   width: 36px;
   height: 36px;
   top: 30px;
-  padding: 5px;*/
+  right: 40px;
+  padding: 5px;
   cursor: pointer;
 }
 
