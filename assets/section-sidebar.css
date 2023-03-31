@@ -969,7 +969,7 @@ sidebar-drawer.opened .sidebar-close-element {
 */
 @media screen and (max-width: 948px) {
   .sidebar {
-    top: 0px;
+    /* top: 0px; oblokuje top ikony*/
     width: 100%;
     max-width: none;
     height: 66px;
