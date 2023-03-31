@@ -212,7 +212,7 @@
           "header_transparent_home": false,
           "header_transparent_collection": false,
           "show_header_social": false,
-          "show_header_search": false,
+          "show_header_search": true,
           "show_account": false,
           "message": false,
           "message_text": "Announce something here",
