@@ -153,14 +153,14 @@
 
   <div style="top:0; right:150px; width:150px; z-index:999999; border:1px solid red;">
     <div class="">
-      {%- if section.settings.show_search -%}
-        <span class="sidebar__search-handle" tabindex="0">
-          <span class="icon icon-search" aria-hidden="true"
-            >111
-            {%- render 'theme-symbols', icon: 'search' -%}
-          </span>
+      {%- # if section.settings.show_search -%}
+      <span class="sidebar__search-handle" tabindex="0">
+        <span class="icon icon-search" aria-hidden="true"
+          >111
+          {%- render 'theme-symbols', icon: 'search' -%}
         </span>
-      {%- endif -%}
+      </span>
+      {%- # endif -%}
 
       <a href="{{ routes.cart_url }}" class="sidebar__cart-handle" title="{{ 'cart.title' | t }}"
         >2222
