@@ -233,7 +233,7 @@
           "logo_image_width": 200,
           "header_style": "normal",
           "header_transparent_home": false,
-          "header_transparent_collection": false,
+          "header_transparent_collection": true,
           "show_header_social": false,
           "show_header_search": true,
           "show_account": true,
