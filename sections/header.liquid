@@ -150,24 +150,23 @@
       </nav>
     </section>
   </div>
+</header>
 
-  <div style="top:0; right:150px; width:150px; z-index:999999; border:1px solid red;">
-    <!-- search -->
+<div class="header__responsive-handles">
+  {%- if section.settings.show_search -%}
     <span class="header__search-handle" tabindex="0">
       <span class="icon icon-search" aria-hidden="true">{%- render 'theme-symbols', icon: 'search' -%}</span>
     </span>
+  {%- endif -%}
 
-    <!-- login -->
-
-    <a href="{{ routes.cart_url }}" class="header__cart-handle" title="{{ 'cart.title' | t }}">
-      <span class="visually-hidden">{{ 'cart.title' | t }}</span>
-      <span class="icon icon-cart" aria-hidden="true" style="height: 28px;">
-        {%- render 'theme-symbols', icon: 'cart' -%}
-      </span>
-      <span class="count" aria-hidden="true" data-header-cart-count>{{ cart.item_count }}</span>
-    </a>
-  </div>
-</header>
+  <a href="{{ routes.cart_url }}" class="header__cart-handle" title="{{ 'cart.title' | t }}">
+    <span class="visually-hidden">{{ 'cart.title' | t }}</span>
+    <span class="icon icon-cart" aria-hidden="true" style="height: 28px;">
+      {%- render 'theme-symbols', icon: 'cart' -%}
+    </span>
+    <span class="count" aria-hidden="true" data-header-cart-count>{{ cart.item_count }}</span>
+  </a>
+</div>
 
 {% if template.name == 'index' %}
   {% assign potential_action_target = shop.url | append: '/search?q={search_term_string}' %}
