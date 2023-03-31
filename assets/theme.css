@@ -2946,43 +2946,10 @@ html[dir=ltr] .shopify-policy__title {
 
 /*-PROGNET -----------------*/
 
-.header__cart-handle,
-.header__search-handle {
-  position: absolute;
-  width: 36px;
-  height: 36px;
-  top: 30px;
-  padding: 5px;
-  cursor: pointer;
-}
+.site-header .sidebar__search-handle {
 
-.header__responsive-handles {
   display: flex;
-  margin-inline-end: -8px;
-
-  border: 4px solid red;
-}
-
-.header__responsive-handles>span,
-.header__responsive-handles>a {
-  display: block;
-  margin: 0 2px;
-}
-
-
-.header__search-handle {
-  position: static;
-  top: 0;
-  padding-top: 8px;
-}
-
-.header__search-handle path {
-  stroke: transparent !important;
-  fill: rgba(var(--color-sidebar-txt), 1);
-}
-
-.no-touch .header__search-handle:hover path h {
-  fill: rgba(var(--color-sidebar-accent), 1);
+  border: 1px solid lime;
 }
 
 
