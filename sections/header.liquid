@@ -80,49 +80,6 @@
             {% endif %}
           </a>
         </h1>
-
-        <div class="user-links">
-          {% if shop.customer_accounts_enabled and section.settings.show_account %}
-            <a href="/account" class="header__account__link" id="account-link">
-              {% include 'icon-account' %}
-              <span class="visually-hidden">{{ 'customer.account.title' | t }}</span>
-            </a>
-          {% endif %}
-          {% if section.settings.show_header_search %}
-            <a href="javascript:void(0)" id="SearchToggle" title="{{ 'general.search.placeholder' | t }}">
-              <span class="search-toggle">
-                <span class="visually-hidden">{{ 'general.search.submit' | t }}</span>
-                <span class="oi" data-glyph="magnifying-glass"></span>
-              </span>
-            </a>
-          {% endif %}
-          <a href="/cart/" class="header__cart__wrapper" id="CartButton" title="{{ 'cart.general.title' | t }}">
-            <span class="header__cart__icon__wrapper">
-              <span class="visually-hidden">{{ 'layout.cart.title' | t }}</span>
-              <span class="oi header__cart__icon" data-glyph="cart"></span>
-              <span
-                class="cart-count-js header__cart__count"
-                {% if cart.item_count == 0 %}
-                  style="display: none;"
-                {% endif %}
-              >
-                {{ cart.item_count }}
-              </span>
-            </span>
-          </a>
-        </div>
-
-        <a href="javascript:void(0)" class="medium-up--hide toggle-menus">
-          <div class="toggle-menus-lines">
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-          <span class="visually-hidden">{{ 'layout.header.menu' | t }}</span>
-        </a>
       </div>
     </div>
 
@@ -151,18 +108,6 @@
           {% endif %}
         </ul>
       </nav>
-
-      {% if section.settings.show_header_social %}
-        <div class="header__social--mobile medium-up--hide">
-          {% include 'social' %}
-        </div>
-      {% endif %}
-
-      {%- if settings.show_multiple_currencies -%}
-        <div class="header__currency">
-          {%- include 'currency-picker' -%}
-        </div>
-      {%- endif -%}
     </section>
   </div>
 </header>
