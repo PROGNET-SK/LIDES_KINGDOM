@@ -1285,6 +1285,14 @@ sidebar-drawer.opened .sidebar-close-element {
   text-align: left;
 }
 
+.left-side-primary-menu {
+  padding-top: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin: 0;
+
+}
+
 
 @media screen and (max-width: 948px) {
 
@@ -1296,7 +1304,7 @@ sidebar-drawer.opened .sidebar-close-element {
     margin: 0;
   }
 
-  .eshop-header li {
+  .eshop-header nav ul li {
     padding-top: 15px;
     padding-left: 30px;
     padding-right: 30px;
