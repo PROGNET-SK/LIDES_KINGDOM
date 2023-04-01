@@ -2960,8 +2960,7 @@ html[dir=ltr] .shopify-policy__title {
     display: flex;
   }
 
-  .lide-primary-menu.sidebar__menu a,
-  .lide-primary-menu.sidebar-parent-element .sidebar-content-element {
+  .lide-primary-menu.sidebar__menu.left-side-primary-menu {
     padding-top: 4px;
     padding-bottom: 4px;
   }
