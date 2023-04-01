@@ -3107,6 +3107,7 @@ html[dir=ltr] .shopify-policy__title {
     border-color: transparent;
   }
   */
+
   .header--transparent:not(.is-sticky) .header__content .header-content {
     background-color: transparent;
   }
@@ -3123,9 +3124,6 @@ html[dir=ltr] .shopify-policy__title {
   .header--transparent:not(.is-sticky) .header__content .header-content a {
     color: white;
   }
-*/
-
-  /*
 
   .header--transparent:not(.is-sticky) .header__content .header-content a svg,
   .header--transparent:not(.is-sticky) .header__content .nav-carat-small svg,
