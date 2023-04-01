@@ -1293,6 +1293,12 @@ sidebar-drawer.opened .sidebar-close-element {
 
 @media screen and (max-width: 948px) {
 
+  .sidebar__menus {
+
+    padding: 25px 0 !important;
+
+  }
+
   .lide-primary-menu {
     display: block;
     visibility: visible;
