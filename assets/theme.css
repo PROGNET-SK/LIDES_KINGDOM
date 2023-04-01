@@ -3101,11 +3101,12 @@ html[dir=ltr] .shopify-policy__title {
     display: inline-block;
   }
 
+  /*
   .header--transparent:not(.is-sticky) .header__content .nav__links {
     background-color: transparent;
     border-color: transparent;
   }
-
+  */
   .header--transparent:not(.is-sticky) .header__content .header-content {
     background-color: transparent;
   }
