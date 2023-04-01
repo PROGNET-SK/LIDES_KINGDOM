@@ -1293,6 +1293,10 @@ sidebar-drawer.opened .sidebar-close-element {
 
 @media screen and (max-width: 948px) {
 
+  .lide-primary-menu {
+    display: block;
+    visibility: visible;
+  }
 
   .eshop-header h1 {
     padding-top: 15px;
@@ -1312,6 +1316,11 @@ sidebar-drawer.opened .sidebar-close-element {
 }
 
 @media screen and (min-width: 948px) {
+
+  .lide-primary-menu {
+    display: none;
+    visibility: hidden;
+  }
 
 
   .eshop-header h1 {
