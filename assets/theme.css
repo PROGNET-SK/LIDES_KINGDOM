@@ -2964,7 +2964,7 @@ html[dir=ltr] .shopify-policy__title {
   .sidebar__submenu.sidebar--primary a {
     padding-top: 14px;
     padding-bottom: 14px;
-    font-weight: bold !important;
+    font-weight: bolder;
   }
 
 
