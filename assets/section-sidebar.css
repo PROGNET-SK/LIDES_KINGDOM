@@ -1286,10 +1286,7 @@ sidebar-drawer.opened .sidebar-close-element {
 }
 
 .left-side-primary-menu {
-  padding-top: 15px !important;
-  padding-left: 30px !important;
-  padding-right: 30px !important;
-  margin: 0 !important;
+  font-size: calc(15px / 14 * var(--base-body-size) + 0px);
 
 }
 
