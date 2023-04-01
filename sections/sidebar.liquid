@@ -78,10 +78,10 @@
           </nav>
         -->
 
-        <nav class="primary-menu eshop-header">
+        <nav class="primary-menu">
           <ul class="main-menu unstyled" role="navigation" aria-label="primary">
             {% for link in linklists['header-top-nav'].links %}
-              <li>
+              <li class="left-side-primary-menu">
                 <a
                   href="{{ link.url }}"
                   title="{{ link.title }}"
