@@ -83,7 +83,6 @@
             {% for link in linklists['header-top-nav'].links %}
               <li class="left-side-primary-menu">
                 <a
-                  class="underline-animation"
                   href="{{ link.url }}"
                   title="{{ link.title }}"
 
@@ -91,7 +90,7 @@
                     class="selected"
                   {% endif %}
                 >
-                  {{- link.title -}}
+                  <span class="underline-animation">{{- link.title -}}</span>
                 </a>
               </li>
             {% endfor %}
