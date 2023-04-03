@@ -922,7 +922,7 @@ sidebar-drawer.opened .sidebar-close-element {
 .sidebar__search-close {
   width: 44px;
   margin-inline-end: -12px;
-  display: none;
+  /*display: none;*/
 }
 
 @media screen and (min-width: 949px) {
