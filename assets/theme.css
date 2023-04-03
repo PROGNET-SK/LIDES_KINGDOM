@@ -4537,9 +4537,6 @@ select {
   outline: none !important;
 }
 
-.custom-serach button {
-  background: transparent;
-  border: none;
-  padding: 0;
+.custom-serach button span {
   margin-top: 7px;
 }
