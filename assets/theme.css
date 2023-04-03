@@ -4535,10 +4535,7 @@ select {
   outline: none !important;
 }
 
-.custom-serach {
 
-  overflow-y: scroll;
-}
 
 .custom-serach .sidebar__search-container {
   position: fixed;
@@ -4547,6 +4544,10 @@ select {
   width: 100%;
   background-color: rgba(255, 255, 255, 1);
   max-height: 100%;
+}
+
+.custom-serach .sidebar__search-container::after {
+  overflow-y: scroll;
 }
 
 
