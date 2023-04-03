@@ -4509,3 +4509,9 @@ li.has-sub-nav>a .icon {
   background-color: silver;
 
 }
+
+.custom-serach .search-form {
+  max-height: 25px;
+  position: relative;
+  width: 100%;
+}
