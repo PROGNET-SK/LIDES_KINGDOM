@@ -4541,6 +4541,8 @@ select {
 
   position: fixed;
   top: 80px;
+  left: 0px;
+  width: 100%;
 
   background-color: white;
 
