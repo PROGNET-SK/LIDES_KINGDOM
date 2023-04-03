@@ -4535,3 +4535,10 @@ select {
   border-radius: 0;
   outline: none !important;
 }
+
+
+.custom-serach .sidebar__search-container {
+
+  background-color: white;
+
+}
