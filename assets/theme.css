@@ -4537,7 +4537,7 @@ select {
 }
 
 
-.custom-serach.sidebar__search-container {
+.custom-serach .sidebar__search-container {
   position: fixed;
   top: 80px;
   left: 0px;
@@ -4548,13 +4548,13 @@ select {
 }
 
 
-.custom-serach.thumbnail {
+.custom-serach .thumbnail {
   width: 20%;
   height: 20%;
 }
 
 
-.custom-serach.sidebar__search-results {
+.custom-serach .sidebar__search-results {
   margin: 0 auto;
   width: 50%;
 }
