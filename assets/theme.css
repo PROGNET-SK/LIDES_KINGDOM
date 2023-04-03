@@ -4548,7 +4548,8 @@ select {
 
 .custom-serach .thumbnail {
   width: 20%;
-  height: 20%;
+  height: auto;
+  margin: 0 aut;
 }
 
 
