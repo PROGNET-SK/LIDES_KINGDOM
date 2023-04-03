@@ -4563,7 +4563,7 @@ select {
 
 }
 
-.custom-serac .sidebar__search-close {
+.custom-serac .sidebar__search-close.sidebar-close-element {
   position: absolute;
   top: 100px;
   right: 100px;
