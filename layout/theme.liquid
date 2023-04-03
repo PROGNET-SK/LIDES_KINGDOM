@@ -138,7 +138,8 @@
         {{ 'component-slider.css' | asset_url | stylesheet_tag }}
         <script src="{{ 'component-slider.js' | asset_url }}" defer></script>
 
-        <div id="page-content">{{ content_for_layout }}</div>
+        <div id="page-content">{{ content_for_layout }}
+<limespot></limespot></div>
 
         <div id="footer-content">
           {%- sections 'footer-group' -%}
