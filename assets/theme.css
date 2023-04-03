@@ -4544,6 +4544,8 @@ select {
   width: 100%;
 
   background-color: white;
+  max-height: 50%;
+  overflow: scroll;
 
 }
 
