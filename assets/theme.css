@@ -1548,7 +1548,6 @@ html[dir=ltr] .aligned-text-content.horizontal-right {
   position: relative;
   width: 10%;
   min-width: 239px;
-
   /*max-width: 360px;*/
   max-width: 240px;
   z-index: -1;
