@@ -4511,7 +4511,7 @@ li.has-sub-nav>a .icon {
 }
 
 .custom-serach .search-form {
-  max-height: 25px;
+  max-height: 40px;
   position: relative;
   width: 100%;
 }
