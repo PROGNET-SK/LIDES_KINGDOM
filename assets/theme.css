@@ -232,7 +232,7 @@ summary::-webkit-details-marker {
 @media screen and (max-width: 948px) {
   :root {
     --vertical-padding: calc(var(--vertical-padding-base) * 0.7);
-    --horizontal-padding: 25px;
+    --horizontal-padding: 225px;
     --horizontal-padding-more: 50px;
     --compact-header-padding: 30px;
     --grid-gutter: calc(var(--grid-gutter-base) * 0.4);
