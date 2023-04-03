@@ -4572,7 +4572,7 @@ select {
   overflow: hidden;
   cursor: pointer;
   z-index: 9999 !important;
-  /* opacity: 0; */
+  opacity: 1 !important;
   /* visibility: hidden; */
   /* transition: all 50ms linear; */
 }
