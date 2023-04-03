@@ -30,8 +30,12 @@
   <div class="header__content">
     <div class="wrap">
       {%- if section.settings.show_header_search -%}
+        <script>
+          alert('here sestion');
+        </script>
         {%- include 'search' -%}
       {%- endif -%}
+
       <!-- SEARCH, CURRENCY, ACCOUNT, CART -->
       <div class="header-content">
         {% if section.settings.show_header_social %}
