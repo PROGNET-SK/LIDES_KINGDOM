@@ -4537,6 +4537,6 @@ select {
   outline: none !important;
 }
 
-.custom-serach button span {
+.custom-serach .svg {
   margin-top: 7px;
 }
