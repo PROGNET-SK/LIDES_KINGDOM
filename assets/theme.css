@@ -4561,5 +4561,11 @@ select {
 .custom-serach .sidebar__search-results {
   margin: 0 auto;
   width: 50%;
+
+}
+
+
+.custom-serach .sidebar__search-results .custom-search-content {
   overflow-y: scroll;
+  height: 100%;
 }
