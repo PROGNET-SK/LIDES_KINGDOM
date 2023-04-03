@@ -4529,8 +4529,8 @@ select {
   background: transparent;
   color: rgba(var(--color-body-txt), 1);
   resize: none;
-  height: 40px !important;
-  padding: 25px 25px 0;
+  height: 30px !important;
+  padding: 0;
   vertical-align: middle;
   -webkit-appearance: none;
   border-radius: 0;
