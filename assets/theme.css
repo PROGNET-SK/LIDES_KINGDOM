@@ -4509,7 +4509,7 @@ li.has-sub-nav>a .icon {
   background-color: transparent;
 }
 
-.custom-serach .search-form {
+.custom-serach.search-form {
   max-height: 40px;
   position: relative;
   width: 100%;
@@ -4537,7 +4537,7 @@ select {
 }
 
 
-.custom-serach .sidebar__search-container {
+.custom-serach.sidebar__search-container {
 
   position: fixed;
   top: 80px;
@@ -4549,7 +4549,7 @@ select {
 }
 
 
-.custom-serach .thumbnail {
+.custom-serach.thumbnail {
   width: 20%;
   height: 20%;
 }
