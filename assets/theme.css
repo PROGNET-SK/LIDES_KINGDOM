@@ -4582,3 +4582,9 @@ select {
   overflow-y: scroll;
   height: 600px;
 }
+
+.custom-serach .sidebar__search-close {
+  width: 44px;
+  margin-inline-end: -12px;
+  display: block !important;
+}
