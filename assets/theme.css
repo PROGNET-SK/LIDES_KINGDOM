@@ -4546,11 +4546,6 @@ select {
   max-height: 100%;
 }
 
-.custom-serach .sidebar__search-container::after {
-  overflow-y: scroll;
-}
-
-
 .custom-serach .sidebar__search-container .sidebar__search-link {
   padding: 15px;
 }
@@ -4566,4 +4561,5 @@ select {
 .custom-serach .sidebar__search-results {
   margin: 0 auto;
   width: 50%;
+  overflow-y: scroll;
 }
