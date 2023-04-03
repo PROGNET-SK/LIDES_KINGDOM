@@ -4537,8 +4537,7 @@ select {
   outline: none !important;
 }
 
-.custom-serach input,
-button {
+.custom-serach button {
   background: transparent;
   border: none;
   padding: 0;
