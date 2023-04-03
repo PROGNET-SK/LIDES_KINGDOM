@@ -4547,6 +4547,7 @@ select {
 
 .custom-serach .sidebar__search-container .sidebar__search-link {
   padding: 15px;
+  display: flex;
 }
 
 
