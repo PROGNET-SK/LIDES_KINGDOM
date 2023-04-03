@@ -4504,7 +4504,7 @@ li.has-sub-nav>a .icon {
 .custom-serach {
   position: fixed;
   top: 77px;
-  max-height: 50px;
+  max-height: 40px;
   right: 38px;
   background-color: silver;
 
