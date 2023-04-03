@@ -4538,7 +4538,7 @@ select {
 
 
 .custom-serach .sidebar__search-container {
-  position: fixed;
+  position: absolute;
   top: 80px;
   left: 0px;
   width: 100%;
