@@ -455,8 +455,8 @@ html[dir=ltr] .cart-item .underline-animation {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-left: 14%;
-  padding-right: 14%;
+  padding-left: 5%;
+  padding-right: 5%;
   transition: none;
 }
 
