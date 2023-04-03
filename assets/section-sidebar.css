@@ -839,7 +839,6 @@ html[dir=ltr] .sidebar__search-handle .count {
   color: rgba(var(--color-sidebar-txt), 1);
 }
 
-
 .sidebar-close-element {
   position: absolute;
   top: 32px;
@@ -848,19 +847,12 @@ html[dir=ltr] .sidebar__search-handle .count {
   overflow: hidden;
   cursor: pointer;
   z-index: 99 !important;
-  opacity: 1;
-  /*visibility: hidden;*/
-  visibility: visible;
+  opacity: 0;
+  visibility: hidden;
   transition: all 50ms linear;
 }
 
-.sidebar__search-close {
-  width: 44px;
-  margin-inline-end: -12px;
-  display: none;
-}
-
-*/ html[dir=rtl] .sidebar-close-element {
+html[dir=rtl] .sidebar-close-element {
   left: 22px;
 }
 
