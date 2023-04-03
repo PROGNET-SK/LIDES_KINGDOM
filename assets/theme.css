@@ -4524,8 +4524,7 @@ select {
   font-size: calc(14 / 14 * var(--base-body-size) + 0px);
   line-height: 1;
   transition: all .1s linear;
-  border: 1px solid rgba(var(--color-body-txt), .14);
-  background: transparent;
+
   color: rgba(var(--color-body-txt), 1);
   resize: none;
   height: 30px !important;
