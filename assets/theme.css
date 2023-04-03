@@ -4515,3 +4515,24 @@ li.has-sub-nav>a .icon {
   position: relative;
   width: 100%;
 }
+
+.custom-serach input,
+textarea,
+select {
+  font-family: var(--font-stack-body);
+  font-weight: var(--font-weight-body);
+  font-style: var(--font-style-body);
+  font-size: calc(14 / 14 * var(--base-body-size) + 0px);
+  line-height: 1;
+  transition: all .1s linear;
+  border: 1px solid rgba(var(--color-body-txt), .14);
+  background: transparent;
+  color: rgba(var(--color-body-txt), 1);
+  resize: none;
+  height: 40px;
+  padding: 3px 12px 0;
+  vertical-align: middle;
+  -webkit-appearance: none;
+  border-radius: 0;
+  outline: none !important;
+}
