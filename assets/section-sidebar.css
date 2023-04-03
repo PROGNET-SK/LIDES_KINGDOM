@@ -839,6 +839,7 @@ html[dir=ltr] .sidebar__search-handle .count {
   color: rgba(var(--color-sidebar-txt), 1);
 }
 
+/*
 .sidebar-close-element {
   position: absolute;
   top: 32px;
@@ -851,6 +852,8 @@ html[dir=ltr] .sidebar__search-handle .count {
   visibility: hidden;
   transition: all 50ms linear;
 }
+*/
+
 
 html[dir=rtl] .sidebar-close-element {
   left: 22px;
@@ -922,7 +925,7 @@ sidebar-drawer.opened .sidebar-close-element {
 .sidebar__search-close {
   width: 44px;
   margin-inline-end: -12px;
-  /*display: none;*/
+  display: none;
 }
 
 @media screen and (min-width: 949px) {
