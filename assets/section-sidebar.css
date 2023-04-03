@@ -857,7 +857,7 @@ html[dir=ltr] .sidebar__search-handle .count {
 .sidebar__search-close {
   width: 44px;
   margin-inline-end: -12px;
-  display: block;
+  display: none;
 }
 
 */ html[dir=rtl] .sidebar-close-element {
