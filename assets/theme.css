@@ -4545,7 +4545,7 @@ select {
 
   background-color: white;
   max-height: 50%;
-  overflow: scroll;
+  overflow-x: scroll;
 
 }
 
