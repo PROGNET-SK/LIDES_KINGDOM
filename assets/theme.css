@@ -4565,7 +4565,7 @@ select {
 }
 
 
-.custom-serach .sidebar__search-results .custom-search-content {
+.custom-search-content {
   overflow-y: scroll;
   height: 100%;
 }
