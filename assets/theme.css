@@ -4547,3 +4547,9 @@ select {
   background-color: white;
 
 }
+
+
+.custom-serach .thumbnail {
+  width: 20%;
+  height: 20%;
+}
