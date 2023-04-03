@@ -854,6 +854,12 @@ html[dir=ltr] .sidebar__search-handle .count {
   transition: all 50ms linear;
 }
 
+.sidebar__search-close {
+  width: 44px;
+  margin-inline-end: -12px;
+  display: block;
+}
+
 */ html[dir=rtl] .sidebar-close-element {
   left: 22px;
 }
