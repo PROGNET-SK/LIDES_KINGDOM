@@ -4536,7 +4536,6 @@ select {
 }
 
 
-
 .custom-serach .sidebar__search-container {
   position: fixed;
   top: 80px;
@@ -4552,7 +4551,7 @@ select {
 
 
 .custom-serach .thumbnail {
-  width: 10%;
+  width: 20%;
   height: auto;
   margin: 0 auto;
 }
@@ -4562,4 +4561,9 @@ select {
   margin: 0 auto;
   width: 50%;
 
+}
+
+.custom-search-content {
+  overflow-y: scroll;
+  height: 600px;
 }
