@@ -16,8 +16,10 @@
   >
   {%- unless search_label -%}
     <button type="submit" class="btn icon-fallback-text" aria-label="{{ 'search.form.submit' | t }}">
-      <div style="width:100%; height:2px;  backgroud-color:red;"></div>
-      <span class="icon icon-search" aria-hidden="true">{%- render 'theme-symbols', icon: 'search' -%}</span>
+      <span class="icon icon-search" aria-hidden="true">
+        <div style="width:100%; height:2px; backgroud-color:red;"></div>
+        {%- render 'theme-symbols', icon: 'search' -%}
+      </span>
     </button>
   {%- else -%}
     <button type="submit" class="button button--solid">{{ search_label }}</button>
