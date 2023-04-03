@@ -3118,7 +3118,7 @@ html[dir=ltr] .shopify-policy__title {
   */
 
   .header--transparent:not(.is-sticky) .header__content .header-content {
-    background-color: transparent;
+    background-color: white;
   }
 
   .header--transparent:not(.is-sticky) .header__content .parent .main-menu-dropdown {
