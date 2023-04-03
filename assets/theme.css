@@ -4544,6 +4544,7 @@ select {
   background-color: rgba(255, 255, 255, 1);
   max-height: 100%;
   overflow-x: scroll;
+  overflow-y: hidden;
 }
 
 
