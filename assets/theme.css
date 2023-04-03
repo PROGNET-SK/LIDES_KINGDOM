@@ -4587,4 +4587,5 @@ select {
   width: 44px;
   margin-inline-end: -12px;
   display: block !important;
+  visibility: visible !important;
 }
