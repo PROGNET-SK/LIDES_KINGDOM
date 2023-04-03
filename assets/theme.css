@@ -4563,6 +4563,13 @@ select {
 
 }
 
+.custom-serac .sidebar__search-clos {
+  position: absolute;
+  top: 100px;
+  right: 100px;
+  background: lightblue;
+}
+
 .custom-search-content {
   overflow-y: scroll;
   height: 600px;
