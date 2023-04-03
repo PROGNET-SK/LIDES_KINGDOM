@@ -4546,6 +4546,11 @@ select {
 }
 
 
+.custom-serach .sidebar__search-container .sidebar__search-link {
+  padding: 15px;
+}
+
+
 .custom-serach .thumbnail {
   width: 20%;
   height: auto;
