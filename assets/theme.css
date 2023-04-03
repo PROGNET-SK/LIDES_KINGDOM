@@ -4564,12 +4564,19 @@ select {
 
 }
 
-.custom-serac .sidebar__search-close .sidebar-close-element {
+.custom-serach .sidebar-close-element {
   position: absolute;
-  top: 100px;
-  right: 100px;
-  background: lightblue;
+  top: 32px;
+  width: 45px;
+  height: 45px;
+  overflow: hidden;
+  cursor: pointer;
+  z-index: 9999 !important;
+  /* opacity: 0; */
+  /* visibility: hidden; */
+  /* transition: all 50ms linear; */
 }
+
 
 .custom-search-content {
   overflow-y: scroll;
