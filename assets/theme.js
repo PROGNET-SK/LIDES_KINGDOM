@@ -43,8 +43,6 @@ const executeOnceOnDomContentLoaded = () =>
 				e.target.tagName == 'INPUT'
 			)
 			{
-
-				console.log("tu je search");
 				activeElement = e.target;
 				e.target.classList.add('focus');
 			}
