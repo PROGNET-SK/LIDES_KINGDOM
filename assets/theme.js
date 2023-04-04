@@ -3,78 +3,98 @@ KROWN.themeVersion = '5.0.0';
 
 // Shopify events
 
-const executeOnceOnDomContentLoaded = ()=>{
+const executeOnceOnDomContentLoaded = () =>
+{
 
 	// input helpers
 
-	document.querySelectorAll('input').forEach(elm=>{
-		elm.addEventListener('change',e=>{
-			if ( e.target.value != '' ) {
+	document.querySelectorAll('input').forEach(elm =>
+	{
+		elm.addEventListener('change', e =>
+		{
+			if (e.target.value != '')
+			{
 				e.target.classList.add('filled');
-			} else {
+			} else
+			{
 				e.target.classList.remove('filled');
 			}
 		})
 	});
-	document.querySelectorAll('input[type="search"]').forEach(elm=>{elm.value=''});
+	document.querySelectorAll('input[type="search"]').forEach(elm => { elm.value = '' });
 
 	// a11y tab helper 
 
 	let activeElement = document.activeElement;
-	document.addEventListener('keyup', e=>{
-		if ( e.keyCode == window.KEYCODES.TAB ) {
-      if ( activeElement.classList.contains('focus') && e.target != activeElement ) {
-      	activeElement.classList.remove('focus');
-      }
-      if ( e.target.classList.contains('regular-select-cover') ||
-      	e.target.classList.contains('search-field') ||
-      	e.target.classList.contains('product-item__link') ||
-      	e.target.classList.contains('content-slider') || 
-      	e.target.classList.contains('blog-item__header') ||
-      	e.target.classList.contains('toggle__title') ||
-      	e.target.tagName == 'INPUT'
-      ) {
-      	activeElement = e.target;
-        e.target.classList.add('focus');
-      } 
-    }
+	document.addEventListener('keyup', e =>
+	{
+		if (e.keyCode == window.KEYCODES.TAB)
+		{
+			if (activeElement.classList.contains('focus') && e.target != activeElement)
+			{
+				activeElement.classList.remove('focus');
+			}
+			if (e.target.classList.contains('regular-select-cover') ||
+				e.target.classList.contains('search-field') ||
+				e.target.classList.contains('product-item__link') ||
+				e.target.classList.contains('content-slider') ||
+				e.target.classList.contains('blog-item__header') ||
+				e.target.classList.contains('toggle__title') ||
+				e.target.tagName == 'INPUT'
+			)
+			{
+
+				console.log("tu je search");
+				activeElement = e.target;
+				e.target.classList.add('focus');
+			}
+		}
 	});
 
-  // newsletter has jump
+	// newsletter has jump
 
-	if ( window.location.search == '?customer_posted=true' ) {
-		setTimeout(()=>{
+	if (window.location.search == '?customer_posted=true')
+	{
+		setTimeout(() =>
+		{
 			window.scroll({
-			  top: document.querySelector('form .alert').offsetTop - 250, 
-			  behavior: 'smooth'
+				top: document.querySelector('form .alert').offsetTop - 250,
+				behavior: 'smooth'
 			});
 		}, 300);
-	} else if ( window.location.pathname.includes('/challenge') ) {
-		setTimeout(()=>{
+	} else if (window.location.pathname.includes('/challenge'))
+	{
+		setTimeout(() =>
+		{
 			window.scroll({
-			  top: 0, 
-			  behavior: 'auto'
+				top: 0,
+				behavior: 'auto'
 			});
 		}, 300);
 	}
 
 }
 
-if ( document.readyState !== 'loading' ) {
+if (document.readyState !== 'loading')
+{
 	executeOnceOnDomContentLoaded();
-} else {
+} else
+{
 	document.addEventListener('DOMContentLoaded', executeOnceOnDomContentLoaded);
 }
 
 // method for apps to tap into and refresh the cart
 
-if ( ! window.refreshCart ) {
+if (!window.refreshCart)
+{
 
-	window.refreshCart = () => {
-		
+	window.refreshCart = () =>
+	{
+
 		fetch('?section_id=cart-helper')
 			.then(response => response.text())
-			.then(text => {
+			.then(text =>
+			{
 
 				const sectionInnerHTML = new DOMParser().parseFromString(text, 'text/html');
 				const cartFormInnerHTML = sectionInnerHTML.getElementById('AjaxCartForm').innerHTML;
@@ -89,7 +109,7 @@ if ( ! window.refreshCart ) {
 
 				document.querySelector('.sidebar__cart').show();
 
-		})
+			})
 
 	}
 
