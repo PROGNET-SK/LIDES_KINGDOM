@@ -37,6 +37,34 @@
         </div>
       </header>
 
+      <!-- - Search block -->
+
+      {%- if section.settings.show_search -%}
+        {{ 'component-search-form.css' | asset_url | stylesheet_tag }}
+        <sidebar-drawer
+          style="display:none"
+          class="sidebar__search sidebar-parent-element predictive-search"
+          data-overlay="cart"
+        >
+          <search-form>
+            {%- render 'search-form' -%}
+            <span class="sidebar__search-close sidebar-close-element" data-js-close tabindex="0">
+              <span class="visually-hidden">{{ 'general.accessibility_labels.close' | t }}</span>
+              <span aria-hidden="true">{%- render 'theme-symbols', icon: 'close' -%}</span>
+            </span>
+            <div class="sidebar__search-container" data-js-search-results data-js-search-results-holder></div>
+          </search-form>
+        </sidebar-drawer>
+        <link
+          rel="stylesheet"
+          href="{{ 'component-search-item.css' | asset_url }}"
+          media="print"
+          onload="this.media='all';"
+        >
+      {%- endif -%}
+
+      <!-- - END  Search block -->
+
       <div class="sidebar__responsive-handles">
         {%- if section.settings.show_search -%}
           <span class="sidebar__search-handle" tabindex="0">
@@ -97,30 +125,6 @@
           </ul>
         </nav>
 
-        {%- if section.settings.show_search -%}
-          {{ 'component-search-form.css' | asset_url | stylesheet_tag }}
-          <sidebar-drawer
-            style="display:none"
-            class="sidebar__search sidebar-parent-element predictive-search"
-            data-overlay="cart"
-          >
-            <search-form>
-              {%- render 'search-form' -%}
-              <span class="sidebar__search-close sidebar-close-element" data-js-close tabindex="0">
-                <span class="visually-hidden">{{ 'general.accessibility_labels.close' | t }}</span>
-                <span aria-hidden="true">{%- render 'theme-symbols', icon: 'close' -%}</span>
-              </span>
-              <div class="sidebar__search-container" data-js-search-results data-js-search-results-holder></div>
-            </search-form>
-          </sidebar-drawer>
-          <link
-            rel="stylesheet"
-            href="{{ 'component-search-item.css' | asset_url }}"
-            media="print"
-            onload="this.media='all';"
-          >
-        {%- endif -%}
-
         <div class="eshop-header">
           <h1>E-shop</h1>
         </div>
@@ -168,6 +172,34 @@
         </sidebar-drawer>
         <link rel="stylesheet" href="{{ 'component-cart.css' | asset_url }}" media="print" onload="this.media='all';">
       {%- endunless -%}
+
+      <!-- - Search block -->
+
+      {%- if section.settings.show_search -%}
+        {{ 'component-search-form.css' | asset_url | stylesheet_tag }}
+        <sidebar-drawer
+          style="display:none"
+          class="sidebar__search sidebar-parent-element predictive-search"
+          data-overlay="cart"
+        >
+          <search-form>
+            {%- render 'search-form' -%}
+            <span class="sidebar__search-close sidebar-close-element" data-js-close tabindex="0">
+              <span class="visually-hidden">{{ 'general.accessibility_labels.close' | t }}</span>
+              <span aria-hidden="true">{%- render 'theme-symbols', icon: 'close' -%}</span>
+            </span>
+            <div class="sidebar__search-container" data-js-search-results data-js-search-results-holder></div>
+          </search-form>
+        </sidebar-drawer>
+        <link
+          rel="stylesheet"
+          href="{{ 'component-search-item.css' | asset_url }}"
+          media="print"
+          onload="this.media='all';"
+        >
+      {%- endif -%}
+
+      <!-- - END  Search block -->
     </div>
   </div>
 
