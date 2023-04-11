@@ -1303,9 +1303,7 @@ sidebar-drawer.opened .sidebar-close-element {
   }
 
   .eshop-header h1 {
-
-    padding-top: 170px;
-    padding-bottom: 130px;
+    padding-top: 15px;
     padding-left: 30px;
     padding-right: 30px;
     margin: 0;
@@ -1330,7 +1328,9 @@ sidebar-drawer.opened .sidebar-close-element {
 
 
   .eshop-header h1 {
-    padding-top: 15px;
+    /*padding-top: 15px;*/
+    padding-top: 70px;
+    padding-bottom: 30px;
     padding-left: 5%;
     padding-right: 5%;
     margin: 0;
