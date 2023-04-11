@@ -158,17 +158,20 @@
     </a>
   </div>
 
-  <div class="custom-serach">
-    <search-form>
-      {%- render 'search-form' -%}
-      <span class="sidebar__search-close sidebar-close-element" data-js-close tabindex="0">
-        <span class="visually-hidden">{{ 'general.accessibility_labels.close' | t }}</span>
-        <span aria-hidden="true">{%- render 'theme-symbols', icon: 'close' -%}</span>
-      </span>
-      <div class="sidebar__search-container" data-js-search-results data-js-search-results-holder></div>
-    </search-form>
-  </div>
+  <!--
+    <div class="custom-serach">
+      <search-form>
+        {%- render 'search-form' -%}
+        <span class="sidebar__search-close sidebar-close-element" data-js-close tabindex="0">
+          <span class="visually-hidden">{{ 'general.accessibility_labels.close' | t }}</span>
+          <span aria-hidden="true">{%- render 'theme-symbols', icon: 'close' -%}</span>
+        </span>
+        <div class="sidebar__search-container" data-js-search-results data-js-search-results-holder></div>
+      </search-form>
+    </div>
 
+    -
+  -->
   <!-- END header -->
 </header>
 
