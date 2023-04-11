@@ -2056,7 +2056,8 @@ html[dir=ltr] .css-slider-button .arrow-icon {
 
 .breadcrumb {
   padding-top: 2px;
-  margin-bottom: 3.6em;
+  /* margin-bottom: 3.6em;*/
+  margin-bottom: 1.6em;
   display: flex;
   flex-wrap: wrap;
   gap: 0 11px;
