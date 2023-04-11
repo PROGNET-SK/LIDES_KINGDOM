@@ -4500,6 +4500,7 @@ li.has-sub-nav>a .icon {
 }
 
 
+/*
 
 .custom-serach {
   position: fixed;
@@ -4564,6 +4565,7 @@ select {
 
 }
 
+
 .custom-serach .sidebar-close-element {
   position: absolute;
   top: 32px;
@@ -4573,8 +4575,7 @@ select {
   cursor: pointer;
   z-index: 9999 !important;
   opacity: 1 !important;
-  /* visibility: hidden; */
-  /* transition: all 50ms linear; */
+
 }
 
 
@@ -4589,3 +4590,5 @@ select {
   display: block !important;
   visibility: visible !important;
 }
+
+*/
