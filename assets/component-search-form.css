@@ -168,7 +168,9 @@ html[dir=ltr] .sidebar__search {
   .sidebar__search .search-form:after {
     position: absolute;
     bottom: -40px;
-    height: 40px;
+    /*height: 40px;*/
+    height: 0px;
+
     background: rgba(var(--color-sidebar-bg), 1);
     content: "";
     width: 100%;
