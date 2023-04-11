@@ -274,7 +274,7 @@ html[dir=rtl] .shopify-payment-button__button--unbranded svg {
   /*width: 40%;*/
   width: 50%;
   min-width: 300px;
-  /*max-width: 600px;*/
+  max-width: 835px;
   min-height: 100vh;
   padding: var(--compact-header-padding) var(--horizontal-padding);
 }
