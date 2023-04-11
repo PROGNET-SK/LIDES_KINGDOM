@@ -215,7 +215,8 @@
           {%- if product.description != blank -%}
             <product-description class="product__description-holder" {{ block.shopify_attributes }}>
               <!-- product__description  truncated truncated--small truncated--show  -->
-              <div class="product__description truncated truncated--small truncated--show {{ block.settings.product_description_truncated }}">
+              <!-- <div class="product__description {{ block.settings.product_description_truncated }}">-->
+                <div class="product__description">
                 <div id="product-description-{{ section.id }}" class="product__description-inner rte">
                   {{ product.description }}
                 </div>
