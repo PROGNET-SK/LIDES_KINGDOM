@@ -134,8 +134,8 @@ html[dir=ltr] .sidebar__search {
   position: fixed;
   /*bottom: 40px;*/
   top: 5px;
-  width: 80%;
-  margin-inline-start: 10%;
+  width: 86%;
+  margin-inline-start: 5%;
   pointer-events: all;
 }
 
