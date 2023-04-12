@@ -94,6 +94,12 @@
               <span class="visually-hidden">{{ 'customer.account.title' | t }}</span>
             </a>
           {% endif %}
+
+          <a href="/login" class="header__account__link" id="account-link">
+            {% include 'icon-account' %}
+            <span class="visually-hidden">{{ 'customer.account.title' | t }}</span>
+          </a>
+
           {% if section.settings.show_header_search %}
             <a href="javascript:void(0)" id="SearchToggle" title="{{ 'general.search.placeholder' | t }}">
               <span class="search-toggle">
