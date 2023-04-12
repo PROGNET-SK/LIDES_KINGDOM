@@ -2989,7 +2989,6 @@ html[dir=ltr] .shopify-policy__title {
 }
 
 
-
 .header__cart-handle .count,
 .header__menu-handle .count,
 .header__search-handle .count {
@@ -3006,6 +3005,7 @@ html[dir=ltr] .shopify-policy__title {
   transition: all .1s linear;
 }
 
+.header__account__link,
 .header__cart-handle,
 .header__menu-handle,
 .header__search-handle {
