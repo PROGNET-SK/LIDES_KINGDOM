@@ -1,9 +1,11 @@
-<div style="padding:25px" >blogy</div>
+<div style="padding:25px">blogy</div>
 
-{% assign cats = "top-stories,news,entertainment,led" | split: ',' %}
-{% for cat in cats %}
-	{% for article in blogs[cat].articles %}
-    		{{ article.title }}
-  	{% endfor %} 
+{% assign blog_handles = 'led,news,blog3' | split: ',' %}
+
+{% for handle in blog_handles %}
+  {% for article in blogs[handle].articles %}
+    <h2>
+      <a href="{{ article.url }}">{{ article.title }}</a>
+    </h2>
+  {% endfor %}
 {% endfor %}
-
