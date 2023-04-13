@@ -320,8 +320,8 @@
       "settings": {
         "title": "Latest Articles",
         "blog": "news",
-        "post_limit": 4,
-        "show_image": true,
+        "post_limit": 10,
+        "show_image": false,
         "show_view_all": true,
         "layout": "grid cols-2",
         "seo_h_tag": "h2"
