@@ -10,6 +10,7 @@
         },
         "info": {
           "type": "info",
+          "disabled": true,
           "settings": {
             "show_date": true,
             "show_author": false
