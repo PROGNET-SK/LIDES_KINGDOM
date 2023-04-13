@@ -1,4 +1,4 @@
-{% assign cats = "top-stories,news,entertainment,whaterver-your-blog-is-called" | split: ',' %}
+{% assign cats = "led,news,entertainment,whaterver-your-blog-is-called" | split: ',' %}
 {% for cat in cats %}
 	{% for article in blogs[cat].articles %}
     		{{ article.title }}
