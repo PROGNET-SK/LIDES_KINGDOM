@@ -13,7 +13,8 @@
             "button_label": "Pozrieť projekty",
             "url": "",
             "color_text": "#ffffff",
-            "color_bg": "rgba(0,0,0,0)"
+            "color_bg": "rgba(0,0,0,0)",
+            "seo_h_tag": "h2"
           }
         },
         "dbbbac16-57eb-416c-9520-df527f047a2a": {
@@ -26,7 +27,8 @@
             "button_label": "Pozrieť projekty",
             "url": "",
             "color_text": "#ffffff",
-            "color_bg": "rgba(0,0,0,0)"
+            "color_bg": "rgba(0,0,0,0)",
+            "seo_h_tag": "h2"
           }
         },
         "e074b4ff-9fb2-44c1-ad7a-602716ef9e47": {
@@ -38,8 +40,9 @@
             "caption": "",
             "button_label": "Pozrieť projekty",
             "url": "",
-            "color_text": "rgba(0,0,0,0)",
-            "color_bg": "rgba(0,0,0,0)"
+            "color_text": "#fff",
+            "color_bg": "rgba(0,0,0,0)",
+            "seo_h_tag": "h2"
           }
         },
         "03ba8527-c340-4b10-94ee-fd0fee4625d4": {
@@ -51,8 +54,9 @@
             "caption": "",
             "button_label": "Pozrieť projekty",
             "url": "",
-            "color_text": "rgba(0,0,0,0)",
-            "color_bg": "rgba(0,0,0,0)"
+            "color_text": "#fff",
+            "color_bg": "#fff",
+            "seo_h_tag": "h2"
           }
         },
         "34b82d19-8a31-4543-88ef-8605f42642b1": {
@@ -64,8 +68,9 @@
             "caption": "",
             "button_label": "Pozrieť projekty",
             "url": "",
-            "color_text": "rgba(0,0,0,0)",
-            "color_bg": "rgba(0,0,0,0)"
+            "color_text": "#fff",
+            "color_bg": "#fff",
+            "seo_h_tag": "h2"
           }
         },
         "31211c21-d3fd-40ca-b679-c516d6db080a": {
@@ -78,7 +83,8 @@
             "button_label": "Pozrieť projekty",
             "url": "",
             "color_text": "#ffffff",
-            "color_bg": "rgba(0,0,0,0)"
+            "color_bg": "rgba(0,0,0,0)",
+            "seo_h_tag": "h2"
           }
         }
       },
@@ -91,10 +97,11 @@
         "31211c21-d3fd-40ca-b679-c516d6db080a"
       ],
       "settings": {
-        "style_mobile": false,
+        "size": "80vh",
         "mobile_size": "80vh",
         "text_size": "huge",
-        "alignment": "horizontal-left vertical-bottom"
+        "alignment": "horizontal-left vertical-bottom",
+        "gutter_enabled": false
       }
     },
     "162878197127c896d8": {
@@ -104,7 +111,8 @@
         "show_view_all": true,
         "layout": "grid",
         "products_number": 12,
-        "collection": ""
+        "collection": "",
+        "seo_h_tag": "h2"
       }
     },
     "162878204691e40114": {
@@ -155,7 +163,8 @@
           "type": "heading",
           "settings": {
             "heading": "<p>Write a big, bold statement about your brand.<\/p>",
-            "heading_size": "large"
+            "heading_size": "large",
+            "seo_h_tag": "h3"
           }
         },
         "47254a4f-4f22-45de-b525-f39cd6f3e2ec": {
@@ -209,7 +218,8 @@
         "title": "Shop the look",
         "subheading": "",
         "color_text": "rgba(0,0,0,0)",
-        "color_bg": "rgba(0,0,0,0)"
+        "color_bg": "rgba(0,0,0,0)",
+        "seo_h_tag": "h3"
       }
     },
     "1628782217b36bf2bd": {
@@ -219,7 +229,8 @@
           "type": "heading",
           "settings": {
             "heading": "Talk about your brand",
-            "heading_size": "regular"
+            "heading_size": "regular",
+            "seo_h_tag": "h2"
           }
         },
         "1628782217b36bf2bd-1": {
@@ -236,6 +247,7 @@
       ],
       "settings": {
         "video_height": "56.25%",
+        "video_mobile_height": "56.25%",
         "text_width": "75%",
         "text_alignment": "horizontal-center vertical-middle",
         "color_text": "rgba(0,0,0,0)",
@@ -277,7 +289,8 @@
       "blocks": {
         "1628782268aab83134-0": {
           "type": "title",
-          "settings": {}
+          "settings": {
+          }
         },
         "1628782268aab83134-1": {
           "type": "info",
@@ -288,7 +301,8 @@
         },
         "1628782268aab83134-2": {
           "type": "summary",
-          "settings": {}
+          "settings": {
+          }
         }
       },
       "block_order": [
@@ -302,7 +316,8 @@
         "post_limit": 4,
         "show_image": true,
         "show_view_all": true,
-        "layout": "slider cols-4"
+        "layout": "slider cols-4",
+        "seo_h_tag": "h2"
       }
     }
   },
