@@ -321,9 +321,9 @@
         "title": "Latest Articles",
         "blog": "blog-1-title",
         "post_limit": 4,
-        "show_image": false,
+        "show_image": true,
         "show_view_all": true,
-        "layout": "grid cols-2",
+        "layout": "slider cols-4",
         "seo_h_tag": "h2"
       }
     }
