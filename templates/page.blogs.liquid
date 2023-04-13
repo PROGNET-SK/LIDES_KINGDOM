@@ -1,1 +1,5 @@
-stranka blogov
+{% for blog in blogs %}
+  {% for article in blog.articles %}
+    {{ article.title }}
+  {% endfor %} 
+{% endfor %}
