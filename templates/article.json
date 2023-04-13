@@ -5,23 +5,33 @@
       "blocks": {
         "featured_image": {
           "type": "featured_image",
-          "settings": {}
+          "disabled": true,
+          "settings": {
+            "image_height": "medium"
+          }
         },
         "title": {
           "type": "title",
-          "settings": {}
+          "settings": {
+            "blog_show_date": true,
+            "blog_show_author": true,
+            "blog_show_comments": false
+          }
         },
         "content": {
           "type": "content",
-          "settings": {}
+          "settings": {
+          }
         },
         "social_sharing": {
           "type": "social_sharing",
-          "settings": {}
+          "settings": {
+          }
         },
         "blog_navigation": {
           "type": "blog_navigation",
-          "settings": {}
+          "settings": {
+          }
         }
       },
       "block_order": [
@@ -31,7 +41,8 @@
         "social_sharing",
         "blog_navigation"
       ],
-      "settings": {}
+      "settings": {
+      }
     }
   },
   "order": [
