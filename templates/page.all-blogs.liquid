@@ -1,6 +1,11 @@
 <div style="padding:25px;">
-  {%- for article in blogs['potion-notions'].articles -%}
-    <hr>
-    {{- article.title | link_to: article.url }}
-  {%- endfor -%}
+  {% assign blog_handles = 'blog1,blog2,blog3' | split: ',' %}
+
+  {% for handle in blog_handles %}
+    {% for article in blogs[handle].articles %}
+      <h2>
+        <a href="{{ article.url }}">{{ article.title }}</a>
+      </h2>
+    {% endfor %}
+  {% endfor %}
 </div>
