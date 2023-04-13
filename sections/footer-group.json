@@ -2,42 +2,6 @@
   "type": "footer",
   "name": "t:sections.refactor_words.labels.footer_group",
   "sections": {
-    "23ecd3a7-0f5c-4233-bb96-d54fbb749f5a": {
-      "type": "blog-posts",
-      "blocks": {
-        "sections--18475839619400__23ecd3a7-0f5c-4233-bb96-d54fbb749f5a-16814042378c188761-0": {
-          "type": "title",
-          "settings": {
-          }
-        },
-        "sections--18475839619400__23ecd3a7-0f5c-4233-bb96-d54fbb749f5a-16814042378c188761-1": {
-          "type": "info",
-          "settings": {
-            "show_date": true,
-            "show_author": false
-          }
-        },
-        "sections--18475839619400__23ecd3a7-0f5c-4233-bb96-d54fbb749f5a-16814042378c188761-2": {
-          "type": "summary",
-          "settings": {
-          }
-        }
-      },
-      "block_order": [
-        "sections--18475839619400__23ecd3a7-0f5c-4233-bb96-d54fbb749f5a-16814042378c188761-0",
-        "sections--18475839619400__23ecd3a7-0f5c-4233-bb96-d54fbb749f5a-16814042378c188761-1",
-        "sections--18475839619400__23ecd3a7-0f5c-4233-bb96-d54fbb749f5a-16814042378c188761-2"
-      ],
-      "settings": {
-        "title": "Latest Articles",
-        "blog": "",
-        "post_limit": 4,
-        "show_image": true,
-        "show_view_all": true,
-        "layout": "grid cols-2",
-        "seo_h_tag": "h2"
-      }
-    },
     "text-columns-with-icons": {
       "type": "text-columns-with-icons",
       "blocks": {
@@ -119,7 +83,6 @@
     }
   },
   "order": [
-    "23ecd3a7-0f5c-4233-bb96-d54fbb749f5a",
     "text-columns-with-icons",
     "footer"
   ]
