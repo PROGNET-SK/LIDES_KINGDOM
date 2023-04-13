@@ -33,50 +33,13 @@
         "link"
       ],
       "settings": {
-        "enable_tags": false,
+        "enable_tags": true,
         "post_limit": 2,
         "show_image": true
-      }
-    },
-    "4ba178ba-7ce1-4b7d-8ae5-a15ceb0208aa": {
-      "type": "blog-posts",
-      "blocks": {
-        "template--18551110992200__4ba178ba-7ce1-4b7d-8ae5-a15ceb0208aa-1681404915dc316012-0": {
-          "type": "title",
-          "settings": {
-          }
-        },
-        "template--18551110992200__4ba178ba-7ce1-4b7d-8ae5-a15ceb0208aa-1681404915dc316012-1": {
-          "type": "info",
-          "settings": {
-            "show_date": true,
-            "show_author": false
-          }
-        },
-        "template--18551110992200__4ba178ba-7ce1-4b7d-8ae5-a15ceb0208aa-1681404915dc316012-2": {
-          "type": "summary",
-          "settings": {
-          }
-        }
-      },
-      "block_order": [
-        "template--18551110992200__4ba178ba-7ce1-4b7d-8ae5-a15ceb0208aa-1681404915dc316012-0",
-        "template--18551110992200__4ba178ba-7ce1-4b7d-8ae5-a15ceb0208aa-1681404915dc316012-1",
-        "template--18551110992200__4ba178ba-7ce1-4b7d-8ae5-a15ceb0208aa-1681404915dc316012-2"
-      ],
-      "settings": {
-        "title": "Latest Articles",
-        "blog": "",
-        "post_limit": 4,
-        "show_image": true,
-        "show_view_all": true,
-        "layout": "grid cols-2",
-        "seo_h_tag": "h2"
       }
     }
   },
   "order": [
-    "main",
-    "4ba178ba-7ce1-4b7d-8ae5-a15ceb0208aa"
+    "main"
   ]
 }
