@@ -1,3 +1,5 @@
-{%- for article in blogs['blog-handle'].articles -%}
-  {{- article.title | link_to: article.url }}
-{% endfor %}
+<div style="padding:25px;">
+  {%- for article in blogs['blog-handle'].articles -%}
+    {{- article.title | link_to: article.url }}
+  {% endfor %}
+</div>
