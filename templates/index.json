@@ -121,19 +121,19 @@
         "162878204691e40114-0": {
           "type": "collection",
           "settings": {
-            "collection": ""
+            "collection": "exterierove-svietidla"
           }
         },
         "162878204691e40114-1": {
           "type": "collection",
           "settings": {
-            "collection": ""
+            "collection": "lustre"
           }
         },
         "336c8af9-b9ad-4c69-9979-a9195e474120": {
           "type": "collection",
           "settings": {
-            "collection": ""
+            "collection": "samostatne-kristale-swarovski"
           }
         }
       },
@@ -145,7 +145,7 @@
       "settings": {
         "layout": "layout-halves",
         "alignment": "horizontal-left vertical-bottom",
-        "color_text": "rgba(0,0,0,0)",
+        "color_text": "#fff",
         "color_bg": "rgba(0,0,0,0)",
         "gutter_enabled": false
       }
