@@ -1,7 +1,40 @@
-<div style="padding:25px">blogy</div>
+<div class="page-width">
+  <div class="grid">
+    <div class="grid__item medium-up--five-sixths medium-up--push-one-twelfth">
+      <div class="section-header text-center">
+        <h1>{{ page.title }}</h1>
+      </div>
 
-<ul>
-  {%- for blog in blogs -%}
-    <li>{{ blog.title }}</li>
-  {%- endfor -%}
-</ul>
+      <div class="rte">
+        {{ page.content }}
+
+
+{% for article in blogs.news.articles %} 
+{% if article.tags contains 'exercise' or article.tags contains 'fitness' %} 
+
+       
+        <div class="njohn_search_otherpage"> 
+  <!---<div>{{ article.image.src | img_url: 'medium' | img_tag: article.title }}</div> --->
+          <div class="list-view-item__link">
+                                 <div class="list-view-item__image-column">
+                    <div class="list-view-item__image-wrapper product-card__image-wrapper">
+                      <center><img class="list-view-item__image" src="{{ article.image.src | img_url: '600x600' }}" alt="{{ article.image.alt | escape }}"></center>
+                    </div>
+                  </div>
+
+ 
+            
+  <div><b><a href="{{ article.url }}" title="{{ article.title | escape }}"> {{ article.title }}</div></a></b>
+    
+  
+                {{ article.content | strip_html | truncatewords: 50 }}
+  
+  </div><br>
+
+ {% endif %} 
+ {% endfor %}
+        
+      </div>
+    </div>
+  </div>
+</div>
