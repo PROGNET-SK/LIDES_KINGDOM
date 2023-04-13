@@ -193,7 +193,7 @@
         "162878219500bbe6ce-0": {
           "type": "product",
           "settings": {
-            "product": ""
+            "product": "aquabelle-elipse-1"
           }
         },
         "162878219500bbe6ce-1": {
@@ -215,8 +215,9 @@
         "162878219500bbe6ce-2"
       ],
       "settings": {
-        "title": "Shop the look",
+        "title": "Vybrané produkty",
         "subheading": "",
+        "image": "shopify:\/\/shop_images\/Lavante_sky-motiv_1.jpg",
         "color_text": "rgba(0,0,0,0)",
         "color_bg": "rgba(0,0,0,0)",
         "seo_h_tag": "h3"
