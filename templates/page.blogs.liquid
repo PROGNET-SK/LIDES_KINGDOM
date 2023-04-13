@@ -1,6 +1,5 @@
-{% assign cats = "led,news,entertainment,whaterver-your-blog-is-called" | split: ',' %}
-{% for cat in cats %}
-	{% for article in blogs[cat].articles %}
-    		{{ article.title }}
-  	{% endfor %} 
-{% endfor %}
+  <ul>
+    {% for blog in blogs  %}
+     <li>{{ blog.title }}</li>
+    {% endfor %}
+  </ul>
