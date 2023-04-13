@@ -1,1 +1,9 @@
 <div style="padding:25px" > blogy</div>
+
+{% assign cats = "top-stories,news,entertainment,led" | split: ',' %}
+{% for cat in cats %}
+	{% for article in blogs[cat].articles %}
+    		{{ article.title }}
+  	{% endfor %} 
+{% endfor %}
+
