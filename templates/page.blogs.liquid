@@ -1,6 +1,6 @@
 <div style="padding:25px">blogy</div>
 
-{% assign blog_handles = 'led,news,blog3' | split: ',' %}
+{% assign blog_handles = 'led,news,blog1, blog2' | split: ',' %}
 
 {% for handle in blog_handles %}
   {% for article in blogs[handle].articles %}
