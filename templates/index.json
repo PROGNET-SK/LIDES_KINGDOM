@@ -321,10 +321,10 @@
       "settings": {
         "title": "Najnovšie články",
         "blog": "blog",
-        "post_limit": 4,
+        "post_limit": 3,
         "show_image": true,
         "show_view_all": true,
-        "layout": "slider cols-4",
+        "layout": "grid cols-2",
         "seo_h_tag": "h2"
       }
     }
