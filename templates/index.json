@@ -319,8 +319,8 @@
       ],
       "settings": {
         "title": "Latest Articles",
-        "blog": "blog-1-title",
-        "post_limit": 1,
+        "blog": "blog",
+        "post_limit": 4,
         "show_image": false,
         "show_view_all": true,
         "layout": "slider cols-4",
