@@ -2,6 +2,42 @@
   "type": "footer",
   "name": "t:sections.refactor_words.labels.footer_group",
   "sections": {
+    "23ecd3a7-0f5c-4233-bb96-d54fbb749f5a": {
+      "type": "blog-posts",
+      "blocks": {
+        "sections--18475839619400__23ecd3a7-0f5c-4233-bb96-d54fbb749f5a-16814042378c188761-0": {
+          "type": "title",
+          "settings": {
+          }
+        },
+        "sections--18475839619400__23ecd3a7-0f5c-4233-bb96-d54fbb749f5a-16814042378c188761-1": {
+          "type": "info",
+          "settings": {
+            "show_date": true,
+            "show_author": false
+          }
+        },
+        "sections--18475839619400__23ecd3a7-0f5c-4233-bb96-d54fbb749f5a-16814042378c188761-2": {
+          "type": "summary",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "sections--18475839619400__23ecd3a7-0f5c-4233-bb96-d54fbb749f5a-16814042378c188761-0",
+        "sections--18475839619400__23ecd3a7-0f5c-4233-bb96-d54fbb749f5a-16814042378c188761-1",
+        "sections--18475839619400__23ecd3a7-0f5c-4233-bb96-d54fbb749f5a-16814042378c188761-2"
+      ],
+      "settings": {
+        "title": "Latest Articles",
+        "blog": "",
+        "post_limit": 4,
+        "show_image": true,
+        "show_view_all": true,
+        "layout": "grid cols-2",
+        "seo_h_tag": "h2"
+      }
+    },
     "text-columns-with-icons": {
       "type": "text-columns-with-icons",
       "blocks": {
@@ -9,21 +45,24 @@
           "type": "text-icon",
           "settings": {
             "title": "Shipping",
-            "body": "<p>Write some useful information about your shipping details<\/p><p>Link to your <a href='#'>shipping policy<\/a>.<\/p>"
+            "body": "<p>Write some useful information about your shipping details<\/p><p>Link to your <a href='#'>shipping policy<\/a>.<\/p>",
+            "icon": "earth-globe"
           }
         },
         "00665f2b-5814-4213-853b-3b6c73955a4a": {
           "type": "text-icon",
           "settings": {
             "title": "Delivery",
-            "body": "<p>Let your customers know if you offer free delivery for certain types of orders<\/p><p>Link to your <a href='#'>offers page<\/a>.<\/p>"
+            "body": "<p>Let your customers know if you offer free delivery for certain types of orders<\/p><p>Link to your <a href='#'>offers page<\/a>.<\/p>",
+            "icon": "earth-globe"
           }
         },
         "913a05c0-114a-4fb7-ba39-047df22f46cf": {
           "type": "text-icon",
           "settings": {
             "title": "Returns",
-            "body": "<p>Show customers how much time they have for testing your products<\/p><p>Link to your <a href='#'>returns policy<\/a>.<\/p>"
+            "body": "<p>Show customers how much time they have for testing your products<\/p><p>Link to your <a href='#'>returns policy<\/a>.<\/p>",
+            "icon": "earth-globe"
           }
         }
       },
@@ -35,7 +74,8 @@
       "settings": {
         "text_alignment": "left",
         "color_text": "#262626",
-        "color_bg": "#f2f2f2"
+        "color_bg": "#f2f2f2",
+        "seo_h_tag": "h3"
       }
     },
     "footer": {
@@ -73,11 +113,13 @@
       "settings": {
         "show_payment_icons": true,
         "show_locale_selector": true,
-        "show_country_selector": true
+        "show_country_selector": true,
+        "seo_h_tag": "h4"
       }
     }
   },
   "order": [
+    "23ecd3a7-0f5c-4233-bb96-d54fbb749f5a",
     "text-columns-with-icons",
     "footer"
   ]
