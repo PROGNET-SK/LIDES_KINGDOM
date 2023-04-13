@@ -8,4 +8,14 @@
       </h2>
     {% endfor %}
   {% endfor %}
+  <hr>
+  <hr>
+  {% for link in linklists.blogs.links %}
+    {% assign blog = link.object %}
+    {% for article in blog.articles %}
+      <h2>
+        <a href="{{ article.url }}">{{ article.title }}</a>
+      </h2>
+    {% endfor %}
+  {% endfor %}
 </div>
