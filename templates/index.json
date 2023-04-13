@@ -40,7 +40,7 @@
             "caption": "",
             "button_label": "Pozrieť projekty",
             "url": "",
-            "color_text": "#fff",
+            "color_text": "#ffffff",
             "color_bg": "rgba(0,0,0,0)",
             "seo_h_tag": "h2"
           }
@@ -54,8 +54,8 @@
             "caption": "",
             "button_label": "Pozrieť projekty",
             "url": "",
-            "color_text": "#fff",
-            "color_bg": "#fff",
+            "color_text": "#ffffff",
+            "color_bg": "#ffffff",
             "seo_h_tag": "h2"
           }
         },
@@ -68,8 +68,8 @@
             "caption": "",
             "button_label": "Pozrieť projekty",
             "url": "",
-            "color_text": "#fff",
-            "color_bg": "#fff",
+            "color_text": "#ffffff",
+            "color_bg": "#ffffff",
             "seo_h_tag": "h2"
           }
         },
@@ -145,7 +145,7 @@
       "settings": {
         "layout": "layout-halves",
         "alignment": "horizontal-left vertical-bottom",
-        "color_text": "#fff",
+        "color_text": "#ffffff",
         "color_bg": "rgba(0,0,0,0)",
         "gutter_enabled": false
       }
@@ -304,12 +304,18 @@
           "type": "summary",
           "settings": {
           }
+        },
+        "dbc70860-fcd5-4237-a645-a8b8a1ec5cde": {
+          "type": "link",
+          "settings": {
+          }
         }
       },
       "block_order": [
         "1628782268aab83134-0",
         "1628782268aab83134-1",
-        "1628782268aab83134-2"
+        "1628782268aab83134-2",
+        "dbc70860-fcd5-4237-a645-a8b8a1ec5cde"
       ],
       "settings": {
         "title": "Latest Articles",
