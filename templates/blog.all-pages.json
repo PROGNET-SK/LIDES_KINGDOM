@@ -1,0 +1,45 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-blog",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {
+          }
+        },
+        "info": {
+          "type": "info",
+          "settings": {
+            "show_date": true,
+            "show_author": false
+          }
+        },
+        "summary": {
+          "type": "summary",
+          "settings": {
+          }
+        },
+        "link": {
+          "type": "link",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "info",
+        "summary",
+        "link"
+      ],
+      "settings": {
+        "enable_tags": true,
+        "post_limit": 8,
+        "show_image": true
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}
