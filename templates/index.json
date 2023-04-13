@@ -295,6 +295,7 @@
         },
         "1628782268aab83134-1": {
           "type": "info",
+          "disabled": true,
           "settings": {
             "show_date": true,
             "show_author": false
