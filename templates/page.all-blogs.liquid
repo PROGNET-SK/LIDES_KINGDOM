@@ -1,0 +1,11 @@
+<div style="padding:25px">blogy</div>
+
+{% assign blog_handles = 'led,news,blog1, blog2' | split: ',' %}
+
+{% for handle in blog_handles %}
+  {% for article in blogs[handle].articles %}
+    <h2>
+      <a href="{{ article.url }}">{{ article.title }}</a>
+    </h2>
+  {% endfor %}
+{% endfor %}
