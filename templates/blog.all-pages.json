@@ -37,17 +37,9 @@
         "post_limit": 2,
         "show_image": true
       }
-    },
-    "3c0c6ecd-5a1e-4299-9188-4bb5e4eeaef8": {
-      "type": "custom-liquid",
-      "settings": {
-        "custom_liquid": "",
-        "gutter_enabled": true
-      }
     }
   },
   "order": [
-    "main",
-    "3c0c6ecd-5a1e-4299-9188-4bb5e4eeaef8"
+    "main"
   ]
 }
