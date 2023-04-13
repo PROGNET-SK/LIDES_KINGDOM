@@ -5,19 +5,25 @@
       "blocks": {
         "title": {
           "type": "title",
-          "settings": {}
-        },
-        "summary": {
-          "type": "summary",
-          "settings": {}
+          "settings": {
+          }
         },
         "info": {
           "type": "info",
-          "settings": {}
+          "settings": {
+            "show_date": true,
+            "show_author": false
+          }
+        },
+        "summary": {
+          "type": "summary",
+          "settings": {
+          }
         },
         "link": {
           "type": "link",
-          "settings": {}
+          "settings": {
+          }
         }
       },
       "block_order": [
@@ -26,7 +32,11 @@
         "summary",
         "link"
       ],
-      "settings": {}
+      "settings": {
+        "enable_tags": true,
+        "post_limit": 8,
+        "show_image": true
+      }
     }
   },
   "order": [
