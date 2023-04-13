@@ -319,7 +319,7 @@
       ],
       "settings": {
         "title": "Latest Articles",
-        "blog": "news",
+        "blog": "blog-1-title",
         "post_limit": 4,
         "show_image": false,
         "show_view_all": true,
