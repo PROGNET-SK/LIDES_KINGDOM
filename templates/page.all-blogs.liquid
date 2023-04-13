@@ -1,5 +1,5 @@
 <div style="padding:25px;">
-  {%- for article in blogs.news.articles -%}
+  {%- for article in blogs['potion-notions'].articles -%}
     {{- article.title | link_to: article.url }}
-  {% endfor %}
+  {%- endfor -%}
 </div>
