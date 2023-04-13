@@ -28,7 +28,8 @@
       style="display:block"
       {%- else -%}
         div
-      {% endif %}
+      {%- endif -%}
+
       class="blog--{{ section.settings.layout }} blog--images-{{ section.settings.blog_show_image }} css-slider--simple-dots"
       data-limit="{{ blogs[section.settings.blog].articles.size }}"
     >
@@ -37,7 +38,7 @@
           render 'blog-item', article: article, layout: section.settings.layout, show_image: section.settings.show_image, blocks: section.blocks
         endfor
       -%}
-    </{% if section.settings.layout contains 'slider' %}css-slider{% else %}div{% endif %}>
+    </{%- if section.settings.layout contains 'slider' -%}css-slider{%- else -%}div{%- endif -%}>
 
   {%- else -%}
     <p class="no-content-message">{{ 'blog.grid.no_articles_text' | t }}</p>
