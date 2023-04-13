@@ -1,1 +1,7 @@
 <div style="padding:25px;">page - all blogs</div>
+
+{%- for blog in blogs -%}
+  {%- for article in blog.articles -%}
+    {{ article.title }}
+  {%- endfor -%}
+{%- endfor -%}
