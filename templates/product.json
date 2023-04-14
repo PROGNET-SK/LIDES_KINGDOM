@@ -62,7 +62,7 @@
         "share"
       ],
       "custom_css": [
-        ".product-gallery--gutter ~ .product-gallery__thumbnails.product-gallery__thumbnails-thumbnails {padding: 55px 25px 0px 25px; }"
+        ".product-gallery--gutter ~ .product-gallery__thumbnails.product-gallery__thumbnails-thumbnails {padding: 55px 25px 0 25px;}"
       ],
       "settings": {
         "gallery_style": "slider",
