@@ -49,12 +49,6 @@
           "type": "share",
           "settings": {
           }
-        },
-        "3e33a05f-d2f4-42b1-8639-3ba5c5b8673a": {
-          "type": "shopify:\/\/apps\/wdt-fancy-image-gallery\/blocks\/app-block\/05b813ce-f90c-44cc-aa96-3aaac819e27d",
-          "settings": {
-            "wdt_image_code": ""
-          }
         }
       },
       "block_order": [
@@ -65,8 +59,7 @@
         "buy_buttons",
         "pickup_avaiability",
         "description",
-        "share",
-        "3e33a05f-d2f4-42b1-8639-3ba5c5b8673a"
+        "share"
       ],
       "settings": {
         "gallery_style": "slider",
