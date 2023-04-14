@@ -1175,7 +1175,7 @@ html[dir=ltr] .product__image-zoom {
 }
 
 .product-gallery--fit .product__image-zoom {
-  top: 25px;
+  top: 50px;
 }
 
 .product__image-zoom svg path {
