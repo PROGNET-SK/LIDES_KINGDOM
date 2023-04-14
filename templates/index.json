@@ -109,7 +109,7 @@
       "settings": {
         "title": "Pripravujeme",
         "show_view_all": true,
-        "layout": "slider",
+        "layout": "grid",
         "products_number": 12,
         "collection": "exterierove-svietidla-1",
         "seo_h_tag": "h2"
