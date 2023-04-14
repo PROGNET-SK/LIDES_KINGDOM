@@ -27,12 +27,21 @@
           "settings": {
             "title": "Newsletter"
           }
+        },
+        "9489babb-94ea-4b67-a4c4-99392fdc9010": {
+          "type": "text",
+          "settings": {
+            "title": "Contact information",
+            "content": "<p>Write a short statement about your brand.<\/p>",
+            "size": "footer-text--large"
+          }
         }
       },
       "block_order": [
         "1568899676297",
         "1568899717495",
-        "1568899707223"
+        "1568899707223",
+        "9489babb-94ea-4b67-a4c4-99392fdc9010"
       ],
       "settings": {
         "show_payment_icons": true,
