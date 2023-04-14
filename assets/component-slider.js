@@ -87,7 +87,7 @@ if (typeof CSSSlider !== 'function')
       this.originalHTML = this.innerHTML;
       this.innerHTML = `<div class="css-slider-viewport">
         <div class="css-slider-holder">
-          <div class="css-slider-container">
+          <div class="css-slider-container" prognet-slider="true">
             ${this.originalHTML}
           </div>
         </div>
