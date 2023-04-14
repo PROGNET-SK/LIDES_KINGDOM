@@ -52,9 +52,7 @@ if (typeof ProductImageZoom !== 'function')
 			const y = e.clientY * (window.innerHeight - this.image.offsetHeight) / window.innerHeight;
 			// style add position
 			//this.image.style.left = x + 'px';
-			//this.image.style.top = y + 'px';
-
-			this.image.style.margin = "0,auto";
+			//this.image.style.top = y + 'px';		
 		}
 
 		onResizeHandler()
@@ -99,8 +97,8 @@ if (typeof ProductImageZoom !== 'function')
 		_productZoomMount(image)
 		{
 
-			this.image.style.left = 0;
-			this.image.style.top = 0;
+			//this.image.style.left = 0;
+			//this.image.style.top = 0;
 
 			window.addEventListener('mousemove', this.onMouseMoveHandlerBinded, { passive: true });
 
