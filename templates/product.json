@@ -42,7 +42,7 @@
         "description": {
           "type": "description",
           "settings": {
-            "product_description_truncated": "truncated--disabled"
+            "product_description_truncated": "truncated truncated--small"
           }
         },
         "share": {
