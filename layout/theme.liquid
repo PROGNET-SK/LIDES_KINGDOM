@@ -115,11 +115,11 @@
     </a>
 
     {%- section 'announcement-bar' -%}
-    
+
     {%- section 'header' -%}
-    
+
     {%- section 'sidebar' -%}
-    
+
     <div id="content-holder">
       <main id="content" class="lide-main-content" role="main">
         {%- liquid
@@ -138,11 +138,12 @@
         {{ 'component-slider.css' | asset_url | stylesheet_tag }}
         <script src="{{ 'component-slider.js' | asset_url }}" defer></script>
 
-        <div id="page-content">{{ content_for_layout }}
-<limespot></limespot></div>
+        <div id="page-content">
+          {{ content_for_layout }}
 
-        <div id="footer-content">
-          {%- sections 'footer-group' -%}
+          <div id="footer-content">
+            {%- sections 'footer-group' -%}
+          </div>
         </div>
       </main>
     </div>
