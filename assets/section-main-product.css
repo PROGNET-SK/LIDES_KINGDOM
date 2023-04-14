@@ -1147,6 +1147,7 @@ html[dir=ltr] .product-gallery--gutter~.product-gallery__thumbnails--dots {
   fill: rgba(var(--color-body-txt), 1);
 }
 
+/*lupa bg edit*/
 .product__image-zoom {
   position: absolute;
   top: 25px;
