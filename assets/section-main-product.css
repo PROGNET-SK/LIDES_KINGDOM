@@ -1273,6 +1273,7 @@ html[dir=ltr] .touch #zoom img {
   opacity: 0;
 }
 
+/*
 #zoom .zoom__exit {
   z-index: 9;
   position: fixed;
@@ -1285,7 +1286,19 @@ html[dir=ltr] .touch #zoom img {
   align-items: center;
   justify-content: center;
   cursor: pointer;
+}*/
+
+#zoom .zoom__exit {
+  z-index: 9;
+
+  background: rgba(var(--color-body-bg), 1);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
 }
+
 
 html[dir=rtl] #zoom .zoom__exit {
   left: 25px;
