@@ -145,7 +145,11 @@ if (typeof ProductImageZoom !== 'function')
 		customElements.define('product-image-zoom', ProductImageZoom);
 	}
 
+	if (typeof customElements.get('figure') == 'undefined')
+	{
+		customElements.define('figure', ProductImageZoom);
+	}
 
-	customElements.define('figure', ProductImageZoom);
+
 
 }
