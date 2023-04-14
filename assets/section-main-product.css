@@ -748,8 +748,8 @@ product-description {
 
 .product-gallery--gutter~.product-gallery__thumbnails.product-gallery__thumbnails-thumbnails {
   height: 110px;
-  padding: 0px 50px 0 25px;
-  margin-top: 12px;
+  /*padding: 0px 50px 0 25px;*/
+  /* margin-top: 12px;*/
 }
 
 .product-gallery__thumbnails.product-gallery__thumbnails-thumbnails .thumbnails-holder {
@@ -763,6 +763,8 @@ product-description {
   scrollbar-width: none;
   scroll-behavior: smooth;
   scroll-snap-type: x mandatory;
+  background-color: white;
+  opacity: .8;
 }
 
 .product-gallery__thumbnails.product-gallery__thumbnails-thumbnails .thumbnails-holder::-webkit-scrollbar {
