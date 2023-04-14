@@ -13,8 +13,7 @@ if (typeof ProductImageZoom !== 'function')
 				this.zoom = document.createElement('div');
 				this.zoom.id = 'zoom';
 				this.zoom.innerHTML = `
-					<img class="zoom__exit" />
-					
+					<img class="zoom__exit" />					
 					<span class="zoom__loader">${KROWN.settings.symbols.zoom_loader}</span>
 					<div class="zoom__overlay"></div>
 				`;
