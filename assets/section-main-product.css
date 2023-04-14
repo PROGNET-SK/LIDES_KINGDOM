@@ -1149,7 +1149,7 @@ html[dir=ltr] .product-gallery--gutter~.product-gallery__thumbnails--dots {
 
 /*lupa bg edit*/
 .product__image-zoom {
-  position: absolute;
+  /*position: absolute;
   top: 25px;
   width: 35px;
   height: 35px;
@@ -1160,6 +1160,7 @@ html[dir=ltr] .product-gallery--gutter~.product-gallery__thumbnails--dots {
 
   transition: all 100ms linear 100ms;
   transform: translate3d(0, 0, 0);
+  */
 }
 
 html[dir=rtl] .product__image-zoom {
