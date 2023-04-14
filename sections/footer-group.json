@@ -7,6 +7,7 @@
       "blocks": {
         "1568899676297": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "title": "About",
             "content": "<p>Write a short statement about your brand.<\/p>",
@@ -30,6 +31,7 @@
         },
         "9489babb-94ea-4b67-a4c4-99392fdc9010": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "title": "Contact information",
             "content": "<p>Write a short statement about your brand.<\/p>",
