@@ -129,8 +129,6 @@ if (typeof ProductImageZoom !== 'function')
 
 	if (typeof customElements.get('product-image-zoom') == 'undefined')
 	{
-
-		alert("zoom");
 		customElements.define('product-image-zoom', ProductImageZoom);
 	}
 
