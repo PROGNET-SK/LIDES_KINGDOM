@@ -13,10 +13,12 @@ if (typeof ProductImageZoom !== 'function')
 				this.zoom = document.createElement('div');
 				this.zoom.id = 'zoom';
 				this.zoom.innerHTML = `
+				<div style="text-align:center;" >
 					<img test />
 					<span class="zoom__exit">${KROWN.settings.symbols.zoom_out}</span>
 					<span class="zoom__loader">${KROWN.settings.symbols.zoom_loader}</span>
 					<div class="zoom__overlay"></div>
+					</div>
 				`;
 				document.body.append(this.zoom);
 				this.zoom.querySelector('.zoom__exit').addEventListener('click', this._productZoomUnmount.bind(this));
