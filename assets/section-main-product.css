@@ -1147,6 +1147,7 @@ html[dir=ltr] .product-gallery--gutter~.product-gallery__thumbnails--dots {
   fill: rgba(var(--color-body-txt), 1);
 }
 
+/*lupa bg edit*/
 
 .product__image-zoom {
   position: absolute;
@@ -1157,11 +1158,10 @@ html[dir=ltr] .product-gallery--gutter~.product-gallery__thumbnails--dots {
   z-index: 99;
   cursor: pointer;
   background-color: white;
+
   transition: all 100ms linear 100ms;
   transform: translate3d(0, 0, 0);
 }
-
-
 
 html[dir=rtl] .product__image-zoom {
   left: 25px;
@@ -1176,7 +1176,7 @@ html[dir=ltr] .product__image-zoom {
 }
 
 .product-gallery--fit .product__image-zoom {
-  top: 50px;
+  top: 25px;
 }
 
 .product__image-zoom svg path {
