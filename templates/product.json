@@ -62,7 +62,7 @@
         "share"
       ],
       "custom_css": [
-        ".thumbnails-holder{margin-top:50px;}"
+        ".thumbnails-holder {margin-top: 55px;}"
       ],
       "settings": {
         "gallery_style": "slider",
