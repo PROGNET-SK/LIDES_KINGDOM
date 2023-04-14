@@ -75,28 +75,10 @@
       "settings": {
         "heading": "You may also like"
       }
-    },
-    "16814605547b5fbff5": {
-      "type": "apps",
-      "blocks": {
-        "b17e78ef-6877-497b-81e7-c9df9ac6d3d5": {
-          "type": "shopify:\/\/apps\/wdt-fancy-image-gallery\/blocks\/app-block\/05b813ce-f90c-44cc-aa96-3aaac819e27d",
-          "settings": {
-            "wdt_image_code": "here is gallery"
-          }
-        }
-      },
-      "block_order": [
-        "b17e78ef-6877-497b-81e7-c9df9ac6d3d5"
-      ],
-      "settings": {
-        "gutter_enabled": true
-      }
     }
   },
   "order": [
     "main",
-    "product-recommendations",
-    "16814605547b5fbff5"
+    "product-recommendations"
   ]
 }
