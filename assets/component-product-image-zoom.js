@@ -71,13 +71,20 @@ if (typeof ProductImageZoom !== 'function')
 			} else
 			{
 
-				this.image.style.height = (window.innerHeight * rf) + 'px';
-				this.image.style.width = (window.innerHeight * rf * this.image.dataset.ratio) + 'px';
+				//this.image.style.height = (window.innerHeight * rf) + 'px';
+				//this.image.style.width = (window.innerHeight * rf * this.image.dataset.ratio) + 'px';
+
+				this.image.style.width = "100%";
+				this.image.style.height = "auto";
 
 				if (this.image.offsetWidth < window.innerWidth)
 				{
-					this.image.style.width = (window.innerWidth * rf) + 'px';
-					this.image.style.height = (window.innerWidth * rf / this.image.dataset.ratio) + 'px';
+					//this.image.style.width = (window.innerWidth * rf) + 'px';
+					//this.image.style.height = (window.innerWidth * rf / this.image.dataset.ratio) + 'px';
+
+					this.image.style.width = "100%";
+					this.image.style.height = "auto";
+
 				}
 
 			}
