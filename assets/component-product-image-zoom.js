@@ -13,11 +13,10 @@ if (typeof ProductImageZoom !== 'function')
 				this.zoom = document.createElement('div');
 				this.zoom.id = 'zoom';
 				this.zoom.innerHTML = `
-					<img style="margin:0 auto 0 auto; right:0px; " />					
+					<img />
 					<span class="zoom__exit">${KROWN.settings.symbols.zoom_out}</span>
 					<span class="zoom__loader">${KROWN.settings.symbols.zoom_loader}</span>
 					<div class="zoom__overlay"></div>
-					
 				`;
 				document.body.append(this.zoom);
 				this.zoom.querySelector('.zoom__exit').addEventListener('click', this._productZoomUnmount.bind(this));
@@ -51,9 +50,8 @@ if (typeof ProductImageZoom !== 'function')
 			window.clientY = e.clientY;
 			const x = e.clientX * (window.innerWidth - this.image.offsetWidth) / window.innerWidth;
 			const y = e.clientY * (window.innerHeight - this.image.offsetHeight) / window.innerHeight;
-			// style add position
-			//this.image.style.left = x + 'px';
-			//this.image.style.top = y + 'px';		
+			this.image.style.left = x + 'px';
+			this.image.style.top = y + 'px';
 		}
 
 		onResizeHandler()
@@ -63,29 +61,18 @@ if (typeof ProductImageZoom !== 'function')
 
 			if (this.image.classList.contains('portrait'))
 			{
-				//this.image.style.width = (window.innerWidth * rf) + 'px';
-				//this.image.style.height = (window.innerWidth * rf / this.image.dataset.ratio) + 'px';
-
-				//this.image.style.width = "auto";
-				this.image.style.height = "100%";
-
+				this.image.style.width = (window.innerWidth * rf) + 'px';
+				this.image.style.height = (window.innerWidth * rf / this.image.dataset.ratio) + 'px';
 			} else
 			{
 
-				//this.image.style.height = (window.innerHeight * rf) + 'px';
-				//this.image.style.width = (window.innerHeight * rf * this.image.dataset.ratio) + 'px';
-
-				//this.image.style.width = "auto";
-				this.image.style.height = "100%";
+				this.image.style.height = (window.innerHeight * rf) + 'px';
+				this.image.style.width = (window.innerHeight * rf * this.image.dataset.ratio) + 'px';
 
 				if (this.image.offsetWidth < window.innerWidth)
 				{
-					//this.image.style.width = (window.innerWidth * rf) + 'px';
-					//this.image.style.height = (window.innerWidth * rf / this.image.dataset.ratio) + 'px';
-
-					//this.image.style.width = "auto";
-					this.image.style.height = "100%";
-
+					this.image.style.width = (window.innerWidth * rf) + 'px';
+					this.image.style.height = (window.innerWidth * rf / this.image.dataset.ratio) + 'px';
 				}
 
 			}
@@ -98,8 +85,8 @@ if (typeof ProductImageZoom !== 'function')
 		_productZoomMount(image)
 		{
 
-			//this.image.style.left = 0;
-			//this.image.style.top = 0;
+			this.image.style.left = 0;
+			this.image.style.top = 0;
 
 			window.addEventListener('mousemove', this.onMouseMoveHandlerBinded, { passive: true });
 
@@ -138,7 +125,6 @@ if (typeof ProductImageZoom !== 'function')
 		}
 
 	}
-
 
 	if (typeof customElements.get('product-image-zoom') == 'undefined')
 	{
