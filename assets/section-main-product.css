@@ -1157,7 +1157,7 @@ html[dir=ltr] .product-gallery--gutter~.product-gallery__thumbnails--dots {
   z-index: 99;
   cursor: pointer;
   background-color: white;
-  opacity: .5 !important;
+
   transition: all 100ms linear 100ms;
   transform: translate3d(0, 0, 0);
 }
@@ -1171,7 +1171,7 @@ html[dir=ltr] .product__image-zoom {
 }
 
 .lazyloaded~.product__image-zoom {
-  opacity: 1;
+  opacity: 0.6;
 }
 
 .product-gallery--fit .product__image-zoom {
