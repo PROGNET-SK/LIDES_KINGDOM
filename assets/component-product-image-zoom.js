@@ -126,14 +126,12 @@ if (typeof ProductImageZoom !== 'function')
 
 	}
 
-	/*
-	if ( typeof customElements.get('product-image-zoom') == 'undefined' ) {
-		customElements.define('product-image-zoom', ProductImageZoom);
-	}
-*/
-	if (typeof customElements.get('figure') == 'undefined')
+
+	if (typeof customElements.get('product-image-zoom') == 'undefined')
 	{
-		customElements.define('figure', ProductImageZoom);
+
+		alert("zoom");
+		customElements.define('product-image-zoom', ProductImageZoom);
 	}
 
 
