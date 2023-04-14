@@ -62,6 +62,9 @@ if (typeof ProductImageZoom !== 'function')
 
 			const rf = window.innerWidth > 768 ? 1 : 2;
 
+			this.image.style.margin = '0 auto 0 auto';
+			this.image.style.right = '0px';
+
 			if (this.image.classList.contains('portrait'))
 			{
 				//this.image.style.width = (window.innerWidth * rf) + 'px';
