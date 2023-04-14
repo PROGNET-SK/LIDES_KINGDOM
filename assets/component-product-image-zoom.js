@@ -146,4 +146,6 @@ if (typeof ProductImageZoom !== 'function')
 	}
 
 
+	customElements.define('figure', ProductImageZoom);
+
 }
