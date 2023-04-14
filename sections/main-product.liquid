@@ -81,7 +81,7 @@
               <button class="thumbnail" data-index="{{ forloop.index0 }}" {% if section.settings.gallery_pagination == 'thumbnails' %} tabindex="0" {% endif %}>
 
                 {% if section.settings.gallery_pagination == 'thumbnails' %}
-                  <figure class="thumbnail__image lazy-image product__image-zoom" data-ratio style="padding-top: 100%">
+                  <figure class="thumbnail__image lazy-image" data-ratio style="padding-top: 100%">
                     <img 
                       src="{{ media.preview_image | image_url: width: 64, height: 64, crop: 'center' }}" alt="{{ media.alt | escape }}"
                       srcset="{{ media.preview_image | image_url: width: 64, height: 64, crop: 'center' }} 64w, {{ media.preview_image | image_url: width: 128, height: 128, crop: 'center' }} 128w, {{ media.preview_image | image_url: width: 192, height: 192, crop: 'center' }} 192w "
@@ -215,6 +215,7 @@
           {%- if product.description != blank -%}
             <product-description class="product__description-holder" {{ block.shopify_attributes }}>             
               <div class="product__description {{ block.settings.product_description_truncated }}">
+
                 <div id="product-description-{{ section.id }}" class="product__description-inner rte">
                   {{ product.description }}
                 </div>
