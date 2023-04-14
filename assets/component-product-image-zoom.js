@@ -65,8 +65,8 @@ if (typeof ProductImageZoom !== 'function')
 				//this.image.style.width = (window.innerWidth * rf) + 'px';
 				//this.image.style.height = (window.innerWidth * rf / this.image.dataset.ratio) + 'px';
 
-				this.image.style.width = 100 %;
-				this.image.style.height = auto;
+				this.image.style.width = "100%";
+				this.image.style.height = "auto";
 
 			} else
 			{
