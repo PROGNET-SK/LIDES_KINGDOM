@@ -11,7 +11,7 @@ if (typeof ProductImageZoom !== 'function')
 			if (!document.getElementById('zoom'))
 			{
 				this.zoom = document.createElement('div');
-				this.zoom.id = 'zoom';
+				this.zoom.id = 'zoom-ER';
 				this.zoom.innerHTML = `
 					<img test />
 					<span class="zoom__exit">${KROWN.settings.symbols.zoom_out}</span>
@@ -22,7 +22,7 @@ if (typeof ProductImageZoom !== 'function')
 				this.zoom.querySelector('.zoom__exit').addEventListener('click', this._productZoomUnmount.bind(this));
 			} else
 			{
-				this.zoom = document.getElementById('zoom');
+				this.zoom = document.getElementById('zoom-ER');
 			}
 
 			this.onMouseMoveHandlerBinded = this.onMouseMoveHandler.bind(this);
