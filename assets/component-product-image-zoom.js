@@ -52,6 +52,9 @@ if (typeof ProductImageZoom !== 'function')
 			const y = e.clientY * (window.innerHeight - this.image.offsetHeight) / window.innerHeight;
 			//this.image.style.left = x + 'px';
 			//this.image.style.top = y + 'px';
+
+			this.image.style.margin = '0 auto 0 auto';
+			this.image.style.right = '0px';
 		}
 
 		onResizeHandler()
