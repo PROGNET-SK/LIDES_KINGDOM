@@ -1151,10 +1151,10 @@ html[dir=ltr] .product-gallery--gutter~.product-gallery__thumbnails--dots {
 
 .product__image-zoom {
   /*position: absolute;*/
-  top: 25px;
+  /*top: 25px;
   width: 35px;
   height: 35px;
-  padding: 5px;
+  padding: 5px;*/
   z-index: 99;
   cursor: pointer;
   background-color: white;
