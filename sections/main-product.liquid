@@ -214,8 +214,8 @@
         {%- when 'description' -%}
           {%- if product.description != blank -%}
             <product-description class="product__description-holder" {{ block.shopify_attributes }}>             
-              <!-- <div class="product__description {{ block.settings.product_description_truncated }}">-->
-                <div class="product__description">
+              <div class="product__description {{ block.settings.product_description_truncated }}">
+              <!--   <div class="product__description"> -->
                 <div id="product-description-{{ section.id }}" class="product__description-inner rte">
                   {{ product.description }}
                 </div>
@@ -369,8 +369,7 @@
               data-variant-id="{{ current_variant.id }}"
               data-has-only-default-variant="{{ product.has_only_default_variant }}"
               data-id="{{ section.id }}"
-              {{ block.shopify_attributes }}
-            >
+              {{ block.shopify_attributes }}>
               <template>
                 <pickup-availability-preview class="pickup-availability-preview store-availability-container">
                   <div class="store-availability-information">
