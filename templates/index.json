@@ -109,7 +109,7 @@
       "settings": {
         "title": "Pripravujeme",
         "show_view_all": true,
-        "layout": "grid",
+        "layout": "slider",
         "products_number": 12,
         "collection": "exterierove-svietidla-1",
         "seo_h_tag": "h2"
@@ -135,12 +135,19 @@
           "settings": {
             "collection": "samostatne-kristale-swarovski"
           }
+        },
+        "f4f5a85f-962a-42e9-8c02-9d31c57d3c85": {
+          "type": "collection",
+          "settings": {
+            "collection": ""
+          }
         }
       },
       "block_order": [
         "162878204691e40114-0",
         "162878204691e40114-1",
-        "336c8af9-b9ad-4c69-9979-a9195e474120"
+        "336c8af9-b9ad-4c69-9979-a9195e474120",
+        "f4f5a85f-962a-42e9-8c02-9d31c57d3c85"
       ],
       "settings": {
         "layout": "layout-halves",
