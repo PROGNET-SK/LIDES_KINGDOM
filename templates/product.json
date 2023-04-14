@@ -61,6 +61,9 @@
         "description",
         "share"
       ],
+      "custom_css": [
+        ".thumbnails-holder{margin-top:50px;}"
+      ],
       "settings": {
         "gallery_style": "slider",
         "gallery_slider_style": true,
