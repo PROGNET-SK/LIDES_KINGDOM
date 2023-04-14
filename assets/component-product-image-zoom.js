@@ -13,7 +13,7 @@ if (typeof ProductImageZoom !== 'function')
 				this.zoom = document.createElement('div');
 				this.zoom.id = 'zoom';
 				this.zoom.innerHTML = `
-					<img class="lides-zoom" />					
+					<img style="margin:0 auto 0 auto; right:0px; " />					
 					<span class="zoom__exit">${KROWN.settings.symbols.zoom_out}</span>
 					<span class="zoom__loader">${KROWN.settings.symbols.zoom_loader}</span>
 					<div class="zoom__overlay"></div>
@@ -66,7 +66,7 @@ if (typeof ProductImageZoom !== 'function')
 				//this.image.style.width = (window.innerWidth * rf) + 'px';
 				//this.image.style.height = (window.innerWidth * rf / this.image.dataset.ratio) + 'px';
 
-				this.image.style.width = "auto";
+				//this.image.style.width = "auto";
 				this.image.style.height = "100%";
 
 			} else
@@ -75,7 +75,7 @@ if (typeof ProductImageZoom !== 'function')
 				//this.image.style.height = (window.innerHeight * rf) + 'px';
 				//this.image.style.width = (window.innerHeight * rf * this.image.dataset.ratio) + 'px';
 
-				this.image.style.width = "auto";
+				//this.image.style.width = "auto";
 				this.image.style.height = "100%";
 
 				if (this.image.offsetWidth < window.innerWidth)
@@ -83,7 +83,7 @@ if (typeof ProductImageZoom !== 'function')
 					//this.image.style.width = (window.innerWidth * rf) + 'px';
 					//this.image.style.height = (window.innerWidth * rf / this.image.dataset.ratio) + 'px';
 
-					this.image.style.width = "auto";
+					//this.image.style.width = "auto";
 					this.image.style.height = "100%";
 
 				}
