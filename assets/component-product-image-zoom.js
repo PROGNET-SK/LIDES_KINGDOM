@@ -53,6 +53,8 @@ if (typeof ProductImageZoom !== 'function')
 			// style add position
 			//this.image.style.left = x + 'px';
 			//this.image.style.top = y + 'px';
+
+			this.image.style.margin = "0,auto";
 		}
 
 		onResizeHandler()
