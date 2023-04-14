@@ -64,9 +64,9 @@
       "settings": {
         "gallery_style": "slider",
         "gallery_slider_style": true,
-        "gallery_pagination": "thumbnails",
-        "gallery_gutter": true,
-        "enable_zoom": true,
+        "gallery_pagination": "dots",
+        "gallery_gutter": false,
+        "enable_zoom": false,
         "enable_video_looping": false
       }
     },
