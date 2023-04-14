@@ -64,28 +64,6 @@
   {% endunless %}
   data-crop="{{ no_crop }}"
 >
-  <!--
-    <img
-     src="{{ image | image_url: width: 480 }}" alt="{{ image_alt | strip_html | escape }}"
-     {{ srcset }}
-     class="img"
-     width="{{ image.width }}"
-     height="{{ image.height }}"
-    {% if image_alignment %} style="object-position: {{ image.presentation.focal_point }}" {% endif %}
-     {{ sizes }}
-     {% unless preload %} loading="lazy" {% endunless %}
-    onload="this.classList.add('lazyloaded')"
-    />
-  -->
-
-  {%- if settings.show_preloader -%}
-    <span class="lazy-preloader"></span>
-  {%- endif -%}
-
-  {%- unless caption == blank -%}
-    <figcaption class="lazy-caption body-text-sm">{{ caption | escape }}</figcaption>
-  {%- endunless -%}
-
   {%- if zoom -%}
     <product-image-zoom
       class="product__image-zoom"
@@ -93,7 +71,6 @@
       aria-hidden="true"
       tabindex="-1"
     >
-      {%- # render 'theme-symbols', icon: 'zoom-in' -%}
       <img
         src="{{ image | image_url: width: 480 }}"
         alt="{{ image_alt | strip_html | escape }}"
@@ -112,6 +89,22 @@
       >
     </product-image-zoom>
   {%- endif -%}
+
+  {%- if settings.show_preloader -%}
+    <span class="lazy-preloader"></span>
+  {%- endif -%}
+
+  {%- unless caption == blank -%}
+    <figcaption class="lazy-caption body-text-sm">{{ caption | escape }}</figcaption>
+  {%- endunless -%}
+
+  <!--
+    {%- if zoom -%}
+    	<product-image-zoom class="product__image-zoom" data-image="{{ image | image_url }}" aria-hidden="true" tabindex="-1">
+    		{%- #render 'theme-symbols', icon: 'zoom-in' -%}
+    	</product-image-zoom>
+    {%- endif -%}
+  -->
 </figure>
 
 {%- assign ratio = blank -%}
