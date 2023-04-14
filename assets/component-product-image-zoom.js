@@ -11,7 +11,7 @@ if (typeof ProductImageZoom !== 'function')
 			if (!document.getElementById('zoom'))
 			{
 				this.zoom = document.createElement('div');
-				this.zoom.id = 'zoom-ER';
+				this.zoom.id = 'zoom';
 				this.zoom.innerHTML = `
 					<img test />
 					<span class="zoom__exit">${KROWN.settings.symbols.zoom_out}</span>
@@ -22,7 +22,7 @@ if (typeof ProductImageZoom !== 'function')
 				this.zoom.querySelector('.zoom__exit').addEventListener('click', this._productZoomUnmount.bind(this));
 			} else
 			{
-				this.zoom = document.getElementById('zoom-ER');
+				this.zoom = document.getElementById('zoom');
 			}
 
 			this.onMouseMoveHandlerBinded = this.onMouseMoveHandler.bind(this);
@@ -50,8 +50,9 @@ if (typeof ProductImageZoom !== 'function')
 			window.clientY = e.clientY;
 			const x = e.clientX * (window.innerWidth - this.image.offsetWidth) / window.innerWidth;
 			const y = e.clientY * (window.innerHeight - this.image.offsetHeight) / window.innerHeight;
-			this.image.style.left = x + 'px';
-			this.image.style.top = y + 'px';
+			// style add position
+			//this.image.style.left = x + 'px';
+			//this.image.style.top = y + 'px';
 		}
 
 		onResizeHandler()
@@ -61,8 +62,12 @@ if (typeof ProductImageZoom !== 'function')
 
 			if (this.image.classList.contains('portrait'))
 			{
-				this.image.style.width = (window.innerWidth * rf) + 'px';
-				this.image.style.height = (window.innerWidth * rf / this.image.dataset.ratio) + 'px';
+				//this.image.style.width = (window.innerWidth * rf) + 'px';
+				//this.image.style.height = (window.innerWidth * rf / this.image.dataset.ratio) + 'px';
+
+				this.image.style.width = 100 %;
+				this.image.style.height = auto;
+
 			} else
 			{
 
