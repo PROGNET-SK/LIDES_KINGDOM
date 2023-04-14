@@ -49,6 +49,12 @@
           "type": "share",
           "settings": {
           }
+        },
+        "2b7c3066-1b5c-4c80-be7b-92969d9422bb": {
+          "type": "shopify:\/\/apps\/enorm-image-gallery-video\/blocks\/embed-code\/01219f89-c8d0-40c2-a0ff-1987199e84a2",
+          "settings": {
+            "embed-code": ""
+          }
         }
       },
       "block_order": [
@@ -59,7 +65,8 @@
         "buy_buttons",
         "pickup_avaiability",
         "description",
-        "share"
+        "share",
+        "2b7c3066-1b5c-4c80-be7b-92969d9422bb"
       ],
       "settings": {
         "gallery_style": "slider",
