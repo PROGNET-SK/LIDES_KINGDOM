@@ -24,7 +24,7 @@
           "type": "variant_picker",
           "settings": {
             "show_variant_labels": true,
-            "show_quantities": "no"
+            "show_quantities": "below"
           }
         },
         "buy_buttons": {
