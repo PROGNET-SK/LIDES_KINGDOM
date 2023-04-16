@@ -237,14 +237,13 @@
                 <div class="product-variant {% if block.settings.show_variant_labels %} product-variant--show-label {% endif %}" data-js-product-variant>
                   <label {% unless block.settings.show_variant_labels %} class="hidden" {% endunless %} for="product-{{ option.name | escape | downcase | strip }}">{{ option.name }}</label>
                   <select class="product-variant-container" id="product-{{ option.name | escape | downcase | strip }}" data-js-product-variant-container="select">
-                    {%- for value in option.values -%}
-                      <optgroup label="">
+                    <optgroup label="">
+                    {%- for value in option.values -%}                     
                       <option class="product-variant-value" style="margin: 15px 25px 10px; line-height:25px;" value="{{ value | escape }}" {% if option.selected_value == value %}selected{% endif %}>
                         {{ value | escape }}
-                      </option>
-                    </optgroup>
-
+                      </option>                
                     {%- endfor -%}
+                  </optgroup>
                   </select>
                 </div>
               {%- endfor -%}
