@@ -2229,6 +2229,7 @@ html[dir=ltr] .product-quick-view__close {
 }
 
 
+/*Lides big otion */
 
 .product-variant-value {
 
@@ -2237,5 +2238,4 @@ html[dir=ltr] .product-quick-view__close {
   white-space: nowrap;
   min-height: 3.2em;
   padding: 15px 15px 15px 15px;
-
 }
