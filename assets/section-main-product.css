@@ -2227,3 +2227,15 @@ html[dir=ltr] .product-quick-view__close {
     max-height: 100vh;
   }
 }
+
+
+
+.product-variant-value {
+
+  font-weight: normal;
+  display: block;
+  white-space: nowrap;
+  min-height: 3.2em;
+  padding: 0px 2px 1px;
+
+}
