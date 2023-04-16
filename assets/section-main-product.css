@@ -2231,9 +2231,6 @@ html[dir=ltr] .product-quick-view__close {
 
 /*Lides big otion */
 
-select {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  padding: 15px;
+option {
+  font-size: 120%;
 }
