@@ -2239,3 +2239,11 @@ html[dir=ltr] .product-quick-view__close {
   min-height: 3.2em;
   padding: 105px 155px 150px 151px !important;
 }*/
+
+option {
+  font-weight: normal;
+  display: block;
+  white-space: nowrap;
+  min-height: 1.2em;
+  padding: 0px 25px 1px;
+}
