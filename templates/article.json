@@ -3,18 +3,18 @@
     "main": {
       "type": "main-article",
       "blocks": {
-        "featured_image": {
-          "type": "featured_image",
-          "settings": {
-            "image_height": "adapt"
-          }
-        },
         "title": {
           "type": "title",
           "settings": {
             "blog_show_date": true,
             "blog_show_author": true,
             "blog_show_comments": false
+          }
+        },
+        "featured_image": {
+          "type": "featured_image",
+          "settings": {
+            "image_height": "adapt"
           }
         },
         "content": {
@@ -34,8 +34,8 @@
         }
       },
       "block_order": [
-        "featured_image",
         "title",
+        "featured_image",
         "content",
         "social_sharing",
         "blog_navigation"
