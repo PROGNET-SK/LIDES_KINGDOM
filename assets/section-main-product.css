@@ -2232,11 +2232,13 @@ html[dir=ltr] .product-quick-view__close {
 /*Lides big otion */
 
 .product-variant-value {
+  background-color: #155724;
+  color: #721c24;
   font-weight: normal;
   display: block;
   white-space: nowrap;
   min-height: 3.2em !important;
-  padding: 105px 155px 150px 151px !important;
+  padding: 15px 15px 20px;
 }
 
 option {
