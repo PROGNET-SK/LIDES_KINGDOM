@@ -91,7 +91,7 @@
     "cart_notes_enable": true,
     "cart_additional_buttons": false,
     "show_breadcrumb": true,
-    "show_preloader": false,
+    "show_preloader": true,
     "show_gotop": true,
     "sections": {
       "announcement-bar": {
