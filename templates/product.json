@@ -46,6 +46,22 @@
           "type": "lides-katalog",
           "settings": {}
         },
+        "lides-tech": {
+          "type": "lides-tech",
+          "settings": {}
+        },
+        "lides-navod": {
+          "type": "lides-navod",
+          "settings": {}
+        },
+        "lides-cert": {
+          "type": "lides-cert",
+          "settings": {}
+        },
+        "lides-3d": {
+          "type": "lides-3d",
+          "settings": {}
+        },
         "share": {
           "type": "share",
           "settings": {}
@@ -60,6 +76,10 @@
         "pickup_avaiability",
         "description",
         "lides-katalog",
+        "lides-tech",
+        "lides-navod",
+        "lides-cert",
+        "lides-3d",
         "share"
       ],
       "custom_css": [],
