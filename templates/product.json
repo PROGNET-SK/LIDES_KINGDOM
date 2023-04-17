@@ -42,8 +42,8 @@
             "product_description_truncated": "truncated--disabled"
           }
         },
-        "lides-download": {
-          "type": "lides-download",
+        "custom-block": {
+          "type": "custom-block",
           "settings": {}
         },
         "share": {
@@ -59,7 +59,7 @@
         "buy_buttons",
         "pickup_avaiability",
         "description",
-        "lides-download",
+        "custom-block",
         "share"
       ],
       "custom_css": [],
