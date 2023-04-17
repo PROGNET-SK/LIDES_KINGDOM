@@ -12,13 +12,11 @@
         },
         "title": {
           "type": "title",
-          "settings": {
-          }
+          "settings": {}
         },
         "price": {
           "type": "price",
-          "settings": {
-          }
+          "settings": {}
         },
         "variant_picker": {
           "type": "variant_picker",
@@ -36,8 +34,7 @@
         },
         "pickup_avaiability": {
           "type": "pickup_avaiability",
-          "settings": {
-          }
+          "settings": {}
         },
         "description": {
           "type": "description",
@@ -53,24 +50,31 @@
         },
         "lides-tech": {
           "type": "lides-tech",
-          "settings": {}
+          "settings": {
+            "lides-tech": "nazov suboru"
+          }
         },
         "lides-navod": {
           "type": "lides-navod",
-          "settings": {}
+          "settings": {
+            "lides-navod": "nazov suboru"
+          }
         },
         "lides-cert": {
           "type": "lides-cert",
-          "settings": {}
+          "settings": {
+            "lides-cert": "nazov suboru"
+          }
         },
         "lides-3d": {
           "type": "lides-3d",
-          "settings": {}
+          "settings": {
+            "lides-3d": "nazov suboru"
+          }
         },
         "share": {
           "type": "share",
-          "settings": {
-          }
+          "settings": {}
         }
       },
       "block_order": [
@@ -88,9 +92,7 @@
         "lides-3d",
         "share"
       ],
-      "custom_css": [
-
-      ],
+      "custom_css": [],
       "settings": {
         "gallery_style": "slider",
         "gallery_slider_style": true,
