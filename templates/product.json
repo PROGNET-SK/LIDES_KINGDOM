@@ -73,16 +73,16 @@
             "text_style": "body"
           }
         },
-        "share": {
-          "type": "share",
-          "settings": {
-          }
-        },
         "5a9f257b-cab1-4f00-8110-33af0b2b2219": {
           "type": "text",
           "settings": {
             "text": "<p><a href=\"#\" target=\"_blank\" title=\"#\"><strong>3D model stiahnuť ZIP<\/strong><\/a><\/p>",
             "text_style": "body"
+          }
+        },
+        "share": {
+          "type": "share",
+          "settings": {
           }
         }
       },
@@ -98,8 +98,8 @@
         "18c2ee59-84a2-4b59-af66-edfbd2da28e7",
         "db64ef87-5782-4363-a714-fa7641386b09",
         "cfe167ef-b7f2-40ac-887f-0208fa90a079",
-        "share",
-        "5a9f257b-cab1-4f00-8110-33af0b2b2219"
+        "5a9f257b-cab1-4f00-8110-33af0b2b2219",
+        "share"
       ],
       "custom_css": [
 
