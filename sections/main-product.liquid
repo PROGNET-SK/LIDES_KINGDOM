@@ -136,10 +136,10 @@
 
     {%- for block in section.blocks -%}
       {%- case block.type -%}
-        {%- when 'custom-block' -%}
-          {% if block.settings['custom-block'] %}
+        {%- when 'lides-download' -%}
+          {% if block.settings['lides-download'] %}
             <p>
-              <a href="/colection/{{ block.settings.custom-block }}" title=""> View TEST Customblock</a>
+              <a href="/colection/{{ block.settings.lides-download }}" title=""> LIDES Download</a>
             </p>
           {% endif %}
 
@@ -771,12 +771,12 @@
       ]
     },
     {
-      "type": "custom-block",
+      "type": "lides-download",
       "name": "Lides Download",
       "settings": [
         {
           "type": "text",
-          "id": "custom-block",
+          "id": "lides-download",
           "label": "Write custom block"
         }
       ]

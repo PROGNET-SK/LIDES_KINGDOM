@@ -43,7 +43,7 @@
           }
         },
         "lides-download": {
-          "type": "custom-block",
+          "type": "lides-download",
           "settings": {}
         },
         "share": {
