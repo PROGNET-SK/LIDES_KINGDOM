@@ -51,15 +51,21 @@
             "lides_katalog": "test"
           }
         },
-        "share": {
-          "type": "share",
-          "settings": {
-          }
-        },
         "52d95ccc-09fc-481a-85a7-65037feddf94": {
           "type": "custom_liquid",
           "settings": {
-            "custom_liquid": ""
+            "custom_liquid": "tu je custom liquid"
+          }
+        },
+        "e491d58b-f76a-4bc3-ae29-c92a317c1f8c": {
+          "type": "lides_katalog",
+          "settings": {
+            "lides_katalog": ""
+          }
+        },
+        "share": {
+          "type": "share",
+          "settings": {
           }
         }
       },
@@ -72,8 +78,9 @@
         "pickup_avaiability",
         "description",
         "lides_katalog",
-        "share",
-        "52d95ccc-09fc-481a-85a7-65037feddf94"
+        "52d95ccc-09fc-481a-85a7-65037feddf94",
+        "e491d58b-f76a-4bc3-ae29-c92a317c1f8c",
+        "share"
       ],
       "custom_css": [
 
