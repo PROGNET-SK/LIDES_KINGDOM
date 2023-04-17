@@ -42,34 +42,34 @@
             "product_description_truncated": "truncated--disabled"
           }
         },
-        "lides-katalog": {
-          "type": "lides-katalog",
+        "lides_katalog": {
+          "type": "lides_katalog",
           "settings": {
-            "lides-katalog": "nazov suboru"
+            "lides_katalog": "nazov suboru"
           }
         },
-        "lides-tech": {
-          "type": "lides-tech",
+        "lides_tech": {
+          "type": "lides_tech",
           "settings": {
-            "lides-tech": "nazov suboru"
+            "lides_tech": "nazov suboru"
           }
         },
-        "lides-navod": {
-          "type": "lides-navod",
+        "lides_navod": {
+          "type": "lides_navod",
           "settings": {
-            "lides-navod": "nazov suboru"
+            "lides_navod": "nazov suboru"
           }
         },
-        "lides-cert": {
-          "type": "lides-cert",
+        "lides_cert": {
+          "type": "lides_cert",
           "settings": {
-            "lides-cert": "nazov suboru"
+            "lides_cert": "nazov suboru"
           }
         },
-        "lides-3d": {
-          "type": "lides-3d",
+        "lides_3d": {
+          "type": "lides_3d",
           "settings": {
-            "lides-3d": "nazov suboru"
+            "lides_3d": "nazov suboru"
           }
         },
         "share": {
@@ -85,11 +85,11 @@
         "buy_buttons",
         "pickup_avaiability",
         "description",
-        "lides-katalog",
-        "lides-tech",
-        "lides-navod",
-        "lides-cert",
-        "lides-3d",
+        "lides_katalog",
+        "lides_tech",
+        "lides_navod",
+        "lides_cert",
+        "lides_3d",
         "share"
       ],
       "custom_css": [],
