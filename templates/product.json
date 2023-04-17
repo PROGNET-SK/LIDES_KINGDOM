@@ -48,7 +48,7 @@
         "c26188f8-e45e-4ee7-ab39-6904a8aa8c55": {
           "type": "text",
           "settings": {
-            "text": "<p><a href=\"#\" target=\"_blank\" title=\"#\"><strong>Produktový list<\/strong><\/a><\/p>",
+            "text": "<p><a href=\"#\" target=\"_blank\" title=\"Produktový list\"><strong>Produktový list<\/strong><\/a><\/p>",
             "text_style": "uppercase"
           }
         },
