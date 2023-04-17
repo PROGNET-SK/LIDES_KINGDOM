@@ -12,11 +12,13 @@
         },
         "title": {
           "type": "title",
-          "settings": {}
+          "settings": {
+          }
         },
         "price": {
           "type": "price",
-          "settings": {}
+          "settings": {
+          }
         },
         "variant_picker": {
           "type": "variant_picker",
@@ -34,7 +36,8 @@
         },
         "pickup_avaiability": {
           "type": "pickup_avaiability",
-          "settings": {}
+          "settings": {
+          }
         },
         "description": {
           "type": "description",
@@ -42,47 +45,10 @@
             "product_description_truncated": "truncated--disabled"
           }
         },
-        "custom-block": {
-          "type": "custom-block"
-        },
-        "c26188f8-e45e-4ee7-ab39-6904a8aa8c55": {
-          "type": "text",
-          "settings": {
-            "text": "<p><a href=\"#\" target=\"_blank\" title=\"#\"><strong>Katalógový list stiahnuť PDF<\/strong><\/a><\/p>",
-            "text_style": "uppercase"
-          }
-        },
-        "18c2ee59-84a2-4b59-af66-edfbd2da28e7": {
-          "type": "text",
-          "settings": {
-            "text": "<p><a href=\"#\" target=\"_blank\" title=\"#\"><strong>Technický list stiahnuť PDF<\/strong><\/a><\/p>",
-            "text_style": "uppercase"
-          }
-        },
-        "db64ef87-5782-4363-a714-fa7641386b09": {
-          "type": "text",
-          "settings": {
-            "text": "<p><a href=\"#\" target=\"_blank\" title=\"#\"><strong>Návod na použitie stiahnuť PDF<\/strong><\/a><\/p>",
-            "text_style": "uppercase"
-          }
-        },
-        "cfe167ef-b7f2-40ac-887f-0208fa90a079": {
-          "type": "text",
-          "settings": {
-            "text": "<p><a href=\"#\" target=\"_blank\" title=\"#\"><strong>Certifikáty stiahnuť PDF<\/strong><\/a><\/p>",
-            "text_style": "body"
-          }
-        },
-        "5a9f257b-cab1-4f00-8110-33af0b2b2219": {
-          "type": "text",
-          "settings": {
-            "text": "<p><a href=\"#\" target=\"_blank\" title=\"#\"><strong>3D model stiahnuť ZIP<\/strong><\/a><\/p>",
-            "text_style": "body"
-          }
-        },
         "share": {
           "type": "share",
-          "settings": {}
+          "settings": {
+          }
         }
       },
       "block_order": [
@@ -93,15 +59,11 @@
         "buy_buttons",
         "pickup_avaiability",
         "description",
-        "custom-block",
-        "c26188f8-e45e-4ee7-ab39-6904a8aa8c55",
-        "18c2ee59-84a2-4b59-af66-edfbd2da28e7",
-        "db64ef87-5782-4363-a714-fa7641386b09",
-        "cfe167ef-b7f2-40ac-887f-0208fa90a079",
-        "5a9f257b-cab1-4f00-8110-33af0b2b2219",
         "share"
       ],
-      "custom_css": [],
+      "custom_css": [
+
+      ],
       "settings": {
         "gallery_style": "slider",
         "gallery_slider_style": true,
