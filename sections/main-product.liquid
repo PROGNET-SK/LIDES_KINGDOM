@@ -138,7 +138,9 @@
       {%- case block.type -%}
         {%- when 'custom-block' -%}
           {% if block.settings['custom-block'] %}
-            <p>tu je to ....</p>
+            <p>
+              <a href="/colection/{{ block.settings.custom-block }}" title=""> View TEST Customblock</a>
+            </p>
           {% endif %}
 
         {%- when '@app' -%}
@@ -765,6 +767,17 @@
             }
           ],
           "default": "truncated truncated--small"
+        }
+      ]
+    },
+    {
+      "type": "custom-block",
+      "name": "custom-block",
+      "settings": [
+        {
+          "type": "text",
+          "id": "custom-block",
+          "label": "Write custom block"
         }
       ]
     },
