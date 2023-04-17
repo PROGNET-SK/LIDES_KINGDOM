@@ -45,6 +45,12 @@
             "product_description_truncated": "truncated--disabled"
           }
         },
+        "ca75ddf8-1685-4f88-aaa8-73c08be92139": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "HER IS IT"
+          }
+        },
         "c26188f8-e45e-4ee7-ab39-6904a8aa8c55": {
           "type": "text",
           "settings": {
@@ -84,12 +90,6 @@
           "type": "share",
           "settings": {
           }
-        },
-        "ca75ddf8-1685-4f88-aaa8-73c08be92139": {
-          "type": "custom_liquid",
-          "settings": {
-            "custom_liquid": "HER IS IT"
-          }
         }
       },
       "block_order": [
@@ -100,13 +100,13 @@
         "buy_buttons",
         "pickup_avaiability",
         "description",
+        "ca75ddf8-1685-4f88-aaa8-73c08be92139",
         "c26188f8-e45e-4ee7-ab39-6904a8aa8c55",
         "18c2ee59-84a2-4b59-af66-edfbd2da28e7",
         "db64ef87-5782-4363-a714-fa7641386b09",
         "cfe167ef-b7f2-40ac-887f-0208fa90a079",
         "5a9f257b-cab1-4f00-8110-33af0b2b2219",
-        "share",
-        "ca75ddf8-1685-4f88-aaa8-73c08be92139"
+        "share"
       ],
       "custom_css": [
 
