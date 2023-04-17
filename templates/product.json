@@ -70,6 +70,14 @@
           "type": "share",
           "settings": {
           }
+        },
+        "b921d78d-b399-43ae-8b73-39ba59247a5e": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Collapsible tab",
+            "content": "",
+            "page": ""
+          }
         }
       },
       "block_order": [
@@ -83,7 +91,8 @@
         "c26188f8-e45e-4ee7-ab39-6904a8aa8c55",
         "18c2ee59-84a2-4b59-af66-edfbd2da28e7",
         "db64ef87-5782-4363-a714-fa7641386b09",
-        "share"
+        "share",
+        "b921d78d-b399-43ae-8b73-39ba59247a5e"
       ],
       "custom_css": [
 
