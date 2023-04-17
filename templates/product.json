@@ -12,13 +12,11 @@
         },
         "title": {
           "type": "title",
-          "settings": {
-          }
+          "settings": {}
         },
         "price": {
           "type": "price",
-          "settings": {
-          }
+          "settings": {}
         },
         "variant_picker": {
           "type": "variant_picker",
@@ -36,8 +34,7 @@
         },
         "pickup_avaiability": {
           "type": "pickup_avaiability",
-          "settings": {
-          }
+          "settings": {}
         },
         "description": {
           "type": "description",
@@ -88,7 +85,12 @@
         },
         "share": {
           "type": "share",
+          "settings": {}
+        },
+        "fbabbca7-77e6-493b-88d7-148dbfa67f60": {
+          "type": "custom_liquid",
           "settings": {
+            "custom_liquid": "<table>\n<tr>\n<td>KATALÓGOVÝ LIST STIAHNUŤ PDF<\/td>\n<\/tr>\n<\/table>"
           }
         }
       },
@@ -106,11 +108,10 @@
         "db64ef87-5782-4363-a714-fa7641386b09",
         "cfe167ef-b7f2-40ac-887f-0208fa90a079",
         "5a9f257b-cab1-4f00-8110-33af0b2b2219",
-        "share"
+        "share",
+        "fbabbca7-77e6-493b-88d7-148dbfa67f60"
       ],
-      "custom_css": [
-
-      ],
+      "custom_css": [],
       "settings": {
         "gallery_style": "slider",
         "gallery_slider_style": true,
