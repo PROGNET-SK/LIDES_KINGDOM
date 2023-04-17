@@ -49,6 +49,12 @@
           "type": "share",
           "settings": {
           }
+        },
+        "fb230d25-fc7e-40d7-9c47-a829cd641bf0": {
+          "type": "lides_download",
+          "settings": {
+            "lides_download": ""
+          }
         }
       },
       "block_order": [
@@ -59,7 +65,8 @@
         "buy_buttons",
         "pickup_avaiability",
         "description",
-        "share"
+        "share",
+        "fb230d25-fc7e-40d7-9c47-a829cd641bf0"
       ],
       "custom_css": [
 
