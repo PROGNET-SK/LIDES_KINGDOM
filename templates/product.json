@@ -43,10 +43,8 @@
           }
         },
         "lides-katalog": {
-          "type": "custom-block",
-          "settings": {
-            "lides-katalog": ""
-          }
+          "type": "lides-katalog",
+          "settings": {}
         },
         "share": {
           "type": "share",
