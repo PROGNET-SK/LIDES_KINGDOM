@@ -45,15 +45,15 @@
             "product_description_truncated": "truncated--disabled"
           }
         },
-        "share": {
-          "type": "share",
-          "settings": {
-          }
-        },
         "fb230d25-fc7e-40d7-9c47-a829cd641bf0": {
           "type": "lides_download",
           "settings": {
             "lides_download": ""
+          }
+        },
+        "share": {
+          "type": "share",
+          "settings": {
           }
         }
       },
@@ -65,8 +65,8 @@
         "buy_buttons",
         "pickup_avaiability",
         "description",
-        "share",
-        "fb230d25-fc7e-40d7-9c47-a829cd641bf0"
+        "fb230d25-fc7e-40d7-9c47-a829cd641bf0",
+        "share"
       ],
       "custom_css": [
 
