@@ -55,6 +55,12 @@
           "type": "share",
           "settings": {
           }
+        },
+        "52d95ccc-09fc-481a-85a7-65037feddf94": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": ""
+          }
         }
       },
       "block_order": [
@@ -66,7 +72,8 @@
         "pickup_avaiability",
         "description",
         "lides_katalog",
-        "share"
+        "share",
+        "52d95ccc-09fc-481a-85a7-65037feddf94"
       ],
       "custom_css": [
 
