@@ -143,46 +143,50 @@
               <a style="float:right;" href="https://{{ block.settings.lides-katalog }}" title="Katalógový list">
                 DOWNLOAD ZIP
               </a>
+              <hr>
             </div>
-            <hr>
           {% endif %}
 
+        {%- when 'lides-tech' -%}
           {% if block.settings['lides-tech'] %}
             <div style="width:100%;">
               <p style="float:left;">Technický list</p>
               <a style="float:right;" href="https://{{ block.settings.lides-tech }}" title="Technický list">
                 DOWNLOAD ZIP
               </a>
+              <hr>
             </div>
-            <hr>
           {% endif %}
 
+        {%- when 'lides-navod' -%}
           {% if block.settings['lides-navod'] %}
             <div style="width:100%;">
               <p style="float:left;">Návod na použitie</p>
               <a style="float:right;" href="https://{{ block.settings.lides-navod }}" title="Návod na použitie">
                 DOWNLOAD ZIP
               </a>
+              <hr>
             </div>
-            <hr>
           {% endif %}
 
+        {%- when 'lides-cert' -%}
           {% if block.settings['lides-cert'] %}
             <div style="width:100%;">
               <p style="float:left;">Certifikáty</p>
               <a style="float:right;" href="https://{{ block.settings.lides-cert }}" title="Certifikáty">
                 DOWNLOAD ZIP
               </a>
+              <hr>
             </div>
-            <hr>
           {% endif %}
 
+        {%- when 'lides-3d' -%}
           {% if block.settings['lides-3d'] %}
             <div style="width:100%;">
               <p style="float:left;">3D model</p>
               <a style="float:right;" href="https://{{ block.settings.lides-3d }}" title="3D model"> DOWNLOAD ZIP </a>
+              <hr>
             </div>
-            <hr>
           {% endif %}
 
         {%- when '@app' -%}
