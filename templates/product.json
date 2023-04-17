@@ -45,12 +45,6 @@
             "product_description_truncated": "truncated--disabled"
           }
         },
-        "lides_katalog": {
-          "type": "lides_katalog",
-          "settings": {
-            "lides_katalog": "test"
-          }
-        },
         "share": {
           "type": "share",
           "settings": {
@@ -65,7 +59,6 @@
         "buy_buttons",
         "pickup_avaiability",
         "description",
-        "lides_katalog",
         "share"
       ],
       "custom_css": [
