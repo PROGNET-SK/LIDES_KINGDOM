@@ -142,7 +142,11 @@
               <div style="width:100%; float:left; padding-bottom:15px;">
                 <div style="width:50%; float:left;"><p>Katalógový list</p></div>
                 <div style="width:50%; float:left; text-align:right;">
-                  <a href="https://{{ product.url }}" title="Katalógový list / {{media.alt}}">DOWNLOAD ZIP</a>
+                  <a
+                    href="https://{{ product.url }}"
+                    title="Katalógový list / {{ product.metafields.my_fields.pdf_file.value.url }}"
+                    >DOWNLOAD ZIP</a
+                  >
                 </div>
               </div>
               <hr>
