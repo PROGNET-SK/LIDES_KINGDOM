@@ -55,14 +55,14 @@
         "18c2ee59-84a2-4b59-af66-edfbd2da28e7": {
           "type": "text",
           "settings": {
-            "text": "<p><strong>Produktové video<\/strong><\/p>",
+            "text": "<p><a href=\"#\" target=\"_blank\" title=\"#\"><strong>Produktové video<\/strong><\/a><\/p>",
             "text_style": "uppercase"
           }
         },
         "db64ef87-5782-4363-a714-fa7641386b09": {
           "type": "text",
           "settings": {
-            "text": "<p><a href=\"#\" title=\"#\"><strong>Návod na použitie<\/strong><\/a><\/p>",
+            "text": "<p><a href=\"#\" target=\"_blank\" title=\"#\"><strong>Návod na použitie<\/strong><\/a><\/p>",
             "text_style": "uppercase"
           }
         },
