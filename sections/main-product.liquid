@@ -147,48 +147,6 @@
             </div>
           {% endif %}
 
-        {%- when 'lides_tech' -%}
-          {% if block.settings.lides_tech %}
-            <div style="width:100%;">
-              <p style="float:left;">Technický list</p>
-              <a style="float:right;" href="https://{{ block.settings.lides_tech }}" title="Technický list">
-                DOWNLOAD ZIP
-              </a>
-              <hr>
-            </div>
-          {% endif %}
-
-        {%- when 'lides_navod' -%}
-          {% if block.settings.lides_navod %}
-            <div style="width:100%;">
-              <p style="float:left;">Návod na použitie</p>
-              <a style="float:right;" href="https://{{ block.settings.lides_navod }}" title="Návod na použitie">
-                DOWNLOAD ZIP
-              </a>
-              <hr>
-            </div>
-          {% endif %}
-
-        {%- when 'lides_cert' -%}
-          {% if block.settings.lides_cert %}
-            <div style="width:100%;">
-              <p style="float:left;">Certifikáty</p>
-              <a style="float:right;" href="https://{{ block.settings.lides_cert }}" title="Certifikáty">
-                DOWNLOAD ZIP
-              </a>
-              <hr>
-            </div>
-          {% endif %}
-
-        {%- when 'lides_3d' -%}
-          {% if block.settings.lides_3d %}
-            <div style="width:100%;">
-              <p style="float:left;">3D model</p>
-              <a style="float:right;" href="https://{{ block.settings.lides_3d }}" title="3D model"> DOWNLOAD ZIP </a>
-              <hr>
-            </div>
-          {% endif %}
-
         {%- when '@app' -%}
           {%- render block -%}
 
@@ -827,50 +785,7 @@
         }
       ]
     },
-    {
-      "type": "lides_tech",
-      "name": "Technický list",
-      "settings": [
-        {
-          "type": "text",
-          "id": "lides_tech",
-          "label": "Názov súboru"
-        }
-      ]
-    },
-    {
-      "type": "lides_navod",
-      "name": "Návod na použitie",
-      "settings": [
-        {
-          "type": "text",
-          "id": "lides_navod",
-          "label": "Názov súboru"
-        }
-      ]
-    },
-    {
-      "type": "lides_cert",
-      "name": "Certifikát",
-      "settings": [
-        {
-          "type": "text",
-          "id": "lides_cert",
-          "label": "Názov súboru"
-        }
-      ]
-    },
-    {
-      "type": "lides_3d",
-      "name": "3D model",
-      "settings": [
-        {
-          "type": "text",
-          "id": "lides_3d",
-          "label": "Názov súboru"
-        }
-      ]
-    },
+
     {
       "type": "share",
       "name": "t:sections.main-product.blocks.share.name",

@@ -46,22 +46,6 @@
           "type": "lides_katalog",
           "settings": {}
         },
-        "lides_tech": {
-          "type": "lides_tech",
-          "settings": {}
-        },
-        "lides_navod": {
-          "type": "lides_navod",
-          "settings": {}
-        },
-        "lides_cert": {
-          "type": "lides_cert",
-          "settings": {}
-        },
-        "lides_3d": {
-          "type": "lides_3d",
-          "settings": {}
-        },
         "share": {
           "type": "share",
           "settings": {}
@@ -76,10 +60,6 @@
         "pickup_avaiability",
         "description",
         "lides_katalog",
-        "lides_tech",
-        "lides_navod",
-        "lides_cert",
-        "lides_3d",
         "share"
       ],
       "custom_css": [],
