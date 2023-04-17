@@ -136,11 +136,11 @@
 
     {%- for block in section.blocks -%}
       {%- case block.type -%}
-        {%- when 'lides_katalog' -%}
-          {% if block.settings.lides_katalog %}
+        {%- when 'lides_download' -%}
+          {% if block.settings.lides_download %}
             <div style="width:100%;">
-              <p style="float:left;">Katalógový list</p>
-              <a style="float:right;" href="https://{{ block.settings.lides_katalog }}" title="Katalógový list">
+              <p style="float:left;">Lides download Files</p>
+              <a style="float:right;" href="https://{{ block.settings.lides_download }}" title="Katalógový list">
                 DOWNLOAD ZIP
               </a>
               <hr>
@@ -775,12 +775,12 @@
       ]
     },
     {
-      "type": "lides_katalog",
+      "type": "lides_download",
       "name": "Katalógový list",
       "settings": [
         {
           "type": "text",
-          "id": "lides_katalog",
+          "id": "lides_download",
           "label": "Názov súboru"
         }
       ]
