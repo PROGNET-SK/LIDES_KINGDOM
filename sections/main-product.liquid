@@ -120,6 +120,12 @@
 
     {%- for block in section.blocks -%}
       {%- case block.type -%}
+        {%- when 'custom-block' -%}
+          {% if block.settings.custom-block  %}
+            <p> tu je to ....</p>
+
+          {% endif %}
+
 
         {%- when '@app' -%}
           {%- render block -%}
