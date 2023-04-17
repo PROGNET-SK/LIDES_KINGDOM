@@ -84,6 +84,12 @@
           "type": "share",
           "settings": {
           }
+        },
+        "ca75ddf8-1685-4f88-aaa8-73c08be92139": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "HER IS IT"
+          }
         }
       },
       "block_order": [
@@ -99,7 +105,8 @@
         "db64ef87-5782-4363-a714-fa7641386b09",
         "cfe167ef-b7f2-40ac-887f-0208fa90a079",
         "5a9f257b-cab1-4f00-8110-33af0b2b2219",
-        "share"
+        "share",
+        "ca75ddf8-1685-4f88-aaa8-73c08be92139"
       ],
       "custom_css": [
 
