@@ -90,8 +90,8 @@
     "cart_action": "no-overlay",
     "cart_notes_enable": true,
     "cart_additional_buttons": false,
-    "show_breadcrumb": true,
-    "show_preloader": true,
+    "show_breadcrumb": false,
+    "show_preloader": false,
     "show_gotop": true,
     "sections": {
       "announcement-bar": {
