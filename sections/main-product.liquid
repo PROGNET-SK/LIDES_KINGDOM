@@ -144,7 +144,7 @@
                 <div style="width:50%; float:left; text-align:right;">
                   <a
                     href="https://{{ product.url }}"
-                    title="Katalógový list / {{ product.metafields.my_fields.pdf_file.value.url }}"
+                    title="Katalógový list / {{ routes.cart_url }}"
                     >DOWNLOAD ZIP</a
                   >
                 </div>
@@ -815,7 +815,8 @@
         {
           "type": "text",
           "id": "lides_download",
-          "label": "Názov súboru"
+          "label": "Názov súboru",
+          "value": ""
         }
       ]
     },
