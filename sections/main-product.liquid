@@ -138,9 +138,7 @@
       {%- case block.type -%}
         {%- when 'custom-block' -%}
           {% if block.settings['custom-block'] %}
-            <p>
-              <a href="/colection/{{ block.settings.custom-block }}" title=""> LIDES Download</a>
-            </p>
+            <p><a href="/colection/{{ block.settings.custom-block }}" title=""> LIDES Download</a></p>
           {% endif %}
 
         {%- when '@app' -%}
