@@ -49,21 +49,21 @@
           "type": "text",
           "settings": {
             "text": "<p>Produktový list<\/p>",
-            "text_style": "body"
+            "text_style": "uppercase"
           }
         },
         "18c2ee59-84a2-4b59-af66-edfbd2da28e7": {
           "type": "text",
           "settings": {
             "text": "<p>Produktové video<\/p>",
-            "text_style": "body"
+            "text_style": "uppercase"
           }
         },
         "db64ef87-5782-4363-a714-fa7641386b09": {
           "type": "text",
           "settings": {
             "text": "<p>Návod na použitie<\/p>",
-            "text_style": "body"
+            "text_style": "uppercase"
           }
         },
         "share": {
