@@ -12,11 +12,13 @@
         },
         "title": {
           "type": "title",
-          "settings": {}
+          "settings": {
+          }
         },
         "price": {
           "type": "price",
-          "settings": {}
+          "settings": {
+          }
         },
         "variant_picker": {
           "type": "variant_picker",
@@ -34,7 +36,8 @@
         },
         "pickup_avaiability": {
           "type": "pickup_avaiability",
-          "settings": {}
+          "settings": {
+          }
         },
         "description": {
           "type": "description",
@@ -44,7 +47,9 @@
         },
         "lides-katalog": {
           "type": "lides-katalog",
-          "settings": {}
+          "settings": {
+            "lides-katalog": "nazov suboru"
+          }
         },
         "lides-tech": {
           "type": "lides-tech",
@@ -64,7 +69,8 @@
         },
         "share": {
           "type": "share",
-          "settings": {}
+          "settings": {
+          }
         }
       },
       "block_order": [
@@ -82,7 +88,9 @@
         "lides-3d",
         "share"
       ],
-      "custom_css": [],
+      "custom_css": [
+
+      ],
       "settings": {
         "gallery_style": "slider",
         "gallery_slider_style": true,
