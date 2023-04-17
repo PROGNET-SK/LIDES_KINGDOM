@@ -136,7 +136,7 @@
 
     {%- for block in section.blocks -%}
       {%- case block.type -%}
-        {%- when 'custom-block' -%}
+        {%- when 'lides-katalog' -%}
           {% if block.settings['lides-katalog'] %}
             <p>
               <a href="/colection/{{ block.settings.lides-katalog }}" title="Katalógový list stiahnuť PDF">
