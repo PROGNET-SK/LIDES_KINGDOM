@@ -137,8 +137,12 @@
     {%- for block in section.blocks -%}
       {%- case block.type -%}
         {%- when 'custom-block' -%}
-          {% if block.settings['custom-block'] %}
-            <p><a href="/colection/{{ block.settings.custom-block }}" title=""> LIDES Download</a></p>
+          {% if block.settings['lides-katalog'] %}
+            <p>
+              <a href="/colection/{{ block.settings.lides-katalog }}" title="Katalógový list stiahnuť PDF">
+                DOWNLOAD ZIP
+              </a>
+            </p>
           {% endif %}
 
         {%- when '@app' -%}
