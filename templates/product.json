@@ -48,7 +48,7 @@
         "ca75ddf8-1685-4f88-aaa8-73c08be92139": {
           "type": "custom_liquid",
           "settings": {
-            "custom_liquid": "<table>\n<tr>\n<td>\nKatalógový list stiahnuť PDF <\/td><td align=\"right\"><a href=\"#\" target=\"_blank\" title=\"#\"><strong>DOWNLOAD ZIP<\/strong><\/a><\/td>\n<\/table>\n<p>\n<hr>"
+            "custom_liquid": "<div style=\"width:100%\">\n\n\n<div class=\"width:50%\">\nKatalógový list stiahnuť PDF <\/div>\n<div class=\"width:50%\" align=\"right\"><a href=\"#\" target=\"_blank\" title=\"#\"><strong>DOWNLOAD ZIP<\/strong><\/a>\n<\/div>\n<hr>\n<\/div>"
           }
         },
         "c26188f8-e45e-4ee7-ab39-6904a8aa8c55": {
