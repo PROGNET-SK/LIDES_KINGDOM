@@ -48,14 +48,14 @@
         "c26188f8-e45e-4ee7-ab39-6904a8aa8c55": {
           "type": "text",
           "settings": {
-            "text": "<p><a href=\"#\" target=\"_blank\" title=\"Produktový list\"><strong>Produktový list<\/strong><\/a><\/p>",
+            "text": "<p><a href=\"#\" target=\"_blank\" title=\"#\"><strong>Katalógový list stiahnuť PDF<\/strong><\/a><\/p>",
             "text_style": "uppercase"
           }
         },
         "18c2ee59-84a2-4b59-af66-edfbd2da28e7": {
           "type": "text",
           "settings": {
-            "text": "<p><a href=\"#\" target=\"_blank\" title=\"#\"><strong>Produktové video<\/strong><\/a><\/p>",
+            "text": "<p><a href=\"#\" target=\"_blank\" title=\"#\"><strong>Technický list stiahnuť PDF<\/strong><\/a><\/p>",
             "text_style": "uppercase"
           }
         },
