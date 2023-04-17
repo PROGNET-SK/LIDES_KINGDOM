@@ -44,33 +44,23 @@
         },
         "lides_katalog": {
           "type": "lides_katalog",
-          "settings": {
-            "lides_katalog": "nazov suboru"
-          }
+          "settings": {}
         },
         "lides_tech": {
           "type": "lides_tech",
-          "settings": {
-            "lides_tech": "nazov suboru"
-          }
+          "settings": {}
         },
         "lides_navod": {
           "type": "lides_navod",
-          "settings": {
-            "lides_navod": "nazov suboru"
-          }
+          "settings": {}
         },
         "lides_cert": {
           "type": "lides_cert",
-          "settings": {
-            "lides_cert": "nazov suboru"
-          }
+          "settings": {}
         },
         "lides_3d": {
           "type": "lides_3d",
-          "settings": {
-            "lides_3d": "nazov suboru"
-          }
+          "settings": {}
         },
         "share": {
           "type": "share",
