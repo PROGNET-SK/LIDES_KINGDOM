@@ -107,7 +107,8 @@
 }
 
 .footer-copyright {
-  margin-bottom: var(--vertical-padding);
+  /*margin-bottom: var(--vertical-padding);*/
+  margin-bottom: 25px;
   line-height: 1.5;
   margin-top: -5px;
   width: 100%;
