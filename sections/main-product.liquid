@@ -162,7 +162,9 @@
                     href="https://lides.sk/downloads/{{ product.handle }}_tech.pdf"
                     target="_blank"
                     title="Technický list"
-                    >DOWNLOAD PDF</a
+                  >
+                    {{- 'products.page.download' | t -}}
+                    &nbsp;PDF</a
                   >
                 </div>
               </div>
@@ -174,7 +176,9 @@
                     href="https://lides.sk/downloads/{{ product.handle }}_navod.pdf"
                     target="_blank"
                     title="Návod na použitie"
-                    >DOWNLOAD PDF</a
+                  >
+                    {{- 'products.page.download' | t -}}
+                    &nbsp;PDF</a
                   >
                 </div>
               </div>
@@ -182,8 +186,13 @@
               <div style="width:100%; float:left; padding-bottom:15px;">
                 <div style="width:50%; float:left;"><p>Certifikáty</p></div>
                 <div style="width:50%; float:left; text-align:right;">
-                  <a href="https://lides.sk/downloads/{{ product.handle }}_cert.pdf" target="_blank" title="Certifikáty"
-                    >DOWNLOAD PDF</a
+                  <a
+                    href="https://lides.sk/downloads/{{ product.handle }}_cert.pdf"
+                    target="_blank"
+                    title="Certifikáty"
+                  >
+                    {{- 'products.page.download' | t -}}
+                    &nbsp;PDF</a
                   >
                 </div>
               </div>
@@ -191,8 +200,9 @@
               <div style="width:100%; float:left; padding-bottom:15px;">
                 <div style="width:50%; float:left;"><p>3D model</p></div>
                 <div style="width:50%; float:left; text-align:right;">
-                  <a href="https://lides.sk/downloads/{{ product.handle }}_3d.zip" target="_blank" title="3D model"
-                    >DOWNLOAD ZIP</a
+                  <a href="https://lides.sk/downloads/{{ product.handle }}_3d.zip" target="_blank" title="3D model">
+                    {{- 'products.page.download' | t -}}
+                    &nbsp;ZIP</a
                   >
                 </div>
               </div>
