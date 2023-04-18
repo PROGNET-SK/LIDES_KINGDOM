@@ -188,7 +188,13 @@
       "include_taxes": "s DPH",
       "shipping_policy_html": "<a href=\"{{ link }}\">Doprava<\/a> vypočítaná pri pokadni",
       "view_in_space": "Zobraziť ",
-      "view_in_space_label": "Zobraziť, načítať položku v rozšírenom okne"
+      "view_in_space_label": "Zobraziť, načítať položku v rozšírenom okne",
+      "katalog": "Catalog page",
+      "tech_page": "Tech. page",
+      "manual": "User manual",
+      "cert": "Certificate for download",
+      "3dmodel": "3D model",
+      "download": "download"
     },
     "featured_product": {
       "mobile_title": "Odporúčaný produkt",
