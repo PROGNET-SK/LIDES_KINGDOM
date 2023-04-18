@@ -352,7 +352,7 @@ html[dir=ltr] .product-item__badge {
 
 .gutter--on .collection--slider .product-item {
   width: 25%;
-  padding: calc(var(--grid-gutter) / 2);
+  padding: calc(var(--grid-gutter) / 8);
 }
 
 @media screen and (max-width: 1279px) {
