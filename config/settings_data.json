@@ -77,7 +77,7 @@
     "body_font": "montserrat_n5",
     "body_size": 14,
     "body_size_alt": 18,
-    "grid_aspect": "1.33333",
+    "grid_aspect": "1",
     "grid_enhance_featured_product": true,
     "grid_show_secondary_image": true,
     "grid_style": "classic",
