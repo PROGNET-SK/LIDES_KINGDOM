@@ -90,24 +90,25 @@
     {%- endcase -%}
   {%- endfor -%}
 
-  <div class="footer-item footer-info localization-form-holder" {{ block.shopify_attributes }}>
-    45444654654654654654
-    {%- render 'localization-form',
-      location: 'footer',
-      show_country_selector: section.settings.show_country_selector,
-      show_locale_selector: section.settings.show_locale_selector
-    -%}
+  <!--
+    <div class="footer-item footer-info localization-form-holder" {{ block.shopify_attributes }}>
+      {%- #render 'localization-form',
+        location: 'footer',
+        show_country_selector: section.settings.show_country_selector,
+        show_locale_selector: section.settings.show_locale_selector
+      -%}
 
-    {%- if section.settings.show_payment_icons and shop.enabled_payment_types != empty -%}
-      <div class="footer-icons">
-        {%- liquid
-          for type in shop.enabled_payment_types
-            echo type | payment_type_svg_tag
-          endfor
-        -%}
-      </div>
-    {%- endif -%}
-  </div>
+      {%- #if section.settings.show_payment_icons and shop.enabled_payment_types != empty -%}
+        <div class="footer-icons">
+          {%- liquid
+            for type in shop.enabled_payment_types
+              echo type | payment_type_svg_tag
+            endfor
+          -%}
+        </div>
+      {%- #endif -%}
+    </div>
+  -->
 
   <div class="footer-copyright body-text-sm">
     <span>
