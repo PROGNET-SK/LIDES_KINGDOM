@@ -156,12 +156,14 @@
               </div>
               <hr>
               <div style="width:100%; float:left; padding-bottom:15px;">
-                <div style="width:50%; float:left;"><p>Technický list</p></div>
+                <div style="width:50%; float:left;">
+                  <p>{{- 'products.page.tech_page' | t -}}</p>
+                </div>
                 <div style="width:50%; float:left; text-align:right;">
                   <a
                     href="https://lides.sk/downloads/{{ product.handle }}_tech.pdf"
                     target="_blank"
-                    title="Technický list"
+                    title="{{- 'products.page.tech_page' | t -}}"
                   >
                     {{- 'products.page.download' | t -}}
                     &nbsp;PDF</a
@@ -170,12 +172,14 @@
               </div>
               <hr>
               <div style="width:100%; float:left; padding-bottom:15px;">
-                <div style="width:50%; float:left;"><p>Návod na použitie</p></div>
+                <div style="width:50%; float:left;">
+                  <p>{{- 'products.page.manual' | t -}}</p>
+                </div>
                 <div style="width:50%; float:left; text-align:right;">
                   <a
                     href="https://lides.sk/downloads/{{ product.handle }}_navod.pdf"
                     target="_blank"
-                    title="Návod na použitie"
+                    title="{{- 'products.page.manual' | t -}}"
                   >
                     {{- 'products.page.download' | t -}}
                     &nbsp;PDF</a
@@ -184,12 +188,14 @@
               </div>
               <hr>
               <div style="width:100%; float:left; padding-bottom:15px;">
-                <div style="width:50%; float:left;"><p>Certifikáty</p></div>
+                <div style="width:50%; float:left;">
+                  <p>{{- 'products.page.cert' | t -}}</p>
+                </div>
                 <div style="width:50%; float:left; text-align:right;">
                   <a
                     href="https://lides.sk/downloads/{{ product.handle }}_cert.pdf"
                     target="_blank"
-                    title="Certifikáty"
+                    title="{{- 'products.page.cert' | t -}}"
                   >
                     {{- 'products.page.download' | t -}}
                     &nbsp;PDF</a
@@ -198,9 +204,15 @@
               </div>
               <hr>
               <div style="width:100%; float:left; padding-bottom:15px;">
-                <div style="width:50%; float:left;"><p>3D model</p></div>
+                <div style="width:50%; float:left;">
+                  <p>{{- 'products.page.3dmodel' | t -}}</p>
+                </div>
                 <div style="width:50%; float:left; text-align:right;">
-                  <a href="https://lides.sk/downloads/{{ product.handle }}_3d.zip" target="_blank" title="3D model">
+                  <a
+                    href="https://lides.sk/downloads/{{ product.handle }}_3d.zip"
+                    target="_blank"
+                    title="{{- 'products.page.3dmodel' | t -}}"
+                  >
                     {{- 'products.page.download' | t -}}
                     &nbsp;ZIP</a
                   >
