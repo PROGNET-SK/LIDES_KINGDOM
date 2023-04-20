@@ -32,6 +32,12 @@
           "settings": {
             "collection": "sety-drop18-drop40"
           }
+        },
+        "2a2035b6-1799-4726-a411-8e29a0d6f692": {
+          "type": "collection",
+          "settings": {
+            "collection": "nastenne-svietidla"
+          }
         }
       },
       "block_order": [
@@ -39,7 +45,8 @@
         "162878204691e40114-0",
         "162878204691e40114-1",
         "336c8af9-b9ad-4c69-9979-a9195e474120",
-        "2bb05bd5-1513-4e7a-9a35-b8b6c03912c6"
+        "2bb05bd5-1513-4e7a-9a35-b8b6c03912c6",
+        "2a2035b6-1799-4726-a411-8e29a0d6f692"
       ],
       "settings": {
         "layout": "layout-halves",
