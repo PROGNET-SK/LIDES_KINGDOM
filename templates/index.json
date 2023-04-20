@@ -5,8 +5,15 @@
       "blocks": {
         "f4f5a85f-962a-42e9-8c02-9d31c57d3c85": {
           "type": "collection",
+          "disabled": true,
           "settings": {
             "collection": "opticke-hviezdne-nebo"
+          }
+        },
+        "336c8af9-b9ad-4c69-9979-a9195e474120": {
+          "type": "collection",
+          "settings": {
+            "collection": "samostatne-kristale-swarovski"
           }
         },
         "162878204691e40114-0": {
@@ -21,24 +28,6 @@
             "collection": "lustre"
           }
         },
-        "336c8af9-b9ad-4c69-9979-a9195e474120": {
-          "type": "collection",
-          "settings": {
-            "collection": "samostatne-kristale-swarovski"
-          }
-        },
-        "2bb05bd5-1513-4e7a-9a35-b8b6c03912c6": {
-          "type": "collection",
-          "settings": {
-            "collection": "sety-drop18-drop40"
-          }
-        },
-        "2a2035b6-1799-4726-a411-8e29a0d6f692": {
-          "type": "collection",
-          "settings": {
-            "collection": "nastenne-svietidla"
-          }
-        },
         "7fdf446b-0068-4f9c-991b-ebc46fbcd51f": {
           "type": "collection",
           "settings": {
@@ -50,17 +39,29 @@
           "settings": {
             "collection": "zavesne-svietidla"
           }
+        },
+        "2a2035b6-1799-4726-a411-8e29a0d6f692": {
+          "type": "collection",
+          "settings": {
+            "collection": "nastenne-svietidla"
+          }
+        },
+        "2bb05bd5-1513-4e7a-9a35-b8b6c03912c6": {
+          "type": "collection",
+          "settings": {
+            "collection": "sety-drop18-drop40"
+          }
         }
       },
       "block_order": [
         "f4f5a85f-962a-42e9-8c02-9d31c57d3c85",
+        "336c8af9-b9ad-4c69-9979-a9195e474120",
         "162878204691e40114-0",
         "162878204691e40114-1",
-        "336c8af9-b9ad-4c69-9979-a9195e474120",
-        "2bb05bd5-1513-4e7a-9a35-b8b6c03912c6",
-        "2a2035b6-1799-4726-a411-8e29a0d6f692",
         "7fdf446b-0068-4f9c-991b-ebc46fbcd51f",
-        "302a1099-204d-4357-a4dc-838b5b539b15"
+        "302a1099-204d-4357-a4dc-838b5b539b15",
+        "2a2035b6-1799-4726-a411-8e29a0d6f692",
+        "2bb05bd5-1513-4e7a-9a35-b8b6c03912c6"
       ],
       "settings": {
         "layout": "layout-halves",
