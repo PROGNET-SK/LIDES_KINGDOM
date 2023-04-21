@@ -99,8 +99,8 @@
       "settings": {
         "size": "80vh",
         "mobile_size": "80vh",
-        "text_size": "huge",
-        "alignment": "horizontal-left vertical-bottom",
+        "text_size": "large",
+        "alignment": "horizontal-left vertical-middle",
         "gutter_enabled": false
       }
     },
