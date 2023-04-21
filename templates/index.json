@@ -171,7 +171,7 @@
         "alignment": "horizontal-left vertical-bottom",
         "color_text": "#ffffff",
         "color_bg": "#ffffff",
-        "gutter_enabled": false
+        "gutter_enabled": true
       }
     },
     "162878197127c896d8": {
