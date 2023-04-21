@@ -100,7 +100,7 @@
         "size": "80vh",
         "mobile_size": "80vh",
         "text_size": "large",
-        "alignment": "horizontal-left vertical-middle",
+        "alignment": "horizontal-left vertical-top",
         "gutter_enabled": false
       }
     },
