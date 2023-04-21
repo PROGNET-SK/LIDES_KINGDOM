@@ -170,7 +170,7 @@
         "layout": "layout-halves",
         "alignment": "horizontal-left vertical-bottom",
         "color_text": "#ffffff",
-        "color_bg": "#ffffff",
+        "color_bg": "#1d1d1f",
         "gutter_enabled": true
       }
     },
