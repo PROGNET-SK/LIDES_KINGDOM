@@ -55,7 +55,7 @@
             "button_label": "Pozrieť projekty",
             "url": "",
             "color_text": "#ffffff",
-            "color_bg": "#ffffff",
+            "color_bg": "rgba(0,0,0,0)",
             "seo_h_tag": "h2"
           }
         },
