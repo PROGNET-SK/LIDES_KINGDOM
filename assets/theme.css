@@ -4519,11 +4519,7 @@ li.has-sub-nav>a .icon {
 
 /* pojekty*/
 
-.projekt-page {
-  display: flex;
-  clear: left;
 
-}
 
 @media only screen and (min-width: 750px) {
   .blog-item-projekt {
@@ -4533,6 +4529,11 @@ li.has-sub-nav>a .icon {
   .blog-item__content-projekt {
     padding-left: 15px;
     margin-bottom: 0 !important;
+  }
+
+  .projekt-page {
+    display: flex;
+    clear: left;
   }
 
   .projekt-lside {
@@ -4563,10 +4564,16 @@ li.has-sub-nav>a .icon {
     margin-bottom: 15px !important;
   }
 
+  .projekt-page {
+    display: block;
+    clear: left;
+  }
+
   .projekt-lside {
     width: 100%;
     display: flex;
     float: none;
+    clear: left;
   }
 
   .projekt-rside {
