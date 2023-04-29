@@ -5,11 +5,9 @@
     {%- case block.type -%}
       {%- when 'featured_image' -%}
         {%- if article.image -%}
-          {%- if article.image -%}
-            {%- liquid
-              render 'thumb-image-projekt', image: article.image, alt: article.title,
-            -%}
-          {%- endif -%}
+          {%- liquid
+            render 'thumb-image-projekt', image: article.image, alt: article.title,
+          -%}
         {%- endif -%}
 
       {%- when 'title' -%}
