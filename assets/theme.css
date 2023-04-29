@@ -4527,6 +4527,7 @@ li.has-sub-nav>a .icon {
 
   .blog-item__content-projekt {
     padding-left: 15px;
+    margin-bottom: 0 !important;
   }
 
 
@@ -4544,7 +4545,7 @@ li.has-sub-nav>a .icon {
 
   .blog-item__content-projekt {
     padding-left: 0;
-    margin-bottom: 15px;
+    margin-bottom: 15px !important;
   }
 
 
