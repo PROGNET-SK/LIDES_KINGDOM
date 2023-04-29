@@ -6,7 +6,7 @@
     {%- case block.type -%}
       {%- when 'featured_image' -%}
         {%- if article.image -%}
-          <div class="article__image article-element">
+          <div class="article__image article-element" style="width:33%;">
             {%- liquid
               render 'lazy-image', image: article.image, alt: article.title,
             -%}
