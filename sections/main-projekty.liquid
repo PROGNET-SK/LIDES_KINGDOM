@@ -1,13 +1,9 @@
 <div class="compact-header">
-  1
   <div class="compact-header-container">
-    2
     {%- render 'breadcrumb' -%}
     <h1 class="blog-header__title h0">{{ blog.title | escape }}</h1>
-
     {%- if section.settings.enable_tags -%}
       <div class="blog-tags">
-        3
         <a
           class="button--smallest {% if current_tags == blank %} button--solid {% else %} button--outline {% endif %}"
           href="{{ blog.url }}"
