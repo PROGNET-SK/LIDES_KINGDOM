@@ -4552,7 +4552,8 @@ li.has-sub-nav>a .icon {
 .projekt-page {
   background-color: lime;
   border: 2px solid red;
-  display: inline;
+  display: block;
+  clear: left;
 
 }
 
