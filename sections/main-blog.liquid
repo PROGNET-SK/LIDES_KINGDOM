@@ -25,13 +25,13 @@
 </div>
 
 {%- paginate blog.articles by section.settings.post_limit -%}
-  <div class="blog--grid cols-2 full-width-section-content blog--images-{{ section.settings.show_image }} gutter--on">
+  <div class="blog--grid cols-1 full-width-section-content blog--images-{{ section.settings.show_image }} gutter--on">
     {{ 'component-blog-item.css' | asset_url | stylesheet_tag }}
 
     {% for article in blog.articles %}
       {%- render 'blog-item',
         article: article,
-        layout: 'cols-1',
+        layout: 'cols-2',
         show_image: section.settings.show_image,
         blocks: section.blocks
       -%}
