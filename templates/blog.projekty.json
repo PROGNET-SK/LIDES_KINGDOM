@@ -35,7 +35,7 @@
       ],
       "settings": {
         "enable_tags": false,
-        "post_limit": 4,
+        "post_limit": 3,
         "show_image": true
       }
     }
