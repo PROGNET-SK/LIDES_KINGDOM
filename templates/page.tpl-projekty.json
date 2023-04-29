@@ -38,7 +38,7 @@
         "show_image": true,
         "show_view_all": true,
         "layout": "slider cols-4",
-        "seo_h_tag": "h2"
+        "seo_h_tag": "h1"
       }
     }
   },
