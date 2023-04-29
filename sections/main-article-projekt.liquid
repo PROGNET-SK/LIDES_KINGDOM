@@ -14,13 +14,18 @@
         {%- endif -%}
 
       {%- when 'title' -%}
-        <!-- <header class="article__header article-element"> -->
+        <header class="article__header article-element"> -->
         <div class="compact-header">
           <div class="compact-header-container">
             {%- render 'breadcrumb' -%}
             <h1 class="article__title h0">{{ article.title | escape }}</h1>
           </div>
         </div>
+
+        {%- when 'content' -%}
+       <!-- <section class="article__body article-element" style="width:66%;">-->
+          <div class="rte" style="width:66%;">{{ article.content }}</div>
+       <!-- </section>-->
 
         <div class="article-meta">
           {% if block.settings.blog_show_date %}
@@ -43,12 +48,9 @@
             </span>
           {% endif %}
         </div>
-        <!-- </header> -->
+        </header>
 
-      {%- when 'content' -%}
-        <section class="article__body article-element" style="width:66%;">
-          <div class="rte">{{ article.content }}</div>
-        </section>
+
 
       {%- when 'social_sharing' -%}
         <aside class="article__sharing article-element">
