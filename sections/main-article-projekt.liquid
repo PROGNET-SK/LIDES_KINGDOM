@@ -4,7 +4,13 @@
   {%- capture date_format -%} {{ 'general.date_format.month_day_year' | t }} {%- endcapture -%}
   {%- for block in section.blocks -%}
     {%- case block.type -%}
-      {%- when 'featured_image' -%}
+        <div class="compact-header">
+          <div class="compact-header-container">
+            {%- render 'breadcrumb' -%}
+            <h1 class="article__title h0">{{ article.title | escape }}</h1>
+          </div>
+        </div>
+
         {%- if article.image -%}
           <div class="article__image article-element" style="width:33%;">
             {%- liquid
@@ -13,18 +19,7 @@
           </div>
         {%- endif -%}
 
-      {%- when 'title' -%}
-        <div class="compact-header">
-          <div class="compact-header-container">
-            {%- render 'breadcrumb' -%}
-            <h1 class="article__title h0">{{ article.title | escape }}</h1>
-          </div>
-        </div>
-
-      {%- when 'content' -%}
         <div class="rte" style="width:66%;">{{ article.content }}</div>
-
-        <hr>
 
         <div class="article-meta">
           {% if block.settings.blog_show_date %}
