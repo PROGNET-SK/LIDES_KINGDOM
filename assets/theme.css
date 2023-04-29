@@ -4543,6 +4543,7 @@ li.has-sub-nav>a .icon {
   }
 
   .projekt-rside {
+    padding-top: 0;
     display: block;
     width: 50%;
     float: left;
@@ -4570,7 +4571,7 @@ li.has-sub-nav>a .icon {
   }
 
   .projekt-lside {
-    padding-top: 15px;
+
     width: 100%;
     display: flex;
     float: none;
@@ -4578,6 +4579,7 @@ li.has-sub-nav>a .icon {
   }
 
   .projekt-rside {
+    padding-top: 15px;
     display: fle;
     width: 100%;
     float: none;
