@@ -42,27 +42,9 @@
       ],
       "settings": {
       }
-    },
-    "168279891991c17b2a": {
-      "type": "apps",
-      "blocks": {
-        "64138818-d527-4651-906c-dbf4af853bc8": {
-          "type": "shopify:\/\/apps\/enorm-image-gallery-video\/blocks\/embed-code\/01219f89-c8d0-40c2-a0ff-1987199e84a2",
-          "settings": {
-            "embed-code": "<div id=\"enap-gallery-85996\"><\/div><div id=\"enap-gallery-popup-85996\"><\/div><script src=\"https:\/\/enormapps.com\/gallery\/embed.js\" data-id=\"85996\"><\/script>"
-          }
-        }
-      },
-      "block_order": [
-        "64138818-d527-4651-906c-dbf4af853bc8"
-      ],
-      "settings": {
-        "gutter_enabled": true
-      }
     }
   },
   "order": [
-    "main",
-    "168279891991c17b2a"
+    "main"
   ]
 }
