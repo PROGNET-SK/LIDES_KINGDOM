@@ -4557,12 +4557,15 @@ li.has-sub-nav>a .icon {
 
 .projekt-lside {
   width: 50%;
-  left: 0;
   background-color: silver;
+  display: block;
+  float: left;
 }
 
 .projekt-rside {
+  display: block;
   width: 50%;
-  right: 0;
+  float: left;
+
   background-color: rgb(173, 118, 118);
 }
