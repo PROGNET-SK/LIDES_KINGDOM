@@ -13,12 +13,14 @@
         {%- endif -%}
 
       {%- when 'title' -%}
-        <div class="compact-header">
-          <div class="compact-header-container">
-            {%- render 'breadcrumb' -%}
-            <h1 class="article__title h0">{{ article.title | escape }}</h1>
+        <header class="article__header article-element">
+          <div class="compact-header">
+            <div class="compact-header-container">
+              {%- render 'breadcrumb' -%}
+              <h1 class="article__title h0">{{ article.title | escape }}</h1>
+            </div>
           </div>
-        </div>
+        </header>
 
       {%- when 'content' -%}
         <div class="rte" style="width:66%;">{{ article.content }}</div>
