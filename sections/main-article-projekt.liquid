@@ -22,10 +22,8 @@
           </div>
         </div>
 
-        {%- when 'content' -%}
-      
-          <div class="rte" style="width:66%;">{{ article.content }}</div>
-      
+        {%- when 'content' -%}      
+          <div class="rte" style="width:66%;">{{ article.content }}</div>      
 
         <div class="article-meta">
           {% if block.settings.blog_show_date %}
@@ -49,8 +47,6 @@
           {% endif %}
         </div>
         </header>
-
-
 
       {%- when 'social_sharing' -%}
         <aside class="article__sharing article-element">
