@@ -4525,6 +4525,10 @@ li.has-sub-nav>a .icon {
     width: 33% !important;
   }
 
+  .blog-item__content-projekt {
+    padding-left: 15px;
+  }
+
 
 }
 
@@ -4536,6 +4540,10 @@ li.has-sub-nav>a .icon {
 
   .blog-item__image a {
     margin: 0 !important;
+  }
+
+  .blog-item__content-projekt {
+    padding-left: 0;
   }
 
 
