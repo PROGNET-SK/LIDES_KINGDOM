@@ -38,46 +38,9 @@
         "post_limit": 2,
         "show_image": true
       }
-    },
-    "06e2b7e0-1e57-4612-9872-2621f4087ee3": {
-      "type": "blog-posts",
-      "blocks": {
-        "template--18867755352392__06e2b7e0-1e57-4612-9872-2621f4087ee3-1682784006ad4e6647-0": {
-          "type": "title",
-          "settings": {
-          }
-        },
-        "template--18867755352392__06e2b7e0-1e57-4612-9872-2621f4087ee3-1682784006ad4e6647-1": {
-          "type": "info",
-          "settings": {
-            "show_date": true,
-            "show_author": false
-          }
-        },
-        "template--18867755352392__06e2b7e0-1e57-4612-9872-2621f4087ee3-1682784006ad4e6647-2": {
-          "type": "summary",
-          "settings": {
-          }
-        }
-      },
-      "block_order": [
-        "template--18867755352392__06e2b7e0-1e57-4612-9872-2621f4087ee3-1682784006ad4e6647-0",
-        "template--18867755352392__06e2b7e0-1e57-4612-9872-2621f4087ee3-1682784006ad4e6647-1",
-        "template--18867755352392__06e2b7e0-1e57-4612-9872-2621f4087ee3-1682784006ad4e6647-2"
-      ],
-      "settings": {
-        "title": "Latest Articles",
-        "blog": "projekty",
-        "post_limit": 16,
-        "show_image": false,
-        "show_view_all": false,
-        "layout": "slider cols-4",
-        "seo_h_tag": "h1"
-      }
     }
   },
   "order": [
-    "main",
-    "06e2b7e0-1e57-4612-9872-2621f4087ee3"
+    "main"
   ]
 }
