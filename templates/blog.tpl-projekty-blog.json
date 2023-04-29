@@ -5,8 +5,7 @@
       "blocks": {
         "title": {
           "type": "title",
-          "settings": {
-          }
+          "settings": {}
         },
         "info": {
           "type": "info",
@@ -18,13 +17,11 @@
         },
         "summary": {
           "type": "summary",
-          "settings": {
-          }
+          "settings": {}
         },
         "link": {
           "type": "link",
-          "settings": {
-          }
+          "settings": {}
         }
       },
       "block_order": [
@@ -35,7 +32,7 @@
       ],
       "settings": {
         "enable_tags": false,
-        "post_limit": 2,
+        "post_limit": 1,
         "show_image": true
       }
     }
