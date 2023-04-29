@@ -1,14 +1,13 @@
 {{ 'section-main-article.css' | asset_url | stylesheet_tag }}
 
 <div class="full-width-section-content gutter--on">
-  465465456465654
   {%- capture date_format -%} {{ 'general.date_format.month_day_year' | t }} {%- endcapture -%}
-
   {%- for block in section.blocks -%}
     {%- case block.type -%}
       {%- when 'featured_image' -%}
         {%- if article.image -%}
           <div class="article__image article-element">
+            545454
             {%- liquid
               assign sizes = 'sizes="(max-width: 948px) calc(100vw - 20px), calc(100vw - 200px)"'
               render 'lazy-image', image: article.image, alt: article.title, sizes: sizes
