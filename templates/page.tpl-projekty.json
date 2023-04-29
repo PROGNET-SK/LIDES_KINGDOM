@@ -17,7 +17,7 @@
         "template--18866835292488__ad3fd18c-43bf-43ad-9d33-b767713766c2-16827694744b6e4d4f-1": {
           "type": "info",
           "settings": {
-            "show_date": true,
+            "show_date": false,
             "show_author": false
           }
         },
