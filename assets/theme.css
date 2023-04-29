@@ -4547,3 +4547,18 @@ li.has-sub-nav>a .icon {
   }
 
 }
+
+
+.projekt-page {
+  background-color: lime;
+
+
+}
+
+.projekt-lside {
+  background-color: silver;
+}
+
+.projekt-rside {
+  background-color: rgb(136, 133, 133);
+}
