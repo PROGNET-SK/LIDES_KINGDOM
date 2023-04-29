@@ -4565,14 +4565,14 @@ li.has-sub-nav>a .icon {
 
   .projekt-lside {
     width: 100%;
-    display: block;
-    float: left;
+    display: flex;
+    float: none;
   }
 
   .projekt-rside {
-    display: block;
+    display: fle;
     width: 100%;
-    float: left;
+    float: none;
   }
 
 
