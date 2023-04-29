@@ -3,13 +3,6 @@
   {%- capture date_format -%} {{ 'general.date_format.month_day_year' | t }} {%- endcapture -%}
   {%- for block in section.blocks -%}
     {%- case block.type -%}
-      {%- when 'featured_image' -%}
-        {%- if article.image -%}
-          {%- liquid
-            render 'thumb-image-projekt', image: article.image, alt: article.title,
-          -%}
-        {%- endif -%}
-
       {%- when 'title' -%}
         <header class="article__header article-element">
           <div class="compact-header">
@@ -21,7 +14,13 @@
         </header>
 
       {%- when 'content' -%}
-        <div class="rte" style="width:66%;">{{ article.content }}</div>
+        <div class="rte" style="width:100%;">
+          {%- liquid
+            render 'thumb-image-projekt', image: article.image, alt: article.title,
+          -%}
+
+          {{ article.content }}
+        </div>
 
         <div class="article-meta">
           {% if block.settings.blog_show_date %}
