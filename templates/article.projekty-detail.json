@@ -1,7 +1,7 @@
 {
   "sections": {
     "main": {
-      "type": "main-article",
+      "type": "main-article-projekt",
       "blocks": {
         "title": {
           "type": "title",
