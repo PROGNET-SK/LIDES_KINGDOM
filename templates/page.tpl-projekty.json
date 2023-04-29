@@ -35,9 +35,9 @@
       "settings": {
         "title": "Latest Articles",
         "blog": "projekty",
-        "post_limit": 4,
+        "post_limit": 5,
         "show_image": true,
-        "show_view_all": true,
+        "show_view_all": false,
         "layout": "slider cols-4",
         "seo_h_tag": "h1"
       }
