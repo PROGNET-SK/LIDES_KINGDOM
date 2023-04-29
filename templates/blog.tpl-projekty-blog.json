@@ -1,12 +1,11 @@
 {
   "sections": {
     "main": {
-      "type": "main-blog",
+      "type": "main-blog-projekty",
       "blocks": {
         "title": {
           "type": "title",
-          "settings": {
-          }
+          "settings": {}
         },
         "info": {
           "type": "info",
@@ -18,13 +17,11 @@
         },
         "summary": {
           "type": "summary",
-          "settings": {
-          }
+          "settings": {}
         },
         "link": {
           "type": "link",
-          "settings": {
-          }
+          "settings": {}
         }
       },
       "block_order": [
