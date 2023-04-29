@@ -8,8 +8,7 @@
         {%- if article.image -%}
           <div class="article__image article-element">
             {%- liquid
-              assign sizes = 'sizes="(max-width: 948px) calc(100vw - 20px), calc(100vw - 200px)"'
-              render 'lazy-image', image: article.image, alt: article.title, sizes: sizes
+              render 'lazy-image', image: article.image, alt: article.title,
             -%}
           </div>
         {%- endif -%}
