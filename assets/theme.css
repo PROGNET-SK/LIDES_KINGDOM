@@ -4603,3 +4603,9 @@ select {
 }
 
 */
+
+
+.enap_content img {
+  border: 0 !important;
+  border-radius: 3px;
+}
