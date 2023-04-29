@@ -46,12 +46,12 @@
         </header>
 
       {%- when 'content' -%}
-        <section class="article__body article-element">
+        <section class="article__body article-element" style="width:66%;">
           <div class="rte">{{ article.content }}</div>
         </section>
 
       {%- when 'social_sharing' -%}
-        <aside class="article__sharing article-element" style="width:66%;">
+        <aside class="article__sharing article-element">
           {%- render 'share-popup', title: article.title, url: article.url, image: article.image -%}
         </aside>
 
