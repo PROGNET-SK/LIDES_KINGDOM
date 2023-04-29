@@ -7,11 +7,9 @@
         {%- if article.image -%}
           <div class="article__image article-element" style="">
             {%- if article.image -%}
-              <div class="article__image article-element" style="width:33%;">
-                {%- liquid
-                  render 'thumb-image-projekt', image: article.image, alt: article.title,
-                -%}
-              </div>
+              {%- liquid
+                render 'thumb-image-projekt', image: article.image, alt: article.title,
+              -%}
             {%- endif -%}
           </div>
         {%- endif -%}
