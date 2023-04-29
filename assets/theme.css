@@ -4556,9 +4556,13 @@ li.has-sub-nav>a .icon {
 }
 
 .projekt-lside {
+  width: 50%;
+  left: 0;
   background-color: silver;
 }
 
 .projekt-rside {
-  background-color: rgb(136, 133, 133);
+  width: 50%;
+  right: 0;
+  background-color: rgb(173, 118, 118);
 }
