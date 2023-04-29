@@ -4570,6 +4570,7 @@ li.has-sub-nav>a .icon {
   }
 
   .projekt-lside {
+    padding-top: 15px;
     width: 100%;
     display: flex;
     float: none;
