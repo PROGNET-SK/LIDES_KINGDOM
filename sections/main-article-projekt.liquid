@@ -14,35 +14,36 @@
         {%- endif -%}
 
       {%- when 'title' -%}
-        <header class="article__header article-element">
-          <div class="compact-header">
-            <div class="compact-header-container">
-              {%- render 'breadcrumb' -%}
-              <h1 class="article__title h0">{{ article.title | escape }}</h1>
-            </div>
+        <!-- <header class="article__header article-element"> -->
+        <div class="compact-header">
+          <div class="compact-header-container">
+            {%- render 'breadcrumb' -%}
+            <h1 class="article__title h0">{{ article.title | escape }}</h1>
           </div>
-          <div class="article-meta">
-            {% if block.settings.blog_show_date %}
-              <span class="article-meta__date">{{ article.published_at | time_tag: date_format }}</span>
-            {% endif %}
+        </div>
 
-            {% if block.settings.blog_show_author %}
-              <span class="article-meta__author">
-                {{- 'general.prefixes.by' | t }}
-                {{ article.author | escape -}}
-              </span>
-            {% endif %}
+        <div class="article-meta">
+          {% if block.settings.blog_show_date %}
+            <span class="article-meta__date">{{ article.published_at | time_tag: date_format }}</span>
+          {% endif %}
 
-            {% if block.settings.blog_show_comments and blog.comments_enabled? %}
-              <span class="article-meta__comments">
-                <a href="#comments">
-                  {{ 'blog.grid.comments_count' | t: count: article.comments_count }}
-                  <span class="hidden" aria-hidden="true">{{ article.comments_count }}</span>
-                </a>
-              </span>
-            {% endif %}
-          </div>
-        </header>
+          {% if block.settings.blog_show_author %}
+            <span class="article-meta__author">
+              {{- 'general.prefixes.by' | t }}
+              {{ article.author | escape -}}
+            </span>
+          {% endif %}
+
+          {% if block.settings.blog_show_comments and blog.comments_enabled? %}
+            <span class="article-meta__comments">
+              <a href="#comments">
+                {{ 'blog.grid.comments_count' | t: count: article.comments_count }}
+                <span class="hidden" aria-hidden="true">{{ article.comments_count }}</span>
+              </a>
+            </span>
+          {% endif %}
+        </div>
+        <!-- </header> -->
 
       {%- when 'content' -%}
         <section class="article__body article-element" style="width:66%;">
