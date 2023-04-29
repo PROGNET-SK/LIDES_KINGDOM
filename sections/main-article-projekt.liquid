@@ -14,6 +14,7 @@
         {%- endif -%}
 
       {%- when 'title' -%}
+        <header class="article__header article-element"> -->
         <div class="compact-header">
           <div class="compact-header-container">
             {%- render 'breadcrumb' -%}
@@ -21,10 +22,10 @@
           </div>
         </div>
 
-      {%- when 'content' -%}
-        <div class="rte" style="width:66%;">{{ article.content }}</div>
-
-        <hr>
+        {%- when 'content' -%}
+      
+          <div class="rte" style="width:66%;">{{ article.content }}</div>
+      
 
         <div class="article-meta">
           {% if block.settings.blog_show_date %}
@@ -47,6 +48,9 @@
             </span>
           {% endif %}
         </div>
+        </header>
+
+
 
       {%- when 'social_sharing' -%}
         <aside class="article__sharing article-element">
