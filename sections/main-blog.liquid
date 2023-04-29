@@ -25,7 +25,12 @@
 </div>
 
 {%- paginate blog.articles by section.settings.post_limit -%}
+  <!--
+    here is old version
+    <div class="blog--grid cols-1 full-width-section-content blog--images-{{ #section.settings.show_image }} gutter--on">
+  -->
   <div class="blog--grid cols-1 blog--images-{{ section.settings.show_image }} gutter--on">
+    XXXXXXX
     {{ 'component-blog-item.css' | asset_url | stylesheet_tag }}
 
     {% for article in blog.articles %}
