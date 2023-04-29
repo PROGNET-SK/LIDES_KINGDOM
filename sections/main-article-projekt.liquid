@@ -7,7 +7,7 @@
         {%- if article.image -%}
           <div class="article__image article-element" style="width:33%;">
             {%- liquid
-              render '', image: article.image, alt: article.title,
+              render 'lazy-image-small', image: article.image, alt: article.title,
             -%}
           </div>
         {%- endif -%}
