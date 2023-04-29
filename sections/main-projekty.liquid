@@ -28,7 +28,7 @@
     {{- 'component-blog-item.css' | asset_url | stylesheet_tag -}}
 
     {% for article in blog.articles %}
-      {%- render 'blog-item',
+      {%- render 'blog-item-projekt',
         article: article,
         layout: 'cols-3',
         show_image: section.settings.show_image,
