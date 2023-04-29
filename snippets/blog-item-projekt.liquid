@@ -9,11 +9,7 @@
       >
         {%- if article.image -%}
           {%- liquid
-            if layout contains 'cols-3'
-              assign sizes = 'sizes="(max-width: 648px) calc(100vw - 20px), (min-width: 649px) and (max-width: 948px) calc((100vw - 20px) / 2), calc((100vw - 300px) / 2)"'
-            else
-              assign sizes = 'sizes="(max-width: 648px) calc(100vw - 20px), (min-width: 649px) and (max-width: 948px) calc((100vw - 20px) / 2), calc((100vw - 300px) / 2)"'
-            endif
+            assign sizes = 'sizes="(max-width: 648px) calc(100vw - 20px), (min-width: 649px) and (max-width: 948px) calc((100vw - 20px) / 2), calc((100vw - 300px) / 2)"'
             render 'lazy-image', image: article.image, type: 'background', alt: article.title, sizes: sizes
           -%}
         {%- else -%}
