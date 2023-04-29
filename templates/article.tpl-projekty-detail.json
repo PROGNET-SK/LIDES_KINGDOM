@@ -24,6 +24,7 @@
         },
         "social_sharing": {
           "type": "social_sharing",
+          "disabled": true,
           "settings": {
           }
         },
