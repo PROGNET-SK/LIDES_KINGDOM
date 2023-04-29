@@ -224,8 +224,19 @@ a.selected .blog-item__title span {
 }
 
 
+
+
 .cols-1 .blog-item__image {
   width: 50%;
   margin-right: 7%;
+}
+
+.blog--grid .blog-item__image {
   padding-top: 66.666%;
+}
+
+.blog-item__image {
+  height: 0;
+  position: relative;
+  overflow: hidden;
 }
