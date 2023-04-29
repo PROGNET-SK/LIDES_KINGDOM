@@ -4530,9 +4530,7 @@ li.has-sub-nav>a .icon {
     margin-bottom: 0 !important;
   }
 
-
 }
-
 
 @media only screen and (max-width: 749px) {
   .blog-item-projekt {
@@ -4547,6 +4545,5 @@ li.has-sub-nav>a .icon {
     padding-left: 0;
     margin-bottom: 15px !important;
   }
-
 
 }
