@@ -5,8 +5,7 @@
       "blocks": {
         "title": {
           "type": "title",
-          "settings": {
-          }
+          "settings": {}
         },
         "info": {
           "type": "info",
@@ -18,13 +17,11 @@
         },
         "summary": {
           "type": "summary",
-          "settings": {
-          }
+          "settings": {}
         },
         "link": {
           "type": "link",
-          "settings": {
-          }
+          "settings": {}
         }
       },
       "block_order": [
@@ -35,7 +32,7 @@
       ],
       "settings": {
         "enable_tags": false,
-        "post_limit": 2,
+        "post_limit": 1,
         "show_image": true
       }
     },
@@ -44,8 +41,7 @@
       "blocks": {
         "template--18475561124168__303001e3-13aa-4824-9449-aa5e0f1e3108-1682763021f1713992-0": {
           "type": "title",
-          "settings": {
-          }
+          "settings": {}
         },
         "template--18475561124168__303001e3-13aa-4824-9449-aa5e0f1e3108-1682763021f1713992-1": {
           "type": "info",
@@ -56,8 +52,7 @@
         },
         "template--18475561124168__303001e3-13aa-4824-9449-aa5e0f1e3108-1682763021f1713992-2": {
           "type": "summary",
-          "settings": {
-          }
+          "settings": {}
         }
       },
       "block_order": [
