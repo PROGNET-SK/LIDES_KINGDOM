@@ -3,19 +3,6 @@
   {%- capture date_format -%} {{ 'general.date_format.month_day_year' | t }} {%- endcapture -%}
   {%- for block in section.blocks -%}
     {%- case block.type -%}
-      {%- when 'featured_image' -%}
-        {%- if article.image -%}
-          <div class="article__image article-element" style="">
-            {%- if article.image -%}
-              <div class="article__image article-element" style="width:33%;">
-                {%- liquid
-                  render 'lazy-image', image: article.image, alt: article.title,
-                -%}
-              </div>
-            {%- endif -%}
-          </div>
-        {%- endif -%}
-
       {%- when 'title' -%}
         <header class="article__header article-element">
           <div class="compact-header">
@@ -27,7 +14,16 @@
         </header>
 
       {%- when 'content' -%}
-        <div class="rte" style="width:66%;">{{ article.content }}</div>
+        <div class="projekt-page">
+          <div class="projekt-lside">
+            {%- liquid
+              render 'thumb-image-projekt', image: article.image, alt: article.title,
+            -%}
+          </div>
+          <div class="projekt-rside">
+            {{ article.content }}
+          </div>
+        </div>
 
         <div class="article-meta">
           {% if block.settings.blog_show_date %}
