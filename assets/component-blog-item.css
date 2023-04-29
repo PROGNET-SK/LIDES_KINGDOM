@@ -109,7 +109,8 @@ html[dir=ltr] .blog--slider.cols-4:before {
 .blog-item__image a {
   position: absolute;
   top: 0;
-  left: 0;
+  /*left: 0;*/
+  left: 20%;
   width: 100%;
   height: 100%;
 }
