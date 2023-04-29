@@ -42,17 +42,9 @@
       ],
       "settings": {
       }
-    },
-    "21e0628c-11ac-492f-a9c0-1bdbc45d5001": {
-      "type": "custom-liquid",
-      "settings": {
-        "custom_liquid": "",
-        "gutter_enabled": true
-      }
     }
   },
   "order": [
-    "main",
-    "21e0628c-11ac-492f-a9c0-1bdbc45d5001"
+    "main"
   ]
 }
