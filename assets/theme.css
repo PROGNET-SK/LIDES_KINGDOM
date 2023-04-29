@@ -4523,3 +4523,10 @@ li.has-sub-nav>a .icon {
 .blog-item-projekt {
   width: 33% !important;
 }
+
+@media only screen and (max-width: 749px) {
+
+  .blog-item-projekt {
+    width: 100% !important;
+  }
+}
