@@ -1,5 +1,4 @@
 {{ 'section-main-article.css' | asset_url | stylesheet_tag }}
-
 <div class="full-width-section-content gutter--on">
   {%- capture date_format -%} {{ 'general.date_format.month_day_year' | t }} {%- endcapture -%}
   {%- for block in section.blocks -%}
@@ -14,6 +13,7 @@
         {%- endif -%}
 
       {%- when 'title' -%}
+        <header class="article__header article-element"> -->
         <div class="compact-header">
           <div class="compact-header-container">
             {%- render 'breadcrumb' -%}
@@ -21,8 +21,10 @@
           </div>
         </div>
 
-      {%- when 'content' -%}
-        <div class="rte" style="width:66%;">{{ article.content }}</div>
+        {%- when 'content' -%}
+      
+          <div class="rte" style="width:66%;">{{ article.content }}</div>
+      
 
         <div class="article-meta">
           {% if block.settings.blog_show_date %}
@@ -45,6 +47,9 @@
             </span>
           {% endif %}
         </div>
+        </header>
+
+
 
       {%- when 'social_sharing' -%}
         <aside class="article__sharing article-element">
