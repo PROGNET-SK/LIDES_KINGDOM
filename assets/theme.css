@@ -4520,12 +4520,14 @@ li.has-sub-nav>a .icon {
 /* pojekty*/
 
 
-.blog-item-projekt {
-  width: 33% !important;
+@media only screen and (min-width: 750px) {
+  .blog-item-projekt {
+    width: 33% !important;
+  }
 }
 
-@media only screen and (max-width: 749px) {
 
+@media only screen and (max-width: 749px) {
   .blog-item-projekt {
     width: 100% !important;
   }
