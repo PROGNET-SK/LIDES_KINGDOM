@@ -101,9 +101,10 @@ html[dir=ltr] .blog--slider.cols-4:before {
   padding-top: 100%;
 }
 
+/*
 .blog--grid .blog-item__image {
   padding-top: 66.666%;
-}
+}*/
 
 .blog-item__image a {
   position: absolute;
@@ -220,4 +221,11 @@ a.selected .blog-item__title span {
   width: 100%;
   margin-bottom: 50px;
   display: flex;
+}
+
+
+.cols-1 .blog-item__image {
+  width: 50%;
+  margin-right: 7%;
+  padding-top: 66.666%;
 }
