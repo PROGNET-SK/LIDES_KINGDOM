@@ -26,6 +26,7 @@
 
 {%- paginate blog.articles by section.settings.post_limit -%}
   <div class="blog--grid cols-1 blog--images-{{ section.settings.show_image }} gutter--on">
+    tu je blog tpl
     {{ 'component-blog-item.css' | asset_url | stylesheet_tag }}
 
     {% for article in blog.articles %}
