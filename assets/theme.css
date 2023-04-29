@@ -4515,3 +4515,11 @@ li.has-sub-nav>a .icon {
   border: 0 !important;
   border-radius: 3px;
 }
+
+
+/* pojekty*/
+
+
+.blog-item-projekt {
+  width: 33% !important;
+}
