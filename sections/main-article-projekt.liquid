@@ -14,13 +14,15 @@
         </header>
 
       {%- when 'content' -%}
-        <div class="projekt-lside">
-          {%- liquid
-            render 'thumb-image-projekt', image: article.image, alt: article.title,
-          -%}
-        </div>
-        <div class="projekt-rside">
-          {{ article.content }}
+        <div class="page">
+          <div class="projekt-lside">
+            {%- liquid
+              render 'thumb-image-projekt', image: article.image, alt: article.title,
+            -%}
+          </div>
+          <div class="projekt-rside">
+            {{ article.content }}
+          </div>
         </div>
 
         <div class="article-meta">
