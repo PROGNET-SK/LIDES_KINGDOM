@@ -34,10 +34,10 @@
       "settings": {
         "title": "Latest Articles",
         "blog": "projekty",
-        "post_limit": 1,
+        "post_limit": 5,
         "show_image": true,
         "show_view_all": true,
-        "layout": "grid cols-2",
+        "layout": "slider cols-4",
         "seo_h_tag": "h2"
       }
     }
