@@ -24,8 +24,6 @@
       {%- when 'content' -%}
         <div class="rte" style="width:66%;">{{ article.content }}</div>
 
-
-
         <div class="article-meta">
           {% if block.settings.blog_show_date %}
             <span class="article-meta__date">{{ article.published_at | time_tag: date_format }}</span>
@@ -47,10 +45,6 @@
             </span>
           {% endif %}
         </div>
-<<<<<<< HEAD
-=======
-        </header>
->>>>>>> d7af857073fc7ab481e4192e9987534dae169fdd
 
       {%- when 'social_sharing' -%}
         <aside class="article__sharing article-element">
