@@ -30,7 +30,7 @@
     {% for article in blog.articles %}
       {%- render 'blog-item',
         article: article,
-        layout: 'cols-1',
+        layout: 'cols-3',
         show_image: section.settings.show_image,
         blocks: section.blocks
       -%}
