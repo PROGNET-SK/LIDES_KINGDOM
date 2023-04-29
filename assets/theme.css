@@ -4599,8 +4599,7 @@ li.has-sub-nav>a .icon {
   .transcy-switcher-item-primary {
     min-height: 10px !important;
     margin-top: 0px;
-    padding: 0 !important;
+    padding: -1 !important;
   }
-
 
 }
