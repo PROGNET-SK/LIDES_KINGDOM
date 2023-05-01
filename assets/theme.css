@@ -4558,7 +4558,13 @@ li.has-sub-nav>a .icon {
     width: 85% !important;
   }
 
+}
 
+@media screen and (max-width: 767px) {
+  .enap_gallery {
+    margin: 10px auto;
+    width: 85%;
+  }
 }
 
 @media only screen and (max-width: 749px) {
