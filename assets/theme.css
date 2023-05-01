@@ -4563,7 +4563,7 @@ li.has-sub-nav>a .icon {
 @media screen and (max-width: 767px) {
   .enap_gallery {
     margin: 10px auto;
-    width: 85%;
+    width: 85% !important;
   }
 }
 
@@ -4599,6 +4599,11 @@ li.has-sub-nav>a .icon {
     display: fle;
     width: 100%;
     float: none;
+  }
+
+  .enap_gallery {
+    margin: 10px auto;
+    width: 85% !important;
   }
 
   .enap_gallery .enap_content {
