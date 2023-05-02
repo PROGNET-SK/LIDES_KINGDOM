@@ -22,7 +22,6 @@
             {{ article.content }}
           </div>
         </div>
-
         <div class="article-meta">
           {% if block.settings.blog_show_date %}
             <span class="article-meta__date">{{ article.published_at | time_tag: date_format }}</span>
@@ -44,7 +43,6 @@
             </span>
           {% endif %}
         </div>
-
       {%- when 'social_sharing' -%}
         <aside class="article__sharing article-element">
           {%- render 'share-popup', title: article.title, url: article.url, image: article.image -%}
