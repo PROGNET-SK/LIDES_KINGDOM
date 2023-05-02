@@ -4555,8 +4555,8 @@ li.has-sub-nav>a .icon {
     margin-top: 5px !important;
   }
 
-  .enap_gallery {
-    width: 85% !important;
+  .enap_gallery img {
+    width: 90% !important;
   }
 
 }
