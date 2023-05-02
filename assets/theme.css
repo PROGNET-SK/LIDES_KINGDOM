@@ -4541,6 +4541,7 @@ li.has-sub-nav>a .icon {
     display: block;
     float: left;
     background-color: #d4edda;
+    padding-right: 25px;
   }
 
   .projekt-rside {
