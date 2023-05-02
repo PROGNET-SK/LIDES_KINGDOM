@@ -4537,7 +4537,7 @@ li.has-sub-nav>a .icon {
   }
 
   .projekt-lside {
-    width: 30%;
+    width: 40%;
     display: block;
     float: left;
   }
@@ -4545,7 +4545,7 @@ li.has-sub-nav>a .icon {
   .projekt-rside {
     padding-top: 0;
     display: block;
-    width: 70%;
+    width: 60%;
     float: left;
   }
 
