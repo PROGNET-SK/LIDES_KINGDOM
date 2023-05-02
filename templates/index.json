@@ -351,7 +351,7 @@
         "dbc70860-fcd5-4237-a645-a8b8a1ec5cde"
       ],
       "settings": {
-        "title": "Najnovšie články",
+        "title": "Najnovšie blogy",
         "blog": "blog",
         "post_limit": 2,
         "show_image": true,
