@@ -4511,18 +4511,12 @@ li.has-sub-nav>a .icon {
   line-height: normal;
 }
 
-.enap_content img {
-  border: 0 !important;
-  border-radius: 3px;
-}
-
 
 /* pojekty*/
 
-.enap_gallery {
+.enap_gallery img {
   width: 85% !important;
 }
-
 
 
 @media only screen and (min-width: 750px) {
@@ -4561,7 +4555,7 @@ li.has-sub-nav>a .icon {
     margin-top: 5px !important;
   }
 
-  .enap_gallery {
+  .enap_gallery img {
     width: 85% !important;
   }
 
