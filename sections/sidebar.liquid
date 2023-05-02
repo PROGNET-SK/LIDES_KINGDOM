@@ -90,7 +90,10 @@
                     class="selected"
                   {% endif %}
                 >
-                  <span class="underline-animation">{{- link.title -}}</span>
+                  <span class="underline-animation"
+                    >TUUU
+                    {{- link.title -}}
+                  </span>
                 </a>
               </li>
             {% endfor %}
@@ -103,24 +106,6 @@
 
         <nav class="secondary-menu">
           {%- render 'sidebar-navigation', menu: section.settings.menu_secondary, type: 'secondary' -%}
-
-          <!--
-            {%- #if shop.customer_accounts_enabled -%}
-              <ul class="sidebar__menu accounts-menu">
-                <li>
-                  {%- #if customer -%}
-                    <a href="{{ routes.account_url }}"
-                      ><span class="underline-animation">{{ 'general.account_link.logged_in' | t }}</span></a
-                    >
-                  {%- #else -%}
-                    <a href="{{ routes.account_login_url }}"
-                      ><span class="underline-animation">{{ 'general.account_link.logged_out' | t }}</span></a
-                    >
-                  {%- #endif -%}
-                </li>
-              </ul>
-            {%- #endif -%}
-          -->
 
           <div class="localization-form-holder">
             {%- render 'localization-form',

@@ -40,7 +40,7 @@
                       class="{% if childlink.links != blank %} parent-has-submenu {% endif %} sub-menu__link-second{% if childlink.active or childlink.child_active %} selected {% endif %} {% if forloop.last %} sub-menu__last-second {% endif %}"
                     >
                       <span style="flex: 1;">
-                        <span class="underline-animation"> TUUU{{ childlink.title | escape }}</span>
+                        <span class="underline-animation">{{ childlink.title | escape }}</span>
                       </span>
                       <span class="submenu-arrow" aria-hidden="true">
                         {%- if childlink.links != blank -%}{%- render 'theme-symbols', icon: 'arrow' -%}{%- endif -%}
