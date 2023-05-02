@@ -4540,6 +4540,7 @@ li.has-sub-nav>a .icon {
     width: 40%;
     display: block;
     float: left;
+    background-color: #d4edda;
   }
 
   .projekt-rside {
@@ -4547,6 +4548,7 @@ li.has-sub-nav>a .icon {
     display: block;
     width: 60%;
     float: left;
+
   }
 
   .enap_gallery .enap_content {
