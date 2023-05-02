@@ -4557,7 +4557,7 @@ li.has-sub-nav>a .icon {
 
   .enap_gallery img {
     width: 90% !important;
-    border: 0px;
+    border: 0px !important;
   }
 
 }
@@ -4566,7 +4566,7 @@ li.has-sub-nav>a .icon {
   .enap_gallery {
     margin: 10px auto;
     width: 85% !important;
-    border: 0px;
+    border: 0px !important;
   }
 }
 
