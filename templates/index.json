@@ -295,6 +295,7 @@
     },
     "16287822411b91418f": {
       "type": "testimonials",
+      "disabled": true,
       "blocks": {
         "16287822411b91418f-0": {
           "type": "testimonial",
