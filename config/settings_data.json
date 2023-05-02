@@ -92,7 +92,7 @@
     "cart_action": "no-overlay",
     "cart_notes_enable": true,
     "cart_additional_buttons": false,
-    "cart_image_ratio": "1",
+    "cart_image_ratio": "0.666667",
     "show_breadcrumb": false,
     "show_preloader": false,
     "show_gotop": true,
