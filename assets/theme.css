@@ -4540,7 +4540,7 @@ li.has-sub-nav>a .icon {
     width: 40%;
     display: block;
     float: left;
-    background-color: #0fdd3f;
+    /*background-color: #0fdd3f;*/
     padding-right: 25px;
   }
 
