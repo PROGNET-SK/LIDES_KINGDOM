@@ -177,7 +177,7 @@
     "162878197127c896d8": {
       "type": "featured-collection",
       "settings": {
-        "title": "Pripravujeme",
+        "title": "Najpredávanejšie",
         "show_view_all": true,
         "layout": "grid",
         "products_number": 12,
@@ -325,8 +325,7 @@
       "blocks": {
         "1628782268aab83134-0": {
           "type": "title",
-          "settings": {
-          }
+          "settings": {}
         },
         "1628782268aab83134-1": {
           "type": "info",
@@ -338,13 +337,11 @@
         },
         "1628782268aab83134-2": {
           "type": "summary",
-          "settings": {
-          }
+          "settings": {}
         },
         "dbc70860-fcd5-4237-a645-a8b8a1ec5cde": {
           "type": "link",
-          "settings": {
-          }
+          "settings": {}
         }
       },
       "block_order": [
