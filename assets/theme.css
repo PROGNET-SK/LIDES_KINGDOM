@@ -4514,7 +4514,7 @@ li.has-sub-nav>a .icon {
 
 /* pojekty*/
 
-.enap_gallery img {
+.enap_gallery {
   width: 85% !important;
 }
 
@@ -4555,7 +4555,7 @@ li.has-sub-nav>a .icon {
     margin-top: 5px !important;
   }
 
-  .enap_gallery img {
+  .enap_gallery {
     width: 85% !important;
   }
 
