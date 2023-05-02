@@ -291,7 +291,7 @@
       "no_results": "Nenašli sa žiadne výsledky pre výraz \"{{ terms }}\"",
       "results": "Výsledky vyhľadávania pre \"{{ terms }}\"",
       "products_found": "Produkty pre \"{{ terms }}\"",
-      "pages_and_articles_found": "Stránky a články pre \"{{ terms }}\"",
+      "pages_and_articles_found": "Stránky a plogy pre \"{{ terms }}\"",
       "results_count": {
         "zero": "Žiadne výsledky",
         "one": " Zobrazuje sa {{count}} výsledok",
