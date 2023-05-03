@@ -151,10 +151,14 @@
   </div>
 
   <div class="header__responsive-handles">
-    {{ request.locale.iso_code }}
+    {% if request.locale.iso_code == 'en' %}
+      <a href="/en/" class="header__language_en__link lng-bolder" id="lang-en"> EN </a>
+      <a href="/sk/" class="header__language_sk__link" id="lang-sk"> SK </a>
 
-    <a href="/en/" class="header__language_en__link" id="lang-en"> EN </a>
-    <a href="/sk/" class="header__language_sk__link" id="lang-sk"> SK </a>
+    {% elsif request.locale.iso_code == 'sk-sk' %}
+      <a href="/en/" class="header__language_en__link" id="lang-en"> EN </a>
+      <a href="/sk/" class="header__language_sk__link lng-bolder" id="lang-sk"> SK </a>
+    {% endif %}
 
     {% if shop.customer_accounts_enabled and section.settings.show_account %}
       <a href="/account" class="header__account__link" id="account-link">
