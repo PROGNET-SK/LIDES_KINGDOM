@@ -3026,6 +3026,7 @@ html[dir=ltr] .shopify-policy__title {
   right: 70px;
   padding: 5px;
   cursor: pointer;
+
 }
 
 .header__language_sk__link {
@@ -3036,6 +3037,7 @@ html[dir=ltr] .shopify-policy__title {
   right: 100px;
   padding: 5px;
   cursor: pointer;
+  border: 1px solid black;
 }
 
 .header__language_en__link {
@@ -3046,6 +3048,7 @@ html[dir=ltr] .shopify-policy__title {
   right: 125px;
   padding: 5px;
   cursor: pointer;
+  border: 1px solid black;
 }
 
 
