@@ -211,7 +211,7 @@
       "header": {
         "type": "header",
         "settings": {
-          "logo_image": "shopify:\/\/shop_images\/LIDES.png",
+          "logo_image": "shopify:\/\/shop_images\/logo-01.svg",
           "logo_image_width": 200,
           "header_style": "normal",
           "header_transparent_home": false,
