@@ -98,13 +98,6 @@
         </div>
         <nav class="secondary-menu">
           {%- render 'sidebar-navigation', menu: section.settings.menu_secondary, type: 'secondary' -%}
-          <div class="localization-form-holder">
-            {%- render 'localization-form',
-              location: 'sidebar',
-              show_country_selector: section.settings.show_country_selector,
-              show_locale_selector: section.settings.show_locale_selector
-            -%}
-          </div>
         </nav>
         <div>
           {% if request.locale.iso_code == 'en' %}
