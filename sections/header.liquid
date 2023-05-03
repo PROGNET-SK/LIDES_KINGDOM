@@ -151,7 +151,7 @@
   </div>
 
   <div class="header__responsive-handles">
-    <p>{{ request.locale.iso_code }}</p>
+    <p>::{{ request.locale.iso_code }}::</p>
 
     {% if request.locale.iso_code == ' en ' %}
       <a href="/en/" class="header__language_en__link lng-bolder" id="{{ request.locale.iso_code }}"> EN </a>
