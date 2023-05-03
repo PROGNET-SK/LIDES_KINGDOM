@@ -38,6 +38,14 @@
       </header>
 
       <div class="sidebar__responsive-handles">
+        {% if request.locale.iso_code == 'en' %}
+          <a href="/en/" class="sidebar__lang-handle lng-bolder" id="{{ request.locale.iso_code }}"> EN </a>
+          <a href="/" class="sidebar__lang-handle" id="{{ request.locale.iso_code }}"> SK </a>
+        {% else %}
+          <a href="/en/" class="sidebar__lang-handle" id="{{ request.locale.iso_code }}"> EN </a>
+          <a href="/" class="sidebar__lang-handle lng-bolder" id="{{ request.locale.iso_code }}"> SK </a>
+        {% endif %}
+
         {%- if section.settings.show_search -%}
           <span class="sidebar__search-handle" tabindex="0">
             <span class="icon icon-search" aria-hidden="true">{%- render 'theme-symbols', icon: 'search' -%}</span>
@@ -106,20 +114,6 @@
             -%}
           </div>
         </nav>
-
-        <div>
-          *********
-
-          {% if request.locale.iso_code == 'en' %}
-            <a href="/en/" class="header__language_en__link lng-bolder" id="{{ request.locale.iso_code }}"> EN </a>
-            <a href="/" class="header__language_sk__link" id="{{ request.locale.iso_code }}"> SK </a>
-          {% else %}
-            <a href="/en/" class="header__language_en__link" id="{{ request.locale.iso_code }}"> EN </a>
-            <a href="/" class="header__language_sk__link lng-bolder" id="{{ request.locale.iso_code }}"> SK </a>
-          {% endif %}
-
-          ************
-        </div>
       </sidebar-drawer>
 
       {%- unless template contains 'cart' -%}
