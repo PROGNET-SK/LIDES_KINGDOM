@@ -3077,7 +3077,7 @@ html[dir=ltr] .shopify-policy__title {
 
 .lng-bolder {
   font-weight: bold;
-  border: solid #1d1d1d;
+  border: 1px solid #1d1d1d;
   color: #1d1d1d;
 }
 
