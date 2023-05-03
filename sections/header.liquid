@@ -151,11 +151,11 @@
   </div>
 
   <div class="header__responsive-handles">
-    {% if request.locale.iso_code == 'en' %}
+    {% if request.locale.iso_code == ' en ' %}
       <a href="/en/" class="header__language_en__link lng-bolder" id="lang-en"> EN </a>
       <a href="/sk/" class="header__language_sk__link" id="lang-sk"> SK </a>
 
-    {% elsif request.locale.iso_code == 'sk-sk' %}
+    {% elsif request.locale.iso_code == ' sk-sk ' %}
       <a href="/en/" class="header__language_en__link" id="lang-en"> EN </a>
       <a href="/sk/" class="header__language_sk__link lng-bolder" id="lang-sk"> SK </a>
     {% endif %}
