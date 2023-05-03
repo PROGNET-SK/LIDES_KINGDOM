@@ -732,8 +732,7 @@ body:after {
 
 .sidebar__cart-handle,
 .sidebar__menu-handle,
-.sidebar__search-handle,
-.sidebar__lang-handle {
+.sidebar__search-handle {
   position: absolute;
   width: 36px;
   height: 36px;
