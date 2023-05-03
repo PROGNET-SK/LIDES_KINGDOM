@@ -4690,3 +4690,13 @@ li.has-sub-nav>a .icon {
 .footer-copyright {
   text-align: center;
 }
+
+
+
+@media screen and (max-width: 767px) {
+  .enapnav .fa {
+
+    background: none !important;
+
+  }
+}
