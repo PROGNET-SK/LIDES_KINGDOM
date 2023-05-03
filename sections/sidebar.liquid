@@ -98,7 +98,6 @@
         </div>
         <nav class="secondary-menu">
           {%- render 'sidebar-navigation', menu: section.settings.menu_secondary, type: 'secondary' -%}
-
           <div class="localization-form-holder">
             {%- render 'localization-form',
               location: 'sidebar',
@@ -108,7 +107,9 @@
           </div>
         </nav>
 
-        <div class="eshop-header">
+        <div>
+          *********
+
           {% if request.locale.iso_code == 'en' %}
             <a href="/en/" class="header__language_en__link lng-bolder" id="{{ request.locale.iso_code }}"> EN </a>
             <a href="/" class="header__language_sk__link" id="{{ request.locale.iso_code }}"> SK </a>
@@ -116,6 +117,8 @@
             <a href="/en/" class="header__language_en__link" id="{{ request.locale.iso_code }}"> EN </a>
             <a href="/" class="header__language_sk__link lng-bolder" id="{{ request.locale.iso_code }}"> SK </a>
           {% endif %}
+
+          ************
         </div>
       </sidebar-drawer>
 
