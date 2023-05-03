@@ -151,13 +151,8 @@
   </div>
 
   <div class="header__responsive-handles">
-    <a href="/en/" class="header__cart-handle" title="EN">
-      <span class="visually-hidden">EN</span>
-      <span class="icon icon-cart" aria-hidden="true" style="height: 28px;">
-        {%- render 'theme-symbols', icon: 'EN' -%}
-      </span>
-      <span class="count" aria-hidden="true" data-header-cart-count>{{ cart.item_count }}</span>
-    </a>
+    <a href="/en/" class="header__account__link" id="lang-en"> EN </a>
+    <a href="/sk/" class="header__account__link" id="lang-sk"> SK </a>
 
     {% if shop.customer_accounts_enabled and section.settings.show_account %}
       <a href="/account" class="header__account__link" id="account-link">
