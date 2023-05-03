@@ -3028,6 +3028,26 @@ html[dir=ltr] .shopify-policy__title {
   cursor: pointer;
 }
 
+.header__language_sk__link {
+  position: absolute;
+  width: 36px;
+  height: 36px;
+  top: 25px;
+  right: 80px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.header__language_en__link {
+  position: absolute;
+  width: 36px;
+  height: 36px;
+  top: 25px;
+  right: 105px;
+  padding: 5px;
+  cursor: pointer;
+}
+
 
 
 @media only screen and (min-width: 948px) {
