@@ -72,12 +72,6 @@
           <span aria-hidden="true">{% render 'theme-symbols', icon: 'arrow-left' %}</span>
         </span>
 
-        <!--
-          <nav class="primary-menu">
-            {%- render 'sidebar-navigation', menu: section.settings.menu_primary, type: 'primary' -%}
-          </nav>
-        -->
-
         <nav class="lide-primary-menu">
           <ul class="sidebar__menu sidebar-menu-element sidebar--primary">
             {% for link in linklists['header-top-nav'].links %}
@@ -102,7 +96,6 @@
         <div class="eshop-header">
           <h1>E-shop</h1>
         </div>
-
         <nav class="secondary-menu">
           {%- render 'sidebar-navigation', menu: section.settings.menu_secondary, type: 'secondary' -%}
 
@@ -114,6 +107,16 @@
             -%}
           </div>
         </nav>
+
+        <div class="eshop-header">
+          {% if request.locale.iso_code == 'en' %}
+            <a href="/en/" class="header__language_en__link lng-bolder" id="{{ request.locale.iso_code }}"> EN </a>
+            <a href="/" class="header__language_sk__link" id="{{ request.locale.iso_code }}"> SK </a>
+          {% else %}
+            <a href="/en/" class="header__language_en__link" id="{{ request.locale.iso_code }}"> EN </a>
+            <a href="/" class="header__language_sk__link lng-bolder" id="{{ request.locale.iso_code }}"> SK </a>
+          {% endif %}
+        </div>
       </sidebar-drawer>
 
       {%- unless template contains 'cart' -%}
