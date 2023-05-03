@@ -1004,9 +1004,10 @@ sidebar-drawer.opened .sidebar-close-element {
 
   .logo .logo__text,
   .logo img {
-    max-height: 39px;
+    /*max-height: 39px;*/
     margin: 0;
-    width: auto;
+    /*width: auto;*/
+    width: 160px;
     display: block;
   }
 
