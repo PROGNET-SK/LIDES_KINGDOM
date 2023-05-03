@@ -3059,6 +3059,12 @@ html[dir=ltr] .shopify-policy__title {
   color: #1d1d1d;
 }
 
+/*mobile bolder*/
+.lides-shop li a {
+  font-weight: bold;
+
+}
+
 
 
 @media only screen and (min-width: 948px) {
