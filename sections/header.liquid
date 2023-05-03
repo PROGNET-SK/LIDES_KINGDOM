@@ -151,6 +151,14 @@
   </div>
 
   <div class="header__responsive-handles">
+    <a href="/sk/" class="header__account__link" id="account-link">
+      <span class="visually-hidden">SK</span>
+    </a>
+
+    <a href="/en/" class="header__account__link" id="account-link">
+      <span class="visually-hidden">EN</span>
+    </a>
+
     {% if shop.customer_accounts_enabled and section.settings.show_account %}
       <a href="/account" class="header__account__link" id="account-link">
         {% include 'icon-account' %}
