@@ -2906,6 +2906,13 @@ html[dir=ltr] .text-w-icon--align-left {
     width: 100%;
     margin-bottom: 50px;
   }
+
+  .lng-mobile {
+    display: block;
+    visibility: visible;
+  }
+
+
 }
 
 .text-w-image .text-w-image__container:last-child {
