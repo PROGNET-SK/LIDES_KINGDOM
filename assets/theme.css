@@ -2878,10 +2878,22 @@ html[dir=ltr] .text-w-icon--align-left {
   width: 50%;
 }
 
+
+.lng-mobile {
+  display: none;
+  visibility: hidden;
+}
+
+
 @media screen and (max-width: 480px) {
   .text-w-image[data-size="2"] .text-w-image__container {
     width: 100%;
     margin-bottom: 50px;
+  }
+
+  .lng-mobile {
+    display: block;
+    visibility: visible;
   }
 }
 
@@ -2986,6 +2998,9 @@ html[dir=ltr] .shopify-policy__title {
     visibility: hidden;
     display: none;
   }
+
+
+
 
 }
 
