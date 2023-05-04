@@ -4692,11 +4692,8 @@ li.has-sub-nav>a .icon {
 }
 
 
-
 @media screen and (max-width: 767px) {
   .enapnav .fa {
-
     background: none !important;
-
   }
 }
