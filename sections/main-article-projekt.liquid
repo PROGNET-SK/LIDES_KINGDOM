@@ -15,13 +15,9 @@
 
       {%- when 'content' -%}
         <div class="projekt-page">
-          <div class="projekt-lside">
-            {{ article.excerpt }}
-          </div>
-          <div class="projekt-rside">
-            {{ article.content }}
-          </div>
+          {{ article.content }}
         </div>
+
         <div class="article-meta">
           {% if block.settings.blog_show_date %}
             <span class="article-meta__date">{{ article.published_at | time_tag: date_format }}</span>
