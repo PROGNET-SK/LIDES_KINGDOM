@@ -212,7 +212,7 @@
         "type": "header",
         "settings": {
           "logo_image": "shopify:\/\/shop_images\/lides-logo-svg-01.svg",
-          "logo_image_width": 200,
+          "logo_image_width": 150,
           "header_style": "normal",
           "header_transparent_home": false,
           "header_transparent_collection": true,
