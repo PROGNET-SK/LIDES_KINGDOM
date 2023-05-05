@@ -1009,7 +1009,7 @@ sidebar-drawer.opened .sidebar-close-element {
     /*width: auto;*/
     width: 160px;
     display: block;
-    padding-top: 5px;
+    padding-top: 0;
   }
 
   .sidebar__menus {
