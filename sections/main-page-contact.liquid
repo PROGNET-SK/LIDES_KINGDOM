@@ -1,10 +1,33 @@
+<style>
+  .eight.columns.lside {
+  width: 40%;
+  float: left;
+  }
+
+  .eight.columns.rside {
+  width:48%;
+  float:right;
+  }
+</style>
+
 <div class="page-content">
   <div class="centered-section-content">
     <div>
       {%- render 'breadcrumb' -%}
       <h1 class="title h0" style="margin-bottom:var(--compact-header-padding)">{{ page.title }}</h1>
-      <div class="rte">
+      <div class="eight columns lside">
         {{ page.content }}
+      </div>
+      <div class="eight columns rside">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1579.9293473877863!2d17.91490977527834!3d48.242935810504676!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476b6a5455aa5205%3A0xfac73b2146249559!2sLIDES%20s.r.o.!5e0!3m2!1ssk!2ssk!4v1683367517711!5m2!1ssk!2ssk"
+          width="100%"
+          height="100%"
+          style="border:0;"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
       </div>
     </div>
   </div>
