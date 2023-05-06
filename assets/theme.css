@@ -4620,6 +4620,16 @@ li.has-sub-nav>a .icon {
     border: 0px !important;
   }
 
+  .eight.columns.lside {
+    width: 50%;
+    float: left;
+  }
+
+  .eight.columns.rside {
+    width: 50%;
+    float: right;
+  }
+
 }
 
 @media screen and (max-width: 767px) {
@@ -4683,16 +4693,6 @@ li.has-sub-nav>a .icon {
     min-height: 10px !important;
     margin-top: 7px;
     padding: 0px !important;
-  }
-
-  .eight.columns.lside {
-    width: 50%;
-    float: left;
-  }
-
-  .eight.columns.rside {
-    width: 50%;
-    float: right;
   }
 
 }
