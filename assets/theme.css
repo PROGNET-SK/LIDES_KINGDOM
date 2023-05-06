@@ -4710,12 +4710,13 @@ li.has-sub-nav>a .icon {
 
   .eight.columns.lside {
     width: 100%;
-    float: none;
+    float: left;
   }
 
   .eight.columns.rside {
     width: 100%;
-    float: none;
+    float: left;
+    background: #155724;
   }
 
 
