@@ -4620,6 +4620,13 @@ li.has-sub-nav>a .icon {
     border: 0px !important;
   }
 
+
+  .lides-contact-wrap {
+    width: 100%;
+    display: flex;
+  }
+
+
   .eight.columns.lside {
     width: 50%;
     float: left;
@@ -4708,6 +4715,13 @@ li.has-sub-nav>a .icon {
     background: none !important;
   }
 
+
+  .lides-contact-wrap {
+    width: 100%;
+    display: contents;
+  }
+
+
   .eight.columns.lside {
     width: 100%;
     float: left;
@@ -4719,6 +4733,7 @@ li.has-sub-nav>a .icon {
     float: left;
     background: #155724;
   }
+
 
 
 }
