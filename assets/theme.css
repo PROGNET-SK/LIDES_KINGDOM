@@ -1610,8 +1610,9 @@ html[dir=ltr] .compact-header-container>.h1 {
 }
 
 .centered-section-content>div {
-  width: 80%;
+  width: 100%;
 }
+
 
 @media screen and (max-width: 1440px) {
   .centered-section-content>div {
