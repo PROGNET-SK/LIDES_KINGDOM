@@ -33,6 +33,9 @@
         "1628539090bcf511f6-1",
         "1628539090bcf511f6-2"
       ],
+      "custom_css": [
+        ".mailer{display:flex; width:100%;}"
+      ],
       "settings": {
         "title": "Napíšte nám...",
         "seo_h_tag": "h3"
