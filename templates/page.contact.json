@@ -1,17 +1,15 @@
 {
   "sections": {
     "main": {
-      "type": "main-page",
-      "settings": {
-      }
+      "type": "main-page-contact",
+      "settings": {}
     },
     "1628539090bcf511f6": {
       "type": "contact-form",
       "blocks": {
         "1628539090bcf511f6-0": {
           "type": "email",
-          "settings": {
-          }
+          "settings": {}
         },
         "1628539090bcf511f6-1": {
           "type": "field",
