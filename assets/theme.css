@@ -4685,6 +4685,16 @@ li.has-sub-nav>a .icon {
     padding: 0px !important;
   }
 
+  .eight.columns.lside {
+    width: 50%;
+    float: left;
+  }
+
+  .eight.columns.rside {
+    width: 50%;
+    float: right;
+  }
+
 }
 
 
@@ -4697,4 +4707,16 @@ li.has-sub-nav>a .icon {
   .enapnav .fa {
     background: none !important;
   }
+
+  .eight.columns.lside {
+    width: 100%;
+    float: none;
+  }
+
+  .eight.columns.rside {
+    width: 100%;
+    float: none;
+  }
+
+
 }
