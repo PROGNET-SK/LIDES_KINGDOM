@@ -4740,6 +4740,6 @@ li.has-sub-nav>a .icon {
 
 #transcyBtnSwitcher {
 
-  display: none;
-  visibility: hidden;
+  display: none !important;
+  visibility: hidden !important;
 }
