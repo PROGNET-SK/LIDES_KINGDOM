@@ -4748,6 +4748,7 @@ li.has-sub-nav>a .icon {
 .blog_article__image {
   position: relative;
   height: 50vh;
+
 }
 
 
@@ -4758,5 +4759,7 @@ li.has-sub-nav>a .icon {
     max-width: 960px;
     margin: 10vw auto;
     background-color: red;
+
+
   }
 }
