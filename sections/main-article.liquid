@@ -8,7 +8,7 @@
       {%- when 'featured_image' -%}
         {%- if article.image -%}
           <div class="article__image blog_article__image">
-            {% assign img_url = article.image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' %}
+            {{ article.image | img_url: '450x450', crop: 'center' }}
           </div>
         {%- endif -%}
 
