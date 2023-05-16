@@ -1,6 +1,7 @@
 {{ 'section-main-article.css' | asset_url | stylesheet_tag }}
 
-<div class="full-width-section-content gutter--on">
+<!-- <div class="full-width-section-content gutter--on"> -->
+<div class="gutter--on">
   {%- capture date_format -%} {{ 'general.date_format.month_day_year' | t }} {%- endcapture -%}
   {%- for block in section.blocks -%}
     {%- case block.type -%}
