@@ -1,7 +1,7 @@
 {%- capture date_format -%} {{ 'general.date_format.month_day_year' | t }} {%- endcapture -%}
 <article class="blog-item">
   {%- if show_image -%}
-    <div class="article__image">
+    <div class="blog-item__image">
       <a
         class="blog-item__header lazy-image--hover"
         href="{{ article.url | escape }}"
@@ -23,7 +23,7 @@
     </div>
   {%- endif -%}
 
-  <div class="article__content">
+  <div class="blog-item__content">
     {%- for block in blocks -%}
       {%- case block.type -%}
         {%- when 'title' -%}
