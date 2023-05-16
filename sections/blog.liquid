@@ -149,7 +149,6 @@
                   style="padding-top:{{ 1 | divided_by: image.aspect_ratio | times: 100}}%; background-image:  url('{{ image.src | img_url: '1x1' }}');"
                 >
                   <img
-                    hereis="true"
                     class="lazyload fade-in"
                     src="{{ image | img_url: '540x' }}"
                     data-src="{{ img_url }}"
