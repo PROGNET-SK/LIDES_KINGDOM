@@ -6,15 +6,7 @@
     {%- case block.type -%}
       {%- when 'featured_image' -%}
         {%- if article.image -%}
-          <div class="article__image article-element blog_article__image">
-            <img
-              src="{{ image | image_url: width: 480 }}"
-              alt="{{ image_alt | strip_html | escape }}"
-              class="img"
-              width="{{ image.width }}"
-              height="{{ image.height }}"
-            >
-          </div>
+          <div class="article__image article-element blog_article__image">here is img</div>
         {%- endif -%}
 
       {%- when 'content' -%}
