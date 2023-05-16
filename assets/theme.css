@@ -4742,20 +4742,3 @@ li.has-sub-nav>a .icon {
   display: none !important;
   visibility: hidden !important;
 }
-
-.article__image {
-  position: relative;
-  height: 50vh;
-}
-
-@media screen and (min-width: 1280px) {
-
-  .page-content,
-  .article__content {
-    width: 60%;
-    padding: 0;
-    max-width: 960px;
-    margin: 10vw auto;
-
-  }
-}
