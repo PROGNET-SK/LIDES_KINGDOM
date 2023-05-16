@@ -4743,14 +4743,10 @@ li.has-sub-nav>a .icon {
   visibility: hidden !important;
 }
 
-
-
 .blog_article__image {
   position: relative;
   height: 50vh;
-
 }
-
 
 @media screen and (min-width: 1280px) {
   .blog_article__content {
