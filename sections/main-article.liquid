@@ -11,9 +11,9 @@
             <img
               id="Image-{{ image.id }}-{{ responsive_image_counter }}"
               class="responsive-image__image lazyload {{ image_class }}"
-              src="{{ article.image | img_url: '300x' }}"
+              src="{{ article.image | img_url: '1654x' }}"
               data-src="{{ img_url }}"
-              data-widths="[{{ image_widths }}]"
+              data-height="[480]"
               data-aspectratio="{{ image.aspect_ratio }}"
               data-sizes="auto"
               tabindex="-1"
