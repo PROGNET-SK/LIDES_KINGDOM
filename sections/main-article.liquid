@@ -8,18 +8,7 @@
       {%- when 'featured_image' -%}
         {%- if article.image -%}
           <div class="article__image blog_article__image">
-            <img
-              id="Image-{{ image.id }}-{{ responsive_image_counter }}"
-              class="responsive-image__image lazyload {{ image_class }}"
-              src="{{ article.image | img_url: '1654x' }}"
-              data-src="{{ article.image }}"
-              data-height="[480]"
-              data-aspectratio="{{ image.aspect_ratio }}"
-              data-sizes="auto"
-              tabindex="-1"
-              alt="{{ image.alt | escape }}"
-              {{ image_attributes }}
-            >
+            {% assign img_url = article.image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' %}
           </div>
         {%- endif -%}
 
