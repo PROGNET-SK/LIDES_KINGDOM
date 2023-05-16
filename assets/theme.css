@@ -4745,6 +4745,12 @@ li.has-sub-nav>a .icon {
 
 
 
+.blog_article__image {
+  position: relative;
+  height: 50vh;
+}
+
+
 @media screen and (min-width: 1280px) {
   .blog_article__content {
     width: 60%;
