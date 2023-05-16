@@ -7,9 +7,6 @@
       {%- when 'featured_image' -%}
         {%- if article.image -%}
           <div class="article__image article-element blog_article__image">
-            {%!!- liquid assign sizes = 'sizes="(max-height: 480px) calc(100vw - 400px), calc(100vw - 200px)"' render
-            'lazy-image', image: article.image, alt: article.title, sizes: sizes -!!%}
-
             <img
               src="{{ image | image_url: width: 480 }}"
               alt="{{ image_alt | strip_html | escape }}"
