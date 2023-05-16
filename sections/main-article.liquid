@@ -6,7 +6,7 @@
     {%- case block.type -%}
       {%- when 'featured_image' -%}
         {%- if article.image -%}
-          <div class="article__image article-element">
+          <div class="article__image article-element blog_article__image">
             {%- liquid
               assign sizes = 'sizes="(max-width: 948px) calc(100vw - 20px), calc(100vw - 200px)"'
               render 'lazy-image', image: article.image, alt: article.title, sizes: sizes
