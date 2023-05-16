@@ -4746,7 +4746,7 @@ li.has-sub-nav>a .icon {
 
 
 @media screen and (min-width: 1280px) {
-  .article__content {
+  .blog_article__content {
     width: 60%;
     padding: 0;
     max-width: 960px;
