@@ -9,9 +9,10 @@
         {%- if article.image -%}
           <div class="article__image article-element blog_article__image">
             <img
-              src="{{ article.image | img_url: 'x460', crop: 'center' }}"
+              src="{{ article.image | img_url: '1700x', crop: 'center' }}"
               alt="{{ article.title }}"
               class="img"
+              style="width: auto; max-height: 470px; object-fit: fill;"
               width=""
               height=""
             >
