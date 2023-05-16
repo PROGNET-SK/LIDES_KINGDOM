@@ -45,6 +45,7 @@
 
       {%- when 'content' -%}
         <section class="article__body article-element blog_article__content">
+          <h1 class="article__title h0">{{ article.title | escape }}</h1>
           <div class="rte">{{ article.content }}</div>
         </section>
 
