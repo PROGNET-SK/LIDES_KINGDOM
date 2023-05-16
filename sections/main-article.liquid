@@ -7,15 +7,11 @@
     {%- case block.type -%}
       {%- when 'featured_image' -%}
         {%- if article.image -%}
-          <div class="article__image article-element blog_article__image">
-            <img
-              src="{{ article.image | img_url: '1700x1700', crop: 'center' }}"
-              alt="{{ article.title }}"
-              class="img"
-              style="width: 300px; height: 337px; object-fit: cover;"
-              width="1700"
-              height="470"
-            >
+          <div class="article__image blog_article__image">
+            {%- liquid
+              assign sizes = 'sizes="(max-width: 1700px) calc(100vw - 20px), calc(100vw - 200px)"'
+              render 'lazy-image', image: article.image, alt: article.title, sizes: sizes
+            -%}
           </div>
         {%- endif -%}
 
