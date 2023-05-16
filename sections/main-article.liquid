@@ -9,7 +9,7 @@
         {%- if article.image -%}
           <div class="article__image blog_article__image" style="max-height:450px; overflow:hidden;">
             <img
-              src="{{ article.image | img_url: '1700x', crop: 'center' }}"
+              src="{{ article.image | img_url: '1700x', crop: 'center', scale: 2 }}"
               alt="{{ article.title }}"
               class=""
               style="width:1700px; height:auto; object-fit:cover;"
