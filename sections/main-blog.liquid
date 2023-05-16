@@ -1,5 +1,4 @@
 <div class="compact-header">
-  main-blog
   <div class="compact-header-container">
     {%- render 'breadcrumb' -%}
     <h1 class="blog-header__title h0">{{ blog.title | escape }}</h1>
@@ -27,7 +26,6 @@
 
 {%- paginate blog.articles by section.settings.post_limit -%}
   <div class="blog--grid cols-1 blog--images-{{ section.settings.show_image }} gutter--on">
-    main-blok-detail
     {{ 'component-blog-item.css' | asset_url | stylesheet_tag }}
 
     {% for article in blog.articles %}
