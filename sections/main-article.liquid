@@ -9,11 +9,11 @@
         {%- if article.image -%}
           <div class="article__image article-element blog_article__image">
             <img
-              src="{{ article.image | img_url: '1690x', crop: 'center' }}"
+              src="{{ article.image | img_url: 'x460', crop: 'center' }}"
               alt="{{ article.title }}"
               class="img"
-              width="100%"
-              height="max-height:480px;"
+              width=""
+              height=""
             >
           </div>
         {%- endif -%}
