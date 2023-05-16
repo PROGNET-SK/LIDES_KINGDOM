@@ -12,7 +12,7 @@
               id="Image-{{ image.id }}-{{ responsive_image_counter }}"
               class="responsive-image__image lazyload {{ image_class }}"
               src="{{ article.image | img_url: '1654x' }}"
-              data-src="{{ img_url }}"
+              data-src="{{ article.image }}"
               data-height="[480]"
               data-aspectratio="{{ image.aspect_ratio }}"
               data-sizes="auto"
