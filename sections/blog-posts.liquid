@@ -1,9 +1,10 @@
-<div class="content-section full-width-section-content gutter--on blog-posts">
+{{ 'component-blog-item.css' | asset_url | stylesheet_tag }}
 
+<div class="content-section full-width-section-content gutter--on blog-posts">
   <div class="blog-posts__header rte">
-    
+       
     {%- unless section.settings.title == blank -%}
-      <h2 class="blog-posts__title h1" style="flex: 1;">{{ section.settings.title | escape }}</h2>
+      <{{ section.settings.seo_h_tag }} class="blog-posts__title h1" style="flex: 1;">{{ section.settings.title | escape }}</{{ section.settings.seo_h_tag }}>
     {%- endunless -%}
 
     {%- if section.settings.show_view_all -%}
@@ -16,16 +17,7 @@
 
   {%- unless section.settings.blog == blank -%}
 
-    <{%- if section.settings.layout contains 'slider' -%}
-      css-slider data-options='{
-        "selector": ".blog-item",
-        "navigation": false,
-        "groupCells": true
-      }'
-      style="display:block"
-      {%- else -%}
-        div
-      {% endif %}
+    <div
       class="blog--{{ section.settings.layout }} blog--images-{{ section.settings.blog_show_image }} css-slider--simple-dots"
       data-limit="{{ blogs[section.settings.blog].articles.size }}"
     >
@@ -34,7 +26,8 @@
           render 'blog-item', article: article, layout: section.settings.layout, show_image: section.settings.show_image, blocks: section.blocks
         endfor
       -%}
-    </{% if section.settings.layout contains 'slider' %}css-slider{% else %}div{% endif %}>
+    </{%- if section.settings.layout contains 'slider' -%}css-slider{%- else -%}div{%- endif -%}>
+
   {%- else -%}
     <p class="no-content-message">{{ 'blog.grid.no_articles_text' | t }}</p>
   {%- endunless -%} 
@@ -44,13 +37,12 @@
 {% schema %}
   {
     "name": "t:sections.blog-posts.name",
-    "class": "overflow-hidden",
+    "class": "overflow-hidden with-gutter",
     "blocks": [
       {
         "type": "title",
         "name": "t:sections.blog-posts.blocks.title.name",
-        "limit": 1
-      },
+        "limit": 1      },
       {
         "type": "info",
         "name": "t:sections.blog-posts.blocks.info.name",
@@ -100,7 +92,7 @@
         "min": 1,
         "max": 16,
         "step": 1,
-        "default": 4
+        "default": 1
       },
       {
         "type": "checkbox",
@@ -131,6 +123,39 @@
           }
         ],
         "default": "grid cols-2"
+      },
+      {
+        "type": "header",
+        "content": "t:sections.refactor_words.seo.name"
+      },
+      {
+        "type": "select",
+        "id": "seo_h_tag",
+        "label": "t:sections.refactor_words.seo.label",
+        "info": "t:sections.refactor_words.seo.info",
+        "options": [
+          {
+            "value": "h1",
+            "label": "H1"
+          },
+          {
+            "value": "h2",
+            "label": "H2"
+          },
+          {
+            "value": "h3",
+            "label": "H3"
+          },
+          {
+            "value": "h4",
+            "label": "H4"
+          },
+          {
+            "value": "span",
+            "label": "span"
+          }
+        ],
+        "default": "h2"
       }
     ],    
     "presets": [{
