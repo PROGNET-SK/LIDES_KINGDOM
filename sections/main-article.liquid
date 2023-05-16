@@ -20,6 +20,25 @@
           <div class="rte">{{ article.content }}</div>
         </section>
 
+        <div class="article-meta">
+          {% if block.settings.blog_show_date %}
+            <span class="article-meta__date">{{ article.published_at | time_tag: date_format }}</span>
+          {% endif %}
+
+          {% if block.settings.blog_show_author %}
+            <span class="article-meta__author"> Autor: Júlia Hanaková </span>
+          {% endif %}
+
+          {% if block.settings.blog_show_comments and blog.comments_enabled? %}
+            <span class="article-meta__comments">
+              <a href="#comments">
+                {{ 'blog.grid.comments_count' | t: count: article.comments_count }}
+                <span class="hidden" aria-hidden="true">{{ article.comments_count }}</span>
+              </a>
+            </span>
+          {% endif %}
+        </div>
+
       {%- when 'social_sharing' -%}
         <aside class="article__sharing article-element blog_article__content">
           {%- render 'share-popup', title: article.title, url: article.url, image: article.image -%}
