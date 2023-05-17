@@ -144,6 +144,7 @@ html[dir=ltr] .blog--slider.cols-4:before {
 }
 
 .blog-item__content {
+  width: 50%;
   display: flex;
   flex-direction: column;
 }
