@@ -231,7 +231,8 @@ a.selected .blog-item__title span {
 
 .cols-1 .blog-item__image {
   width: 50%;
-  margin-right: 7%;
+  /*margin-right: 7%;*/
+  margin-right: 2%;
 }
 
 .blog--grid .blog-item__image {
