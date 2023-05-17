@@ -218,16 +218,11 @@ a.selected .blog-item__title span {
   color: rgba(var(--color-body-accent), 1);
 }
 
-
-
 .cols-1 .blog-item {
   width: 100%;
   margin-bottom: 50px;
   display: flex;
 }
-
-
-
 
 .cols-1 .blog-item__image {
   width: 50%;
