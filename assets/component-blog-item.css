@@ -159,7 +159,7 @@ html[dir=ltr] .blog--slider.cols-4:before {
   transition: all 150ms linear;
 }
 
-a:hover .blog-item__title span,
+.sidebar__menu .sidebar-menu-element a:hover .blog-item__title span,
 a.selected .blog-item__title span {
   background-size: 100% 1px;
 }
