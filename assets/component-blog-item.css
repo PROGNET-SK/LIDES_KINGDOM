@@ -161,7 +161,7 @@ html[dir=ltr] .blog--slider.cols-4:before {
 
 a:hover .blog-item__title span,
 a.selected .blog-item__title span {
-  background-size: 100% 1px;
+  /* background-size: 100% 1px;*/
 }
 
 .blog-item__meta {
