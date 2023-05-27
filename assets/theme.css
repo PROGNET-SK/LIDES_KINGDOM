@@ -1141,9 +1141,17 @@ a {
   transition: all 150ms linear;
 }
 
+
+a.underline-animation,
+a.selected .underline-animation {
+
+  text-decoration: underline;
+}
+
 a:hover .underline-animation,
 a.selected .underline-animation {
-  background-size: 100% 1px;
+  color: red;
+  text-decoration: underline;
 }
 
 .rte a img {
