@@ -4738,7 +4738,7 @@ li.has-sub-nav>a .icon {
   }
 
   .blog-item__content {
-    width: 100%;
+    width: 100% !important;
   }
 
 
