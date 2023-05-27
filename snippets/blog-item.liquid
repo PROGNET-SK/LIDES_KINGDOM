@@ -7,8 +7,7 @@
         href="{{ article.url | escape }}"
         title="{{ article.title | escape }}"
       >
-        <!-- blog post image -->
-        <img src="{%- article.image -%}" alt="{{ article.title | escape }}" width="100%">
+        {{ article.image }}
       </a>
     </div>
   {%- endif -%}
