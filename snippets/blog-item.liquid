@@ -52,7 +52,7 @@
 
         {%- when 'link' -%}
           <div>
-            <a class="blog-item__more" href="{{ article.url | escape }}">{{ 'blog.grid.read_more_label' | t }}</a>
+            <a class="underline-animation" href="{{ article.url | escape }}">{{ 'blog.grid.read_more_label' | t }}</a>
           </div>
       {%- endcase -%}
     {%- endfor -%}
