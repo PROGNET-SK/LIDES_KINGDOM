@@ -4715,7 +4715,6 @@ li.has-sub-nav>a .icon {
     background: none !important;
   }
 
-
   .lides-contact-wrap {
     width: 100%;
     display: contents;
@@ -4732,6 +4731,16 @@ li.has-sub-nav>a .icon {
     float: left;
     padding-bottom: 25px;
   }
+
+
+  .blog-item__image {
+    display: none;
+  }
+
+  .blog-item__content {
+    width: 100%;
+  }
+
 
 
 
