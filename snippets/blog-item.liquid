@@ -8,17 +8,7 @@
         title="{{ article.title | escape }}"
       >
         {%- if article.image -%}
-          {%- liquid
-            if layout contains 'cols-2'
-              assign sizes = 'sizes="(max-width: 648px) calc(100vw - 80px), (min-width: 649px) and (max-width: 948px) calc((100vw - 20px) / 2), calc((100vw - 300px) / 2)"'
-            else
-              assign sizes = 'sizes="(max-width: 948px) calc((100vw - 80px) / 2), (min-width: 949px) and (max-width: 1023px) calc((100vw - 250px) / 2), (min-width: 1024px) and (max-width: 1280px) calc((100vw - 250px) / 3), calc((100vw - 300px) / 4)"'
-            endif
-
-            render 'lazy-image', image: article.image, type: 'background', alt: article.title, sizes: sizes
-          -%}
-        {%- else -%}
-          <span class="onboarding-svg onboarding-background">{{ 'image' | placeholder_svg_tag }}</span>
+          <img src="article.image" width="100%">
         {%- endif -%}
       </a>
     </div>
