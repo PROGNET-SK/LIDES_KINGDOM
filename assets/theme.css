@@ -1141,7 +1141,7 @@ a {
   transition: all 150ms linear;
 }
 
-.sidebar__menu .sidebar-menu-element a:hover .underline-animation,
+.sidebar__menu a:hover .underline-animation,
 a.selected .underline-animation {
   background-size: 100% 1px;
 }
