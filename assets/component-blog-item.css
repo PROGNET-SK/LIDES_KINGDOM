@@ -225,7 +225,7 @@ a.selected .blog-item__title span {
 }
 
 .cols-1 .blog-item__image {
-  width: 50%;
+  width: 90%;
   /*margin-right: 7%;*/
   margin-right: 2%;
 }
