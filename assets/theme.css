@@ -1142,9 +1142,7 @@ a {
 }
 
 
-a.underline-animation,
-a.selected .underline-animation {
-
+.underline-animation {
   text-decoration: underline;
 }
 
