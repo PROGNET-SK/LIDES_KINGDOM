@@ -9,7 +9,7 @@
         title="{{ article.title | escape }}"
       >
         <img
-          src="{{ article.image | img_url: '1700x', crop: 'center' }}"
+          src="{{ article.image | img_url: '800x' | img_tag   }}"
           alt="{{ article.title }}"
           style="width:100%; height:auto;"
           width="100%"
