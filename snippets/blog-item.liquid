@@ -8,6 +8,7 @@
         title="{{ article.title | escape }}"
       >
         {%- if article.image -%}
+          <!-- blog post image -->
           <img src="{%- article.image -%}" alt="{{ article.title | escape }}" width="100%">
         {%- endif -%}
       </a>
