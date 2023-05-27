@@ -342,6 +342,7 @@
         },
         "1628782268aab83134-2": {
           "type": "summary",
+          "disabled": true,
           "settings": {
           }
         },
