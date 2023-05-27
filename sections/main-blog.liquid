@@ -5,7 +5,6 @@
 
     {%- if section.settings.enable_tags -%}
       <div class="blog-tags">
-        465464464
         <a
           class="button--smallest {% if current_tags == blank %} button--solid {% else %} button--outline {% endif %}"
           href="{{ blog.url }}"
@@ -26,9 +25,8 @@
 </div>
 
 {%- paginate blog.articles by section.settings.post_limit -%}
-  <div class="blog--grid cols-1 blog--images-{{ section.settings.show_image }} gutter--on">
+  <div class="blog--grid cols-1 blog--images-{{ section.settings.show_image }} full-width-section-content gutter--on">
     {{ 'component-blog-item.css' | asset_url | stylesheet_tag }}
-
     {% for article in blog.articles %}
       {%- render 'blog-item',
         article: article,
