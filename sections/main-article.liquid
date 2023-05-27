@@ -5,9 +5,8 @@
   {%- capture date_format -%} {{ 'general.date_format.month_day_year' | t }} {%- endcapture -%}
   {%- for block in section.blocks -%}
     {%- case block.type -%}
+      {%- when 'featured_image' -%}
         <!--
-          {%- when 'featured_image' -%}
-
           {%- if article.image -%}
             <div class="article__image blog_article__image" style="max-height:450px; overflow:hidden;">
               <img
