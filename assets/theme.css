@@ -4767,10 +4767,12 @@ li.has-sub-nav>a .icon {
 }
 
 
-.blog-item__more_href a:hover {
+.blog-item__more_href {
   color: rgba(var(--color-sidebar-accent), 1);
   background-size: 100% 1px;
+
   background-image: linear-gradient(to right, rgba(var(--color-sidebar-accent), 1), rgba(var(--color-sidebar-accent), 1));
+}
 }
 
 .blog-item__more_href {
