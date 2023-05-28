@@ -4766,6 +4766,49 @@ li.has-sub-nav>a .icon {
   }
 }
 
+/**********************************************************************************************/
+
+/*
+
+.sidebar__menu.sidebar--primary a .underline-animation,
+.sidebar__submenu.sidebar--primary a .underline-animation {
+  background-size: 0 1px;
+}
+
+.no-touch .sidebar__menu.sidebar--primary a:hover .underline-animation,
+.sidebar__menu.sidebar--primary a.selected .underline-animation,
+.no-touch .sidebar__submenu.sidebar--primary a:hover .underline-animation,
+.sidebar__submenu.sidebar--primary a.selected .underline-animation {
+  background-size: 100% 1px;
+}
+
+.no-touch sidebar-drawer a:hover .underline-animation,
+sidebar-drawer a.selected .underline-animation {
+  color: rgba(var(--color-sidebar-accent), 1);
+}
+
+sidebar-drawer .underline-animation {
+  background-image: linear-gradient(to right, rgba(var(--color-sidebar-accent), 1), rgba(var(--color-sidebar-accent), 1));
+}
+
+html[dir=rtl] sidebar-drawer .underline-animation {
+  background-position: right calc(1em + 4px);
+}
+
+html[dir=ltr] sidebar-drawer .underline-animation {
+  background-position: left calc(1em + 4px);
+}
+
+html[dir=rtl] .cart-item .underline-animation {
+  background-position: right calc(1em + 2px);
+}
+
+html[dir=ltr] .cart-item .underline-animation {
+  background-position: left calc(1em + 2px);
+}
+*/
+
+/**************************************************************/
 
 .blog-item__more_href {
   color: rgba(var(--color-sidebar-accent), 1);
@@ -4773,7 +4816,7 @@ li.has-sub-nav>a .icon {
 
   background-image: linear-gradient(to right, rgba(var(--color-sidebar-accent), 1), rgba(var(--color-sidebar-accent), 1));
 }
-}
+
 
 .blog-item__more_href {
   line-height: 1.2;
