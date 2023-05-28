@@ -52,11 +52,9 @@
 
         {%- when 'link' -%}
           <div>
-            <span class="blog-item__more_href"
-              ><a class="blog-item__more" href="{{ article.url | escape }}">
-                {{- 'blog.grid.read_more_label' | t -}}
-              </a></span
-            >
+            <a class="blog-item__more" href="{{ article.url | escape }}">
+              <span class="blog-item__more_href">{{- 'blog.grid.read_more_label' | t -}}</span>
+            </a>
           </div>
       {%- endcase -%}
     {%- endfor -%}
