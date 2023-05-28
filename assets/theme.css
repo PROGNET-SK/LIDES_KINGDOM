@@ -4581,7 +4581,8 @@ li.has-sub-nav>a .icon {
 
 @media only screen and (min-width: 750px) {
   .blog-item-projekt {
-    width: 33% !important;
+    width: 32% !important;
+    padding-left: 35px;
   }
 
   .blog-item__content-projekt {
