@@ -4766,14 +4766,14 @@ li.has-sub-nav>a .icon {
   }
 }
 
-/*
-.blog-item__more a:hover {
+
+.blog-item__more_href a:hover {
   color: rgba(var(--color-sidebar-accent), 1);
   background-size: 100% 1px;
   background-image: linear-gradient(to right, rgba(var(--color-sidebar-accent), 1), rgba(var(--color-sidebar-accent), 1));
 }
 
-.blog-item__more {
+.blog-item__more_href {
   line-height: 1.2;
   background-position: 0 calc(1em + 2px);
   background-image: linear-gradient(to right, rgba(var(--color-body-txt), 1), rgba(var(--color-body-txt), 1));
@@ -4783,4 +4783,3 @@ li.has-sub-nav>a .icon {
   padding-bottom: 3px;
   transition: all .15s linear;
 }
-*/
