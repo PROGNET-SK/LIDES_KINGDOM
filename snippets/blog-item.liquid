@@ -26,7 +26,7 @@
           <div class="blog-item__title-holder">
             <a href="{{ article.url | escape }}" title="{{ article.title | escape }}">
               <span class="blog-item__title {% if layout contains 'cols-2' %} body-text-hu {% else %} body-text-hd {% endif %}">
-                <span class="blog-item__more">{{ article.title | escape }}</span>
+                <span class="blog-item__more_href">{{ article.title | escape }}</span>
               </span>
             </a>
           </div>
@@ -52,7 +52,7 @@
 
         {%- when 'link' -%}
           <div>
-            <a class="blog-item__more" href="{{ article.url | escape }}">{{ 'blog.grid.read_more_label' | t }}</a>
+            <a class="blog-item__more_href" href="{{ article.url | escape }}">{{ 'blog.grid.read_more_label' | t }}</a>
           </div>
       {%- endcase -%}
     {%- endfor -%}
