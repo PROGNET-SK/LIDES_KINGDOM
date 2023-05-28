@@ -4774,6 +4774,7 @@ a .blog-item__more_href {
 
 a:hover .blog-item__more_href {
   background-size: 100% 1px;
+  background-image: linear-gradient(to right, rgba(var(--color-sidebar-accent), 1), rgba(var(--color-sidebar-accent), 1));
 }
 
 a:hover .blog-item__more_href {
