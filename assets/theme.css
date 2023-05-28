@@ -4704,9 +4704,12 @@ li.has-sub-nav>a .icon {
 
 }
 
-
 .footer-copyright {
   text-align: center;
+}
+
+.blog_image_side {
+  display: block;
 }
 
 
@@ -4733,16 +4736,13 @@ li.has-sub-nav>a .icon {
   }
 
 
-  .blog-item__image {
+  .blog_image_side {
     display: none;
   }
 
-  .blog-item__content {
+  .blog_content_side {
     width: 100% !important;
   }
-
-
-
 
 }
 
