@@ -4834,5 +4834,5 @@ a:hover .blog-item__more_href {
 tr,
 th,
 td {
-  border: 0;
+  border: 0 !important;
 }
