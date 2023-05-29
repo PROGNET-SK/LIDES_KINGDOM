@@ -4877,8 +4877,8 @@ td {
 .grid-number {
   background-color: #eaeaeb;
   display: grid;
-  justify-content: center;
-  padding: 2px;
+  justify-content: left;
+  padding: 0;
   font-size: 22px;
   color: white;
   line-height: 1;
