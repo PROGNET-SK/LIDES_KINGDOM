@@ -4840,3 +4840,25 @@ td {
   padding: 0;
   margin: 0;
 }
+
+
+
+.grid-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 1px;
+  grid-row-gap: 1px;
+  margin: 1em;
+  background-color: white;
+}
+
+.grid-number {
+  background-color: #5C6AC4;
+  display: grid;
+  justify-content: center;
+  padding: 20px;
+  font-size: 70px;
+  color: white;
+  line-height: 1;
+  border-radius: 5px;
+}
