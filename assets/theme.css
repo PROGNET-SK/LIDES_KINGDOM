@@ -4754,6 +4754,16 @@ li.has-sub-nav>a .icon {
     width: 100% !important;
   }
 
+
+  .grid-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 1px;
+    grid-row-gap: 1px;
+    margin: 1em;
+    background-color: white;
+  }
+
 }
 
 
@@ -4845,7 +4855,7 @@ td {
 
 .grid-wrapper {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-column-gap: 1px;
   grid-row-gap: 1px;
   margin: 1em;
