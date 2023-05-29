@@ -1562,7 +1562,8 @@ html[dir=ltr] .aligned-text-content.horizontal-right {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  margin-left: 10px;
+  margin-left: 15px;
+  margin-right: 15px;
 }
 
 
