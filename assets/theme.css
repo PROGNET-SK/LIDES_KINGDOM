@@ -4863,7 +4863,7 @@ td {
 
 
 .grid-number {
-  background-color: #8585c7;
+  /* background-color: #8787a5;*/
   display: grid;
   justify-content: left;
   padding-right: 15px;
