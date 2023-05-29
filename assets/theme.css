@@ -4875,10 +4875,10 @@ td {
 
 
 .grid-number {
-  background-color: #eaeaeb;
+  background-color: #8585c7;
   display: grid;
   justify-content: left;
-  padding: 0;
+  padding: ;
   font-size: 22px;
   color: white;
   line-height: 1;
