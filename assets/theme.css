@@ -4638,6 +4638,11 @@ li.has-sub-nav>a .icon {
     float: right;
   }
 
+  .projekty-LR-spacing {
+    margin-left: 35px;
+    margin-right: 0;
+  }
+
 }
 
 @media screen and (max-width: 767px) {
@@ -4701,6 +4706,11 @@ li.has-sub-nav>a .icon {
     min-height: 10px !important;
     margin-top: 7px;
     padding: 0px !important;
+  }
+
+  .projekty-LR-spacing {
+    margin-left: 5px;
+    margin-right: 5px;
   }
 
 }
