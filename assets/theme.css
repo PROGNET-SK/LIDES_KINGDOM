@@ -4831,7 +4831,8 @@ a:hover .blog-item__more_href {
 }
 
 
-table.katalog-table tbody,
+table,
+tbody,
 tr,
 th,
 td {
