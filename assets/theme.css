@@ -4830,8 +4830,12 @@ a:hover .blog-item__more_href {
   transition: all .15s linear;
 }
 
-.katalog-table table,
-tbody,
+
+.katalog-table table {
+  border: 0 !important;
+}
+
+.katalog-table tbody,
 tr,
 th,
 td {
