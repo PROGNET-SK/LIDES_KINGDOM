@@ -4861,24 +4861,12 @@ td {
 }
 
 
-.grid-number {
-  background-color: #eaeaeb;
-  display: grid;
-  justify-content: center;
-  padding: 2px;
-  font-size: 22px;
-  color: white;
-  line-height: 1;
-  border-radius: 5px;
-  padding-bottom: 25px;
-}
-
 
 .grid-number {
   background-color: #8585c7;
   display: grid;
   justify-content: left;
-  padding: ;
+  padding-right: 15px;
   font-size: 22px;
   color: white;
   line-height: 1;
