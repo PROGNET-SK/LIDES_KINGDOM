@@ -4866,8 +4866,9 @@ td {
   display: grid;
   justify-content: center;
   padding: 2px;
-  font-size: 14px;
+  font-size: 22px;
   color: white;
   line-height: 1;
   border-radius: 5px;
+  padding-bottom: 25px;
 }
