@@ -4829,3 +4829,8 @@ a:hover .blog-item__more_href {
   padding-bottom: 3px;
   transition: all .15s linear;
 }
+
+
+.katalog-table {
+  border: 0;
+}
