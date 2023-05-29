@@ -4835,5 +4835,7 @@ table.katalog-table tbody,
 tr,
 th,
 td {
-  border: 0 !important;
+  border: 0px !important;
+  padding: 0;
+  margin: 0;
 }
