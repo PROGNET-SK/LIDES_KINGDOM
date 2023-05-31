@@ -441,6 +441,7 @@ html[dir=rtl] sidebar-drawer .underline-animation {
 
 html[dir=ltr] sidebar-drawer .underline-animation {
   background-position: left calc(1em + 4px);
+  white-space: nowrap;
 }
 
 html[dir=rtl] .cart-item .underline-animation {
