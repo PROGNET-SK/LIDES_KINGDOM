@@ -132,18 +132,22 @@
         <ul class="main-menu unstyled" role="navigation" aria-label="primary">
           <!-- <li class="transcy-switcher-manual hidden transcy-mobile mobile-nav__item"></li> -->
           {% for link in linklists['header-top-nav'].links %}
-            <li>
-              <a
-                href="{{ link.url }}"
-                title="{{ link.title }}"
+            {% if request.locale.iso_code == 'sk' %}
+              {% if link.title != 'Catalogues' %}
+                <li>
+                  <a
+                    href="{{ link.url }}"
+                    title="{{ link.title }}"
 
-                {% if link.active %}
-                  class="selected"
-                {% endif %}
-              >
-                {{- link.title -}}
-              </a>
-            </li>
+                    {% if link.active %}
+                      class="selected"
+                    {% endif %}
+                  >
+                    {{- link.title -}}
+                  </a>
+                </li>
+              {% endif %}
+            {% endif %}
           {% endfor %}
         </ul>
       </nav>
