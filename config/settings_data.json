@@ -111,9 +111,7 @@
       },
       "sidebar": {
         "type": "sidebar",
-        "custom_css": [
-
-        ],
+        "custom_css": [],
         "settings": {
           "logo_width": 60,
           "menu_primary": "",
@@ -229,39 +227,31 @@
         }
       }
     },
-    "content_for_index": [
-
-    ],
+    "content_for_index": [],
     "blocks": {
       "1027443428159536739": {
         "type": "shopify:\/\/apps\/hextom-quick-announcement-bar\/blocks\/qab-embeded-block\/9ac2a261-3b8b-42c8-9613-d34eb2e079d3",
         "disabled": true,
-        "settings": {
-        }
+        "settings": {}
       },
       "9094328589753815681": {
         "type": "shopify:\/\/apps\/hextom-free-shipping-bar\/blocks\/fsb-embeded-block\/7ef5d9af-75a2-45c7-9b1b-f9240ee488e9",
         "disabled": true,
-        "settings": {
-        }
+        "settings": {}
       },
       "2153490007123654574": {
         "type": "shopify:\/\/apps\/consentmo-gdpr\/blocks\/gdpr_cookie_consent\/4fbe573f-a377-4fea-9801-3ee0858cae41",
         "disabled": false,
-        "settings": {
-        }
+        "settings": {}
       },
       "3847134708050210359": {
         "type": "shopify:\/\/apps\/transcy-ai-language-translate\/blocks\/switcher_embed_block\/bce4f1c0-c18c-43b0-b0b2-a1aefaa44573",
         "disabled": false,
-        "settings": {
-        }
+        "settings": {}
       }
     }
   },
   "platform_customizations": {
-    "custom_css": [
-
-    ]
+    "custom_css": []
   }
 }
