@@ -144,14 +144,27 @@
                   <p>{{- 'products.page.katalog' | t -}}</p>
                 </div>
                 <div style="width:50%; float:left; text-align:right;">
-                  <a
-                    href="https://lides.sk/downloads/{{ product.handle }}_katalog.pdf"
-                    target="_blank"
-                    title="{{- 'products.page.katalog' | t -}}"
-                  >
-                    {{- 'products.page.download' | t -}}
-                    &nbsp;PDF
-                  </a>
+                  {% if request.locale.iso_code == 'en' %}
+                    <a
+                      href="https://lides.sk/downloads/{{ product.handle }}_en_katalog.pdf"
+                      target="_blank"
+                      title="{{- 'products.page.katalog' | t -}}"
+                    >
+                      {{- 'products.page.download' | t -}}
+                      &nbsp;
+                      {{- 'products.page.file_pdf' | t -}}
+                    </a>
+                  {% else %}
+                    <a
+                      href="https://lides.sk/downloads/{{ product.handle }}_katalog.pdf"
+                      target="_blank"
+                      title="{{- 'products.page.katalog' | t -}}"
+                    >
+                      {{- 'products.page.download' | t -}}
+                      &nbsp;
+                      {{- 'products.page.file_pdf' | t -}}
+                    </a>
+                  {% endif %}
                 </div>
               </div>
               <hr>
@@ -160,14 +173,27 @@
                   <p>{{- 'products.page.tech_page' | t -}}</p>
                 </div>
                 <div style="width:50%; float:left; text-align:right;">
-                  <a
-                    href="https://lides.sk/downloads/{{ product.handle }}_tech.pdf"
-                    target="_blank"
-                    title="{{- 'products.page.tech_page' | t -}}"
-                  >
-                    {{- 'products.page.download' | t -}}
-                    &nbsp;PDF</a
-                  >
+                  {% if request.locale.iso_code == 'en' %}
+                    <a
+                      href="https://lides.sk/downloads/{{ product.handle }}_en_tech.pdf"
+                      target="_blank"
+                      title="{{- 'products.page.tech_page' | t -}}"
+                    >
+                      {{- 'products.page.download' | t -}}
+                      &nbsp;
+                      {{- 'products.page.file_pdf' | t -}}
+                    </a>
+                  {% else %}
+                    <a
+                      href="https://lides.sk/downloads/{{ product.handle }}_tech.pdf"
+                      target="_blank"
+                      title="{{- 'products.page.tech_page' | t -}}"
+                    >
+                      {{- 'products.page.download' | t -}}
+                      &nbsp;
+                      {{- 'products.page.file_pdf' | t -}}
+                    </a>
+                  {% endif %}
                 </div>
               </div>
               <hr>
@@ -176,14 +202,27 @@
                   <p>{{- 'products.page.manual' | t -}}</p>
                 </div>
                 <div style="width:50%; float:left; text-align:right;">
-                  <a
-                    href="https://lides.sk/downloads/{{ product.handle }}_navod.pdf"
-                    target="_blank"
-                    title="{{- 'products.page.manual' | t -}}"
-                  >
-                    {{- 'products.page.download' | t -}}
-                    &nbsp;PDF</a
-                  >
+                  {% if request.locale.iso_code == 'en' %}
+                    <a
+                      href="https://lides.sk/downloads/{{ product.handle }}_en_navod.pdf"
+                      target="_blank"
+                      title="{{- 'products.page.manual' | t -}}"
+                    >
+                      {{- 'products.page.download' | t -}}
+                      &nbsp;
+                      {{- 'products.page.file_pdf' | t -}}
+                    </a>
+                  {% else %}
+                    <a
+                      href="https://lides.sk/downloads/{{ product.handle }}_navod.pdf"
+                      target="_blank"
+                      title="{{- 'products.page.manual' | t -}}"
+                    >
+                      {{- 'products.page.download' | t -}}
+                      &nbsp;
+                      {{- 'products.page.file_pdf' | t -}}
+                    </a>
+                  {% endif %}
                 </div>
               </div>
               <hr>
