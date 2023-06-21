@@ -147,6 +147,21 @@
                   </a>
                 </li>
               {% endif %}
+            {% else %}
+              {% if link.title != 'Catalogues' %}
+                <li>
+                  <a
+                    href="{{ link.url }}"
+                    title="{{ link.title }}"
+
+                    {% if link.active %}
+                      class="selected"
+                    {% endif %}
+                  >
+                    {{- link.title -}}
+                  </a>
+                </li>
+              {% endif %}
             {% endif %}
           {% endfor %}
         </ul>
