@@ -208,14 +208,25 @@
                   <p>{{- 'products.page.3dmodel' | t -}}</p>
                 </div>
                 <div style="width:50%; float:left; text-align:right;">
-                  <a
-                    href="https://lides.sk/downloads/{{ product.handle }}_3d.zip"
-                    target="_blank"
-                    title="{{- 'products.page.3dmodel' | t -}}"
-                  >
-                    {{- 'products.page.download' | t -}}
-                    &nbsp;ZIP</a
-                  >
+                  {% if request.locale.iso_code == 'en' %}
+                    <a
+                      href="https://lides.sk/downloads/{{ product.handle }}_en_3d.zip"
+                      target="_blank"
+                      title="{{- 'products.page.3dmodel' | t -}}"
+                    >
+                      {{- 'products.page.download' | t -}}
+                      &nbsp;ZIP</a
+                    >
+                  {% else %}
+                    <a
+                      href="https://lides.sk/downloads/{{ product.handle }}_3d.zip"
+                      target="_blank"
+                      title="{{- 'products.page.3dmodel' | t -}}"
+                    >
+                      {{- 'products.page.download' | t -}}
+                      &nbsp;ZIP</a
+                    >
+                  {% endif %}
                 </div>
               </div>
               <hr>
