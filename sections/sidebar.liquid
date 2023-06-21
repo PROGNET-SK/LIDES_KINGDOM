@@ -82,20 +82,58 @@
         <nav class="lide-primary-menu">
           <ul class="sidebar__menu sidebar-menu-element sidebar--primary">
             {% for link in linklists['header-top-nav'].links %}
-              <li class="left-side-primary-menu">
-                <a
-                  href="{{ link.url }}"
-                  title="{{ link.title }}"
+              <!--
+                <li class="left-side-primary-menu">
+                  <a
+                    href="{{--- link.url ---}}"
+                    title="{{--- link.title ---}}"
 
-                  {% if link.active %}
-                    class="selected"
-                  {% endif %}
-                >
-                  <span class="underline-animation">
-                    {{- link.title -}}
-                  </span>
-                </a>
-              </li>
+                    {% if link.active %}
+                      class="selected"
+                    {% endif %}
+                  >
+                    <span class="underline-animation">
+                      {{---- link.title ----}}
+                    </span>
+                  </a>
+                </li>
+              -->
+
+              {% if request.locale.iso_code == 'en' %}
+                {% if link.title != 'Katalógy' %}
+                  <li>
+                    <a
+                      href="{{ link.url }}"
+                      title="{{ link.title }}"
+
+                      {% if link.active %}
+                        class="selected"
+                      {% endif %}
+                    >
+                      <span class="underline-animation">
+                        {{- link.title -}}
+                      </span>
+                    </a>
+                  </li>
+                {% endif %}
+              {% else %}
+                {% if link.title != 'Catalogues' %}
+                  <li>
+                    <a
+                      href="{{ link.url }}"
+                      title="{{ link.title }}"
+
+                      {% if link.active %}
+                        class="selected"
+                      {% endif %}
+                    >
+                      <span class="underline-animation">
+                        {{- link.title -}}
+                      </span>
+                    </a>
+                  </li>
+                {% endif %}
+              {% endif %}
             {% endfor %}
           </ul>
         </nav>
