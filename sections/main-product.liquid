@@ -192,14 +192,27 @@
                   <p>{{- 'products.page.cert' | t -}}</p>
                 </div>
                 <div style="width:50%; float:left; text-align:right;">
-                  <a
-                    href="https://lides.sk/downloads/{{ product.handle }}_cert.pdf"
-                    target="_blank"
-                    title="{{- 'products.page.cert' | t -}}"
-                  >
-                    {{- 'products.page.download' | t -}}
-                    &nbsp;PDF</a
-                  >
+                  {% if request.locale.iso_code == 'en' %}
+                    <a
+                      href="https://lides.sk/downloads/{{ product.handle }}_en_cert.pdf"
+                      target="_blank"
+                      title="{{- 'products.page.cert' | t -}}"
+                    >
+                      {{- 'products.page.download' | t -}}
+                      &nbsp;
+                      {{- 'products.page.file_pdf' | t -}}
+                    </a>
+                  {% else %}
+                    <a
+                      href="https://lides.sk/downloads/{{ product.handle }}_cert.pdf"
+                      target="_blank"
+                      title="{{- 'products.page.cert' | t -}}"
+                    >
+                      {{- 'products.page.download' | t -}}
+                      &nbsp;
+                      {{- 'products.page.file_pdf' | t -}}
+                    </a>
+                  {% endif %}
                 </div>
               </div>
               <hr>
