@@ -101,7 +101,7 @@
 
               {% if request.locale.iso_code == 'en' %}
                 {% if link.title != 'Katalógy' %}
-                  <li>
+                  <li class="left-side-primary-menu">
                     <a
                       href="{{ link.url }}"
                       title="{{ link.title }}"
@@ -119,7 +119,7 @@
                 {% endif %}
               {% else %}
                 {% if link.title != 'Catalogues' %}
-                  <li>
+                  <li class="left-side-primary-menu">
                     <a
                       href="{{ link.url }}"
                       title="{{ link.title }}"
