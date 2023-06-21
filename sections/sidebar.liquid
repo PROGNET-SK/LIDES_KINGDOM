@@ -130,13 +130,17 @@
         <div>
           {% if request.locale.iso_code == 'en' %}
             <a href="/en/" class="header__language_en__link lng-mobile lng-bolder" id="{{ request.locale.iso_code }}">
-              EN
+              {{- 'products.page.tr_en' | t -}}
             </a>
-            <a href="/" class="header__language_sk__link lng-mobile" id="{{ request.locale.iso_code }}"> SK </a>
+            <a href="/" class="header__language_sk__link lng-mobile" id="{{ request.locale.iso_code }}">
+              {{- 'products.page.tr_sk' | t -}}
+            </a>
           {% else %}
-            <a href="/en/" class="header__language_en__link lng-mobile" id="{{ request.locale.iso_code }}"> EN </a>
+            <a href="/en/" class="header__language_en__link lng-mobile" id="{{ request.locale.iso_code }}">
+              {{- 'products.page.tr_en' | t -}}
+            </a>
             <a href="/" class="header__language_sk__link lng-mobile lng-bolder" id="{{ request.locale.iso_code }}">
-              SK
+              {{- 'products.page.tr_sk' | t -}}
             </a>
           {% endif %}
         </div>
