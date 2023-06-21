@@ -194,7 +194,9 @@
       "manual": "User manual",
       "cert": "Certificate for download",
       "3dmodel": "3D model",
-      "download": "download"
+      "download": "download",
+      "file_pdf": "PDF",
+      "file_zip": "ZIP"
     },
     "featured_product": {
       "mobile_title": "Odporúčaný produkt",
