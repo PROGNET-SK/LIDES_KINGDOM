@@ -1,12 +1,12 @@
 <div class="product__price {{ text_size_class }}" id="product-price-{{ id }}">
   {%- if target.price_varies -%}
     <span class="product__price--original" data-js-product-price-original>
-      888888
       {%- liquid
         assign price = target.price_min | money
         if target.compare_at_price > target.price
-          echo 'products.grid.on_sale_from_html' | t: price: price;
-          echo "tututu";
+          echo 'products.grid.on_sale_from_html' | t: price: price ;
+          echo 'xxxx';
+
         else
           echo 'products.grid.from_text_html' | t: price: price
         endif
