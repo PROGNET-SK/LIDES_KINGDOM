@@ -517,7 +517,7 @@
 
           <span>>>{{ product.price }}</span>
 
-          {%- if product.price == 0 -%}
+          {%- if product.price >= 1 -%}
           {%- when 'buy_buttons' -%}
             <hr>
 
