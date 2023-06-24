@@ -523,9 +523,6 @@
 
         {%- when 'buy_buttons' -%}
           <hr>
-
-          <span>999999</span>
-
           <product-form
             id="add-to-cart-{{ section.id }}"
             class="product__form"
@@ -533,7 +530,7 @@
               data-ajax-cart
             {% endif %}
             {{ block.shopify_attributes }}
-          >
+            >55555
             {%- form 'product',
               product,
               id: product_form_id,
