@@ -330,7 +330,7 @@
                 data-ajax-cart
               {% endif %}
               {{ block.shopify_attributes }}
-            >
+              >11111111111
               {%- form 'product',
                 product,
                 id: product_form_id,
@@ -355,7 +355,6 @@
 
                 <div class="product__cart-functions">
                   <div class="flex-buttons">
-                    11111111111
                     {%- liquid
                       if block.settings.show_quantity_selector
                         render 'product-quantity', variant: current_variant, id: section.id
