@@ -14,7 +14,7 @@
   {%- else -%}
     <span class="product__price--original" data-js-product-price-original>{{ target.price | money }}</span>
     <span class="product__price--original" data-js-product-price-original>
-      {{ ( target.price / 1.20 ) | money }}
+      {% target .price | money %}
     </span>
 
     <span class="product__price--compare" data-js-product-price-compare>
