@@ -517,14 +517,7 @@
 
           <span>>>{{ product.price }}</span>
 
-          {%- if product.price == 0 -%}
-            <span>|||>>{{ product.price }}</span>
-          {% endif %}
-
         {%- when 'buy_buttons' -%}
-          <hr>
-          <span>{{ current_variant.price }}</span>
-
           {%- if current_variant.price != 0 -%}
             <product-form
               id="add-to-cart-{{ section.id }}"
@@ -595,7 +588,6 @@
               {%- endform -%}
             </product-form>
           {% endif %}
-          <hr>
 
         {%- when 'collapsible_tab' -%}
           <toggle-tab class="toggle" {{ block.shopify_attributes }}>
