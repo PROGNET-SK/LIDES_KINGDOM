@@ -525,7 +525,7 @@
           <hr>
           <span>{{ current_variant.price }}</span>
 
-          {%- if current_variant.price == '0' -%}
+          {%- if current_variant.price != '0' -%}
             <product-form
               id="add-to-cart-{{ section.id }}"
               class="product__form"
