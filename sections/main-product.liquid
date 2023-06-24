@@ -525,74 +525,76 @@
           <hr>
           <span>{{ current_variant.price }}</span>
 
-          <product-form
-            id="add-to-cart-{{ section.id }}"
-            class="product__form"
-            {% if settings.cart_action == 'overlay' %}
-              data-ajax-cart
-            {% endif %}
-            {{ block.shopify_attributes }}
-          >
-            {%- form 'product',
-              product,
-              id: product_form_id,
-              class: 'form',
-              novalidate: 'novalidate',
-              data-type: 'add-to-cart-form'
-            -%}
-              <template>
-                <input type="hidden" name="id" value="{{ current_variant.id }}">
-              </template>
-              <script>
-                document
-                  .getElementById('add-to-cart-{{ section.id }}')
-                  .querySelector('form')
-                  .append(
-                    document
-                      .getElementById('add-to-cart-{{ section.id }}')
-                      .querySelector('template')
-                      .content.cloneNode(true)
-                  );
-              </script>
+          {%- if current_variant.price >= 0 -%}
+            <product-form
+              id="add-to-cart-{{ section.id }}"
+              class="product__form"
+              {% if settings.cart_action == 'overlay' %}
+                data-ajax-cart
+              {% endif %}
+              {{ block.shopify_attributes }}
+            >
+              {%- form 'product',
+                product,
+                id: product_form_id,
+                class: 'form',
+                novalidate: 'novalidate',
+                data-type: 'add-to-cart-form'
+              -%}
+                <template>
+                  <input type="hidden" name="id" value="{{ current_variant.id }}">
+                </template>
+                <script>
+                  document
+                    .getElementById('add-to-cart-{{ section.id }}')
+                    .querySelector('form')
+                    .append(
+                      document
+                        .getElementById('add-to-cart-{{ section.id }}')
+                        .querySelector('template')
+                        .content.cloneNode(true)
+                    );
+                </script>
 
-              <div class="product__cart-functions">
-                <div class="flex-buttons">
+                <div class="product__cart-functions">
+                  <div class="flex-buttons">
+                    {%- liquid
+                      if block.settings.show_quantity_selector
+                        render 'product-quantity', variant: current_variant, id: section.id
+                      endif
+                    -%}
+
+                    <button
+                      type="submit"
+                      name="add"
+                      class="product__add-to-cart button {% unless current_variant.available %} disabled {% endunless %}"
+                      data-js-product-add-to-cart
+                    >
+                      <span class="add-to-cart__text" data-js-product-add-to-cart-text>
+                        {%- liquid
+                          if current_variant.available
+                            echo 'products.page.add_to_cart_button' | t
+                          else
+                            echo 'products.page.inventory.sold_out_variant' | t
+                          endif
+                        -%}
+                      </span>
+                      <span class="add-to-cart__symbol" aria-hidden="true">
+                        {%- render 'theme-symbols', icon: 'cart' -%}
+                      </span>
+                      <span class="add-to-cart__preloader" aria-hidden="true"></span>
+                    </button>
+                  </div>
+
                   {%- liquid
-                    if block.settings.show_quantity_selector
-                      render 'product-quantity', variant: current_variant, id: section.id
+                    if block.settings.show_dynamic_checkout
+                      echo form | payment_button
                     endif
                   -%}
-
-                  <button
-                    type="submit"
-                    name="add"
-                    class="product__add-to-cart button {% unless current_variant.available %} disabled {% endunless %}"
-                    data-js-product-add-to-cart
-                  >
-                    <span class="add-to-cart__text" data-js-product-add-to-cart-text>
-                      {%- liquid
-                        if current_variant.available
-                          echo 'products.page.add_to_cart_button' | t
-                        else
-                          echo 'products.page.inventory.sold_out_variant' | t
-                        endif
-                      -%}
-                    </span>
-                    <span class="add-to-cart__symbol" aria-hidden="true">
-                      {%- render 'theme-symbols', icon: 'cart' -%}
-                    </span>
-                    <span class="add-to-cart__preloader" aria-hidden="true"></span>
-                  </button>
                 </div>
-
-                {%- liquid
-                  if block.settings.show_dynamic_checkout
-                    echo form | payment_button
-                  endif
-                -%}
-              </div>
-            {%- endform -%}
-          </product-form>
+              {%- endform -%}
+            </product-form>
+          {% endif %}
           <hr>
 
         {%- when 'collapsible_tab' -%}
