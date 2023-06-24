@@ -9,9 +9,10 @@
           echo 'products.grid.from_text_html' | t: price: price
         endif
       -%}
+      <br>
+      <span style="font-size:12px; color:#636262;">{{ target.price | divided_by: 1.2 | money }} bez DPH</span>
     </span>
-    <br>
-    <span style="font-size:12px; color:#636262;">{{ target.price | divided_by: 1.2 | money }} bez DPH</span>
+
   {%- else -%}
     <span class="product__price--original" data-js-product-price-original>{{ target.price | money }}</span><br>
     <span class="product__price--original" style="font-size:12px; color:#636262;" data-js-product-price-original>
