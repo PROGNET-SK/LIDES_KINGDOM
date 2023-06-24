@@ -515,9 +515,11 @@
             </script>
           </product-variants>
 
+          <span>>>{{ product.price }}</span>
+
         {%- when 'buy_buttons' -%}
           <hr>
-          <span>{{ variant.price }}</span>
+
           <product-form
             id="add-to-cart-{{ section.id }}"
             class="product__form"
