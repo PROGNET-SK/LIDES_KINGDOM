@@ -4,8 +4,7 @@
       {%- liquid
         assign price = target.price_min | money
         if target.compare_at_price > target.price
-          echo 'products.grid.on_sale_from_html' | t: price: price ;
-          echo 'xxxx';
+          echo 'products.grid.on_sale_from_html' | t: price: price
 
         else
           echo 'products.grid.from_text_html' | t: price: price
