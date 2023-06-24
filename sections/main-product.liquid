@@ -515,12 +515,15 @@
             </script>
           </product-variants>
 
-          {% if product.price | floor  == 0 %}
+          <span>>>{{ product.price }}</span>
+
+          {%- if product.price == 0 -%}
             <span>|||>>{{ product.price }}</span>
           {% endif %}
 
         {%- when 'buy_buttons' -%}
           <hr>
+
           <product-form
             id="add-to-cart-{{ section.id }}"
             class="product__form"
@@ -528,7 +531,7 @@
               data-ajax-cart
             {% endif %}
             {{ block.shopify_attributes }}
-          >
+            >2222
             {%- form 'product',
               product,
               id: product_form_id,
@@ -589,7 +592,6 @@
               </div>
             {%- endform -%}
           </product-form>
-
           <hr>
 
         {%- when 'collapsible_tab' -%}
