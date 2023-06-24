@@ -515,9 +515,7 @@
             </script>
           </product-variants>
 
-          <span>>>{{ product.price }}</span>
-
-          {%- if product.price | floor  == 0 -%}
+          {% if product.price | floor  == 0 %}
             <span>|||>>{{ product.price }}</span>
           {% endif %}
 
