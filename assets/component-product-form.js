@@ -53,7 +53,6 @@ if (typeof ProductVariants !== 'function')
 								} else if (variantContainer.dataset.jsProductVariantContainer == 'select')
 								{
 									variantContainer.value = option;
-									console.log("43");
 								}
 							})
 							return variant;
@@ -164,7 +163,6 @@ if (typeof ProductVariants !== 'function')
 					if (!(this.variantRequired && elm.selectedIndex == 0))
 					{
 						this.options.push(elm.value);
-						console.log("167: " + elm.value);
 					}
 				}
 			});
@@ -481,7 +479,6 @@ if (typeof ProductVariants !== 'function')
 				} else
 				{
 					selectedOption = elm.value;
-					console.log("368");
 				}
 			});
 			return selectedOption;
