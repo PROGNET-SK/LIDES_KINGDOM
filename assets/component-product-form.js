@@ -164,7 +164,7 @@ if (typeof ProductVariants !== 'function')
 					if (!(this.variantRequired && elm.selectedIndex == 0))
 					{
 						this.options.push(elm.value);
-						console.log("135");
+						console.log("167: " + elm.value);
 					}
 				}
 			});
