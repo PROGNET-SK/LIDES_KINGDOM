@@ -590,12 +590,14 @@
               <a
                 class="product__add-to-cart button"
                 data-js-product-add-to-cart
-                data-js-product-add-to-cart-text
+
                 style="color:white !important;"
                 href="mailto:lides@lides.com?subject={{- current_variant.title -}}"
                 target="_blank"
               >
-                <span class="add-to-cart__text">{{- 'products.page.mailto_price' | t -}}</span>
+                <span class="add-to-cart__text" data-js-product-add-to-cart-text>
+                  {{- 'products.page.mailto_price' | t -}}
+                </span>
               </a>
             </product-form>
           {% endif %}
