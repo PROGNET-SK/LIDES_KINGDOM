@@ -202,12 +202,14 @@ if (typeof ProductVariants !== 'function')
 			{
 
 				this.priceOriginal.innerHTML = this._formatMoney(this.currentVariant.price, KROWN.settings.shop_money_format);
+
+				console.log("206 " + this.currentVariant.price);
+
 				if (this.currentVariant.compare_at_price > this.currentVariant.price)
 				{
 					this.priceCompare.innerHTML = this._formatMoney(this.currentVariant.compare_at_price, KROWN.settings.shop_money_format);
 				} else
 				{
-					console.log("2010");
 					this.priceCompare.innerHTML = '';
 				}
 
