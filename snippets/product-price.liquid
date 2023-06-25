@@ -1,41 +1,38 @@
 <div class="product__price {{ text_size_class }}" id="product-price-{{ id }}">
   {%- if target.price_varies -%}
-    2333333
-    {%- if target.price >= 1 -%}
-      <span class="product__price--original" data-js-product-price-original>
-        {%- liquid
-          assign price = target.price_min | money
-
-          if target.compare_at_price > target.price
-            echo 'products.grid.on_sale_from_html' | t: price: price
-          else
-            echo 'products.grid.from_text_html' | t: price: price
-          endif
-        -%}
-        <br>
-        <span style="font-size:12px; color:#636262;">{{ target.price | divided_by: 1.2 | money }} bez DPH</span>
-      </span>
-    {% endif %}
-
-  {%- else -%}
-    222222222
-    <span class="product__price--original" data-js-product-price-original>{{ target.price | money }}</span>
-    <br>
-    <span
-      class="product__price--original"
-      style="font-size:12px; color:#636262;"
-      data-js-product-price-original
-    >
-      <span class="customVAT">{{ target.price | divided_by: 1.2 | money }}</span> bez DPH
-    </span>
-
-    <span class="product__price--compare" data-js-product-price-compare>
+    <span class="product__price--original" data-js-product-price-original>
       {%- liquid
+        assign price = target.price_min | money
+
         if target.compare_at_price > target.price
-          echo target.compare_at_price | money
+          echo 'products.grid.on_sale_from_html' | t: price: price
+        else
+          echo 'products.grid.from_text_html' | t: price: price
         endif
       -%}
+      <br>
+      <span style="font-size:12px; color:#636262;">{{ target.price | divided_by: 1.2 | money }} bez DPH</span>
     </span>
+
+  {%- else -%}
+    {%- if target.price > 0 -%}
+      <span class="product__price--original" data-js-product-price-original>{{ target.price | money }}</span>
+      <br>
+      <span
+        class="product__price--original"
+        style="font-size:12px; color:#636262;"
+        data-js-product-price-original
+      >
+        <span class="customVAT">{{ target.price | divided_by: 1.2 | money }}</span> bez DPH
+      </span>
+      <span class="product__price--compare" data-js-product-price-compare>
+        {%- liquid
+          if target.compare_at_price > target.price
+            echo target.compare_at_price | money
+          endif
+        -%}
+      </span>
+    {% endif %}
   {%- endif -%}
 
   <span class="product__price--unit" data-js-product-price-unit>
