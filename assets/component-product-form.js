@@ -203,7 +203,7 @@ if (typeof ProductVariants !== 'function')
 
 				this.priceOriginal.innerHTML = this._formatMoney(this.currentVariant.price, KROWN.settings.shop_money_format);
 
-				console.log("206 " + this.currentVariant.price + " | " + KROWN.settings.shop_money_format);
+				console.log("206 " + this.currentVariant.price | money);
 
 				if (this.currentVariant.compare_at_price > this.currentVariant.price)
 				{
