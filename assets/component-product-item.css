@@ -492,7 +492,6 @@ html[dir=ltr] .gutter--on .collection--slider:before {
   transition: 150ms height cubic-bezier(0.4, 0, 0.2, 1) 50ms;
 }
 
-
 .product__add-to-cart>span {
   display: block;
   position: absolute;
@@ -501,7 +500,6 @@ html[dir=ltr] .gutter--on .collection--slider:before {
   width: 100%;
   z-index: 9;
 }
-
 
 
 .product__add-to-cart>span.add-to-cart__text {
