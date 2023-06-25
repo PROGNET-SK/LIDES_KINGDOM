@@ -191,6 +191,8 @@ if (typeof ProductVariants !== 'function')
 		{
 			if (!this.currentVariant)
 			{
+
+				console.log("195");
 				if (!(this.variantRequired && this.noVariantSelectedYet))
 				{
 					this.priceOriginal.innerHTML = '';
@@ -199,6 +201,7 @@ if (typeof ProductVariants !== 'function')
 				}
 			} else
 			{
+				console.log("204");
 				this.priceOriginal.innerHTML = this._formatMoney(this.currentVariant.price, KROWN.settings.shop_money_format);
 				if (this.currentVariant.compare_at_price > this.currentVariant.price)
 				{
