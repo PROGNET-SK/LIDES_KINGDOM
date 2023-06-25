@@ -587,7 +587,11 @@
             </product-form>
           {% else %}
             <product-form>
-              <a href="mailto:lides@lides.com?subject={{- current_variant.title -}}" target="_blank">
+              <a
+                class="product__add-to-cart button"
+                href="mailto:lides@lides.com?subject={{- current_variant.title -}}"
+                target="_blank"
+              >
                 {{- 'products.page.mailto_price' | t -}}
               </a>
             </product-form>
