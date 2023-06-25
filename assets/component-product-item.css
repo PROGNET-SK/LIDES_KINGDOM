@@ -494,6 +494,7 @@ html[dir=ltr] .gutter--on .collection--slider:before {
 
 .product__add-to-cart-mailer:after {
   margin: auto;
+  min-width: 120px;
 
   background: rgba(var(--color-body-accent), 1);
   width: 100%;
