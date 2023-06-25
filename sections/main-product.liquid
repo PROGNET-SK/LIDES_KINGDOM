@@ -585,6 +585,10 @@
                 </div>
               {%- endform -%}
             </product-form>
+          {% else %}
+            <product-form>
+              <a href="mailto:lides@lides.com?subject={{- current_variant.name -}}">Kontakt</a>
+            </product-form>
           {% endif %}
 
         {%- when 'collapsible_tab' -%}
