@@ -3,7 +3,6 @@
     <span class="product__price--original" data-js-product-price-original>
       {%- liquid
         assign price = target.price_min | money
-
         if target.compare_at_price > target.price
           echo 'products.grid.on_sale_from_html' | t: price: price
         else
