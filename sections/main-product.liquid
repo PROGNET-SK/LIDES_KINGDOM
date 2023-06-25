@@ -592,9 +592,14 @@
                 style="color:white !important;"
                 href="mailto:lides@lides.com?subject={{- current_variant.title -}}"
                 target="_blank"
+                data-js-product-add-to-cart
               >
-                <span class="add-to-cart__text" style="color:white !important;">
+                <span class="add-to-cart__text" data-js-product-add-to-cart-text style="color:white !important;">
                   {{- 'products.page.mailto_price' | t -}}
+                </span>
+
+                <span class="add-to-cart__symbol" aria-hidden="true">
+                  {%- render 'theme-symbols', icon: 'cart' -%}
                 </span>
               </a>
             </product-form>
