@@ -588,12 +588,12 @@
           {% else %}
             <product-form>
               <a
-                class="product__add-to-cart button add-to-cart__text"
+                class="product__add-to-cart button"
                 style="color:white !important;"
                 href="mailto:lides@lides.com?subject={{- current_variant.title -}}"
                 target="_blank"
               >
-                {{- 'products.page.mailto_price' | t -}}
+                <span class="add-to-cart__text">{{- 'products.page.mailto_price' | t -}}</span>
               </a>
             </product-form>
           {% endif %}
