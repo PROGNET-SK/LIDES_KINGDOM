@@ -39,16 +39,13 @@
     -%}
 
     <link rel="canonical" href="{{ canonical_url }}">
-
     <link rel="preconnect" href="https://cdn.shopify.com">
     {%- unless settings.headings_font.system? and settings.body_font.system? -%}
       <link rel="preconnect" href="https://fonts.shopifycdn.com" crossorigin>
     {%- endunless -%}
-
     {%- render 'head-preloader' -%}
     {%- render 'head-variables' -%}
     {{ 'theme.css' | asset_url | stylesheet_tag }}
-
     {{ content_for_header }}
 
     {%- if template == 'customers/addresses' -%}
