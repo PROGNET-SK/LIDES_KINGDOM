@@ -1,0 +1,16 @@
+{% layout none %}
+<?xml version="1.0" encoding="UTF-8"?>
+<products>
+{% for product in collections.all.products %}
+<product>
+<id>{{ product.id }}</id>
+<title>{{ product.title | xml_escape }}</title>
+<description>{{ product.description | xml_escape }}</description>
+<price>{{ product.price | xml_escape }}</price>
+{% for image in product.images %}
+<image>{{ image.src | xml_escape }}</image>
+{% endfor %}
+<url>{{ shop.url | append: product.url | xml_escape }}</url>
+</product>
+{% endfor %}
+</products>
