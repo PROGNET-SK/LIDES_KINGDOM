@@ -212,7 +212,7 @@
         "type": "header",
         "settings": {
           "logo_image": "shopify:\/\/shop_images\/LOGO320-2.svg",
-          "logo_image_width": 320,
+          "logo_image_width": 350,
           "header_style": "normal",
           "header_transparent_home": false,
           "header_transparent_collection": true,
