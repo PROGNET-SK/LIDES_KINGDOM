@@ -22,7 +22,7 @@
     >
       {%- for block in section.blocks -%}
         <div id="slide-{{ block.id }}" class="slide" {{ block.shopify_attributes }} data-index="{{ forloop.index }}">
-          <div class="slide__text aligned-text-content vertical-top">
+          <div class="slide__text aligned-text-content {{ section.settings.alignment }}">
             {%- if block.settings.url != blank and block.settings.button_label == blank -%}
               <a href="{{ block.settings.url | escape }}">
             {%- endif -%}
