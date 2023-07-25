@@ -75,6 +75,7 @@
         },
         "46d7d58a-7400-4ab4-9482-728bcbbd5a58": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "title": "",
             "subheading": "",
