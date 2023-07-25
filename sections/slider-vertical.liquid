@@ -24,7 +24,7 @@
 
 				<div id="slide-{{ block.id }}" class="slide" {{ block.shopify_attributes }} data-index="{{ forloop.index }}">
 					
-					<div class="slide__text aligned-text-content {{ section.settings.alignment }}">
+					<div class="slide__text aligned-text-content {{ section.settings.alignment }} vertical-top"">
 
 						{%- if block.settings.url != blank and block.settings.button_label == blank -%}
 							<a href="{{ block.settings.url | escape }}">
