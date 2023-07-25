@@ -73,16 +73,15 @@
             "seo_h_tag": "h2"
           }
         },
-        "31211c21-d3fd-40ca-b679-c516d6db080a": {
+        "46d7d58a-7400-4ab4-9482-728bcbbd5a58": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Crystella-motiv-1.jpg",
-            "title": "Crystella",
+            "title": "",
             "subheading": "",
             "caption": "",
-            "button_label": "Pozrieť projekty",
-            "url": "shopify:\/\/blogs\/projekty\/projekt-006",
-            "color_text": "#ffffff",
+            "button_label": "",
+            "url": "",
+            "color_text": "rgba(0,0,0,0)",
             "color_bg": "rgba(0,0,0,0)",
             "seo_h_tag": "h2"
           }
@@ -94,7 +93,7 @@
         "e074b4ff-9fb2-44c1-ad7a-602716ef9e47",
         "03ba8527-c340-4b10-94ee-fd0fee4625d4",
         "34b82d19-8a31-4543-88ef-8605f42642b1",
-        "31211c21-d3fd-40ca-b679-c516d6db080a"
+        "46d7d58a-7400-4ab4-9482-728bcbbd5a58"
       ],
       "settings": {
         "size": "80vh",
