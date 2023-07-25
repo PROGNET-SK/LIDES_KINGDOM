@@ -62,12 +62,12 @@
         "34b82d19-8a31-4543-88ef-8605f42642b1": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Parachute-motiv-1.jpg",
-            "title": "Kolekcia Parachute",
+            "image": "shopify:\/\/shop_images\/Exterierove-svietidlo-Ray.jpg",
+            "title": "Ray - krásna záhrada aj v noci",
             "subheading": "",
             "caption": "",
             "button_label": "Detail produktu",
-            "url": "shopify:\/\/products\/parachute-single-140",
+            "url": "shopify:\/\/products\/ray",
             "color_text": "#ffffff",
             "color_bg": "rgba(0,0,0,0)",
             "seo_h_tag": "h2"
