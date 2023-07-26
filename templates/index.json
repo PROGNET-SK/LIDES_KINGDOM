@@ -11,7 +11,7 @@
             "subheading": "Navrhneme Vám dokonalý kúsok hviezdnej oblohy, ušitej do Vášho priestoru.",
             "caption": "",
             "button_label": "Detail produktu",
-            "url": "shopify:\/\/collections\/opticke-hviezdne-nebo",
+            "url": "shopify:\/\/collections\/hviezdne-nebo-opticke",
             "color_text": "#ffffff",
             "color_bg": "rgba(0,0,0,0)",
             "seo_h_tag": "h2"
@@ -110,7 +110,7 @@
         "f4f5a85f-962a-42e9-8c02-9d31c57d3c85": {
           "type": "collection",
           "settings": {
-            "collection": "opticke-hviezdne-nebo"
+            "collection": "hviezdne-nebo-opticke"
           }
         },
         "336c8af9-b9ad-4c69-9979-a9195e474120": {
