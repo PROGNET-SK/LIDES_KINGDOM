@@ -292,7 +292,7 @@ html[dir=ltr] .sidebar-parent-element .sidebar-element:after {
 
 @media screen and (min-width: 1280px) and (max-width: 1920px) {
   .accounts-menu {
-    font-size: calc(14px / 16 * var(--base-body-size) + 0px);
+    font-size: calc(14px / 14 * var(--base-body-size) + 0px);
     line-height: 1;
   }
 }
@@ -388,7 +388,7 @@ html[dir=ltr] .sidebar-parent-element .sidebar-element:after {
 
   .sidebar__menu.sidebar--secondary,
   .sidebar__submenu.sidebar--secondary {
-    font-size: calc(14px / 14 * var(--base-body-size) + 0px);
+    font-size: calc(14px / 16 * var(--base-body-size) + 0px);
     line-height: 1;
   }
 }
