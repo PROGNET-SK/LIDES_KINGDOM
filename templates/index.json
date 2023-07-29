@@ -34,12 +34,12 @@
         "e074b4ff-9fb2-44c1-ad7a-602716ef9e47": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Luster-Fallen-motiv.jpg",
-            "title": "Luster Fallen - jeseň vo Vašom domove",
+            "image": "shopify:\/\/shop_images\/Luster-Mikado.jpg",
+            "title": "Vyrobené s krištáľmi Swarovski",
             "subheading": "",
             "caption": "",
-            "button_label": "Pozrieť projekty",
-            "url": "shopify:\/\/blogs\/projekty\/projekt-013",
+            "button_label": "Pozrieť luster",
+            "url": "shopify:\/\/products\/diamont-mikado-rectangle",
             "color_text": "#ffffff",
             "color_bg": "rgba(0,0,0,0)",
             "seo_h_tag": "h2"
@@ -62,7 +62,7 @@
         "34b82d19-8a31-4543-88ef-8605f42642b1": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Exterierove-svietidla-Ocean.jpg",
+            "image": "shopify:\/\/shop_images\/Exterierove-svietidla-Ocean_6c4d51bd-f581-4187-aa7b-5fbddad8bcbe.jpg",
             "title": "Ocean",
             "subheading": "",
             "caption": "",
