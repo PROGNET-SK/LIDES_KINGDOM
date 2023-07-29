@@ -7,10 +7,10 @@
           "type": "image",
           "settings": {
             "image": "shopify:\/\/shop_images\/Hviezdne-nebo-motiv-1.jpg",
-            "title": "Špecializujeme sa na výrobu hviezdneho neba",
-            "subheading": "Navrhneme Vám dokonalý kúsok hviezdnej oblohy, ušitej do Vášho priestoru.",
+            "title": "",
+            "subheading": "",
             "caption": "",
-            "button_label": "Detail produktu",
+            "button_label": "Výroba hviezdneho neba na mieru",
             "url": "shopify:\/\/collections\/hviezdne-nebo-opticke",
             "color_text": "#ffffff",
             "color_bg": "rgba(0,0,0,0)",
