@@ -35,10 +35,10 @@
           "type": "image",
           "settings": {
             "image": "shopify:\/\/shop_images\/L.jpg",
-            "title": "Vyrobené krištáľmi Swarovski",
+            "title": "",
             "subheading": "",
             "caption": "",
-            "button_label": "Pozrieť luster",
+            "button_label": "Pozrieť luster s krištáľmi Swarovski",
             "url": "shopify:\/\/products\/diamont-mikado-rectangle",
             "color_text": "#ffffff",
             "color_bg": "rgba(0,0,0,0)",
