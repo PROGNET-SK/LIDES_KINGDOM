@@ -187,7 +187,6 @@
     },
     "16287820898598ef0b": {
       "type": "rich-text",
-      "disabled": true,
       "blocks": {
         "16287820898598ef0b-1": {
           "type": "text",
@@ -215,6 +214,7 @@
         "16287820898598ef0b-0",
         "47254a4f-4f22-45de-b525-f39cd6f3e2ec"
       ],
+      "disabled": true,
       "settings": {
         "text_alignment": "center",
         "image_position": "align-left",
@@ -225,7 +225,6 @@
     },
     "162878219500bbe6ce": {
       "type": "shop-the-look",
-      "disabled": true,
       "blocks": {
         "162878219500bbe6ce-0": {
           "type": "product",
@@ -242,7 +241,7 @@
         "162878219500bbe6ce-2": {
           "type": "product",
           "settings": {
-            "product": "aquabelle-elipse"
+            "product": "aquabelle-elipse-amber"
           }
         }
       },
@@ -251,6 +250,7 @@
         "162878219500bbe6ce-1",
         "162878219500bbe6ce-2"
       ],
+      "disabled": true,
       "settings": {
         "title": "Vybrané produkty",
         "subheading": "",
@@ -262,7 +262,6 @@
     },
     "1628782217b36bf2bd": {
       "type": "video-background",
-      "disabled": true,
       "blocks": {
         "1628782217b36bf2bd-0": {
           "type": "heading",
@@ -284,6 +283,7 @@
         "1628782217b36bf2bd-0",
         "1628782217b36bf2bd-1"
       ],
+      "disabled": true,
       "settings": {
         "video_height": "56.25%",
         "video_mobile_height": "56.25%",
@@ -296,7 +296,6 @@
     },
     "16287822411b91418f": {
       "type": "testimonials",
-      "disabled": true,
       "blocks": {
         "16287822411b91418f-0": {
           "type": "testimonial",
@@ -319,6 +318,7 @@
         "16287822411b91418f-0",
         "16287822411b91418f-1"
       ],
+      "disabled": true,
       "settings": {
         "color_bg": "rgba(0,0,0,0)",
         "color_text": "rgba(0,0,0,0)"
