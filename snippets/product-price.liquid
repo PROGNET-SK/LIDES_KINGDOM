@@ -1,6 +1,6 @@
 <div class="product__price {{ text_size_class }}" id="product-price-{{ id }}">
   {%- if target.price_varies -%}
-    {%- if target.price > 0 -%}
+    {%- if target.price > 99999999999999 -%}
       <span class="product__price--original" data-js-product-price-original>
         {%- liquid
           assign price = target.price_min | money
@@ -16,7 +16,7 @@
     {% endif %}
 
   {%- else -%}
-    {%- if target.price > 0 -%}
+    {%- if target.price > 99999999999999 -%}
       <span class="product__price--original" data-js-product-price-original>{{ target.price | money }}</span>
       <br>
       <span
