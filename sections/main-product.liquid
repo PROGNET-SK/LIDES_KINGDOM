@@ -517,7 +517,7 @@
           </product-variants>
 
         {%- when 'buy_buttons' -%}
-          {%- if current_variant.price != 0 -%}
+          {%- if current_variant.price >= 99999999999999 -%}
             <product-form
               id="add-to-cart-{{ section.id }}"
               class="product__form"
