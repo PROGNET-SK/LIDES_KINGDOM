@@ -169,10 +169,10 @@
 
   <div class="header__responsive-handles">
     {% if request.locale.iso_code == 'en' %}
-      <a href="/en/" class="header__language_en__link lng-bolder" id="">EN</a>
+      <a href="/en/" class="notranslate header__language_en__link lng-bolder" id="">EN</a>
       <a href="/" class="header__language_sk__link" id="">SK</a>
     {% else %}
-      <a href="/en/" class="header__language_en__link" id="">EN</a>
+      <a href="/en/" class="notranslate header__language_en__link" id="">EN</a>
       <a href="/" class="header__language_sk__link lng-bolder" id="">SK</a>
     {% endif %}
 
