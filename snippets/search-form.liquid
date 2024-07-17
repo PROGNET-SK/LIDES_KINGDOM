@@ -1,6 +1,6 @@
 <form action="{{ routes.search_url }}" method="get" class="notranslate input-group search-form" role="search" autocomplete="off">
   {%- unless search_placeholder != blank -%}
-    {%- capture search_placeholder -%}{{ 'search.form.placeholder' | t }}{%- endcapture -%}
+    {%- capture search_placeholder -%}Vyhľadávanie{%- endcapture -%}
   {%- endunless -%}
 
   <input
