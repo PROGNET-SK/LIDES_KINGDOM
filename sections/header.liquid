@@ -169,18 +169,18 @@
 
   <div class="header__responsive-handles">
     {% if request.locale.iso_code == 'en' %}
-      <a href="/en/" class="header__language_en__link lng-bolder" id="{{ request.locale.iso_code }}">
-        {{- 'products.page.tr_en' | t -}}
+      <a href="/en/" class="header__language_en__link lng-bolder" id="">
+       SK
       </a>
-      <a href="/" class="header__language_sk__link" id="{{ request.locale.iso_code }}">
-        {{- 'products.page.tr_sk' | t -}}
+      <a href="/" class="header__language_sk__link" id="">
+       SK
       </a>
     {% else %}
-      <a href="/en/" class="header__language_en__link" id="{{ request.locale.iso_code }}">
-        {{- 'products.page.tr_en' | t -}}
+      <a href="/en/" class="header__language_en__link" id="">
+        SK
       </a>
-      <a href="/" class="header__language_sk__link lng-bolder" id="{{ request.locale.iso_code }}">
-        {{- 'products.page.tr_sk' | t -}}
+      <a href="/" class="header__language_sk__link lng-bolder" id="">
+       SK
       </a>
     {% endif %}
 
