@@ -290,6 +290,7 @@
       "search_for_html": "Hľadať \"{{ terms }}\"",
       "product_results_title": "Produkty"
     },
+    
     "page": {
       "title": "Hľadať",
       "subtitle": "Na vyhľadanie produktov použite panel vyhľadávania nižšie:",

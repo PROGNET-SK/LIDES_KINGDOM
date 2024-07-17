@@ -150,6 +150,7 @@
     "view_all_products": "Zobraziť všetky produkty",
     "no_collections": "Ľutujeme, v tomto obchode momentálne nie sú žiadne produkty."
   },
+  
   "products": {
     "grid": {
       "on_sale_from_html": "V predaji od {{ price }}",
