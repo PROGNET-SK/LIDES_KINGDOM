@@ -1,4 +1,4 @@
-<form action="{{ routes.search_url }}" method="get" class="input-group search-form" role="search" autocomplete="off">
+<form action="{{ routes.search_url }}" method="get" class="notranslate input-group search-form" role="search" autocomplete="off">
   {%- unless search_placeholder != blank -%}
     {%- capture search_placeholder -%}{{ 'search.form.placeholder' | t }}{%- endcapture -%}
   {%- endunless -%}
@@ -9,7 +9,7 @@
     value="{{ search.terms | escape }}"
     placeholder="{{ search_placeholder }}"
     data-responsive-placeholder="{{ 'search.form.responsive_placeholder' | t }}"
-    class="input-group-field search-field"
+    class="notranslate input-group-field search-field"
     aria-label="{{ search_placeholder }}"
     autocomplete="off"
     data-js-search-input
