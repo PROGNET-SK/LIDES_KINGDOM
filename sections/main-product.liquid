@@ -299,6 +299,17 @@
             id="add-to-cart-{{ section.id }}" class="product__form" {% if settings.cart_action == 'overlay' %} data-ajax-cart {% endif %}
             {{ block.shopify_attributes }}
           >
+
+<!-- Price -->
+
+<div id="product-price-123">
+    <span data-js-product-price-original></span>
+    <span data-js-product-price-compare></span>
+    <span data-js-product-price-unit></span>
+</div>
+
+<!-- end price  -->
+
             {%- form 'product', product, id: product_form_id, class: 'form', novalidate: 'novalidate', data-type: 'add-to-cart-form' -%}
 
             <div {{ block.shopify_attributes }}>
