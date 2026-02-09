@@ -345,14 +345,7 @@
                     <span class="add-to-cart__symbol" aria-hidden="true">{%- render 'theme-symbols', icon: 'cart' -%}</span>
                     <span class="add-to-cart__preloader" aria-hidden="true"></span>
                   </button>
-
-                </div>
-
-                {%- liquid
-                  if block.settings.show_dynamic_checkout
-                    echo form | payment_button
-                  endif
-                -%}
+                </div>            
                 
               </div>
 
