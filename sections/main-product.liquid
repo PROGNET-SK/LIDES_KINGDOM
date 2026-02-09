@@ -596,7 +596,7 @@
                 data-js-product-add-to-cart
               >
                 <span class="add-to-cart__text" data-js-product-add-to-cart-text>
-                  {% assign price_with_increase = product.variants.first.price | times: 1.23 %}
+                  {% assign price_with_increase = product.variants.first.price  %}
                   {{ price_with_increase | money }}
 
                    {% comment %}                  
@@ -605,7 +605,7 @@
                 </span>
                 <span class="add-to-cart__symbol" aria-hidden="true" style="margin-left:24px;">
                    
-                  {% assign price_with_increase = product.variants.first.price | times: 1.23 %}
+                  {% assign price_with_increase = product.variants.first.price %}
                   {{ price_with_increase | money }}
 
                  {% comment %}      
