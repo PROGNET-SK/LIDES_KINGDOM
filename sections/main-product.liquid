@@ -646,7 +646,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
   function getSelectedVariant() {
     const selectedOptions = Array.from(variantSelects).map(select => select.value);
-    return variants.find(v => selectedOptions.every((val, i) => v.options[i] === val));
+
+    return variants.find(v => {
+      if (!v.options) return false;
+      return selectedOptions.every((val, i) => v.options[i] && v.options[i] === val);
+    });
   }
 
   function updatePrice() {
@@ -669,6 +673,7 @@ document.addEventListener('DOMContentLoaded', function() {
   updatePrice();
 });
 </script>
+
    
          
 
