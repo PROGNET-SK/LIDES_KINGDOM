@@ -13,7 +13,8 @@ if (typeof ProductVariants !== 'function')
 		init()
 		{
 
-			this.price = document.querySelector(`#product-price-${this.dataset.id}`);
+			//this.price = document.querySelector(`#product-price-${this.dataset.id}`);
+			this.price = document.querySelector(`#product-price-lides-eur`);
 
 			if (this.price)
 			{
