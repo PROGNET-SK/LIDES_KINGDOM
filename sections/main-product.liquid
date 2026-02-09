@@ -290,6 +290,10 @@
 
          <!-- here price -->       
 <div class="product__custom-price body-text-lg" {{ block.shopify_attributes }}>
+
+<span class="product__price" data-js-product-price></span>
+
+
   {%- assign variant = product.selected_or_first_available_variant -%}
 
 <span class="custom-price-amount" data-js-product-price></span>
