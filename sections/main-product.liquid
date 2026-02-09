@@ -382,6 +382,7 @@
         {%- when 'pickup_avaiability' -%} 
           {{ 'component-pickup-availability.css' | asset_url | stylesheet_tag }}
           {%- assign pick_up_availabilities = current_variant.store_availabilities | where: 'pick_up_enabled', true -%}
+          
           <pickup-availability class="product__pickup-availabilities no-js-hidden"
             {% if current_variant.available and pick_up_availabilities.size > 0 %} available {% endif %}
               data-base-url="{{ shop.url }}{{ routes.root_url }}"
@@ -390,7 +391,7 @@
               data-id="{{ section.id }}"
               {{ block.shopify_attributes }}
             >
-             <!-- <template>
+            <template>
                 <pickup-availability-preview class="pickup-availability-preview store-availability-container">
                   <div class="store-availability-information">
                     {%- render 'theme-symbols', icon: 'out_of_stock' -%}
@@ -403,7 +404,7 @@
                       </p>
                     </div>
                 </div>
-              </template>-->
+              </template>
 
           </pickup-availability>
 

@@ -334,7 +334,7 @@ html[dir=rtl] .shopify-payment-button__button--unbranded svg {
 }
 
 .product .product__price {
-  margin-bottom: 3.2em;
+  /*margin-bottom: 3.2em;*/
 }
 
 .product__form,
