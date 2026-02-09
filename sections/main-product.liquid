@@ -601,7 +601,8 @@
                 {% {{- 'products.page.mailto_price' | t -}} %}
                 </span>
                 <span class="add-to-cart__symbol" aria-hidden="true" style="margin-left:24px;">
-                  {{- 'products.page.mailto_price' | t -}}
+                 {{- target.price | times: 1.20 | money -}}
+                 {%{- 'products.page.mailto_price' | t -}%}
                 </span>
               </a>
             </product-form>
