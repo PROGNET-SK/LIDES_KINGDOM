@@ -605,7 +605,9 @@
                 </span>
                 <span class="add-to-cart__symbol" aria-hidden="true" style="margin-left:24px;">
                    
-                 {{- target.price | times: 1.20 | money -}}
+                  {% assign price_with_increase = target.price | times: 1.2 %}
+                  {{ price_with_increase | money }}
+
                  {% comment %}      
                  {{- 'products.page.mailto_price' | t -}}
                  {% endcomment %}      
