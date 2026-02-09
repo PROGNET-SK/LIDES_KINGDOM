@@ -303,17 +303,12 @@
   {%- form 'product', product, id: product_form_id -%}
 
     <!-- Dynamická cena -->
-    <div class="product__price-wrapper body-text-lg">
-      <span class="product__price" data-js-product-price>
-        {{ current_variant.price | money }}
-      </span>
-
-      {%- if current_variant.compare_at_price > current_variant.price -%}
-        <span class="product__price-compare body-text-sm">
-          {{ current_variant.compare_at_price | money }}
-        </span>
-      {%- endif -%}
-    </div>
+  
+  <div id="product-price-123">
+    <span data-js-product-price-original></span>
+    <span data-js-product-price-compare></span>
+    <span data-js-product-price-unit></span>
+</div>
 
     <!-- Hidden input pre variant -->
     <input type="hidden" name="id" value="{{ current_variant.id }}">
