@@ -290,21 +290,6 @@
 
          <!-- here price -->   
 
-         <div class="product__price-wrapper body-text-lg">
-  {%- assign variant = product.selected_or_first_available_variant -%}
-
-  <!-- Jediný element, ktorý JS bude aktualizovať -->
-  <span class="product__price" data-js-product-price>
-    {{ variant.price | money }}
-  </span>
-
-  {%- if variant.compare_at_price > variant.price -%}
-    <span class="product__price-compare body-text-sm">
-      {{ variant.compare_at_price | money }}
-    </span>
-  {%- endif -%}
-</div>    
-
 
         {%- when 'buy_buttons' -%}
           <product-form 
