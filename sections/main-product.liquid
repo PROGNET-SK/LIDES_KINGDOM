@@ -288,27 +288,22 @@
 
           </product-variants>
 
-         <!-- here price -->       
-<div class="product__custom-price body-text-lg" {{ block.shopify_attributes }}>
+         <!-- here price -->   
 
-<span class="product__price" data-js-product-price></span>
-
-
+         <div class="product__price-wrapper body-text-lg">
   {%- assign variant = product.selected_or_first_available_variant -%}
 
-<span class="custom-price-amount" data-js-product-price></span>
-
-
-  <span class="custom-price-amount">
+  <!-- Jediný element, ktorý JS bude aktualizovať -->
+  <span class="product__price" data-js-product-price>
     {{ variant.price | money }}
   </span>
 
   {%- if variant.compare_at_price > variant.price -%}
-    <span class="custom-price-compare body-text-sm" data-js-product-price >
+    <span class="product__price-compare body-text-sm">
       {{ variant.compare_at_price | money }}
     </span>
   {%- endif -%}
-</div>
+</div>    
 
 
         {%- when 'buy_buttons' -%}
