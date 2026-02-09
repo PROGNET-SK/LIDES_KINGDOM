@@ -288,13 +288,17 @@
 
           </product-variants>
 
-         <!-- here price -->
-         {%- comment -%} Custom Price Block {%- endcomment -%}
-<div class="product__custom-price body-text-lg" {{ block.shopify_attributes }} margin-bottom="15px" >
+         <!-- here price -->       
+<div class="product__custom-price body-text-lg" {{ block.shopify_attributes }}>
   {%- assign variant = product.selected_or_first_available_variant -%}
+
+<span class="custom-price-amount" data-js-product-price></span>
+
+
   <span class="custom-price-amount">
     {{ variant.price | money }}
   </span>
+  
   {%- if variant.compare_at_price > variant.price -%}
     <span class="custom-price-compare body-text-sm">
       {{ variant.compare_at_price | money }}

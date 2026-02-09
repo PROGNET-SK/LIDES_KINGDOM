@@ -304,3 +304,28 @@ if ( typeof ProductPage !== 'function' ) {
 	}
 
 }
+
+
+// Product price update on variant change
+
+document.addEventListener('DOMContentLoaded', () => {
+  const priceElement = document.querySelector('[data-js-product-price]');
+  const variants = {{ product.variants | json }};
+
+  const updatePrice = (variantId) => {
+    const variant = variants.find(v => v.id == variantId);
+    if (!variant) return;
+    priceElement.textContent = Shopify.formatMoney(variant.price, "{{ shop.money_format }}");
+  };
+
+  // Predvolená cena pri načítaní
+  updatePrice({{ product.selected_or_first_available_variant.id }});
+
+  // Sleduj zmenu variantov
+  document.querySelectorAll('[data-js-product-variant-container]').forEach(select => {
+    select.addEventListener('change', (e) => {
+      const selectedId = parseInt(e.target.value, 10);
+      updatePrice(selectedId);
+    });
+  });
+});
