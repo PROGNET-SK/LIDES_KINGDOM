@@ -292,6 +292,7 @@
 
 
         {%- when 'buy_buttons' -%}
+        
           <product-form 
             id="add-to-cart-{{ section.id }}" class="product__form" {% if settings.cart_action == 'overlay' %} data-ajax-cart {% endif %}
             {{ block.shopify_attributes }}
