@@ -161,12 +161,7 @@
           </div>
 
         {%- when 'text' -%} 
-          <div class="product__subtitle remove-end-margin
-            {% if block.settings.text_style == 'subtitle' %} body-text-sm {% elsif block.settings.text_style == 'uppercase' %} body-text-sm text-transform-uppercase {% endif %}" 
-            {{ block.shopify_attributes }}
-          >
-            {{ block.settings.text }}
-          </div>
+       
 
         {%- when 'vendor' -%}
           <div class="product__subtitle remove end-margin body-text-sm" {{ block.shopify_attributes }}>
@@ -307,7 +302,7 @@
               {%- render 'product-price', target: current_variant, variant: current_variant, id: section.id, text_size_class: 'body-text-lg' -%}
             </div>
 
-                          <!-- Price -->
+  <!-- Price -->
   <div id="product-price-lides-eur" style="margin-bottom:15px; font-size:25px;">
       <span data-js-product-price-original>{{ current_variant.price | money }}</span>
       <span data-js-product-price-compare>{% if current_variant.compare_at_price > current_variant.price %}{{ current_variant.compare_at_price | money }}{% endif %}</span>
