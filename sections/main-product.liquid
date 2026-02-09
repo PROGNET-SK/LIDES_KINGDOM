@@ -596,7 +596,7 @@
                 data-js-product-add-to-cart
               >
                 <span class="add-to-cart__text" data-js-product-add-to-cart-text>
-                   {{ target.price | times: 1.20 | money }}
+                   {{ product.price| times: 1.20 | money }}
                    {% comment %}                  
                     {{- 'products.page.mailto_price' | t -}} 
                    {% endcomment %}
