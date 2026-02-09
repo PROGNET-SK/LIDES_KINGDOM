@@ -294,29 +294,7 @@
         {%- when 'buy_buttons' -%}
 
 
-        <product-form 
-  id="add-to-cart-{{ section.id }}" 
-  class="product__form" 
-  {% if settings.cart_action == 'overlay' %} data-ajax-cart {% endif %}
-  {{ block.shopify_attributes }}
->
-  {%- form 'product', product, id: product_form_id -%}
 
-    <!-- Dynamická cena -->
-  
-
-    <!-- Hidden input pre variant -->
-    <input type="hidden" name="id" value="{{ current_variant.id }}">
-
-    <!-- Add to cart tlačidlo -->
-    <button type="submit" name="add" class="product__add-to-cart button">
-      {{ 'products.page.add_to_cart_button' | t }}
-    </button>
-
-  {%- endform -%}
-</product-form>
-
-{% comment %}
           <product-form 
             id="add-to-cart-{{ section.id }}" class="product__form" {% if settings.cart_action == 'overlay' %} data-ajax-cart {% endif %}
             {{ block.shopify_attributes }}
@@ -324,8 +302,8 @@
             {%- form 'product', product, id: product_form_id, class: 'form', novalidate: 'novalidate', data-type: 'add-to-cart-form' -%}
 
             <div {{ block.shopify_attributes }}>
-  {%- render 'product-price', target: current_variant, variant: current_variant, id: section.id, text_size_class: 'body-text-lg' -%}
-</div>
+              {%- render 'product-price', target: current_variant, variant: current_variant, id: section.id, text_size_class: 'body-text-lg' -%}
+            </div>
 
 
               <template>
@@ -372,7 +350,7 @@
             {%- endform -%}
 
           </product-form>
-          {% endcomment %}
+      
 
         {%- when 'collapsible_tab' -%}
           <toggle-tab class="toggle" {{ block.shopify_attributes }}>
