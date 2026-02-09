@@ -290,7 +290,7 @@
 
          <!-- here price -->
          {%- comment -%} Custom Price Block {%- endcomment -%}
-<div class="product__custom-price body-text-lg" {{ block.shopify_attributes }}>
+<div class="product__custom-price body-text-lg" {{ block.shopify_attributes }} margin-bottom="15px" >
   {%- assign variant = product.selected_or_first_available_variant -%}
   <span class="custom-price-amount">
     {{ variant.price | money }}
