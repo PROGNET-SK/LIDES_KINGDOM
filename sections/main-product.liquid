@@ -640,8 +640,9 @@ document.addEventListener('DOMContentLoaded', function() {
   const quantityInput = document.querySelector('input[name="quantity"]');
   const variantSelects = document.querySelectorAll('[data-js-product-variant-container]');
 
-  // načítame všetky varianty zo Shopify JSON
-  const variants = JSON.parse(document.querySelector('script[type="application/json"]').textContent);
+  // načítame varianty zo Shopify JSON
+  let variantsData = JSON.parse(document.querySelector('script[type="application/json"]').textContent);
+  const variants = Array.isArray(variantsData) ? variantsData : Object.values(variantsData);
 
   function getSelectedVariant() {
     const selectedOptions = Array.from(variantSelects).map(select => select.value);
@@ -655,7 +656,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const basePrice = parseInt(variant.price); // cena v centoch
     const quantity = quantityInput ? parseInt(quantityInput.value) : 1;
     const totalPriceCents = basePrice * priceMultiplier * quantity;
-    const totalPrice = totalPriceCents / 100; // prepocitame na doláre/eura
+    const totalPrice = totalPriceCents / 100;
 
     if (priceDisplay) {
       priceDisplay.textContent = totalPrice.toLocaleString(undefined, { style: 'currency', currency: '{{ shop.currency }}' });
@@ -668,8 +669,6 @@ document.addEventListener('DOMContentLoaded', function() {
   updatePrice();
 });
 </script>
-  
-
    
          
 
