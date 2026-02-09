@@ -599,7 +599,7 @@
               {% endif %}
               {{ block.shopify_attributes }}
             >
-            DDDDDD  
+              
               {%- form 'product',
                 product,
                 id: product_form_id,
@@ -672,27 +672,18 @@
               >
                 <span class="add-to-cart__text" data-js-product-add-to-cart-text>
                   {% assign price_with_increase = product.variants.first.price  %}
-                  {{ price_with_increase | money }}
-
-                   {% comment %}                  
-                    {{- 'products.page.mailto_price' | t -}} 
-                   {% endcomment %}
+                  {{ price_with_increase | money }}                                 
+                  {{- 'products.page.mailto_price' | t -}}                   
                 </span>
-                <span class="add-to-cart__symbol" aria-hidden="true" style="margin-left:24px;">
-                   
+                <span class="add-to-cart__symbol" aria-hidden="true" style="margin-left:24px;">                   
                   {% assign price_with_increase = product.variants.first.price %}
-                  {{ price_with_increase | money }}
-
-                 {% comment %}      
-                 {{- 'products.page.mailto_price' | t -}}
-                 {% endcomment %}  
+                  {{ price_with_increase | money }}                   
+                  {{- 'products.page.mailto_price' | t -}}               
 
                 </span>
               </a>
             </product-form>
             {% end comment %}   
-
-
 
           {% endif %}
 
