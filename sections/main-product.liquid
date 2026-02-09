@@ -591,79 +591,98 @@
 
           {% else %}
 
-            <product-form
-              id="add-to-cart-{{ section.id }}"
-              class="product__form"
-              {% if settings.cart_action == 'overlay' %}
-                data-ajax-cart
-              {% endif %}
-              {{ block.shopify_attributes }}
-            >
-              {%- form 'product',
-                product,
-                id: product_form_id,
-                class: 'form',
-                novalidate: 'novalidate',
-                data-type: 'add-to-cart-form'
-              -%}
-                <template>
-                  <input type="hidden" name="id" value="{{ current_variant.id }}">
-                </template>
-                <script>
-                  document
-                    .getElementById('add-to-cart-{{ section.id }}')
-                    .querySelector('form')
-                    .append(
-                      document
-                        .getElementById('add-to-cart-{{ section.id }}')
-                        .querySelector('template')
-                        .content.cloneNode(true)
-                    );
-                </script>
+         <product-form
+  id="add-to-cart-{{ section.id }}"
+  class="product__form"
+  {% if settings.cart_action == 'overlay' %} data-ajax-cart {% endif %}
+  {{ block.shopify_attributes }}
+>
+  {%- form 'product', product, id: product_form_id, class: 'form', novalidate: 'novalidate', data-type: 'add-to-cart-form' -%}
 
-                <div class="product__cart-functions">
-                  <div class="flex-buttons">
-                    {%- liquid
-                      if block.settings.show_quantity_selector
-                        render 'product-quantity', variant: current_variant, id: section.id
-                      endif
-                    -%}
+    <!-- Skrytý input s variantou -->
+    <input type="hidden" name="id" value="{{ current_variant.id }}">
 
-                    <button
-                      type="submit"
-                      name="add"
-                      class="product__add-to-cart button {% unless current_variant.available %} disabled {% endunless %}"
-                      data-js-product-add-to-cart
-                    >
-                      <span class="add-to-cart__text" data-js-product-add-to-cart-text>
-                        {%- liquid
-                          if current_variant.available
-                            echo 'products.page.add_to_cart_button' | t
-                          else
-                            echo 'products.page.inventory.sold_out_variant' | t
-                          endif
-                        -%}
-                      </span>
-                      <span class="add-to-cart__symbol" aria-hidden="true">
-                        {%- render 'theme-symbols', icon: 'cart' -%}
-                      </span>
-                      <span class="add-to-cart__preloader" aria-hidden="true"></span>
-                    </button>
-                  </div>
+    <div class="product__cart-functions">
 
-                  {%- liquid
-                    if block.settings.show_dynamic_checkout
-                      echo form | payment_button
-                    endif
-                  -%}
-                </div>
-              {%- endform -%}
-            </product-form>         
+      <!-- Zobrazenie ceny nad tlačidlom -->
+      <div class="product__price" data-js-product-price>
+        {{ current_variant.price | times: 1.23 | money }}
+      </div>
+
+      <div class="flex-buttons">
+
+        {%- liquid
+          if block.settings.show_quantity_selector
+            render 'product-quantity', variant: current_variant, id: section.id
+          endif
+        -%}
+
+        <!-- Add to cart button -->
+        <button
+          type="submit"
+          name="add"
+          class="product__add-to-cart button {% unless current_variant.available %} disabled {% endunless %}"
+          data-js-product-add-to-cart
+        >
+          <span class="add-to-cart__text" data-js-product-add-to-cart-text>
+            {%- liquid
+              if current_variant.available
+                echo 'products.page.add_to_cart_button' | t
+              else
+                echo 'products.page.inventory.sold_out_variant' | t
+              endif
+            -%}
+          </span>
+          <span class="add-to-cart__symbol" aria-hidden="true">
+            {%- render 'theme-symbols', icon: 'cart' -%}
+          </span>
+          <span class="add-to-cart__preloader" aria-hidden="true"></span>
+        </button>
+
+      </div>
+    </div>
+
+  {%- endform -%}
+</product-form>
+
+<!-- Script na dynamický prepočet ceny -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const priceMultiplier = 1.23; // multiplikátor ceny
+
+  const variantSelects = document.querySelectorAll('[data-js-product-variant-container]');
+  const quantityInput = document.querySelector('input[name="quantity"]');
+  const priceDisplay = document.querySelector('[data-js-product-price]');
+
+  // načítanie všetkých variantov z JSONu
+  const variants = JSON.parse(document.querySelector('script[type="application/json"]').textContent);
+
+  function getSelectedVariantPrice() {
+    let selectedOptions = Array.from(variantSelects).map(select => select.value);
+    let variant = variants.find(v => selectedOptions.every((val, i) => v.options[i] === val));
+    return variant ? parseFloat(variant.price) : 0;
+  }
+
+  function updatePrice() {
+    const basePrice = getSelectedVariantPrice();
+    const quantity = parseInt(quantityInput ? quantityInput.value : 1);
+    const totalPrice = (basePrice * priceMultiplier * quantity) / 100; // Shopify ceny sú v centoch
+    if(priceDisplay) {
+      priceDisplay.textContent = `$${totalPrice.toFixed(2)}`;
+    }
+  }
+
+  variantSelects.forEach(select => select.addEventListener('change', updatePrice));
+  if(quantityInput) quantityInput.addEventListener('input', updatePrice);
+
+  updatePrice();
+});
+</script>      
 
    
          
 
-          {% endif %}
+        {% endif %}
 
         {%- when 'collapsible_tab' -%}
           <toggle-tab class="toggle" {{ block.shopify_attributes }}>
