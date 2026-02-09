@@ -598,7 +598,7 @@
                 <span class="add-to-cart__text" data-js-product-add-to-cart-text>
                    {{ target.price | times: 1.20 | money }}
                   
-                {# {{- 'products.page.mailto_price' | t -}} #}
+                {% {{- 'products.page.mailto_price' | t -}} %}
                 </span>
                 <span class="add-to-cart__symbol" aria-hidden="true" style="margin-left:24px;">
                   {{- 'products.page.mailto_price' | t -}}
