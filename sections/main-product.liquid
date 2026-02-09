@@ -161,7 +161,13 @@
           </div>
 
         {%- when 'text' -%} 
-       
+          <!--
+          <div class="product__subtitle remove-end-margin
+            {% if block.settings.text_style == 'subtitle' %} body-text-sm {% elsif block.settings.text_style == 'uppercase' %} body-text-sm text-transform-uppercase {% endif %}" 
+            {{ block.shopify_attributes }}
+          >
+            {{ block.settings.text }}
+          </div>-->
 
         {%- when 'vendor' -%}
           <div class="product__subtitle remove end-margin body-text-sm" {{ block.shopify_attributes }}>
